@@ -8,10 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProyectoFinal.Formularios;
-<<<<<<< HEAD
-
-=======
->>>>>>> 324ada8e1563998a0c055a746d75fb22ca8743de
 namespace ProyectoFinal
 {
     public partial class UniEventHub : Form
@@ -52,11 +48,11 @@ namespace ProyectoFinal
 
 
 
-
         private void label1_Click_1(object sender, EventArgs e)
         {
 
         }
-
+        
     }
 }
+       

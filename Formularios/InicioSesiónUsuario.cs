@@ -21,9 +21,26 @@ namespace ProyectoFinal.Formularios
 
         private void btnAcceder_Click(object sender, EventArgs e)
         {
-            
+            string usuarioIngresado = txtCIF.Text;
+            string contraseñaIngresada = txtContraseña.Text;
 
+            if (usuarioIngresado == USUARIO_VALIDO && contraseñaIngresada == CONTRASENA_VALIDA)
+            {
+                // Credenciales correctas: abre el formulario de destino
+                VistaGeneralUsuario vistaGeneralUsuario= new VistaGeneralUsuario();
+                vistaGeneralUsuario.Show();
 
+                // Opcional: Ocultar o cerrar el formulario de login
+                this.Hide(); // Oculta el formulario actual
+            }
+            else
+            {
+                // Credenciales incorrectas: muestra un mensaje de error
+                MessageBox.Show("Usuario o contraseña incorrectos. Por favor, inténtelo de nuevo.", "Error de autenticación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
+
     }
-}
+    }
+
