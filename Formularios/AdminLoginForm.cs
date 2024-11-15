@@ -8,27 +8,26 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoFinal
+namespace ProyectoFinal.Formularios
 {
-    public partial class UniEventHub : Form
+    public partial class AdminLoginForm : Form
     {
-        public UniEventHub()
+        public AdminLoginForm()
         {
             InitializeComponent();
         }
 
-
-        private void label1_Click(object sender, EventArgs e)
+        private void AdminLoginForm_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnUsuario_Click(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
