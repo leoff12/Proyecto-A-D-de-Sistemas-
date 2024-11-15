@@ -32,9 +32,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.lblInicioSesionUsuario = new System.Windows.Forms.Label();
             this.pbLogoUAM = new System.Windows.Forms.PictureBox();
+            this.lblInicioSesionUsuario = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.lblIngresoDatosUsuario = new System.Windows.Forms.Label();
             this.lblCIF = new System.Windows.Forms.Label();
             this.pbCIF = new System.Windows.Forms.PictureBox();
@@ -76,13 +76,15 @@
             this.panel3.Size = new System.Drawing.Size(798, 85);
             this.panel3.TabIndex = 1;
             // 
-            // panel4
+            // pbLogoUAM
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel4.Location = new System.Drawing.Point(1, 367);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(798, 61);
-            this.panel4.TabIndex = 2;
+            this.pbLogoUAM.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoUAM.Image")));
+            this.pbLogoUAM.Location = new System.Drawing.Point(627, 6);
+            this.pbLogoUAM.Name = "pbLogoUAM";
+            this.pbLogoUAM.Size = new System.Drawing.Size(138, 67);
+            this.pbLogoUAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLogoUAM.TabIndex = 1;
+            this.pbLogoUAM.TabStop = false;
             // 
             // lblInicioSesionUsuario
             // 
@@ -95,15 +97,13 @@
             this.lblInicioSesionUsuario.TabIndex = 0;
             this.lblInicioSesionUsuario.Text = "UniEventHub - Inicio de Sesión Usuario\r\n";
             // 
-            // pbLogoUAM
+            // panel4
             // 
-            this.pbLogoUAM.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoUAM.Image")));
-            this.pbLogoUAM.Location = new System.Drawing.Point(627, 6);
-            this.pbLogoUAM.Name = "pbLogoUAM";
-            this.pbLogoUAM.Size = new System.Drawing.Size(138, 67);
-            this.pbLogoUAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbLogoUAM.TabIndex = 1;
-            this.pbLogoUAM.TabStop = false;
+            this.panel4.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel4.Location = new System.Drawing.Point(1, 367);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(798, 61);
+            this.panel4.TabIndex = 2;
             // 
             // lblIngresoDatosUsuario
             // 
@@ -186,6 +186,7 @@
             this.btnAcceder.TabIndex = 10;
             this.btnAcceder.Text = "Acceder";
             this.btnAcceder.UseVisualStyleBackColor = false;
+            this.btnAcceder.Click += new System.EventHandler(this.btnAcceder_Click);
             // 
             // btnRegresar
             // 
