@@ -8,7 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProyectoFinal.Formularios;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 324ada8e1563998a0c055a746d75fb22ca8743de
 namespace ProyectoFinal
 {
     public partial class UniEventHub : Form
@@ -20,12 +23,20 @@ namespace ProyectoFinal
 
         private void btnUsuario_Click(object sender, EventArgs e)
         {
+            //Instanciar el Formulario Inicio de sesión Usuario
+            InicioSesiónUsuario inicioSesiónUsuario = new InicioSesiónUsuario();
 
+            //Mostrar el formulario
+            inicioSesiónUsuario.Show();
         }
 
         private void btnAdministrador_Click(object sender, EventArgs e)
         {
+            //Instanciar el formulario de Inicio de sesión administrador
+            AdminLoginForm adminLoginForm = new AdminLoginForm();
 
+            //Mostrar el formulario
+            adminLoginForm.Show();
         }
         private void label1_Click(object sender, EventArgs e)
         {
@@ -37,9 +48,15 @@ namespace ProyectoFinal
 
         }
 
-        
+
+
+
+
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
-       
-
-        

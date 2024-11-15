@@ -12,9 +12,18 @@ namespace ProyectoFinal.Formularios
 {
     public partial class InicioSesiónUsuario : Form
     {
+        private const string USUARIO_VALIDO = "admin";
+        private const string CONTRASENA_VALIDA = "1234";
         public InicioSesiónUsuario()
         {
             InitializeComponent();
+        }
+
+        private void btnAcceder_Click(object sender, EventArgs e)
+        {
+            
+
+
         }
     }
 }
