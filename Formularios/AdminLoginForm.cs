@@ -31,5 +31,10 @@ namespace ProyectoFinal.Formularios
         {
 
         }
+
+        private void btnRegreAdm_Click(object sender, EventArgs e)
+        {  
+                this.Close(); // Cierra el formulario actual
+        }
     }
 }

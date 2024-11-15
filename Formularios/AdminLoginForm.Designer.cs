@@ -146,6 +146,7 @@
             this.btnRegreAdm.TabIndex = 11;
             this.btnRegreAdm.Text = "Regresar";
             this.btnRegreAdm.UseVisualStyleBackColor = false;
+            this.btnRegreAdm.Click += new System.EventHandler(this.btnRegreAdm_Click);
             // 
             // panel2
             // 
