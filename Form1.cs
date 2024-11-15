@@ -13,7 +13,7 @@ using ProyectoFinal.Formularios;
 
 namespace ProyectoFinal
 {
-    public partial class UniEventHub : Form
+    public partial class UniEventHub : MetroFramework.Forms.MetroForm
     {
         public UniEventHub()
         {
