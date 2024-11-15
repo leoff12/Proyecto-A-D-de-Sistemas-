@@ -60,8 +60,7 @@ namespace ProyectoFinal.Formularios
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            // Código para cerrar la aplicación o regresar a otro formulario
-            Application.Exit();
+            this.Close();
         }
     }
 }
