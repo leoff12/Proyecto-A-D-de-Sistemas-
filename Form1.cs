@@ -17,7 +17,15 @@ namespace ProyectoFinal
             InitializeComponent();
         }
 
+        private void btnUsuario_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void btnAdministrador_Click(object sender, EventArgs e)
+        {
+
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -33,9 +41,6 @@ namespace ProyectoFinal
 
         }
 
-        private void btnUsuario_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
