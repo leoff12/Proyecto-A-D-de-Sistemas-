@@ -193,6 +193,7 @@
             this.pbMensajes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbMensajes.TabIndex = 5;
             this.pbMensajes.TabStop = false;
+            this.pbMensajes.Click += new System.EventHandler(this.pbMensajes_Click);
             // 
             // label2
             // 
@@ -207,6 +208,7 @@
             // 
             // pbInicio
             // 
+            this.pbInicio.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbInicio.Image = ((System.Drawing.Image)(resources.GetObject("pbInicio.Image")));
             this.pbInicio.Location = new System.Drawing.Point(9, 43);
             this.pbInicio.Margin = new System.Windows.Forms.Padding(2);

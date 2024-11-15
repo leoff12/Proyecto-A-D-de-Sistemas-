@@ -146,7 +146,6 @@
             this.btnRegreAdm.TabIndex = 11;
             this.btnRegreAdm.Text = "Regresar";
             this.btnRegreAdm.UseVisualStyleBackColor = false;
-            this.btnRegreAdm.Click += new System.EventHandler(this.btnRegreAdm_Click);
             // 
             // AdminLoginForm
             // 
@@ -163,7 +162,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "AdminLoginForm";
             this.Text = "UniEventHub - Inicio de Sesión Administrado";
-            this.Load += new System.EventHandler(this.AdminLoginForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -21,5 +21,10 @@ namespace ProyectoFinal.Formularios
         {
 
         }
+
+        private void pbMensajes_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
