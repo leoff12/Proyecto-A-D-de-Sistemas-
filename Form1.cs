@@ -8,10 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProyectoFinal.Formularios;
-<<<<<<< HEAD
+using ProyectoFinal.Formularios;
 
-=======
->>>>>>> 324ada8e1563998a0c055a746d75fb22ca8743de
 namespace ProyectoFinal
 {
     public partial class UniEventHub : Form
