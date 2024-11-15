@@ -29,10 +29,11 @@ namespace ProyectoFinal.Formularios
                 MessageBox.Show("Bienvenido, Santiago Mena", "Acceso Concedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 // Credenciales correctas: abre el formulario de destino
                 VistaGeneralUsuario vistaGeneralUsuario= new VistaGeneralUsuario();
-                vistaGeneralUsuario.Show();
-
-                // Opcional: Ocultar o cerrar el formulario de login
                 this.Hide(); // Oculta el formulario actual
+
+                vistaGeneralUsuario.ShowDialog();
+
+                this.Show();
             }
             else
             {

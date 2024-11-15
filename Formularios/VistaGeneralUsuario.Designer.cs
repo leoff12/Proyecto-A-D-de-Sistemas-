@@ -154,12 +154,13 @@
             this.btnCerrarSesion.BackColor = System.Drawing.Color.Red;
             this.btnCerrarSesion.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(449, 6);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(435, 6);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(123, 33);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(137, 33);
             this.btnCerrarSesion.TabIndex = 3;
             this.btnCerrarSesion.Text = "Cerrar Sesión";
             this.btnCerrarSesion.UseVisualStyleBackColor = false;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // pbBuscar
             // 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProyectoFinal;
 
 namespace ProyectoFinal.Formularios
 {
@@ -24,6 +25,14 @@ namespace ProyectoFinal.Formularios
 
         private void txtBuscarEvento_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            
+            this.Close();
+           
 
         }
     }

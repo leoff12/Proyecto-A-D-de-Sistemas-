@@ -24,18 +24,27 @@ namespace ProyectoFinal
         {
             //Instanciar el Formulario Inicio de sesión Usuario
             InicioSesiónUsuario inicioSesiónUsuario = new InicioSesiónUsuario();
+            this.Hide();
 
             //Mostrar el formulario
-            inicioSesiónUsuario.Show();
+            inicioSesiónUsuario.ShowDialog();
+
+            this.Show();
+            
         }
 
         private void btnAdministrador_Click(object sender, EventArgs e)
         {
             //Instanciar el formulario de Inicio de sesión administrador
             AdminLoginForm adminLoginForm = new AdminLoginForm();
+            
+            this.Hide();
 
             //Mostrar el formulario
-            adminLoginForm.Show();
+            adminLoginForm.ShowDialog();
+
+            this.Show();
+            
         }
         private void label1_Click(object sender, EventArgs e)
         {
