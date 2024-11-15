@@ -11,7 +11,7 @@ using ProyectoFinal;
 
 namespace ProyectoFinal.Formularios
 {
-    public partial class VistaGeneralUsuario : Form
+    public partial class VistaGeneralUsuario : MetroFramework.Forms.MetroForm
     {
         public VistaGeneralUsuario()
         {

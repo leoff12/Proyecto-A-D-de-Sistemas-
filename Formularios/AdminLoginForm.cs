@@ -11,7 +11,7 @@ using ProyectoFinal.Formularios;
 
 namespace ProyectoFinal.Formularios
 {
-    public partial class AdminLoginForm : Form
+    public partial class AdminLoginForm : MetroFramework.Forms.MetroForm
     {
         public AdminLoginForm()
         {

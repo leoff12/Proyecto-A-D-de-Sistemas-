@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal.Formularios
 {
-    public partial class FrmAdmin : Form
+    public partial class FrmAdmin : MetroFramework.Forms.MetroForm
     {
         public FrmAdmin()
         {

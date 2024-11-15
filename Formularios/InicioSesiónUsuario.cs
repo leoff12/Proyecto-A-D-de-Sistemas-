@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal.Formularios
 {
-    public partial class InicioSesiónUsuario : Form
+    public partial class InicioSesiónUsuario : MetroFramework.Forms.MetroForm
     {
         private const string USUARIO_VALIDO = "admin";
         private const string CONTRASENA_VALIDA = "1234";
