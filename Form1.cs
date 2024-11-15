@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal
 {
-    public partial class Form1 : Form
+    public partial class UniEventHub : Form
     {
-        public Form1()
+        public UniEventHub()
         {
             InitializeComponent();
         }
@@ -36,11 +36,23 @@ namespace ProyectoFinal
 
         }
 
+        private void btnUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
         private void label1_Click_1(object sender, EventArgs e)
         {
 
         }
 
         
+    }
+}
+        }
+    }
+}
+        }
     }
 }
