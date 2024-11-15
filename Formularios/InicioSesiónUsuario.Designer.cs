@@ -182,7 +182,7 @@
             this.btnAcceder.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAcceder.Location = new System.Drawing.Point(38, 301);
             this.btnAcceder.Name = "btnAcceder";
-            this.btnAcceder.Size = new System.Drawing.Size(79, 30);
+            this.btnAcceder.Size = new System.Drawing.Size(91, 41);
             this.btnAcceder.TabIndex = 10;
             this.btnAcceder.Text = "Acceder";
             this.btnAcceder.UseVisualStyleBackColor = false;
@@ -195,10 +195,11 @@
             this.btnRegresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnRegresar.Location = new System.Drawing.Point(135, 301);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(90, 30);
+            this.btnRegresar.Size = new System.Drawing.Size(104, 41);
             this.btnRegresar.TabIndex = 11;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // InicioSesiónUsuario
             // 
