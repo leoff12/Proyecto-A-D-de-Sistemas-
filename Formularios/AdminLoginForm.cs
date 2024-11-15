@@ -7,9 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-using System;
-using System.Windows.Forms;
 using ProyectoFinal.Formularios;
 
 namespace ProyectoFinal.Formularios
