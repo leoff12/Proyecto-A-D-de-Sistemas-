@@ -83,7 +83,7 @@
             // 
             this.lblSaludo.AutoSize = true;
             this.lblSaludo.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSaludo.Location = new System.Drawing.Point(32, 91);
+            this.lblSaludo.Location = new System.Drawing.Point(293, 92);
             this.lblSaludo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSaludo.Name = "lblSaludo";
             this.lblSaludo.Size = new System.Drawing.Size(154, 31);

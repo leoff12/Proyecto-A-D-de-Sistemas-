@@ -68,6 +68,11 @@ namespace ProyectoFinal.Formularios
         {
 
         }
+
+        private void txtContraseñaAdm_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
