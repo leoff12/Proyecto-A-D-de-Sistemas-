@@ -63,6 +63,26 @@ namespace ProyectoFinal.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _16344954 {
+            get {
+                object obj = ResourceManager.GetObject("16344954", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _67654f6b2a7d10436445455b1458935f {
+            get {
+                object obj = ResourceManager.GetObject("67654f6b2a7d10436445455b1458935f", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add {
             get {
                 object obj = ResourceManager.GetObject("add", resourceCulture);
@@ -116,6 +136,26 @@ namespace ProyectoFinal.Properties {
         internal static System.Drawing.Bitmap image {
             get {
                 object obj = ResourceManager.GetObject("image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Imagen_de_WhatsApp_2024_11_22_a_las_00_00_36_5a23c395 {
+            get {
+                object obj = ResourceManager.GetObject("Imagen de WhatsApp 2024-11-22 a las 00.00.36_5a23c395", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Imagen_de_WhatsApp_2024_11_22_a_las_00_001 {
+            get {
+                object obj = ResourceManager.GetObject("Imagen de WhatsApp 2024-11-22 a las 00.001", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

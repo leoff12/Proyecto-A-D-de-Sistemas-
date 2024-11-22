@@ -28,119 +28,140 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UniEventHub));
-            this.btnAdministrador = new System.Windows.Forms.Button();
-            this.btnUsuario = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblSaludo = new System.Windows.Forms.Label();
             this.lblCargo = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pbUsuario = new System.Windows.Forms.PictureBox();
-            this.pbAdministrador = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUsuario)).BeginInit();
+            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbAdministrador = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pbUsuario = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnAdministrador = new Guna.UI2.WinForms.Guna2TileButton();
+            this.btnUsuario = new Guna.UI2.WinForms.Guna2TileButton();
+            this.metroPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAdministrador)).BeginInit();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUsuario)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnAdministrador
-            // 
-            this.btnAdministrador.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnAdministrador.Location = new System.Drawing.Point(509, 235);
-            this.btnAdministrador.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAdministrador.Name = "btnAdministrador";
-            this.btnAdministrador.Size = new System.Drawing.Size(82, 21);
-            this.btnAdministrador.TabIndex = 0;
-            this.btnAdministrador.Text = "Administrador";
-            this.btnAdministrador.UseVisualStyleBackColor = false;
-            this.btnAdministrador.Click += new System.EventHandler(this.btnAdministrador_Click);
-            // 
-            // btnUsuario
-            // 
-            this.btnUsuario.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnUsuario.Location = new System.Drawing.Point(167, 235);
-            this.btnUsuario.Margin = new System.Windows.Forms.Padding(2);
-            this.btnUsuario.Name = "btnUsuario";
-            this.btnUsuario.Size = new System.Drawing.Size(82, 21);
-            this.btnUsuario.TabIndex = 1;
-            this.btnUsuario.Text = "Usuario";
-            this.btnUsuario.UseVisualStyleBackColor = false;
-            this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Times New Roman", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(227, 13);
+            this.lblTitulo.Font = new System.Drawing.Font("Dubai", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblTitulo.Location = new System.Drawing.Point(350, 54);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(317, 40);
+            this.lblTitulo.Size = new System.Drawing.Size(293, 54);
             this.lblTitulo.TabIndex = 2;
             this.lblTitulo.Text = "UAM - UniEventHub";
-            this.lblTitulo.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblSaludo
             // 
             this.lblSaludo.AutoSize = true;
-            this.lblSaludo.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSaludo.Location = new System.Drawing.Point(293, 92);
+            this.lblSaludo.Font = new System.Drawing.Font("Dubai", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaludo.Location = new System.Drawing.Point(417, 9);
             this.lblSaludo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSaludo.Name = "lblSaludo";
-            this.lblSaludo.Size = new System.Drawing.Size(154, 31);
+            this.lblSaludo.Size = new System.Drawing.Size(161, 45);
             this.lblSaludo.TabIndex = 3;
             this.lblSaludo.Text = "¡Bienvenido!";
             // 
             // lblCargo
             // 
             this.lblCargo.AutoSize = true;
-            this.lblCargo.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCargo.Location = new System.Drawing.Point(307, 123);
+            this.lblCargo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCargo.Location = new System.Drawing.Point(425, 134);
             this.lblCargo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCargo.Name = "lblCargo";
-            this.lblCargo.Size = new System.Drawing.Size(129, 16);
+            this.lblCargo.Size = new System.Drawing.Size(153, 16);
             this.lblCargo.TabIndex = 4;
             this.lblCargo.Text = "Selecciones su cargo:";
             // 
-            // panel1
+            // metroPanel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.panel1.Location = new System.Drawing.Point(-1, 77);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(781, 12);
-            this.panel1.TabIndex = 5;
+            this.metroPanel1.Controls.Add(this.pictureBox1);
+            this.metroPanel1.HorizontalScrollbarBarColor = true;
+            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.Location = new System.Drawing.Point(0, -2);
+            this.metroPanel1.Name = "metroPanel1";
+            this.metroPanel1.Size = new System.Drawing.Size(299, 335);
+            this.metroPanel1.TabIndex = 8;
+            this.metroPanel1.VerticalScrollbarBarColor = true;
+            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.VerticalScrollbarSize = 10;
             // 
-            // pbUsuario
+            // pictureBox1
             // 
-            this.pbUsuario.Image = ((System.Drawing.Image)(resources.GetObject("pbUsuario.Image")));
-            this.pbUsuario.Location = new System.Drawing.Point(167, 146);
-            this.pbUsuario.Margin = new System.Windows.Forms.Padding(2);
-            this.pbUsuario.Name = "pbUsuario";
-            this.pbUsuario.Size = new System.Drawing.Size(109, 62);
-            this.pbUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbUsuario.TabIndex = 6;
-            this.pbUsuario.TabStop = false;
+            this.pictureBox1.Image = global::ProyectoFinal.Properties.Resources.Imagen_de_WhatsApp_2024_11_22_a_las_00_001;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(296, 332);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // pbAdministrador
             // 
-            this.pbAdministrador.Image = ((System.Drawing.Image)(resources.GetObject("pbAdministrador.Image")));
-            this.pbAdministrador.Location = new System.Drawing.Point(482, 157);
-            this.pbAdministrador.Margin = new System.Windows.Forms.Padding(2);
+            this.pbAdministrador.Image = global::ProyectoFinal.Properties.Resources._16344954;
+            this.pbAdministrador.ImageRotate = 0F;
+            this.pbAdministrador.Location = new System.Drawing.Point(369, 181);
             this.pbAdministrador.Name = "pbAdministrador";
-            this.pbAdministrador.Size = new System.Drawing.Size(109, 62);
+            this.pbAdministrador.Size = new System.Drawing.Size(96, 81);
             this.pbAdministrador.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbAdministrador.TabIndex = 7;
+            this.pbAdministrador.TabIndex = 10;
             this.pbAdministrador.TabStop = false;
+            this.pbAdministrador.Click += new System.EventHandler(this.btnAdministrador_Click);
             // 
-            // panel2
+            // pbUsuario
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Info;
-            this.panel2.Controls.Add(this.lblTitulo);
-            this.panel2.Location = new System.Drawing.Point(-1, 21);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(781, 55);
-            this.panel2.TabIndex = 8;
+            this.pbUsuario.Image = global::ProyectoFinal.Properties.Resources._67654f6b2a7d10436445455b1458935f;
+            this.pbUsuario.ImageRotate = 0F;
+            this.pbUsuario.Location = new System.Drawing.Point(545, 181);
+            this.pbUsuario.Name = "pbUsuario";
+            this.pbUsuario.Size = new System.Drawing.Size(85, 81);
+            this.pbUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbUsuario.TabIndex = 9;
+            this.pbUsuario.TabStop = false;
+            this.pbUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
+            // 
+            // btnAdministrador
+            // 
+            this.btnAdministrador.Animated = true;
+            this.btnAdministrador.AnimatedGIF = true;
+            this.btnAdministrador.AutoRoundedCorners = true;
+            this.btnAdministrador.BorderRadius = 15;
+            this.btnAdministrador.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAdministrador.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAdministrador.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAdministrador.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAdministrador.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdministrador.ForeColor = System.Drawing.Color.White;
+            this.btnAdministrador.Location = new System.Drawing.Point(359, 268);
+            this.btnAdministrador.Name = "btnAdministrador";
+            this.btnAdministrador.Size = new System.Drawing.Size(116, 33);
+            this.btnAdministrador.TabIndex = 11;
+            this.btnAdministrador.Text = "Administrador";
+            this.btnAdministrador.Click += new System.EventHandler(this.btnAdministrador_Click);
+            // 
+            // btnUsuario
+            // 
+            this.btnUsuario.Animated = true;
+            this.btnUsuario.AnimatedGIF = true;
+            this.btnUsuario.AutoRoundedCorners = true;
+            this.btnUsuario.BorderRadius = 15;
+            this.btnUsuario.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUsuario.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUsuario.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUsuario.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUsuario.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuario.ForeColor = System.Drawing.Color.White;
+            this.btnUsuario.Location = new System.Drawing.Point(530, 268);
+            this.btnUsuario.Name = "btnUsuario";
+            this.btnUsuario.Size = new System.Drawing.Size(113, 33);
+            this.btnUsuario.TabIndex = 12;
+            this.btnUsuario.Text = "Usuario";
+            this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
             // 
             // UniEventHub
             // 
@@ -148,40 +169,38 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(710, 330);
-            this.Controls.Add(this.lblSaludo);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pbAdministrador);
-            this.Controls.Add(this.pbUsuario);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lblCargo);
             this.Controls.Add(this.btnUsuario);
             this.Controls.Add(this.btnAdministrador);
+            this.Controls.Add(this.pbAdministrador);
+            this.Controls.Add(this.pbUsuario);
+            this.Controls.Add(this.metroPanel1);
+            this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.lblSaludo);
+            this.Controls.Add(this.lblCargo);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UniEventHub";
             this.Padding = new System.Windows.Forms.Padding(13, 60, 13, 13);
             this.Style = MetroFramework.MetroColorStyle.White;
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.UniEventHub_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbUsuario)).EndInit();
+            this.TransparencyKey = System.Drawing.Color.DodgerBlue;
+            this.metroPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAdministrador)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUsuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnAdministrador;
-        private System.Windows.Forms.Button btnUsuario;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblSaludo;
         private System.Windows.Forms.Label lblCargo;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pbUsuario;
-        private System.Windows.Forms.PictureBox pbAdministrador;
-        private System.Windows.Forms.Panel panel2;
+        private MetroFramework.Controls.MetroPanel metroPanel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox pbUsuario;
+        private Guna.UI2.WinForms.Guna2PictureBox pbAdministrador;
+        private Guna.UI2.WinForms.Guna2TileButton btnAdministrador;
+        private Guna.UI2.WinForms.Guna2TileButton btnUsuario;
     }
 }
 

@@ -169,6 +169,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Recursos\image.png" />
+    <None Include="Resources\16344954.png" />
+    <None Include="Resources\67654f6b2a7d10436445455b1458935f.png" />
+    <None Include="Resources\Imagen de WhatsApp 2024-11-22 a las 00.00.36_5a23c3951.jpg" />
+    <None Include="Resources\Imagen de WhatsApp 2024-11-22 a las 00.00.36_5a23c395.jpg" />
     <None Include="Resources\borrar.png" />
     <None Include="Resources\modificar.png" />
     <None Include="Resources\boton-agregar.png" />
