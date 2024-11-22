@@ -41,6 +41,7 @@
             this.btnAccAdm = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnRegreAdm = new Guna.UI2.WinForms.Guna2TileButton();
             this.pbAdministrador = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.chkMostrarContraseñaAdm = new Guna.UI2.WinForms.Guna2CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -174,7 +175,7 @@
             this.txtContraseñaAdm.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtContraseñaAdm.Location = new System.Drawing.Point(290, 165);
             this.txtContraseñaAdm.Name = "txtContraseñaAdm";
-            this.txtContraseñaAdm.PasswordChar = '\0';
+            this.txtContraseñaAdm.PasswordChar = '*';
             this.txtContraseñaAdm.PlaceholderText = "INGRESE SU CONTRASEÑA";
             this.txtContraseñaAdm.SelectedText = "";
             this.txtContraseñaAdm.Size = new System.Drawing.Size(375, 30);
@@ -231,12 +232,33 @@
             this.pbAdministrador.TabIndex = 18;
             this.pbAdministrador.TabStop = false;
             // 
+            // chkMostrarContraseñaAdm
+            // 
+            this.chkMostrarContraseñaAdm.AutoSize = true;
+            this.chkMostrarContraseñaAdm.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chkMostrarContraseñaAdm.CheckedState.BorderRadius = 0;
+            this.chkMostrarContraseñaAdm.CheckedState.BorderThickness = 0;
+            this.chkMostrarContraseñaAdm.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chkMostrarContraseñaAdm.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkMostrarContraseñaAdm.Location = new System.Drawing.Point(301, 207);
+            this.chkMostrarContraseñaAdm.Name = "chkMostrarContraseñaAdm";
+            this.chkMostrarContraseñaAdm.Size = new System.Drawing.Size(117, 22);
+            this.chkMostrarContraseñaAdm.TabIndex = 19;
+            this.chkMostrarContraseñaAdm.Text = "Mostrar contraseña";
+            this.chkMostrarContraseñaAdm.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chkMostrarContraseñaAdm.UncheckedState.BorderRadius = 0;
+            this.chkMostrarContraseñaAdm.UncheckedState.BorderThickness = 0;
+            this.chkMostrarContraseñaAdm.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chkMostrarContraseñaAdm.CheckedChanged += new System.EventHandler(this.chkMostrarContraseñaAdm_CheckedChanged);
+            this.chkMostrarContraseñaAdm.TextChanged += new System.EventHandler(this.btnRegresar_Click);
+            // 
             // AdminLoginForm
             // 
             this.ApplyImageInvert = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(710, 330);
+            this.Controls.Add(this.chkMostrarContraseñaAdm);
             this.Controls.Add(this.pbAdministrador);
             this.Controls.Add(this.btnRegreAdm);
             this.Controls.Add(this.btnAccAdm);
@@ -277,5 +299,6 @@
         private Guna.UI2.WinForms.Guna2TileButton btnAccAdm;
         private Guna.UI2.WinForms.Guna2TileButton btnRegreAdm;
         private Guna.UI2.WinForms.Guna2PictureBox pbAdministrador;
+        private Guna.UI2.WinForms.Guna2CheckBox chkMostrarContraseñaAdm;
     }
 }

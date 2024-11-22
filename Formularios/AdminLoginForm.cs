@@ -17,7 +17,7 @@ namespace ProyectoFinal.Formularios
         {
             InitializeComponent();
         }
-        
+
 
         private void btnAcceder_Click(object sender, EventArgs e)
         {
@@ -63,10 +63,19 @@ namespace ProyectoFinal.Formularios
             this.Close();
         }
 
-        private void txtUserAdm_TextChanged(object sender, EventArgs e)
+        
+        private void chkMostrarContraseñaAdm_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (chkMostrarContraseñaAdm.Checked)
+            {
+                txtContraseñaAdm.PasswordChar = '\0'; // Mostrar la contraseña
+            }
+            else
+            {
+                txtContraseñaAdm.PasswordChar = '*'; // Ocultar la contraseña
+            }
         }
+
     }
 }
 

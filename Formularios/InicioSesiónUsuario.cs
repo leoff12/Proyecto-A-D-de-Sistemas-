@@ -45,20 +45,18 @@ namespace ProyectoFinal.Formularios
             this.Close();
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void chkMostrarContraseña_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (chkMostrarContraseña.Checked)
+            {
+                txtContraseña.PasswordChar = '\0'; // Mostrar la contraseña
+            }
+            else
+            {
+                txtContraseña.PasswordChar = '*'; // Ocultar la contraseña
+            }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void InicioSesiónUsuario_Load(object sender, EventArgs e)
-        {
-
-        }
     }
-    }
+}
 

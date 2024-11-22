@@ -41,6 +41,7 @@
             this.btnAcceder = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnRegresar = new Guna.UI2.WinForms.Guna2TileButton();
             this.pbUsuario = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.chkMostrarContraseña = new Guna.UI2.WinForms.Guna2CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,7 +70,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label5
             // 
@@ -131,7 +131,7 @@
             this.txtContraseña.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtContraseña.Location = new System.Drawing.Point(289, 164);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.PasswordChar = '\0';
+            this.txtContraseña.PasswordChar = '*';
             this.txtContraseña.PlaceholderText = "INGRESE SU CONTRASEÑA";
             this.txtContraseña.SelectedText = "";
             this.txtContraseña.Size = new System.Drawing.Size(375, 24);
@@ -157,7 +157,6 @@
             this.label7.Size = new System.Drawing.Size(27, 17);
             this.label7.TabIndex = 16;
             this.label7.Text = "CIF";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // txtCIF
             // 
@@ -230,11 +229,30 @@
             this.pbUsuario.TabIndex = 24;
             this.pbUsuario.TabStop = false;
             // 
+            // chkMostrarContraseña
+            // 
+            this.chkMostrarContraseña.AutoSize = true;
+            this.chkMostrarContraseña.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chkMostrarContraseña.CheckedState.BorderRadius = 0;
+            this.chkMostrarContraseña.CheckedState.BorderThickness = 0;
+            this.chkMostrarContraseña.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chkMostrarContraseña.Location = new System.Drawing.Point(300, 204);
+            this.chkMostrarContraseña.Name = "chkMostrarContraseña";
+            this.chkMostrarContraseña.Size = new System.Drawing.Size(117, 17);
+            this.chkMostrarContraseña.TabIndex = 25;
+            this.chkMostrarContraseña.Text = "Mostrar contraseña";
+            this.chkMostrarContraseña.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chkMostrarContraseña.UncheckedState.BorderRadius = 0;
+            this.chkMostrarContraseña.UncheckedState.BorderThickness = 0;
+            this.chkMostrarContraseña.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chkMostrarContraseña.CheckedChanged += new System.EventHandler(this.chkMostrarContraseña_CheckedChanged);
+            // 
             // InicioSesiónUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(710, 330);
+            this.Controls.Add(this.chkMostrarContraseña);
             this.Controls.Add(this.pbUsuario);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnAcceder);
@@ -248,7 +266,6 @@
             this.Name = "InicioSesiónUsuario";
             this.Padding = new System.Windows.Forms.Padding(13, 60, 13, 13);
             this.Style = MetroFramework.MetroColorStyle.White;
-            this.Load += new System.EventHandler(this.InicioSesiónUsuario_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -273,5 +290,6 @@
         private Guna.UI2.WinForms.Guna2TileButton btnAcceder;
         private Guna.UI2.WinForms.Guna2TileButton btnRegresar;
         private Guna.UI2.WinForms.Guna2PictureBox pbUsuario;
+        private Guna.UI2.WinForms.Guna2CheckBox chkMostrarContraseña;
     }
 }
