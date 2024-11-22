@@ -40,9 +40,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAccAdm = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnRegreAdm = new Guna.UI2.WinForms.Guna2TileButton();
+            this.pbAdministrador = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAdministrador)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -217,12 +219,24 @@
             this.btnRegreAdm.Text = "Regresar";
             this.btnRegreAdm.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
+            // pbAdministrador
+            // 
+            this.pbAdministrador.Image = global::ProyectoFinal.Properties.Resources._16344954;
+            this.pbAdministrador.ImageRotate = 0F;
+            this.pbAdministrador.Location = new System.Drawing.Point(646, 24);
+            this.pbAdministrador.Name = "pbAdministrador";
+            this.pbAdministrador.Size = new System.Drawing.Size(48, 38);
+            this.pbAdministrador.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbAdministrador.TabIndex = 18;
+            this.pbAdministrador.TabStop = false;
+            // 
             // AdminLoginForm
             // 
             this.ApplyImageInvert = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(710, 330);
+            this.Controls.Add(this.pbAdministrador);
             this.Controls.Add(this.btnRegreAdm);
             this.Controls.Add(this.btnAccAdm);
             this.Controls.Add(this.txtContraseñaAdm);
@@ -241,6 +255,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAdministrador)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -260,5 +275,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtContraseñaAdm;
         private Guna.UI2.WinForms.Guna2TileButton btnAccAdm;
         private Guna.UI2.WinForms.Guna2TileButton btnRegreAdm;
+        private Guna.UI2.WinForms.Guna2PictureBox pbAdministrador;
     }
 }
