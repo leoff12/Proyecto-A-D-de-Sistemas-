@@ -46,6 +46,16 @@ namespace ProyectoFinal.Formularios
         {
             this.Close();
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 

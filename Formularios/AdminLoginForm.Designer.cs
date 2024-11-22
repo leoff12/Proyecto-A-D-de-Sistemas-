@@ -29,19 +29,17 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnAccAdm = new System.Windows.Forms.Button();
-            this.btnRegreAdm = new System.Windows.Forms.Button();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.txtUserAdm = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.txtContraseñaAdm = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAccAdm = new Guna.UI2.WinForms.Guna2TileButton();
+            this.btnRegreAdm = new Guna.UI2.WinForms.Guna2TileButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,18 +55,8 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-2, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(257, 333);
+            this.panel1.Size = new System.Drawing.Size(275, 333);
             this.panel1.TabIndex = 0;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::ProyectoFinal.Properties.Resources.image;
-            this.pictureBox2.Location = new System.Drawing.Point(46, 84);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(152, 67);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
             // 
             // label5
             // 
@@ -76,23 +64,12 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Yu Gothic UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(15, 154);
+            this.label5.Location = new System.Drawing.Point(28, 177);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(229, 47);
             this.label5.TabIndex = 4;
             this.label5.Text = "UniEventHub";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = global::ProyectoFinal.Properties.Resources.image;
-            this.pictureBox1.Location = new System.Drawing.Point(415, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(116, 47);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -109,62 +86,32 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(297, 27);
+            this.label2.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(297, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(260, 20);
+            this.label2.Size = new System.Drawing.Size(238, 27);
             this.label2.TabIndex = 1;
             this.label2.Text = "Por favor, Ingrese sus credenciales:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(298, 85);
+            this.label3.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(298, 60);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 16);
+            this.label3.Size = new System.Drawing.Size(128, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nombre de Usuario";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(298, 173);
+            this.label4.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(298, 146);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 16);
+            this.label4.Size = new System.Drawing.Size(77, 17);
             this.label4.TabIndex = 8;
             this.label4.Text = "Contraseña";
-            // 
-            // btnAccAdm
-            // 
-            this.btnAccAdm.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnAccAdm.Location = new System.Drawing.Point(365, 278);
-            this.btnAccAdm.Name = "btnAccAdm";
-            this.btnAccAdm.Size = new System.Drawing.Size(75, 23);
-            this.btnAccAdm.TabIndex = 10;
-            this.btnAccAdm.Text = "Aceder";
-            this.btnAccAdm.UseVisualStyleBackColor = false;
-            this.btnAccAdm.Click += new System.EventHandler(this.btnAcceder_Click);
-            // 
-            // btnRegreAdm
-            // 
-            this.btnRegreAdm.BackColor = System.Drawing.Color.IndianRed;
-            this.btnRegreAdm.Location = new System.Drawing.Point(559, 278);
-            this.btnRegreAdm.Name = "btnRegreAdm";
-            this.btnRegreAdm.Size = new System.Drawing.Size(75, 23);
-            this.btnRegreAdm.TabIndex = 11;
-            this.btnRegreAdm.Text = "Regresar";
-            this.btnRegreAdm.UseVisualStyleBackColor = false;
-            this.btnRegreAdm.Click += new System.EventHandler(this.btnRegresar_Click);
-            // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Separator1.Location = new System.Drawing.Point(301, 126);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(364, 10);
-            this.guna2Separator1.TabIndex = 12;
             // 
             // txtUserAdm
             // 
@@ -179,7 +126,7 @@
             this.txtUserAdm.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUserAdm.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtUserAdm.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUserAdm.Location = new System.Drawing.Point(290, 106);
+            this.txtUserAdm.Location = new System.Drawing.Point(290, 79);
             this.txtUserAdm.Name = "txtUserAdm";
             this.txtUserAdm.PasswordChar = '\0';
             this.txtUserAdm.PlaceholderText = "";
@@ -187,14 +134,6 @@
             this.txtUserAdm.Size = new System.Drawing.Size(375, 30);
             this.txtUserAdm.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtUserAdm.TabIndex = 13;
-            // 
-            // guna2Separator2
-            // 
-            this.guna2Separator2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Separator2.Location = new System.Drawing.Point(301, 192);
-            this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(364, 10);
-            this.guna2Separator2.TabIndex = 14;
             // 
             // txtContraseñaAdm
             // 
@@ -209,7 +148,7 @@
             this.txtContraseñaAdm.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtContraseñaAdm.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtContraseñaAdm.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtContraseñaAdm.Location = new System.Drawing.Point(290, 192);
+            this.txtContraseñaAdm.Location = new System.Drawing.Point(290, 165);
             this.txtContraseñaAdm.Name = "txtContraseñaAdm";
             this.txtContraseñaAdm.PasswordChar = '\0';
             this.txtContraseñaAdm.PlaceholderText = "";
@@ -218,18 +157,76 @@
             this.txtContraseñaAdm.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtContraseñaAdm.TabIndex = 15;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::ProyectoFinal.Properties.Resources.image;
+            this.pictureBox2.Location = new System.Drawing.Point(55, 94);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(152, 67);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Image = global::ProyectoFinal.Properties.Resources.image;
+            this.pictureBox1.Location = new System.Drawing.Point(415, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(116, 47);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnAccAdm
+            // 
+            this.btnAccAdm.Animated = true;
+            this.btnAccAdm.AnimatedGIF = true;
+            this.btnAccAdm.AutoRoundedCorners = true;
+            this.btnAccAdm.BorderRadius = 15;
+            this.btnAccAdm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAccAdm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAccAdm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAccAdm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAccAdm.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccAdm.ForeColor = System.Drawing.Color.White;
+            this.btnAccAdm.Location = new System.Drawing.Point(290, 256);
+            this.btnAccAdm.Name = "btnAccAdm";
+            this.btnAccAdm.Size = new System.Drawing.Size(113, 33);
+            this.btnAccAdm.TabIndex = 16;
+            this.btnAccAdm.Text = "Acceder";
+            this.btnAccAdm.Click += new System.EventHandler(this.btnAcceder_Click);
+            // 
+            // btnRegreAdm
+            // 
+            this.btnRegreAdm.Animated = true;
+            this.btnRegreAdm.AnimatedGIF = true;
+            this.btnRegreAdm.AutoRoundedCorners = true;
+            this.btnRegreAdm.BorderRadius = 15;
+            this.btnRegreAdm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRegreAdm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRegreAdm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRegreAdm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRegreAdm.FillColor = System.Drawing.Color.Red;
+            this.btnRegreAdm.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegreAdm.ForeColor = System.Drawing.Color.White;
+            this.btnRegreAdm.Location = new System.Drawing.Point(581, 281);
+            this.btnRegreAdm.Name = "btnRegreAdm";
+            this.btnRegreAdm.Size = new System.Drawing.Size(113, 33);
+            this.btnRegreAdm.TabIndex = 17;
+            this.btnRegreAdm.Text = "Regresar";
+            this.btnRegreAdm.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
             // AdminLoginForm
             // 
             this.ApplyImageInvert = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(710, 330);
-            this.Controls.Add(this.guna2Separator2);
-            this.Controls.Add(this.txtContraseñaAdm);
-            this.Controls.Add(this.guna2Separator1);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnRegreAdm);
             this.Controls.Add(this.btnAccAdm);
+            this.Controls.Add(this.txtContraseñaAdm);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
@@ -257,13 +254,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnAccAdm;
-        private System.Windows.Forms.Button btnRegreAdm;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Guna.UI2.WinForms.Guna2TextBox txtUserAdm;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
         private Guna.UI2.WinForms.Guna2TextBox txtContraseñaAdm;
+        private Guna.UI2.WinForms.Guna2TileButton btnAccAdm;
+        private Guna.UI2.WinForms.Guna2TileButton btnRegreAdm;
     }
 }
