@@ -43,7 +43,6 @@ namespace ProyectoFinal.Formularios
             // Validar credenciales
             if (nombreUsuario == "Santiago Mena" && contrasena == "1234")
             {
-                MessageBox.Show("Bienvenido, Santiago Mena", "Acceso Concedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Abrir el formulario principal
                 FrmAdmin frmAdmin = new FrmAdmin();

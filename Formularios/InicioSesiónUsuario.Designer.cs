@@ -120,9 +120,8 @@
             // txtContraseña
             // 
             this.txtContraseña.Animated = true;
-            this.txtContraseña.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.txtContraseña.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtContraseña.DefaultText = "INGRESE SU CONTRASEÑA";
+            this.txtContraseña.DefaultText = "";
             this.txtContraseña.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtContraseña.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtContraseña.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -133,7 +132,7 @@
             this.txtContraseña.Location = new System.Drawing.Point(289, 164);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '\0';
-            this.txtContraseña.PlaceholderText = "";
+            this.txtContraseña.PlaceholderText = "INGRESE SU CONTRASEÑA";
             this.txtContraseña.SelectedText = "";
             this.txtContraseña.Size = new System.Drawing.Size(375, 24);
             this.txtContraseña.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -163,9 +162,8 @@
             // txtCIF
             // 
             this.txtCIF.Animated = true;
-            this.txtCIF.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.txtCIF.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCIF.DefaultText = "INGRESE SU CIF";
+            this.txtCIF.DefaultText = "";
             this.txtCIF.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtCIF.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtCIF.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -176,7 +174,7 @@
             this.txtCIF.Location = new System.Drawing.Point(289, 85);
             this.txtCIF.Name = "txtCIF";
             this.txtCIF.PasswordChar = '\0';
-            this.txtCIF.PlaceholderText = "";
+            this.txtCIF.PlaceholderText = "INGRESE SU CIF";
             this.txtCIF.SelectedText = "";
             this.txtCIF.Size = new System.Drawing.Size(375, 30);
             this.txtCIF.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;

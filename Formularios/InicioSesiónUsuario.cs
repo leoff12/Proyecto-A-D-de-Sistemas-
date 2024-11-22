@@ -26,8 +26,6 @@ namespace ProyectoFinal.Formularios
 
             if (usuarioIngresado == USUARIO_VALIDO && contraseñaIngresada == CONTRASENA_VALIDA)
             {
-                MessageBox.Show("Bienvenido, Santiago Mena", "Acceso Concedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                // Credenciales correctas: abre el formulario de destino
                 VistaGeneralUsuario vistaGeneralUsuario= new VistaGeneralUsuario();
                 this.Hide(); // Oculta el formulario actual
 
