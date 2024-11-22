@@ -38,9 +38,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnAccAdm = new System.Windows.Forms.Button();
             this.btnRegreAdm = new System.Windows.Forms.Button();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.txtUserAdm = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.txtContraseñaAdm = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -110,7 +108,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(297, 27);
+            this.label2.Location = new System.Drawing.Point(297, 24);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(260, 20);
             this.label2.TabIndex = 1;
@@ -120,7 +118,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(298, 85);
+            this.label3.Location = new System.Drawing.Point(298, 60);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(142, 16);
             this.label3.TabIndex = 2;
@@ -130,7 +128,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(298, 173);
+            this.label4.Location = new System.Drawing.Point(298, 146);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 16);
             this.label4.TabIndex = 8;
@@ -139,7 +137,7 @@
             // btnAccAdm
             // 
             this.btnAccAdm.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnAccAdm.Location = new System.Drawing.Point(365, 278);
+            this.btnAccAdm.Location = new System.Drawing.Point(301, 291);
             this.btnAccAdm.Name = "btnAccAdm";
             this.btnAccAdm.Size = new System.Drawing.Size(75, 23);
             this.btnAccAdm.TabIndex = 10;
@@ -150,21 +148,13 @@
             // btnRegreAdm
             // 
             this.btnRegreAdm.BackColor = System.Drawing.Color.IndianRed;
-            this.btnRegreAdm.Location = new System.Drawing.Point(559, 278);
+            this.btnRegreAdm.Location = new System.Drawing.Point(619, 291);
             this.btnRegreAdm.Name = "btnRegreAdm";
             this.btnRegreAdm.Size = new System.Drawing.Size(75, 23);
             this.btnRegreAdm.TabIndex = 11;
             this.btnRegreAdm.Text = "Regresar";
             this.btnRegreAdm.UseVisualStyleBackColor = false;
             this.btnRegreAdm.Click += new System.EventHandler(this.btnRegresar_Click);
-            // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Separator1.Location = new System.Drawing.Point(301, 126);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(364, 10);
-            this.guna2Separator1.TabIndex = 12;
             // 
             // txtUserAdm
             // 
@@ -179,7 +169,7 @@
             this.txtUserAdm.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUserAdm.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtUserAdm.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUserAdm.Location = new System.Drawing.Point(290, 106);
+            this.txtUserAdm.Location = new System.Drawing.Point(290, 79);
             this.txtUserAdm.Name = "txtUserAdm";
             this.txtUserAdm.PasswordChar = '\0';
             this.txtUserAdm.PlaceholderText = "";
@@ -187,14 +177,6 @@
             this.txtUserAdm.Size = new System.Drawing.Size(375, 30);
             this.txtUserAdm.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtUserAdm.TabIndex = 13;
-            // 
-            // guna2Separator2
-            // 
-            this.guna2Separator2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Separator2.Location = new System.Drawing.Point(301, 192);
-            this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(364, 10);
-            this.guna2Separator2.TabIndex = 14;
             // 
             // txtContraseñaAdm
             // 
@@ -209,7 +191,7 @@
             this.txtContraseñaAdm.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtContraseñaAdm.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtContraseñaAdm.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtContraseñaAdm.Location = new System.Drawing.Point(290, 192);
+            this.txtContraseñaAdm.Location = new System.Drawing.Point(290, 165);
             this.txtContraseñaAdm.Name = "txtContraseñaAdm";
             this.txtContraseñaAdm.PasswordChar = '\0';
             this.txtContraseñaAdm.PlaceholderText = "";
@@ -224,9 +206,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(710, 330);
-            this.Controls.Add(this.guna2Separator2);
             this.Controls.Add(this.txtContraseñaAdm);
-            this.Controls.Add(this.guna2Separator1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnRegreAdm);
             this.Controls.Add(this.btnAccAdm);
@@ -261,9 +241,7 @@
         private System.Windows.Forms.Button btnRegreAdm;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Guna.UI2.WinForms.Guna2TextBox txtUserAdm;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
         private Guna.UI2.WinForms.Guna2TextBox txtContraseñaAdm;
     }
 }
