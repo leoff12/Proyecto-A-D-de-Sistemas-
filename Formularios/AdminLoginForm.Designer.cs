@@ -35,11 +35,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtUserAdm = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtContraseñaAdm = new System.Windows.Forms.TextBox();
             this.btnAccAdm = new System.Windows.Forms.Button();
             this.btnRegreAdm = new System.Windows.Forms.Button();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            this.txtUserAdm = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
+            this.txtContraseñaAdm = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,7 +63,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::ProyectoFinal.Properties.Resources.image;
-            this.pictureBox2.Location = new System.Drawing.Point(37, 84);
+            this.pictureBox2.Location = new System.Drawing.Point(46, 84);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(152, 67);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -74,7 +76,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Yu Gothic UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(2, 154);
+            this.label5.Location = new System.Drawing.Point(15, 154);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(229, 47);
@@ -108,7 +110,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(343, 38);
+            this.label2.Location = new System.Drawing.Point(297, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(260, 20);
             this.label2.TabIndex = 1;
@@ -118,49 +120,26 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(277, 115);
+            this.label3.Location = new System.Drawing.Point(298, 85);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(142, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nombre de Usuario";
             // 
-            // txtUserAdm
-            // 
-            this.txtUserAdm.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserAdm.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtUserAdm.Location = new System.Drawing.Point(424, 115);
-            this.txtUserAdm.Margin = new System.Windows.Forms.Padding(2);
-            this.txtUserAdm.Name = "txtUserAdm";
-            this.txtUserAdm.Size = new System.Drawing.Size(191, 20);
-            this.txtUserAdm.TabIndex = 7;
-            this.txtUserAdm.Text = "Ingrese el nombre de administrador";
-            this.txtUserAdm.TextChanged += new System.EventHandler(this.txtUserAdm_TextChanged);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(277, 180);
+            this.label4.Location = new System.Drawing.Point(298, 173);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 16);
             this.label4.TabIndex = 8;
             this.label4.Text = "Contraseña";
             // 
-            // txtContraseñaAdm
-            // 
-            this.txtContraseñaAdm.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseñaAdm.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtContraseñaAdm.Location = new System.Drawing.Point(402, 176);
-            this.txtContraseñaAdm.Margin = new System.Windows.Forms.Padding(2);
-            this.txtContraseñaAdm.Name = "txtContraseñaAdm";
-            this.txtContraseñaAdm.Size = new System.Drawing.Size(201, 20);
-            this.txtContraseñaAdm.TabIndex = 9;
-            this.txtContraseñaAdm.Text = "Ingrese su contraseña";
-            // 
             // btnAccAdm
             // 
             this.btnAccAdm.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnAccAdm.Location = new System.Drawing.Point(402, 235);
+            this.btnAccAdm.Location = new System.Drawing.Point(365, 278);
             this.btnAccAdm.Name = "btnAccAdm";
             this.btnAccAdm.Size = new System.Drawing.Size(75, 23);
             this.btnAccAdm.TabIndex = 10;
@@ -171,7 +150,7 @@
             // btnRegreAdm
             // 
             this.btnRegreAdm.BackColor = System.Drawing.Color.IndianRed;
-            this.btnRegreAdm.Location = new System.Drawing.Point(592, 256);
+            this.btnRegreAdm.Location = new System.Drawing.Point(559, 278);
             this.btnRegreAdm.Name = "btnRegreAdm";
             this.btnRegreAdm.Size = new System.Drawing.Size(75, 23);
             this.btnRegreAdm.TabIndex = 11;
@@ -179,20 +158,82 @@
             this.btnRegreAdm.UseVisualStyleBackColor = false;
             this.btnRegreAdm.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
+            // guna2Separator1
+            // 
+            this.guna2Separator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2Separator1.Location = new System.Drawing.Point(301, 126);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(364, 10);
+            this.guna2Separator1.TabIndex = 12;
+            // 
+            // txtUserAdm
+            // 
+            this.txtUserAdm.Animated = true;
+            this.txtUserAdm.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.txtUserAdm.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUserAdm.DefaultText = "INGRESE NOMBRE DE ADMINISTRADOR";
+            this.txtUserAdm.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUserAdm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUserAdm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserAdm.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserAdm.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserAdm.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtUserAdm.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserAdm.Location = new System.Drawing.Point(290, 106);
+            this.txtUserAdm.Name = "txtUserAdm";
+            this.txtUserAdm.PasswordChar = '\0';
+            this.txtUserAdm.PlaceholderText = "";
+            this.txtUserAdm.SelectedText = "";
+            this.txtUserAdm.Size = new System.Drawing.Size(375, 30);
+            this.txtUserAdm.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtUserAdm.TabIndex = 13;
+            // 
+            // guna2Separator2
+            // 
+            this.guna2Separator2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2Separator2.Location = new System.Drawing.Point(301, 192);
+            this.guna2Separator2.Name = "guna2Separator2";
+            this.guna2Separator2.Size = new System.Drawing.Size(364, 10);
+            this.guna2Separator2.TabIndex = 14;
+            // 
+            // txtContraseñaAdm
+            // 
+            this.txtContraseñaAdm.Animated = true;
+            this.txtContraseñaAdm.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.txtContraseñaAdm.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtContraseñaAdm.DefaultText = "INGRESE SU CONTRASEÑA";
+            this.txtContraseñaAdm.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtContraseñaAdm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtContraseñaAdm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtContraseñaAdm.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtContraseñaAdm.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtContraseñaAdm.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtContraseñaAdm.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtContraseñaAdm.Location = new System.Drawing.Point(290, 192);
+            this.txtContraseñaAdm.Name = "txtContraseñaAdm";
+            this.txtContraseñaAdm.PasswordChar = '\0';
+            this.txtContraseñaAdm.PlaceholderText = "";
+            this.txtContraseñaAdm.SelectedText = "";
+            this.txtContraseñaAdm.Size = new System.Drawing.Size(375, 30);
+            this.txtContraseñaAdm.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtContraseñaAdm.TabIndex = 15;
+            // 
             // AdminLoginForm
             // 
             this.ApplyImageInvert = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(710, 330);
+            this.Controls.Add(this.guna2Separator2);
+            this.Controls.Add(this.txtContraseñaAdm);
+            this.Controls.Add(this.guna2Separator1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnRegreAdm);
             this.Controls.Add(this.btnAccAdm);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtContraseñaAdm);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtUserAdm);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.txtUserAdm);
             this.HelpButton = true;
             this.Name = "AdminLoginForm";
             this.Padding = new System.Windows.Forms.Padding(13, 60, 13, 13);
@@ -215,12 +256,14 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtUserAdm;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtContraseñaAdm;
         private System.Windows.Forms.Button btnAccAdm;
         private System.Windows.Forms.Button btnRegreAdm;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
+        private Guna.UI2.WinForms.Guna2TextBox txtUserAdm;
+        private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
+        private Guna.UI2.WinForms.Guna2TextBox txtContraseñaAdm;
     }
 }
