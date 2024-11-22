@@ -250,6 +250,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "FrmAdmin";
+            this.Style = MetroFramework.MetroColorStyle.White;
             this.Text = "AdminGestion";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

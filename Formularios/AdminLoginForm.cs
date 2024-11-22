@@ -64,12 +64,7 @@ namespace ProyectoFinal.Formularios
             this.Close();
         }
 
-        private void AdminLoginForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtContraseñaAdm_TextChanged(object sender, EventArgs e)
+        private void txtUserAdm_TextChanged(object sender, EventArgs e)
         {
 
         }

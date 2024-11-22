@@ -159,6 +159,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UniEventHub";
             this.Padding = new System.Windows.Forms.Padding(13, 60, 13, 13);
+            this.Style = MetroFramework.MetroColorStyle.White;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.UniEventHub_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbUsuario)).EndInit();

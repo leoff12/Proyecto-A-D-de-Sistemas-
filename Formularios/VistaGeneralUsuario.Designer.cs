@@ -57,7 +57,7 @@
             this.panel1.BackColor = System.Drawing.Color.Cyan;
             this.panel1.Controls.Add(this.pbLogoUAM);
             this.panel1.Location = new System.Drawing.Point(33, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(501, 55);
             this.panel1.TabIndex = 0;
@@ -66,7 +66,7 @@
             // 
             this.pbLogoUAM.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoUAM.Image")));
             this.pbLogoUAM.Location = new System.Drawing.Point(408, 8);
-            this.pbLogoUAM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbLogoUAM.Margin = new System.Windows.Forms.Padding(2);
             this.pbLogoUAM.Name = "pbLogoUAM";
             this.pbLogoUAM.Size = new System.Drawing.Size(92, 44);
             this.pbLogoUAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -82,7 +82,7 @@
             this.panel2.Controls.Add(this.pbMas);
             this.panel2.Controls.Add(this.lblInicio);
             this.panel2.Location = new System.Drawing.Point(0, -1);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(34, 293);
             this.panel2.TabIndex = 1;
@@ -92,7 +92,7 @@
             this.pbMensajes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbMensajes.Image = ((System.Drawing.Image)(resources.GetObject("pbMensajes.Image")));
             this.pbMensajes.Location = new System.Drawing.Point(9, 80);
-            this.pbMensajes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbMensajes.Margin = new System.Windows.Forms.Padding(2);
             this.pbMensajes.Name = "pbMensajes";
             this.pbMensajes.Size = new System.Drawing.Size(19, 20);
             this.pbMensajes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -115,7 +115,7 @@
             this.pbInicio.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbInicio.Image = ((System.Drawing.Image)(resources.GetObject("pbInicio.Image")));
             this.pbInicio.Location = new System.Drawing.Point(9, 43);
-            this.pbInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbInicio.Margin = new System.Windows.Forms.Padding(2);
             this.pbInicio.Name = "pbInicio";
             this.pbInicio.Size = new System.Drawing.Size(19, 20);
             this.pbInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -127,7 +127,7 @@
             this.pbMas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbMas.Image = ((System.Drawing.Image)(resources.GetObject("pbMas.Image")));
             this.pbMas.Location = new System.Drawing.Point(9, 8);
-            this.pbMas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbMas.Margin = new System.Windows.Forms.Padding(2);
             this.pbMas.Name = "pbMas";
             this.pbMas.Size = new System.Drawing.Size(20, 19);
             this.pbMas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -153,7 +153,7 @@
             this.panel3.Controls.Add(this.txtBuscarEvento);
             this.panel3.Controls.Add(this.lblBienvenidoUsuario);
             this.panel3.Location = new System.Drawing.Point(33, 55);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(501, 27);
             this.panel3.TabIndex = 2;
@@ -164,7 +164,7 @@
             this.btnCerrarSesion.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
             this.btnCerrarSesion.Location = new System.Drawing.Point(290, 4);
-            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(2);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
             this.btnCerrarSesion.Size = new System.Drawing.Size(91, 21);
             this.btnCerrarSesion.TabIndex = 3;
@@ -177,7 +177,7 @@
             this.pbBuscar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbBuscar.Image = ((System.Drawing.Image)(resources.GetObject("pbBuscar.Image")));
             this.pbBuscar.Location = new System.Drawing.Point(475, 5);
-            this.pbBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.pbBuscar.Name = "pbBuscar";
             this.pbBuscar.Size = new System.Drawing.Size(19, 18);
             this.pbBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -189,7 +189,7 @@
             this.txtBuscarEvento.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscarEvento.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtBuscarEvento.Location = new System.Drawing.Point(385, 4);
-            this.txtBuscarEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBuscarEvento.Margin = new System.Windows.Forms.Padding(2);
             this.txtBuscarEvento.Name = "txtBuscarEvento";
             this.txtBuscarEvento.Size = new System.Drawing.Size(87, 23);
             this.txtBuscarEvento.TabIndex = 1;
@@ -215,9 +215,10 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "VistaGeneralUsuario";
-            this.Padding = new System.Windows.Forms.Padding(13, 39, 13, 13);
+            this.Padding = new System.Windows.Forms.Padding(13, 60, 13, 13);
+            this.Style = MetroFramework.MetroColorStyle.White;
             this.Text = "x";
             this.Load += new System.EventHandler(this.VistaGeneralUsuario_Load);
             this.panel1.ResumeLayout(false);

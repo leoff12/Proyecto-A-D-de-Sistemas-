@@ -54,7 +54,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.panel1.Location = new System.Drawing.Point(8, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(517, 14);
             this.panel1.TabIndex = 0;
@@ -63,7 +63,7 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.panel2.Location = new System.Drawing.Point(8, 278);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(517, 14);
             this.panel2.TabIndex = 1;
@@ -74,7 +74,7 @@
             this.panel3.Controls.Add(this.pbLogoUAM);
             this.panel3.Controls.Add(this.lblInicioSesionUsuario);
             this.panel3.Location = new System.Drawing.Point(1, 14);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(532, 55);
             this.panel3.TabIndex = 1;
@@ -83,7 +83,7 @@
             // 
             this.pbLogoUAM.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoUAM.Image")));
             this.pbLogoUAM.Location = new System.Drawing.Point(418, 4);
-            this.pbLogoUAM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbLogoUAM.Margin = new System.Windows.Forms.Padding(2);
             this.pbLogoUAM.Name = "pbLogoUAM";
             this.pbLogoUAM.Size = new System.Drawing.Size(92, 44);
             this.pbLogoUAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -106,7 +106,7 @@
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel4.Location = new System.Drawing.Point(1, 239);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(532, 40);
             this.panel4.TabIndex = 2;
@@ -137,7 +137,7 @@
             // 
             this.pbCIF.Image = ((System.Drawing.Image)(resources.GetObject("pbCIF.Image")));
             this.pbCIF.Location = new System.Drawing.Point(25, 98);
-            this.pbCIF.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbCIF.Margin = new System.Windows.Forms.Padding(2);
             this.pbCIF.Name = "pbCIF";
             this.pbCIF.Size = new System.Drawing.Size(22, 18);
             this.pbCIF.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -149,7 +149,7 @@
             this.txtCIF.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCIF.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtCIF.Location = new System.Drawing.Point(25, 120);
-            this.txtCIF.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCIF.Margin = new System.Windows.Forms.Padding(2);
             this.txtCIF.Name = "txtCIF";
             this.txtCIF.Size = new System.Drawing.Size(116, 20);
             this.txtCIF.TabIndex = 6;
@@ -170,7 +170,7 @@
             // 
             this.pbContraseña.Image = ((System.Drawing.Image)(resources.GetObject("pbContraseña.Image")));
             this.pbContraseña.Location = new System.Drawing.Point(25, 144);
-            this.pbContraseña.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbContraseña.Margin = new System.Windows.Forms.Padding(2);
             this.pbContraseña.Name = "pbContraseña";
             this.pbContraseña.Size = new System.Drawing.Size(22, 18);
             this.pbContraseña.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -182,7 +182,7 @@
             this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtContraseña.Location = new System.Drawing.Point(25, 165);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(2);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(116, 20);
             this.txtContraseña.TabIndex = 9;
@@ -194,7 +194,7 @@
             this.btnAcceder.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcceder.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAcceder.Location = new System.Drawing.Point(25, 196);
-            this.btnAcceder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAcceder.Margin = new System.Windows.Forms.Padding(2);
             this.btnAcceder.Name = "btnAcceder";
             this.btnAcceder.Size = new System.Drawing.Size(61, 27);
             this.btnAcceder.TabIndex = 10;
@@ -208,7 +208,7 @@
             this.btnRegresar.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnRegresar.Location = new System.Drawing.Point(90, 196);
-            this.btnRegresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(69, 27);
             this.btnRegresar.TabIndex = 11;
@@ -234,9 +234,10 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "InicioSesiónUsuario";
-            this.Padding = new System.Windows.Forms.Padding(13, 39, 13, 13);
+            this.Padding = new System.Windows.Forms.Padding(13, 60, 13, 13);
+            this.Style = MetroFramework.MetroColorStyle.White;
             this.Text = "InicioSesiónUsuario";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
