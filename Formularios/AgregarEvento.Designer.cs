@@ -68,18 +68,18 @@
             this.panel2.Controls.Add(this.pbInicio);
             this.panel2.Controls.Add(this.pbMas);
             this.panel2.Controls.Add(this.lblInicio);
-            this.panel2.Location = new System.Drawing.Point(0, -1);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(-1, -1);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(53, 458);
+            this.panel2.Size = new System.Drawing.Size(40, 406);
             this.panel2.TabIndex = 4;
             // 
             // pbInicio
             // 
             this.pbInicio.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbInicio.Image = ((System.Drawing.Image)(resources.GetObject("pbInicio.Image")));
-            this.pbInicio.Location = new System.Drawing.Point(17, 58);
-            this.pbInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbInicio.Location = new System.Drawing.Point(7, 59);
+            this.pbInicio.Margin = new System.Windows.Forms.Padding(2);
             this.pbInicio.Name = "pbInicio";
             this.pbInicio.Size = new System.Drawing.Size(29, 25);
             this.pbInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -91,8 +91,8 @@
             // 
             this.pbMas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbMas.Image = ((System.Drawing.Image)(resources.GetObject("pbMas.Image")));
-            this.pbMas.Location = new System.Drawing.Point(17, 9);
-            this.pbMas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbMas.Location = new System.Drawing.Point(7, 9);
+            this.pbMas.Margin = new System.Windows.Forms.Padding(2);
             this.pbMas.Name = "pbMas";
             this.pbMas.Size = new System.Drawing.Size(29, 25);
             this.pbMas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -103,7 +103,7 @@
             // 
             this.lblInicio.AutoSize = true;
             this.lblInicio.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInicio.Location = new System.Drawing.Point(9, 84);
+            this.lblInicio.Location = new System.Drawing.Point(-4, 86);
             this.lblInicio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblInicio.Name = "lblInicio";
             this.lblInicio.Size = new System.Drawing.Size(42, 19);
@@ -114,7 +114,7 @@
             // 
             this.txtNombreEvento.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtNombreEvento.Location = new System.Drawing.Point(13, 67);
-            this.txtNombreEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreEvento.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreEvento.Name = "txtNombreEvento";
             this.txtNombreEvento.Size = new System.Drawing.Size(195, 29);
             this.txtNombreEvento.TabIndex = 7;
@@ -122,9 +122,9 @@
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.BackColor = System.Drawing.Color.NavajoWhite;
+            this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.Color.White;
+            this.lblTitulo.ForeColor = System.Drawing.Color.Black;
             this.lblTitulo.Location = new System.Drawing.Point(11, 50);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitulo.Name = "lblTitulo";
@@ -135,9 +135,9 @@
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.BackColor = System.Drawing.Color.NavajoWhite;
+            this.lblDescripcion.BackColor = System.Drawing.Color.Transparent;
             this.lblDescripcion.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.ForeColor = System.Drawing.Color.White;
+            this.lblDescripcion.ForeColor = System.Drawing.Color.Black;
             this.lblDescripcion.Location = new System.Drawing.Point(10, 95);
             this.lblDescripcion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDescripcion.Name = "lblDescripcion";
@@ -167,9 +167,9 @@
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.BackColor = System.Drawing.Color.NavajoWhite;
+            this.lblFecha.BackColor = System.Drawing.Color.Transparent;
             this.lblFecha.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.ForeColor = System.Drawing.Color.White;
+            this.lblFecha.ForeColor = System.Drawing.Color.Black;
             this.lblFecha.Location = new System.Drawing.Point(523, 88);
             this.lblFecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFecha.Name = "lblFecha";
@@ -180,7 +180,7 @@
             // mtxtFechaEvento
             // 
             this.mtxtFechaEvento.Location = new System.Drawing.Point(660, 81);
-            this.mtxtFechaEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mtxtFechaEvento.Margin = new System.Windows.Forms.Padding(2);
             this.mtxtFechaEvento.Mask = "00/00/0000";
             this.mtxtFechaEvento.Name = "mtxtFechaEvento";
             this.mtxtFechaEvento.Size = new System.Drawing.Size(68, 29);
@@ -190,9 +190,9 @@
             // lblHInicio
             // 
             this.lblHInicio.AutoSize = true;
-            this.lblHInicio.BackColor = System.Drawing.Color.NavajoWhite;
+            this.lblHInicio.BackColor = System.Drawing.Color.Transparent;
             this.lblHInicio.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHInicio.ForeColor = System.Drawing.Color.White;
+            this.lblHInicio.ForeColor = System.Drawing.Color.Black;
             this.lblHInicio.Location = new System.Drawing.Point(523, 118);
             this.lblHInicio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHInicio.Name = "lblHInicio";
@@ -203,9 +203,9 @@
             // lblHFin
             // 
             this.lblHFin.AutoSize = true;
-            this.lblHFin.BackColor = System.Drawing.Color.NavajoWhite;
+            this.lblHFin.BackColor = System.Drawing.Color.Transparent;
             this.lblHFin.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHFin.ForeColor = System.Drawing.Color.White;
+            this.lblHFin.ForeColor = System.Drawing.Color.Black;
             this.lblHFin.Location = new System.Drawing.Point(523, 150);
             this.lblHFin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHFin.Name = "lblHFin";
@@ -238,21 +238,21 @@
             this.guna2GroupBox1.Controls.Add(this.lblDescripcion);
             this.guna2GroupBox1.Controls.Add(this.lblTitulo);
             this.guna2GroupBox1.Controls.Add(this.txtNombreEvento);
-            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.SpringGreen;
-            this.guna2GroupBox1.FillColor = System.Drawing.Color.NavajoWhite;
+            this.guna2GroupBox1.CustomBorderColor = System.Drawing.SystemColors.Highlight;
+            this.guna2GroupBox1.FillColor = System.Drawing.Color.Silver;
             this.guna2GroupBox1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
             this.guna2GroupBox1.Location = new System.Drawing.Point(57, 8);
-            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(742, 377);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(755, 377);
             this.guna2GroupBox1.TabIndex = 5;
             this.guna2GroupBox1.Text = "Información del Evento";
             this.guna2GroupBox1.Click += new System.EventHandler(this.guna2GroupBox1_Click);
             // 
             // btnGuardarEvento
             // 
-            this.btnGuardarEvento.BackColor = System.Drawing.Color.NavajoWhite;
+            this.btnGuardarEvento.BackColor = System.Drawing.Color.Transparent;
             this.btnGuardarEvento.BorderRadius = 24;
             this.btnGuardarEvento.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGuardarEvento.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -261,7 +261,7 @@
             this.btnGuardarEvento.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarEvento.ForeColor = System.Drawing.Color.Pink;
             this.btnGuardarEvento.Location = new System.Drawing.Point(304, 329);
-            this.btnGuardarEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGuardarEvento.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardarEvento.Name = "btnGuardarEvento";
             this.btnGuardarEvento.Size = new System.Drawing.Size(141, 29);
             this.btnGuardarEvento.TabIndex = 25;
@@ -272,7 +272,7 @@
             // 
             this.pictureBox.ImageRotate = 0F;
             this.pictureBox.Location = new System.Drawing.Point(525, 194);
-            this.pictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(200, 130);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -290,7 +290,7 @@
             this.cmbImagen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbImagen.ItemHeight = 30;
             this.cmbImagen.Location = new System.Drawing.Point(13, 315);
-            this.cmbImagen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbImagen.Margin = new System.Windows.Forms.Padding(2);
             this.cmbImagen.Name = "cmbImagen";
             this.cmbImagen.Size = new System.Drawing.Size(95, 36);
             this.cmbImagen.TabIndex = 23;
@@ -299,9 +299,9 @@
             // lblImagen
             // 
             this.lblImagen.AutoSize = true;
-            this.lblImagen.BackColor = System.Drawing.Color.NavajoWhite;
+            this.lblImagen.BackColor = System.Drawing.Color.Transparent;
             this.lblImagen.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblImagen.ForeColor = System.Drawing.Color.White;
+            this.lblImagen.ForeColor = System.Drawing.Color.Black;
             this.lblImagen.Location = new System.Drawing.Point(10, 298);
             this.lblImagen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblImagen.Name = "lblImagen";
@@ -331,9 +331,9 @@
             // lblTipoPublico
             // 
             this.lblTipoPublico.AutoSize = true;
-            this.lblTipoPublico.BackColor = System.Drawing.Color.NavajoWhite;
+            this.lblTipoPublico.BackColor = System.Drawing.Color.Transparent;
             this.lblTipoPublico.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoPublico.ForeColor = System.Drawing.Color.White;
+            this.lblTipoPublico.ForeColor = System.Drawing.Color.Black;
             this.lblTipoPublico.Location = new System.Drawing.Point(11, 238);
             this.lblTipoPublico.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTipoPublico.Name = "lblTipoPublico";
@@ -344,9 +344,9 @@
             // lblCategoria
             // 
             this.lblCategoria.AutoSize = true;
-            this.lblCategoria.BackColor = System.Drawing.Color.NavajoWhite;
+            this.lblCategoria.BackColor = System.Drawing.Color.Transparent;
             this.lblCategoria.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoria.ForeColor = System.Drawing.Color.White;
+            this.lblCategoria.ForeColor = System.Drawing.Color.Black;
             this.lblCategoria.Location = new System.Drawing.Point(10, 177);
             this.lblCategoria.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCategoria.Name = "lblCategoria";
@@ -397,9 +397,9 @@
             // lblCuposDisp
             // 
             this.lblCuposDisp.AutoSize = true;
-            this.lblCuposDisp.BackColor = System.Drawing.Color.NavajoWhite;
+            this.lblCuposDisp.BackColor = System.Drawing.Color.Transparent;
             this.lblCuposDisp.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCuposDisp.ForeColor = System.Drawing.Color.White;
+            this.lblCuposDisp.ForeColor = System.Drawing.Color.Black;
             this.lblCuposDisp.Location = new System.Drawing.Point(523, 57);
             this.lblCuposDisp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCuposDisp.Name = "lblCuposDisp";
@@ -410,7 +410,7 @@
             // mtxtHFin
             // 
             this.mtxtHFin.Location = new System.Drawing.Point(661, 142);
-            this.mtxtHFin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mtxtHFin.Margin = new System.Windows.Forms.Padding(2);
             this.mtxtHFin.Mask = "00:00";
             this.mtxtHFin.Name = "mtxtHFin";
             this.mtxtHFin.Size = new System.Drawing.Size(51, 29);
@@ -420,7 +420,7 @@
             // mtxtHInicio
             // 
             this.mtxtHInicio.Location = new System.Drawing.Point(660, 111);
-            this.mtxtHInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mtxtHInicio.Margin = new System.Windows.Forms.Padding(2);
             this.mtxtHInicio.Mask = "00:00";
             this.mtxtHInicio.Name = "mtxtHInicio";
             this.mtxtHInicio.Size = new System.Drawing.Size(51, 29);
@@ -432,10 +432,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(830, 403);
+            this.ClientSize = new System.Drawing.Size(843, 403);
             this.Controls.Add(this.guna2GroupBox1);
             this.Controls.Add(this.panel2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AgregarEvento";
             this.Text = "AgregarEvento";
             this.Load += new System.EventHandler(this.AgregarEvento_Load);
