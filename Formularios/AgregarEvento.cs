@@ -84,11 +84,11 @@ namespace ProyectoFinal.Formularios
                 NombreEvento = txtNombreEvento.Text,
                 Descripción = txtDescripcion.Text,
                 Categoría = txtCategoria.Text,
-                Fecha = int.Parse(mtxtFechaEvento.Text),
+                Fecha = DateTime.ParseExact(mtxtFechaEvento.Text, "dd/MM/yyyy", null),
                 TipoPúblico = txtTipoPublico.Text,
                 CuposDisp = int.Parse(txtCuposDisp.Text),
-                HoraInicio = int.Parse(mtxtHInicio.Text),
-                HoraFin = int.Parse(mtxtHFin.Text),
+                HoraInicio = int.Parse(mtxtHInicio.Text.Split(':')[0]),  // Solo toma la hora
+                HoraFin = int.Parse(mtxtHFin.Text.Split(':')[0]),        // Solo toma la hora
                 ImagenSeleccionada = cmbImagen.SelectedItem?.ToString()
             };
 
@@ -97,6 +97,7 @@ namespace ProyectoFinal.Formularios
 
             MessageBox.Show("Evento guardado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
         // Método para validar el formulario
         private bool ValidarFormulario()
         {
@@ -115,10 +116,10 @@ namespace ProyectoFinal.Formularios
                 return false;
             }
 
-            // Validar que Fecha sea un número entero
-            if (!int.TryParse(mtxtFechaEvento.Text, out int fecha) || fecha <= 0)
+            // Validar que Fecha sea válida
+            if (!DateTime.TryParseExact(mtxtFechaEvento.Text, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime fecha))
             {
-                MessageBox.Show("La fecha debe ser un número entero positivo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("La fecha debe tener un formato válido (dd/MM/yyyy).", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
 
@@ -129,18 +130,31 @@ namespace ProyectoFinal.Formularios
                 return false;
             }
 
-            // Validar que HoraInicio y HoraFin sean números enteros y que HoraInicio < HoraFin
-            if (!int.TryParse(mtxtHInicio.Text, out int horaInicio) || !int.TryParse(mtxtHFin.Text, out int horaFin))
+            // Convertir las horas (HH:mm) a enteros
+            if (!mtxtHInicio.MaskCompleted || !mtxtHFin.MaskCompleted)
             {
-                MessageBox.Show("Las horas de inicio y fin deben ser números enteros.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Las horas deben tener el formato HH:mm.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
 
-            if (horaInicio >= horaFin)
+            string[] horaInicioParts = mtxtHInicio.Text.Split(':');
+            string[] horaFinParts = mtxtHFin.Text.Split(':');
+
+            if (horaInicioParts.Length == 2 && horaFinParts.Length == 2)
             {
-                MessageBox.Show("La hora de inicio debe ser menor que la hora de fin.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
+                int horaInicioInt = int.Parse(horaInicioParts[0]);
+                int minutoInicioInt = int.Parse(horaInicioParts[1]);
+                int horaFinInt = int.Parse(horaFinParts[0]);
+                int minutoFinInt = int.Parse(horaFinParts[1]);
+
+                // Verificar que la hora de inicio sea menor que la hora de fin
+                if (horaInicioInt > horaFinInt || (horaInicioInt == horaFinInt && minutoInicioInt >= minutoFinInt))
+                {
+                    MessageBox.Show("La hora de inicio debe ser menor que la hora de fin.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
             }
+
 
             // Validar que se seleccionó una imagen
             if (cmbImagen.SelectedItem == null || string.IsNullOrWhiteSpace(cmbImagen.SelectedItem.ToString()))
@@ -160,6 +174,16 @@ namespace ProyectoFinal.Formularios
             {
                 e.Handled = true; // Cancela el evento
             }
+        }
+
+        private void mtxtFechaEvento_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void pictureBox_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

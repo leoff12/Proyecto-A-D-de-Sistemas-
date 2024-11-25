@@ -117,11 +117,41 @@
     <Compile Include="Formularios\AgregarEvento.Designer.cs">
       <DependentUpon>AgregarEvento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\BuscarEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\BuscarEliminar.Designer.cs">
+      <DependentUpon>BuscarEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\DetalleEventoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\DetalleEventoForm.Designer.cs">
+      <DependentUpon>DetalleEventoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\EditarEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EditarEvento.Designer.cs">
+      <DependentUpon>EditarEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\EliminarEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EliminarEvento.Designer.cs">
+      <DependentUpon>EliminarEvento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\InicioSesiónUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\InicioSesiónUsuario.Designer.cs">
       <DependentUpon>InicioSesiónUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Modificar.Designer.cs">
+      <DependentUpon>Modificar.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\VistaGeneralUsuario.cs">
       <SubType>Form</SubType>
@@ -145,8 +175,23 @@
     <EmbeddedResource Include="Formularios\AgregarEvento.resx">
       <DependentUpon>AgregarEvento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\BuscarEliminar.resx">
+      <DependentUpon>BuscarEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\DetalleEventoForm.resx">
+      <DependentUpon>DetalleEventoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EditarEvento.resx">
+      <DependentUpon>EditarEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EliminarEvento.resx">
+      <DependentUpon>EliminarEvento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\InicioSesiónUsuario.resx">
       <DependentUpon>InicioSesiónUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Modificar.resx">
+      <DependentUpon>Modificar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\VistaGeneralUsuario.resx">
       <DependentUpon>VistaGeneralUsuario.cs</DependentUpon>

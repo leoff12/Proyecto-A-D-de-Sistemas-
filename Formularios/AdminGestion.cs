@@ -46,5 +46,26 @@ namespace ProyectoFinal.Formularios
         {
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            ModificarEvento modificarEvento = new ModificarEvento();
+            modificarEvento.Show();
+            this.Close();
+        }
+
+        private void btnCerrarSesiónAdmin_Click(object sender, EventArgs e)
+        {
+            AdminLoginForm adminLoginForm = new AdminLoginForm();
+            adminLoginForm.Show();
+            this.Close();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            BuscarEliminar buscaEliminar = new BuscarEliminar();   
+            buscaEliminar.Show();
+            this.Close();
+        }
     }
 }
