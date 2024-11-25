@@ -107,9 +107,9 @@
             this.label1.Location = new System.Drawing.Point(7, 108);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 33);
+            this.label1.Size = new System.Drawing.Size(256, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Administrador";
+            this.label1.Text = "Bienvenido, Administrador";
             // 
             // panel2
             // 
@@ -172,7 +172,7 @@
             this.btnBorrarEvent.Location = new System.Drawing.Point(404, 295);
             this.btnBorrarEvent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBorrarEvent.Name = "btnBorrarEvent";
-            this.btnBorrarEvent.Size = new System.Drawing.Size(198, 35);
+            this.btnBorrarEvent.Size = new System.Drawing.Size(132, 23);
             this.btnBorrarEvent.TabIndex = 2;
             this.btnBorrarEvent.Text = "Borrar Evento";
             this.btnBorrarEvent.UseVisualStyleBackColor = false;
@@ -184,7 +184,7 @@
             this.btnModEvent.Location = new System.Drawing.Point(639, 152);
             this.btnModEvent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnModEvent.Name = "btnModEvent";
-            this.btnModEvent.Size = new System.Drawing.Size(186, 35);
+            this.btnModEvent.Size = new System.Drawing.Size(124, 23);
             this.btnModEvent.TabIndex = 1;
             this.btnModEvent.Text = "Modificar Evento";
             this.btnModEvent.UseVisualStyleBackColor = false;
@@ -195,7 +195,7 @@
             this.btnAddEvent.Location = new System.Drawing.Point(142, 152);
             this.btnAddEvent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAddEvent.Name = "btnAddEvent";
-            this.btnAddEvent.Size = new System.Drawing.Size(216, 35);
+            this.btnAddEvent.Size = new System.Drawing.Size(144, 23);
             this.btnAddEvent.TabIndex = 0;
             this.btnAddEvent.Text = "Añadir Evento";
             this.btnAddEvent.UseVisualStyleBackColor = false;
@@ -269,17 +269,14 @@
             // 
             // FrmAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1065, 508);
+            this.ClientSize = new System.Drawing.Size(710, 330);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmAdmin";
-            this.Padding = new System.Windows.Forms.Padding(30, 92, 30, 31);
             this.Style = MetroFramework.MetroColorStyle.White;
-            this.Text = "AdminGestion";
             this.Load += new System.EventHandler(this.FrmAdmin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

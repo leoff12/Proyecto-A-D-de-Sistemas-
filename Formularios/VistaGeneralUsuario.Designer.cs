@@ -333,6 +333,7 @@
             this.Text = "x";
             this.Load += new System.EventHandler(this.VistaGeneralUsuario_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

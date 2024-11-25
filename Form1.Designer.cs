@@ -131,6 +131,7 @@
             this.btnAdministrador.AnimatedGIF = true;
             this.btnAdministrador.AutoRoundedCorners = true;
             this.btnAdministrador.BorderRadius = 15;
+            this.btnAdministrador.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdministrador.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAdministrador.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAdministrador.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -150,6 +151,7 @@
             this.btnUsuario.AnimatedGIF = true;
             this.btnUsuario.AutoRoundedCorners = true;
             this.btnUsuario.BorderRadius = 15;
+            this.btnUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUsuario.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnUsuario.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnUsuario.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));

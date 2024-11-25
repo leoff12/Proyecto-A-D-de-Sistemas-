@@ -29,20 +29,23 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtContraseña = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtCIF = new Guna.UI2.WinForms.Guna2TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAcceder = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnRegresar = new Guna.UI2.WinForms.Guna2TileButton();
+            this.pbUsuario = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.chkMostrarContraseña = new Guna.UI2.WinForms.Guna2CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUsuario)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -58,18 +61,39 @@
             this.panel1.Size = new System.Drawing.Size(276, 333);
             this.panel1.TabIndex = 12;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::ProyectoFinal.Properties.Resources.image;
+            this.pictureBox2.Location = new System.Drawing.Point(56, 93);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(152, 67);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Yu Gothic UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(30, 174);
+            this.label5.Location = new System.Drawing.Point(30, 173);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(229, 47);
             this.label5.TabIndex = 4;
             this.label5.Text = "UniEventHub";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Image = global::ProyectoFinal.Properties.Resources.image;
+            this.pictureBox1.Location = new System.Drawing.Point(415, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(116, 47);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -96,9 +120,8 @@
             // txtContraseña
             // 
             this.txtContraseña.Animated = true;
-            this.txtContraseña.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.txtContraseña.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtContraseña.DefaultText = "INGRESE SU CONTRASEÑA";
+            this.txtContraseña.DefaultText = "";
             this.txtContraseña.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtContraseña.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtContraseña.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -108,8 +131,8 @@
             this.txtContraseña.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtContraseña.Location = new System.Drawing.Point(289, 164);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.PasswordChar = '\0';
-            this.txtContraseña.PlaceholderText = "";
+            this.txtContraseña.PasswordChar = '*';
+            this.txtContraseña.PlaceholderText = "INGRESE SU CONTRASEÑA";
             this.txtContraseña.SelectedText = "";
             this.txtContraseña.Size = new System.Drawing.Size(375, 24);
             this.txtContraseña.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -134,14 +157,12 @@
             this.label7.Size = new System.Drawing.Size(27, 17);
             this.label7.TabIndex = 16;
             this.label7.Text = "CIF";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // txtCIF
             // 
             this.txtCIF.Animated = true;
-            this.txtCIF.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.txtCIF.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCIF.DefaultText = "INGRESE SU CIF";
+            this.txtCIF.DefaultText = "";
             this.txtCIF.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtCIF.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtCIF.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -152,33 +173,11 @@
             this.txtCIF.Location = new System.Drawing.Point(289, 85);
             this.txtCIF.Name = "txtCIF";
             this.txtCIF.PasswordChar = '\0';
-            this.txtCIF.PlaceholderText = "";
+            this.txtCIF.PlaceholderText = "INGRESE SU CIF";
             this.txtCIF.SelectedText = "";
             this.txtCIF.Size = new System.Drawing.Size(375, 30);
             this.txtCIF.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtCIF.TabIndex = 19;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::ProyectoFinal.Properties.Resources.image;
-            this.pictureBox2.Location = new System.Drawing.Point(56, 84);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(152, 67);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = global::ProyectoFinal.Properties.Resources.image;
-            this.pictureBox1.Location = new System.Drawing.Point(415, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(116, 47);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // btnAcceder
             // 
@@ -186,6 +185,7 @@
             this.btnAcceder.AnimatedGIF = true;
             this.btnAcceder.AutoRoundedCorners = true;
             this.btnAcceder.BorderRadius = 15;
+            this.btnAcceder.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAcceder.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAcceder.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAcceder.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -205,6 +205,7 @@
             this.btnRegresar.AnimatedGIF = true;
             this.btnRegresar.AutoRoundedCorners = true;
             this.btnRegresar.BorderRadius = 15;
+            this.btnRegresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegresar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnRegresar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnRegresar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -219,11 +220,42 @@
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
+            // pbUsuario
+            // 
+            this.pbUsuario.Image = global::ProyectoFinal.Properties.Resources._67654f6b2a7d10436445455b1458935f;
+            this.pbUsuario.ImageRotate = 0F;
+            this.pbUsuario.Location = new System.Drawing.Point(647, 24);
+            this.pbUsuario.Name = "pbUsuario";
+            this.pbUsuario.Size = new System.Drawing.Size(47, 42);
+            this.pbUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbUsuario.TabIndex = 24;
+            this.pbUsuario.TabStop = false;
+            // 
+            // chkMostrarContraseña
+            // 
+            this.chkMostrarContraseña.AutoSize = true;
+            this.chkMostrarContraseña.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chkMostrarContraseña.CheckedState.BorderRadius = 0;
+            this.chkMostrarContraseña.CheckedState.BorderThickness = 0;
+            this.chkMostrarContraseña.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chkMostrarContraseña.Location = new System.Drawing.Point(300, 204);
+            this.chkMostrarContraseña.Name = "chkMostrarContraseña";
+            this.chkMostrarContraseña.Size = new System.Drawing.Size(117, 17);
+            this.chkMostrarContraseña.TabIndex = 25;
+            this.chkMostrarContraseña.Text = "Mostrar contraseña";
+            this.chkMostrarContraseña.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chkMostrarContraseña.UncheckedState.BorderRadius = 0;
+            this.chkMostrarContraseña.UncheckedState.BorderThickness = 0;
+            this.chkMostrarContraseña.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chkMostrarContraseña.CheckedChanged += new System.EventHandler(this.chkMostrarContraseña_CheckedChanged);
+            // 
             // InicioSesiónUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(710, 330);
+            this.Controls.Add(this.chkMostrarContraseña);
+            this.Controls.Add(this.pbUsuario);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnAcceder);
             this.Controls.Add(this.txtContraseña);
@@ -240,6 +272,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUsuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,5 +291,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txtCIF;
         private Guna.UI2.WinForms.Guna2TileButton btnAcceder;
         private Guna.UI2.WinForms.Guna2TileButton btnRegresar;
+        private Guna.UI2.WinForms.Guna2PictureBox pbUsuario;
+        private Guna.UI2.WinForms.Guna2CheckBox chkMostrarContraseña;
     }
 }

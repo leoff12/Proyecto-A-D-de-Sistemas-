@@ -29,20 +29,23 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtUserAdm = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtContraseñaAdm = new Guna.UI2.WinForms.Guna2TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAccAdm = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnRegreAdm = new Guna.UI2.WinForms.Guna2TileButton();
+            this.pbAdministrador = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.chkMostrarContraseñaAdm = new Guna.UI2.WinForms.Guna2CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAdministrador)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -58,6 +61,16 @@
             this.panel1.Size = new System.Drawing.Size(275, 333);
             this.panel1.TabIndex = 0;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::ProyectoFinal.Properties.Resources.image;
+            this.pictureBox2.Location = new System.Drawing.Point(55, 94);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(152, 67);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -70,6 +83,17 @@
             this.label5.Size = new System.Drawing.Size(229, 47);
             this.label5.TabIndex = 4;
             this.label5.Text = "UniEventHub";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Image = global::ProyectoFinal.Properties.Resources.image;
+            this.pictureBox1.Location = new System.Drawing.Point(415, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(116, 47);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -118,7 +142,7 @@
             this.txtUserAdm.Animated = true;
             this.txtUserAdm.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.txtUserAdm.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUserAdm.DefaultText = "INGRESE NOMBRE DE ADMINISTRADOR";
+            this.txtUserAdm.DefaultText = "";
             this.txtUserAdm.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtUserAdm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtUserAdm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -129,7 +153,8 @@
             this.txtUserAdm.Location = new System.Drawing.Point(290, 79);
             this.txtUserAdm.Name = "txtUserAdm";
             this.txtUserAdm.PasswordChar = '\0';
-            this.txtUserAdm.PlaceholderText = "";
+            this.txtUserAdm.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtUserAdm.PlaceholderText = "INGRESE NOMBRE DE ADMINISTRADOR";
             this.txtUserAdm.SelectedText = "";
             this.txtUserAdm.Size = new System.Drawing.Size(375, 30);
             this.txtUserAdm.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -140,7 +165,7 @@
             this.txtContraseñaAdm.Animated = true;
             this.txtContraseñaAdm.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.txtContraseñaAdm.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtContraseñaAdm.DefaultText = "INGRESE SU CONTRASEÑA";
+            this.txtContraseñaAdm.DefaultText = "";
             this.txtContraseñaAdm.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtContraseñaAdm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtContraseñaAdm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -150,33 +175,12 @@
             this.txtContraseñaAdm.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtContraseñaAdm.Location = new System.Drawing.Point(290, 165);
             this.txtContraseñaAdm.Name = "txtContraseñaAdm";
-            this.txtContraseñaAdm.PasswordChar = '\0';
-            this.txtContraseñaAdm.PlaceholderText = "";
+            this.txtContraseñaAdm.PasswordChar = '*';
+            this.txtContraseñaAdm.PlaceholderText = "INGRESE SU CONTRASEÑA";
             this.txtContraseñaAdm.SelectedText = "";
             this.txtContraseñaAdm.Size = new System.Drawing.Size(375, 30);
             this.txtContraseñaAdm.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtContraseñaAdm.TabIndex = 15;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::ProyectoFinal.Properties.Resources.image;
-            this.pictureBox2.Location = new System.Drawing.Point(55, 94);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(152, 67);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = global::ProyectoFinal.Properties.Resources.image;
-            this.pictureBox1.Location = new System.Drawing.Point(415, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(116, 47);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // btnAccAdm
             // 
@@ -184,6 +188,7 @@
             this.btnAccAdm.AnimatedGIF = true;
             this.btnAccAdm.AutoRoundedCorners = true;
             this.btnAccAdm.BorderRadius = 15;
+            this.btnAccAdm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAccAdm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAccAdm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAccAdm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -203,6 +208,7 @@
             this.btnRegreAdm.AnimatedGIF = true;
             this.btnRegreAdm.AutoRoundedCorners = true;
             this.btnRegreAdm.BorderRadius = 15;
+            this.btnRegreAdm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegreAdm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnRegreAdm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnRegreAdm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -217,12 +223,45 @@
             this.btnRegreAdm.Text = "Regresar";
             this.btnRegreAdm.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
+            // pbAdministrador
+            // 
+            this.pbAdministrador.Image = global::ProyectoFinal.Properties.Resources._16344954;
+            this.pbAdministrador.ImageRotate = 0F;
+            this.pbAdministrador.Location = new System.Drawing.Point(646, 24);
+            this.pbAdministrador.Name = "pbAdministrador";
+            this.pbAdministrador.Size = new System.Drawing.Size(48, 38);
+            this.pbAdministrador.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbAdministrador.TabIndex = 18;
+            this.pbAdministrador.TabStop = false;
+            // 
+            // chkMostrarContraseñaAdm
+            // 
+            this.chkMostrarContraseñaAdm.AutoSize = true;
+            this.chkMostrarContraseñaAdm.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chkMostrarContraseñaAdm.CheckedState.BorderRadius = 0;
+            this.chkMostrarContraseñaAdm.CheckedState.BorderThickness = 0;
+            this.chkMostrarContraseñaAdm.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chkMostrarContraseñaAdm.Font = new System.Drawing.Font("Dubai", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkMostrarContraseñaAdm.Location = new System.Drawing.Point(301, 207);
+            this.chkMostrarContraseñaAdm.Name = "chkMostrarContraseñaAdm";
+            this.chkMostrarContraseñaAdm.Size = new System.Drawing.Size(117, 22);
+            this.chkMostrarContraseñaAdm.TabIndex = 19;
+            this.chkMostrarContraseñaAdm.Text = "Mostrar contraseña";
+            this.chkMostrarContraseñaAdm.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chkMostrarContraseñaAdm.UncheckedState.BorderRadius = 0;
+            this.chkMostrarContraseñaAdm.UncheckedState.BorderThickness = 0;
+            this.chkMostrarContraseñaAdm.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chkMostrarContraseñaAdm.CheckedChanged += new System.EventHandler(this.chkMostrarContraseñaAdm_CheckedChanged);
+            this.chkMostrarContraseñaAdm.TextChanged += new System.EventHandler(this.btnRegresar_Click);
+            // 
             // AdminLoginForm
             // 
             this.ApplyImageInvert = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(710, 330);
+            this.Controls.Add(this.chkMostrarContraseñaAdm);
+            this.Controls.Add(this.pbAdministrador);
             this.Controls.Add(this.btnRegreAdm);
             this.Controls.Add(this.btnAccAdm);
             this.Controls.Add(this.txtContraseñaAdm);
@@ -241,6 +280,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAdministrador)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -260,5 +300,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txtContraseñaAdm;
         private Guna.UI2.WinForms.Guna2TileButton btnAccAdm;
         private Guna.UI2.WinForms.Guna2TileButton btnRegreAdm;
+        private Guna.UI2.WinForms.Guna2PictureBox pbAdministrador;
+        private Guna.UI2.WinForms.Guna2CheckBox chkMostrarContraseñaAdm;
     }
 }

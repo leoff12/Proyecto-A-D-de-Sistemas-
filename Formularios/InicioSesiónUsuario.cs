@@ -26,8 +26,6 @@ namespace ProyectoFinal.Formularios
 
             if (usuarioIngresado == USUARIO_VALIDO && contraseñaIngresada == CONTRASENA_VALIDA)
             {
-                MessageBox.Show("Bienvenido, Santiago Mena", "Acceso Concedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                // Credenciales correctas: abre el formulario de destino
                 VistaGeneralUsuario vistaGeneralUsuario= new VistaGeneralUsuario();
                 this.Hide(); // Oculta el formulario actual
 
@@ -47,15 +45,18 @@ namespace ProyectoFinal.Formularios
             this.Close();
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void chkMostrarContraseña_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (chkMostrarContraseña.Checked)
+            {
+                txtContraseña.PasswordChar = '\0'; // Mostrar la contraseña
+            }
+            else
+            {
+                txtContraseña.PasswordChar = '*'; // Ocultar la contraseña
+            }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
-    }
+}
 
