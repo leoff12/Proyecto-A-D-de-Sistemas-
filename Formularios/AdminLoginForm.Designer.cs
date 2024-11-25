@@ -188,6 +188,7 @@
             this.btnAccAdm.AnimatedGIF = true;
             this.btnAccAdm.AutoRoundedCorners = true;
             this.btnAccAdm.BorderRadius = 15;
+            this.btnAccAdm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAccAdm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAccAdm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAccAdm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -207,6 +208,7 @@
             this.btnRegreAdm.AnimatedGIF = true;
             this.btnRegreAdm.AutoRoundedCorners = true;
             this.btnRegreAdm.BorderRadius = 15;
+            this.btnRegreAdm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegreAdm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnRegreAdm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnRegreAdm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
