@@ -64,10 +64,10 @@
             this.panel1.Controls.Add(this.btnCerrarSesiónAdmin);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(98, -1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Location = new System.Drawing.Point(147, 51);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(966, 141);
+            this.panel1.Size = new System.Drawing.Size(1054, 164);
             this.panel1.TabIndex = 1;
             // 
             // btnCerrarSesiónAdmin
@@ -78,11 +78,12 @@
             this.btnCerrarSesiónAdmin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCerrarSesiónAdmin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnCerrarSesiónAdmin.FillColor = System.Drawing.Color.Red;
-            this.btnCerrarSesiónAdmin.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarSesiónAdmin.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
             this.btnCerrarSesiónAdmin.ForeColor = System.Drawing.Color.White;
-            this.btnCerrarSesiónAdmin.Location = new System.Drawing.Point(754, 90);
+            this.btnCerrarSesiónAdmin.Location = new System.Drawing.Point(703, 110);
+            this.btnCerrarSesiónAdmin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCerrarSesiónAdmin.Name = "btnCerrarSesiónAdmin";
-            this.btnCerrarSesiónAdmin.Size = new System.Drawing.Size(180, 45);
+            this.btnCerrarSesiónAdmin.Size = new System.Drawing.Size(216, 49);
             this.btnCerrarSesiónAdmin.TabIndex = 2;
             this.btnCerrarSesiónAdmin.Text = "Cerrar Sesión";
             this.btnCerrarSesiónAdmin.Click += new System.EventHandler(this.btnCerrarSesiónAdmin_Click);
@@ -90,10 +91,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ProyectoFinal.Properties.Resources.image;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 5);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(14, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(174, 77);
+            this.pictureBox1.Size = new System.Drawing.Size(210, 92);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -104,10 +105,10 @@
             this.label1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(7, 108);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(6, 122);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(256, 24);
+            this.label1.Size = new System.Drawing.Size(381, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenido, Administrador";
             // 
@@ -120,10 +121,10 @@
             this.panel2.Controls.Add(this.btnBorrarEvent);
             this.panel2.Controls.Add(this.btnModEvent);
             this.panel2.Controls.Add(this.btnAddEvent);
-            this.panel2.Location = new System.Drawing.Point(98, 142);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel2.Location = new System.Drawing.Point(147, 218);
+            this.panel2.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(966, 366);
+            this.panel2.Size = new System.Drawing.Size(1054, 563);
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -131,10 +132,10 @@
             // 
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox4.Image = global::ProyectoFinal.Properties.Resources.borrar;
-            this.pictureBox4.Location = new System.Drawing.Point(465, 217);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox4.Location = new System.Drawing.Point(437, 336);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(76, 68);
+            this.pictureBox4.Size = new System.Drawing.Size(112, 102);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
@@ -144,10 +145,10 @@
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox3.Image = global::ProyectoFinal.Properties.Resources.modificar;
-            this.pictureBox3.Location = new System.Drawing.Point(691, 60);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox3.Location = new System.Drawing.Point(703, 94);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(84, 82);
+            this.pictureBox3.Size = new System.Drawing.Size(124, 124);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
@@ -157,10 +158,10 @@
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox2.Image = global::ProyectoFinal.Properties.Resources.boton_agregar;
-            this.pictureBox2.Location = new System.Drawing.Point(213, 60);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Location = new System.Drawing.Point(118, 94);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(79, 82);
+            this.pictureBox2.Size = new System.Drawing.Size(116, 124);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -169,10 +170,10 @@
             // btnBorrarEvent
             // 
             this.btnBorrarEvent.BackColor = System.Drawing.Color.LightBlue;
-            this.btnBorrarEvent.Location = new System.Drawing.Point(404, 295);
-            this.btnBorrarEvent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBorrarEvent.Location = new System.Drawing.Point(394, 454);
+            this.btnBorrarEvent.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.btnBorrarEvent.Name = "btnBorrarEvent";
-            this.btnBorrarEvent.Size = new System.Drawing.Size(132, 23);
+            this.btnBorrarEvent.Size = new System.Drawing.Size(198, 35);
             this.btnBorrarEvent.TabIndex = 2;
             this.btnBorrarEvent.Text = "Borrar Evento";
             this.btnBorrarEvent.UseVisualStyleBackColor = false;
@@ -181,10 +182,10 @@
             // 
             this.btnModEvent.BackColor = System.Drawing.Color.PowderBlue;
             this.btnModEvent.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnModEvent.Location = new System.Drawing.Point(639, 152);
-            this.btnModEvent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnModEvent.Location = new System.Drawing.Point(675, 234);
+            this.btnModEvent.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.btnModEvent.Name = "btnModEvent";
-            this.btnModEvent.Size = new System.Drawing.Size(124, 23);
+            this.btnModEvent.Size = new System.Drawing.Size(186, 35);
             this.btnModEvent.TabIndex = 1;
             this.btnModEvent.Text = "Modificar Evento";
             this.btnModEvent.UseVisualStyleBackColor = false;
@@ -192,10 +193,10 @@
             // btnAddEvent
             // 
             this.btnAddEvent.BackColor = System.Drawing.Color.LightBlue;
-            this.btnAddEvent.Location = new System.Drawing.Point(142, 152);
-            this.btnAddEvent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAddEvent.Location = new System.Drawing.Point(78, 234);
+            this.btnAddEvent.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.btnAddEvent.Name = "btnAddEvent";
-            this.btnAddEvent.Size = new System.Drawing.Size(144, 23);
+            this.btnAddEvent.Size = new System.Drawing.Size(216, 35);
             this.btnAddEvent.TabIndex = 0;
             this.btnAddEvent.Text = "Añadir Evento";
             this.btnAddEvent.UseVisualStyleBackColor = false;
@@ -209,18 +210,20 @@
             this.panel3.Controls.Add(this.pbInicio);
             this.panel3.Controls.Add(this.pbMas);
             this.panel3.Controls.Add(this.lblInicio);
-            this.panel3.Location = new System.Drawing.Point(-1, -1);
+            this.panel3.Location = new System.Drawing.Point(-2, 51);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(102, 524);
+            this.panel3.Size = new System.Drawing.Size(153, 753);
             this.panel3.TabIndex = 3;
             // 
             // pbMensajes
             // 
             this.pbMensajes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbMensajes.Image = ((System.Drawing.Image)(resources.GetObject("pbMensajes.Image")));
-            this.pbMensajes.Location = new System.Drawing.Point(26, 169);
+            this.pbMensajes.Location = new System.Drawing.Point(39, 260);
+            this.pbMensajes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbMensajes.Name = "pbMensajes";
-            this.pbMensajes.Size = new System.Drawing.Size(46, 47);
+            this.pbMensajes.Size = new System.Drawing.Size(67, 70);
             this.pbMensajes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbMensajes.TabIndex = 5;
             this.pbMensajes.TabStop = false;
@@ -230,7 +233,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(17, 219);
+            this.label2.Location = new System.Drawing.Point(26, 337);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 19);
             this.label2.TabIndex = 4;
@@ -240,9 +244,10 @@
             // 
             this.pbInicio.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbInicio.Image = ((System.Drawing.Image)(resources.GetObject("pbInicio.Image")));
-            this.pbInicio.Location = new System.Drawing.Point(29, 76);
+            this.pbInicio.Location = new System.Drawing.Point(44, 117);
+            this.pbInicio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbInicio.Name = "pbInicio";
-            this.pbInicio.Size = new System.Drawing.Size(43, 43);
+            this.pbInicio.Size = new System.Drawing.Size(62, 64);
             this.pbInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbInicio.TabIndex = 3;
             this.pbInicio.TabStop = false;
@@ -250,9 +255,10 @@
             // pbMas
             // 
             this.pbMas.Image = ((System.Drawing.Image)(resources.GetObject("pbMas.Image")));
-            this.pbMas.Location = new System.Drawing.Point(29, 19);
+            this.pbMas.Location = new System.Drawing.Point(44, 29);
+            this.pbMas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbMas.Name = "pbMas";
-            this.pbMas.Size = new System.Drawing.Size(43, 41);
+            this.pbMas.Size = new System.Drawing.Size(64, 63);
             this.pbMas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbMas.TabIndex = 3;
             this.pbMas.TabStop = false;
@@ -261,7 +267,8 @@
             // 
             this.lblInicio.AutoSize = true;
             this.lblInicio.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInicio.Location = new System.Drawing.Point(19, 122);
+            this.lblInicio.Location = new System.Drawing.Point(45, 188);
+            this.lblInicio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblInicio.Name = "lblInicio";
             this.lblInicio.Size = new System.Drawing.Size(56, 22);
             this.lblInicio.TabIndex = 3;
@@ -269,13 +276,15 @@
             // 
             // FrmAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(710, 330);
+            this.ClientSize = new System.Drawing.Size(1100, 768);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmAdmin";
+            this.Padding = new System.Windows.Forms.Padding(30, 92, 30, 31);
             this.Style = MetroFramework.MetroColorStyle.White;
             this.Load += new System.EventHandler(this.FrmAdmin_Load);
             this.panel1.ResumeLayout(false);
