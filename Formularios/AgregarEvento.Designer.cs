@@ -71,7 +71,7 @@
             this.panel2.Location = new System.Drawing.Point(-1, -1);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(40, 406);
+            this.panel2.Size = new System.Drawing.Size(47, 406);
             this.panel2.TabIndex = 4;
             // 
             // pbInicio
@@ -103,7 +103,7 @@
             // 
             this.lblInicio.AutoSize = true;
             this.lblInicio.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInicio.Location = new System.Drawing.Point(-4, 86);
+            this.lblInicio.Location = new System.Drawing.Point(3, 86);
             this.lblInicio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblInicio.Name = "lblInicio";
             this.lblInicio.Size = new System.Drawing.Size(42, 19);
@@ -253,13 +253,13 @@
             // btnGuardarEvento
             // 
             this.btnGuardarEvento.BackColor = System.Drawing.Color.Transparent;
-            this.btnGuardarEvento.BorderRadius = 24;
+            this.btnGuardarEvento.BorderRadius = 10;
             this.btnGuardarEvento.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGuardarEvento.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGuardarEvento.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnGuardarEvento.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnGuardarEvento.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarEvento.ForeColor = System.Drawing.Color.Pink;
+            this.btnGuardarEvento.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnGuardarEvento.Location = new System.Drawing.Point(304, 329);
             this.btnGuardarEvento.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardarEvento.Name = "btnGuardarEvento";
@@ -437,7 +437,7 @@
             this.Controls.Add(this.panel2);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AgregarEvento";
-            this.Text = "AgregarEvento";
+            this.Style = MetroFramework.MetroColorStyle.White;
             this.Load += new System.EventHandler(this.AgregarEvento_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

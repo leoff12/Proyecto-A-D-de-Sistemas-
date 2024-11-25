@@ -14,7 +14,7 @@ using ProyectoFinal.Clases;
 
 namespace ProyectoFinal.Formularios
 {
-    public partial class AgregarEvento : Form
+    public partial class AgregarEvento : MetroFramework.Forms.MetroForm
     {
         private CargarImagen cargarImagen = new CargarImagen();
 
