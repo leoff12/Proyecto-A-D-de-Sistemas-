@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EliminarEvento));
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.btnGuardarCambios = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pbImagen = new Guna.UI2.WinForms.Guna2PictureBox();
             this.cmbImagen = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblImagen = new System.Windows.Forms.Label();
             this.txtTipoPublico = new Guna.UI2.WinForms.Guna2TextBox();
@@ -58,7 +58,7 @@
             this.lblAgregarEvento = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pbLogoUAM = new System.Windows.Forms.PictureBox();
             this.guna2GroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbInicio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMas)).BeginInit();
@@ -72,7 +72,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2GroupBox1.BorderRadius = 24;
             this.guna2GroupBox1.Controls.Add(this.btnGuardarCambios);
-            this.guna2GroupBox1.Controls.Add(this.pictureBox);
+            this.guna2GroupBox1.Controls.Add(this.pbImagen);
             this.guna2GroupBox1.Controls.Add(this.cmbImagen);
             this.guna2GroupBox1.Controls.Add(this.lblImagen);
             this.guna2GroupBox1.Controls.Add(this.txtTipoPublico);
@@ -121,8 +121,9 @@
             this.btnGuardarCambios.Text = "Eliminar Evento";
             this.btnGuardarCambios.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // pictureBox
+            // pbImagen
             // 
+<<<<<<< HEAD
             this.pictureBox.ImageRotate = 0F;
             this.pictureBox.Location = new System.Drawing.Point(345, 187);
             this.pictureBox.Margin = new System.Windows.Forms.Padding(2);
@@ -131,6 +132,15 @@
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 24;
             this.pictureBox.TabStop = false;
+=======
+            this.pbImagen.ImageRotate = 0F;
+            this.pbImagen.Location = new System.Drawing.Point(788, 299);
+            this.pbImagen.Name = "pbImagen";
+            this.pbImagen.Size = new System.Drawing.Size(300, 200);
+            this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbImagen.TabIndex = 24;
+            this.pbImagen.TabStop = false;
+>>>>>>> e0fc8588fb5b5422e7bafb2e1719545fcf06807b
             // 
             // cmbImagen
             // 
@@ -147,6 +157,7 @@
             this.cmbImagen.Name = "cmbImagen";
             this.cmbImagen.Size = new System.Drawing.Size(95, 36);
             this.cmbImagen.TabIndex = 23;
+            this.cmbImagen.SelectedIndexChanged += new System.EventHandler(this.cmbImagen_SelectedIndexChanged);
             // 
             // lblImagen
             // 
@@ -442,6 +453,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(675, 58);
             this.panel1.TabIndex = 9;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // lblAgregarEvento
             // 
@@ -451,9 +463,15 @@
             this.lblAgregarEvento.Location = new System.Drawing.Point(61, 21);
             this.lblAgregarEvento.Margin = new System.Windows.Forms.Padding(2);
             this.lblAgregarEvento.Name = "lblAgregarEvento";
+<<<<<<< HEAD
             this.lblAgregarEvento.Size = new System.Drawing.Size(201, 26);
             this.lblAgregarEvento.TabIndex = 3;
             this.lblAgregarEvento.Text = "ELIMINAR  EVENTO";
+=======
+            this.lblAgregarEvento.Size = new System.Drawing.Size(309, 38);
+            this.lblAgregarEvento.TabIndex = 3;
+            this.lblAgregarEvento.Text = "ELIMINAR EVENTO";
+>>>>>>> e0fc8588fb5b5422e7bafb2e1719545fcf06807b
             // 
             // pbLogoUAM
             // 
@@ -481,7 +499,7 @@
             this.Load += new System.EventHandler(this.EliminarEvento_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbInicio)).EndInit();
@@ -498,7 +516,7 @@
 
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private Guna.UI2.WinForms.Guna2Button btnGuardarCambios;
-        private Guna.UI2.WinForms.Guna2PictureBox pictureBox;
+        private Guna.UI2.WinForms.Guna2PictureBox pbImagen;
         private Guna.UI2.WinForms.Guna2ComboBox cmbImagen;
         private System.Windows.Forms.Label lblImagen;
         private Guna.UI2.WinForms.Guna2TextBox txtTipoPublico;

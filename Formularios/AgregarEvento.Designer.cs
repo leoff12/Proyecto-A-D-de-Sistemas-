@@ -44,7 +44,6 @@
             this.txtTipoPublico = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblTipoPublico = new System.Windows.Forms.Label();
             this.lblCategoria = new System.Windows.Forms.Label();
-            this.txtCategoria = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCuposDisp = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblCuposDisp = new System.Windows.Forms.Label();
             this.mtxtHFin = new System.Windows.Forms.MaskedTextBox();
@@ -56,6 +55,9 @@
             this.btnToggleMenu = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pbInicioAdmin = new System.Windows.Forms.PictureBox();
+            this.txtCategoria = new Guna.UI2.WinForms.Guna2TextBox();
+            this.panel2.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.guna2PanelMenu.SuspendLayout();
@@ -181,7 +183,6 @@
             this.guna2GroupBox1.Controls.Add(this.txtTipoPublico);
             this.guna2GroupBox1.Controls.Add(this.lblTipoPublico);
             this.guna2GroupBox1.Controls.Add(this.lblCategoria);
-            this.guna2GroupBox1.Controls.Add(this.txtCategoria);
             this.guna2GroupBox1.Controls.Add(this.txtCuposDisp);
             this.guna2GroupBox1.Controls.Add(this.lblCuposDisp);
             this.guna2GroupBox1.Controls.Add(this.mtxtHFin);
@@ -300,6 +301,7 @@
             this.lblCategoria.TabIndex = 19;
             this.lblCategoria.Text = "Categoría";
             // 
+<<<<<<< HEAD
             // txtCategoria
             // 
             this.txtCategoria.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -320,6 +322,8 @@
             this.txtCategoria.Size = new System.Drawing.Size(191, 39);
             this.txtCategoria.TabIndex = 18;
             // 
+=======
+>>>>>>> e0fc8588fb5b5422e7bafb2e1719545fcf06807b
             // txtCuposDisp
             // 
             this.txtCuposDisp.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -455,6 +459,26 @@
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pbInicioAdmin_Click);
             // 
+            // txtCategoria
+            // 
+            this.txtCategoria.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCategoria.DefaultText = "";
+            this.txtCategoria.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCategoria.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCategoria.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCategoria.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCategoria.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCategoria.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCategoria.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCategoria.Location = new System.Drawing.Point(20, 302);
+            this.txtCategoria.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtCategoria.Name = "txtCategoria";
+            this.txtCategoria.PasswordChar = '\0';
+            this.txtCategoria.PlaceholderText = "";
+            this.txtCategoria.SelectedText = "";
+            this.txtCategoria.Size = new System.Drawing.Size(286, 60);
+            this.txtCategoria.TabIndex = 18;
+            // 
             // AgregarEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -499,17 +523,21 @@
         private Guna.UI2.WinForms.Guna2TextBox txtTipoPublico;
         private System.Windows.Forms.Label lblTipoPublico;
         private System.Windows.Forms.Label lblCategoria;
-        private Guna.UI2.WinForms.Guna2TextBox txtCategoria;
         private Guna.UI2.WinForms.Guna2PictureBox pictureBox;
         private Guna.UI2.WinForms.Guna2ComboBox cmbImagen;
         private System.Windows.Forms.Label lblImagen;
         private Guna.UI2.WinForms.Guna2Button btnGuardarEvento;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblAgregarEvento;
+<<<<<<< HEAD
         private Guna.UI2.WinForms.Guna2Panel guna2PanelMenu;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btnToggleMenu;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
+=======
+        private System.Windows.Forms.PictureBox pbInicioAdmin;
+        private Guna.UI2.WinForms.Guna2TextBox txtCategoria;
+>>>>>>> e0fc8588fb5b5422e7bafb2e1719545fcf06807b
     }
 }
