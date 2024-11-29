@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarEvento));
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pbInicio = new System.Windows.Forms.PictureBox();
-            this.pbMas = new System.Windows.Forms.PictureBox();
-            this.lblInicio = new System.Windows.Forms.Label();
             this.txtNombreEvento = new System.Windows.Forms.TextBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
@@ -43,7 +39,6 @@
             this.lblHFin = new System.Windows.Forms.Label();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.btnGuardarEvento = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.cmbImagen = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblImagen = new System.Windows.Forms.Label();
             this.txtTipoPublico = new Guna.UI2.WinForms.Guna2TextBox();
@@ -54,67 +49,26 @@
             this.lblCuposDisp = new System.Windows.Forms.Label();
             this.mtxtHFin = new System.Windows.Forms.MaskedTextBox();
             this.mtxtHInicio = new System.Windows.Forms.MaskedTextBox();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbInicio)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMas)).BeginInit();
+            this.pictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PanelMenu = new Guna.UI2.WinForms.Guna2Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnToggleMenu = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            this.guna2PanelMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnToggleMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel2
-            // 
-            this.panel2.AutoSize = true;
-            this.panel2.BackColor = System.Drawing.Color.Azure;
-            this.panel2.Controls.Add(this.pbInicio);
-            this.panel2.Controls.Add(this.pbMas);
-            this.panel2.Controls.Add(this.lblInicio);
-            this.panel2.Location = new System.Drawing.Point(-1, -1);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(47, 406);
-            this.panel2.TabIndex = 4;
-            // 
-            // pbInicio
-            // 
-            this.pbInicio.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pbInicio.Image = ((System.Drawing.Image)(resources.GetObject("pbInicio.Image")));
-            this.pbInicio.Location = new System.Drawing.Point(7, 59);
-            this.pbInicio.Margin = new System.Windows.Forms.Padding(2);
-            this.pbInicio.Name = "pbInicio";
-            this.pbInicio.Size = new System.Drawing.Size(29, 25);
-            this.pbInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbInicio.TabIndex = 3;
-            this.pbInicio.TabStop = false;
-            this.pbInicio.Click += new System.EventHandler(this.pbInicio_Click);
-            // 
-            // pbMas
-            // 
-            this.pbMas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pbMas.Image = ((System.Drawing.Image)(resources.GetObject("pbMas.Image")));
-            this.pbMas.Location = new System.Drawing.Point(7, 9);
-            this.pbMas.Margin = new System.Windows.Forms.Padding(2);
-            this.pbMas.Name = "pbMas";
-            this.pbMas.Size = new System.Drawing.Size(29, 25);
-            this.pbMas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbMas.TabIndex = 3;
-            this.pbMas.TabStop = false;
-            // 
-            // lblInicio
-            // 
-            this.lblInicio.AutoSize = true;
-            this.lblInicio.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInicio.Location = new System.Drawing.Point(3, 86);
-            this.lblInicio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblInicio.Name = "lblInicio";
-            this.lblInicio.Size = new System.Drawing.Size(42, 19);
-            this.lblInicio.TabIndex = 3;
-            this.lblInicio.Text = "Inicio";
             // 
             // txtNombreEvento
             // 
             this.txtNombreEvento.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtNombreEvento.Location = new System.Drawing.Point(13, 67);
-            this.txtNombreEvento.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombreEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombreEvento.Name = "txtNombreEvento";
             this.txtNombreEvento.Size = new System.Drawing.Size(195, 29);
             this.txtNombreEvento.TabIndex = 7;
@@ -157,6 +111,7 @@
             this.txtDescripcion.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDescripcion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDescripcion.Location = new System.Drawing.Point(13, 111);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.PasswordChar = '\0';
             this.txtDescripcion.PlaceholderText = "";
@@ -170,7 +125,7 @@
             this.lblFecha.BackColor = System.Drawing.Color.Transparent;
             this.lblFecha.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.Color.Black;
-            this.lblFecha.Location = new System.Drawing.Point(523, 88);
+            this.lblFecha.Location = new System.Drawing.Point(381, 81);
             this.lblFecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(112, 17);
@@ -179,13 +134,14 @@
             // 
             // mtxtFechaEvento
             // 
-            this.mtxtFechaEvento.Location = new System.Drawing.Point(660, 81);
-            this.mtxtFechaEvento.Margin = new System.Windows.Forms.Padding(2);
+            this.mtxtFechaEvento.Location = new System.Drawing.Point(518, 74);
+            this.mtxtFechaEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mtxtFechaEvento.Mask = "00/00/0000";
             this.mtxtFechaEvento.Name = "mtxtFechaEvento";
             this.mtxtFechaEvento.Size = new System.Drawing.Size(68, 29);
             this.mtxtFechaEvento.TabIndex = 11;
             this.mtxtFechaEvento.ValidatingType = typeof(System.DateTime);
+            this.mtxtFechaEvento.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mtxtFechaEvento_MaskInputRejected);
             // 
             // lblHInicio
             // 
@@ -193,7 +149,7 @@
             this.lblHInicio.BackColor = System.Drawing.Color.Transparent;
             this.lblHInicio.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHInicio.ForeColor = System.Drawing.Color.Black;
-            this.lblHInicio.Location = new System.Drawing.Point(523, 118);
+            this.lblHInicio.Location = new System.Drawing.Point(381, 111);
             this.lblHInicio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHInicio.Name = "lblHInicio";
             this.lblHInicio.Size = new System.Drawing.Size(77, 17);
@@ -206,7 +162,7 @@
             this.lblHFin.BackColor = System.Drawing.Color.Transparent;
             this.lblHFin.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHFin.ForeColor = System.Drawing.Color.Black;
-            this.lblHFin.Location = new System.Drawing.Point(523, 150);
+            this.lblHFin.Location = new System.Drawing.Point(381, 143);
             this.lblHFin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHFin.Name = "lblHFin";
             this.lblHFin.Size = new System.Drawing.Size(62, 17);
@@ -242,10 +198,10 @@
             this.guna2GroupBox1.FillColor = System.Drawing.Color.Silver;
             this.guna2GroupBox1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(57, 8);
-            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(53, 36);
+            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(755, 377);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(658, 375);
             this.guna2GroupBox1.TabIndex = 5;
             this.guna2GroupBox1.Text = "Información del Evento";
             this.guna2GroupBox1.Click += new System.EventHandler(this.guna2GroupBox1_Click);
@@ -259,25 +215,14 @@
             this.btnGuardarEvento.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnGuardarEvento.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnGuardarEvento.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarEvento.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGuardarEvento.Location = new System.Drawing.Point(304, 329);
-            this.btnGuardarEvento.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGuardarEvento.ForeColor = System.Drawing.Color.Pink;
+            this.btnGuardarEvento.Location = new System.Drawing.Point(224, 335);
+            this.btnGuardarEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGuardarEvento.Name = "btnGuardarEvento";
             this.btnGuardarEvento.Size = new System.Drawing.Size(141, 29);
             this.btnGuardarEvento.TabIndex = 25;
             this.btnGuardarEvento.Text = "Guardar Evento";
             this.btnGuardarEvento.Click += new System.EventHandler(this.btnGuardarEvento_Click);
-            // 
-            // pictureBox
-            // 
-            this.pictureBox.ImageRotate = 0F;
-            this.pictureBox.Location = new System.Drawing.Point(525, 194);
-            this.pictureBox.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(200, 130);
-            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox.TabIndex = 24;
-            this.pictureBox.TabStop = false;
             // 
             // cmbImagen
             // 
@@ -290,7 +235,7 @@
             this.cmbImagen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbImagen.ItemHeight = 30;
             this.cmbImagen.Location = new System.Drawing.Point(13, 315);
-            this.cmbImagen.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbImagen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbImagen.Name = "cmbImagen";
             this.cmbImagen.Size = new System.Drawing.Size(95, 36);
             this.cmbImagen.TabIndex = 23;
@@ -321,6 +266,7 @@
             this.txtTipoPublico.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtTipoPublico.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTipoPublico.Location = new System.Drawing.Point(13, 256);
+            this.txtTipoPublico.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTipoPublico.Name = "txtTipoPublico";
             this.txtTipoPublico.PasswordChar = '\0';
             this.txtTipoPublico.PlaceholderText = "";
@@ -366,6 +312,7 @@
             this.txtCategoria.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCategoria.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCategoria.Location = new System.Drawing.Point(13, 196);
+            this.txtCategoria.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.PasswordChar = '\0';
             this.txtCategoria.PlaceholderText = "";
@@ -384,7 +331,8 @@
             this.txtCuposDisp.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCuposDisp.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCuposDisp.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCuposDisp.Location = new System.Drawing.Point(661, 50);
+            this.txtCuposDisp.Location = new System.Drawing.Point(519, 43);
+            this.txtCuposDisp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCuposDisp.Name = "txtCuposDisp";
             this.txtCuposDisp.PasswordChar = '\0';
             this.txtCuposDisp.PlaceholderText = "";
@@ -400,7 +348,7 @@
             this.lblCuposDisp.BackColor = System.Drawing.Color.Transparent;
             this.lblCuposDisp.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCuposDisp.ForeColor = System.Drawing.Color.Black;
-            this.lblCuposDisp.Location = new System.Drawing.Point(523, 57);
+            this.lblCuposDisp.Location = new System.Drawing.Point(381, 50);
             this.lblCuposDisp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCuposDisp.Name = "lblCuposDisp";
             this.lblCuposDisp.Size = new System.Drawing.Size(120, 17);
@@ -409,8 +357,8 @@
             // 
             // mtxtHFin
             // 
-            this.mtxtHFin.Location = new System.Drawing.Point(661, 142);
-            this.mtxtHFin.Margin = new System.Windows.Forms.Padding(2);
+            this.mtxtHFin.Location = new System.Drawing.Point(519, 135);
+            this.mtxtHFin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mtxtHFin.Mask = "00:00";
             this.mtxtHFin.Name = "mtxtHFin";
             this.mtxtHFin.Size = new System.Drawing.Size(51, 29);
@@ -419,43 +367,122 @@
             // 
             // mtxtHInicio
             // 
-            this.mtxtHInicio.Location = new System.Drawing.Point(660, 111);
-            this.mtxtHInicio.Margin = new System.Windows.Forms.Padding(2);
+            this.mtxtHInicio.Location = new System.Drawing.Point(518, 104);
+            this.mtxtHInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mtxtHInicio.Mask = "00:00";
             this.mtxtHInicio.Name = "mtxtHInicio";
             this.mtxtHInicio.Size = new System.Drawing.Size(51, 29);
             this.mtxtHInicio.TabIndex = 13;
             this.mtxtHInicio.ValidatingType = typeof(System.DateTime);
             // 
+            // pictureBox
+            // 
+            this.pictureBox.ImageRotate = 0F;
+            this.pictureBox.Location = new System.Drawing.Point(383, 187);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(200, 130);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox.TabIndex = 24;
+            this.pictureBox.TabStop = false;
+            // 
+            // guna2PanelMenu
+            // 
+            this.guna2PanelMenu.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.guna2PanelMenu.Controls.Add(this.label2);
+            this.guna2PanelMenu.Controls.Add(this.label1);
+            this.guna2PanelMenu.Controls.Add(this.btnToggleMenu);
+            this.guna2PanelMenu.Controls.Add(this.pictureBox6);
+            this.guna2PanelMenu.Controls.Add(this.pictureBox5);
+            this.guna2PanelMenu.Location = new System.Drawing.Point(0, -1);
+            this.guna2PanelMenu.Name = "guna2PanelMenu";
+            this.guna2PanelMenu.Size = new System.Drawing.Size(40, 418);
+            this.guna2PanelMenu.TabIndex = 6;
+            this.guna2PanelMenu.Click += new System.EventHandler(this.btnToggleMenu_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(42, 186);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Mensajes";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(48, 112);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 16);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Inicio";
+            // 
+            // btnToggleMenu
+            // 
+            this.btnToggleMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnToggleMenu.Image")));
+            this.btnToggleMenu.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnToggleMenu.InitialImage")));
+            this.btnToggleMenu.Location = new System.Drawing.Point(3, 33);
+            this.btnToggleMenu.Name = "btnToggleMenu";
+            this.btnToggleMenu.Size = new System.Drawing.Size(32, 28);
+            this.btnToggleMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnToggleMenu.TabIndex = 2;
+            this.btnToggleMenu.TabStop = false;
+            this.btnToggleMenu.Click += new System.EventHandler(this.btnToggleMenu_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::ProyectoFinal.Properties.Resources.speech_bubble_8716838;
+            this.pictureBox6.Location = new System.Drawing.Point(47, 139);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(44, 42);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 1;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = global::ProyectoFinal.Properties.Resources.logout_17905742;
+            this.pictureBox5.Location = new System.Drawing.Point(47, 64);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(44, 45);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pbInicioAdmin_Click);
+            // 
             // AgregarEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(843, 403);
+            this.ClientSize = new System.Drawing.Size(745, 417);
+            this.Controls.Add(this.guna2PanelMenu);
             this.Controls.Add(this.guna2GroupBox1);
-            this.Controls.Add(this.panel2);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AgregarEvento";
+            this.Padding = new System.Windows.Forms.Padding(13, 60, 13, 13);
             this.Style = MetroFramework.MetroColorStyle.White;
             this.Load += new System.EventHandler(this.AgregarEvento_Load);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbInicio)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMas)).EndInit();
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            this.guna2PanelMenu.ResumeLayout(false);
+            this.guna2PanelMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnToggleMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pbInicio;
         private System.Windows.Forms.PictureBox pbMas;
-        private System.Windows.Forms.Label lblInicio;
         private System.Windows.Forms.TextBox txtNombreEvento;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblDescripcion;
@@ -477,5 +504,12 @@
         private Guna.UI2.WinForms.Guna2ComboBox cmbImagen;
         private System.Windows.Forms.Label lblImagen;
         private Guna.UI2.WinForms.Guna2Button btnGuardarEvento;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblAgregarEvento;
+        private Guna.UI2.WinForms.Guna2Panel guna2PanelMenu;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox btnToggleMenu;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }

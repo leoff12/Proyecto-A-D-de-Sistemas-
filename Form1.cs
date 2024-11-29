@@ -36,17 +36,13 @@ namespace ProyectoFinal
         {
             //Instanciar el formulario de Inicio de sesión administrador
             AdminLoginForm adminLoginForm = new AdminLoginForm();
-            
-            this.Hide();
-
-            //Mostrar el formulario
-            adminLoginForm.ShowDialog();
-
-            this.Show();
-            
+            adminLoginForm.Show();
         }
 
-       
+        private void UniEventHub_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
        

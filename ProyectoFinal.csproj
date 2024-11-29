@@ -117,11 +117,41 @@
     <Compile Include="Formularios\AgregarEvento.Designer.cs">
       <DependentUpon>AgregarEvento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\BuscarEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\BuscarEliminar.Designer.cs">
+      <DependentUpon>BuscarEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\DetalleEventoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\DetalleEventoForm.Designer.cs">
+      <DependentUpon>DetalleEventoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\EditarEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EditarEvento.Designer.cs">
+      <DependentUpon>EditarEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\EliminarEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EliminarEvento.Designer.cs">
+      <DependentUpon>EliminarEvento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\InicioSesiónUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\InicioSesiónUsuario.Designer.cs">
       <DependentUpon>InicioSesiónUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Modificar.Designer.cs">
+      <DependentUpon>Modificar.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\VistaGeneralUsuario.cs">
       <SubType>Form</SubType>
@@ -145,8 +175,23 @@
     <EmbeddedResource Include="Formularios\AgregarEvento.resx">
       <DependentUpon>AgregarEvento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\BuscarEliminar.resx">
+      <DependentUpon>BuscarEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\DetalleEventoForm.resx">
+      <DependentUpon>DetalleEventoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EditarEvento.resx">
+      <DependentUpon>EditarEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EliminarEvento.resx">
+      <DependentUpon>EliminarEvento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\InicioSesiónUsuario.resx">
       <DependentUpon>InicioSesiónUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Modificar.resx">
+      <DependentUpon>Modificar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\VistaGeneralUsuario.resx">
       <DependentUpon>VistaGeneralUsuario.cs</DependentUpon>
@@ -180,6 +225,11 @@
     <Content Include="Imagenes\images %281%29.jpeg" />
     <Content Include="Imagenes\png-transparent-child-sports-coach-sports-association-sport-of-athletics-social-group-line-silhouette-thumbnail.png" />
     <Content Include="Recursos\image.png" />
+    <None Include="Resources\speech-bubble_8716838.gif" />
+    <None Include="Resources\logout_17905742.gif" />
+    <None Include="Resources\email_14674244.gif" />
+    <None Include="Resources\home_100230671.png" />
+    <None Include="Resources\home_10023067.png" />
     <None Include="Resources\16344954.png" />
     <None Include="Resources\67654f6b2a7d10436445455b1458935f.png" />
     <None Include="Resources\Imagen de WhatsApp 2024-11-22 a las 00.00.36_5a23c3951.jpg" />

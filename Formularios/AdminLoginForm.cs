@@ -47,7 +47,7 @@ namespace ProyectoFinal.Formularios
                 // Abrir el formulario principal
                 FrmAdmin frmAdmin = new FrmAdmin();
                 frmAdmin.Show();
-                this.Hide(); // Ocultar este formulario
+                this.Close(); 
             }
             else
             {
