@@ -109,11 +109,11 @@ namespace ProyectoFinal.Servicios
 
         public static void EliminarEvento(Eventos evento)
         {
-            string rutaArchivo = "ruta_donde_se_guardan_los_eventos.dat";
+            string rutaArchivo = "Eventos.dat";
             List<Eventos> eventos = CargarEventos();
 
             // Elimina el evento de la lista
-            eventos.RemoveAll(e => e.NombreEvento == evento.NombreEvento);
+            eventos.RemoveAll(e => e.ID == evento.ID);
 
             // Guarda nuevamente la lista sin el evento eliminado
             GuardarEventos(eventos);
@@ -121,14 +121,10 @@ namespace ProyectoFinal.Servicios
 
         public static void GuardarEventos(List<Eventos> eventos)
         {
-            string rutaArchivo = "ruta_donde_se_guardan_los_eventos.dat";
-
-            using (StreamWriter writer = new StreamWriter(rutaArchivo, false))
+            using (FileStream fs = new FileStream("Eventos.dat", FileMode.Create, FileAccess.Write))
             {
-                foreach (var evento in eventos)
-                {
-                    writer.WriteLine($"{evento.NombreEvento}|{evento.Descripción}|{evento.Categoría}|{evento.Fecha:dd/MM/yyyy}|{evento.TipoPúblico}|{evento.CuposDisp}|{evento.HoraInicio}|{evento.HoraFin}");
-                }
+                BinaryFormatter formatter = new BinaryFormatter();
+                formatter.Serialize(fs, eventos);
             }
         }
 
