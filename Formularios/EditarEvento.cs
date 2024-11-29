@@ -21,11 +21,24 @@ namespace ProyectoFinal.Formularios
 
         private void CargarDatosEnControles()
         {
+            if (cmbTipoDeEventoMod.Items.Count == 0)
+            {
+                cmbTipoDeEventoMod.Items.Add("PAGA");
+                cmbTipoDeEventoMod.Items.Add("GRATUITO");
+            }
+
+            if (cmbCategoriaMod.Items.Count == 0)
+            {
+                cmbCategoriaMod.Items.Add("Deportes");
+                cmbCategoriaMod.Items.Add("Cultura");
+                cmbCategoriaMod.Items.Add("Educación");
+            }
+
             txtNombreEvento.Text = eventoOriginal.NombreEvento;
             txtDescripcion.Text = eventoOriginal.Descripción;
-            txtCategoria.Text = eventoOriginal.Categoría;
+            cmbTipoDeEventoMod.SelectedItem = eventoOriginal.TipoDeEvento;
             mtxtFechaEvento.Text = eventoOriginal.Fecha.ToString("dd/MM/yyyy");
-            txtTipoPublico.Text = eventoOriginal.TipoPúblico;
+            cmbCategoriaMod.SelectedItem = eventoOriginal.Categoría;
             txtCuposDisp.Text = eventoOriginal.CuposDisp.ToString();
             mtxtHInicio.Text = $"{eventoOriginal.HoraInicio:00}:00";
             mtxtHFin.Text = $"{eventoOriginal.HoraFin:00}:00";
@@ -43,9 +56,9 @@ namespace ProyectoFinal.Formularios
             // Actualizar los datos del evento
             eventoOriginal.NombreEvento = txtNombreEvento.Text;
             eventoOriginal.Descripción = txtDescripcion.Text;
-            eventoOriginal.Categoría = txtCategoria.Text;
+            eventoOriginal.TipoDeEvento = cmbTipoDeEventoMod.SelectedItem?.ToString();
             eventoOriginal.Fecha = DateTime.ParseExact(mtxtFechaEvento.Text, "dd/MM/yyyy", null);
-            eventoOriginal.TipoPúblico = txtTipoPublico.Text;
+            eventoOriginal.Categoría = cmbCategoriaMod.SelectedItem?.ToString();
             eventoOriginal.CuposDisp = int.Parse(txtCuposDisp.Text);
             eventoOriginal.HoraInicio = int.Parse(mtxtHInicio.Text.Split(':')[0]);
             eventoOriginal.HoraFin = int.Parse(mtxtHFin.Text.Split(':')[0]);

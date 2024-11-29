@@ -83,9 +83,9 @@ namespace ProyectoFinal.Formularios
             {
                 NombreEvento = txtNombreEvento.Text,
                 Descripción = txtDescripcion.Text,
-                Categoría = txtCategoria.Text,
+                TipoDeEvento = cmbTipoDeEvento.Text,
                 Fecha = DateTime.ParseExact(mtxtFechaEvento.Text, "dd/MM/yyyy", null),
-                TipoPúblico = txtTipoPublico.Text,
+                Categoría = cmbCategoria.Text,
                 CuposDisp = int.Parse(txtCuposDisp.Text),
                 HoraInicio = int.Parse(mtxtHInicio.Text.Split(':')[0]),  // Solo toma la hora
                 HoraFin = int.Parse(mtxtHFin.Text.Split(':')[0]),        // Solo toma la hora
@@ -104,9 +104,9 @@ namespace ProyectoFinal.Formularios
             // Verificar campos vacíos
             if (string.IsNullOrWhiteSpace(txtNombreEvento.Text) ||
                 string.IsNullOrWhiteSpace(txtDescripcion.Text) ||
-                string.IsNullOrWhiteSpace(txtCategoria.Text) ||
+                string.IsNullOrWhiteSpace(cmbTipoDeEvento.Text) ||
                 string.IsNullOrWhiteSpace(mtxtFechaEvento.Text) ||
-                string.IsNullOrWhiteSpace(txtTipoPublico.Text) ||
+                 string.IsNullOrWhiteSpace(cmbCategoria.Text) ||
                 string.IsNullOrWhiteSpace(txtCuposDisp.Text) ||
                 string.IsNullOrWhiteSpace(mtxtHInicio.Text) ||
                 string.IsNullOrWhiteSpace(mtxtHFin.Text) ||

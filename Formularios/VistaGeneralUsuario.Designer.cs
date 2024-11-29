@@ -39,17 +39,16 @@
             this.lblInicio = new System.Windows.Forms.Label();
             this.pbMas = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnCerrarSesion = new Guna.UI2.WinForms.Guna2TileButton();
             this.txtBuscarEvento = new Guna.UI2.WinForms.Guna2TextBox();
             this.pbBuscar = new System.Windows.Forms.PictureBox();
             this.lblBienvenidoUsuario = new System.Windows.Forms.Label();
             this.dgvEventos = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.dgvNumeroEvento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnExaminar = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.dgvNombreEvento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnExaminar = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.btnCerrarSesion = new Guna.UI2.WinForms.Guna2TileButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMensajes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbInicio)).BeginInit();
@@ -69,20 +68,18 @@
             this.panel2.Controls.Add(this.pbInicio);
             this.panel2.Controls.Add(this.lblInicio);
             this.panel2.Controls.Add(this.pbMas);
-            this.panel2.Location = new System.Drawing.Point(0, 32);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(0, 49);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(77, 372);
+            this.panel2.Size = new System.Drawing.Size(116, 572);
             this.panel2.TabIndex = 1;
             // 
             // pbMensajes
             // 
             this.pbMensajes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbMensajes.Image = ((System.Drawing.Image)(resources.GetObject("pbMensajes.Image")));
-            this.pbMensajes.Location = new System.Drawing.Point(21, 123);
-            this.pbMensajes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbMensajes.Location = new System.Drawing.Point(32, 189);
             this.pbMensajes.Name = "pbMensajes";
-            this.pbMensajes.Size = new System.Drawing.Size(32, 35);
+            this.pbMensajes.Size = new System.Drawing.Size(46, 52);
             this.pbMensajes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbMensajes.TabIndex = 5;
             this.pbMensajes.TabStop = false;
@@ -91,10 +88,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(2, 159);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(3, 245);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 19);
+            this.label1.Size = new System.Drawing.Size(102, 27);
             this.label1.TabIndex = 4;
             this.label1.Text = "Mensajes";
             // 
@@ -102,10 +98,9 @@
             // 
             this.pbInicio.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbInicio.Image = ((System.Drawing.Image)(resources.GetObject("pbInicio.Image")));
-            this.pbInicio.Location = new System.Drawing.Point(21, 57);
-            this.pbInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbInicio.Location = new System.Drawing.Point(32, 88);
             this.pbInicio.Name = "pbInicio";
-            this.pbInicio.Size = new System.Drawing.Size(32, 35);
+            this.pbInicio.Size = new System.Drawing.Size(46, 52);
             this.pbInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbInicio.TabIndex = 3;
             this.pbInicio.TabStop = false;
@@ -114,10 +109,9 @@
             // 
             this.lblInicio.AutoSize = true;
             this.lblInicio.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInicio.Location = new System.Drawing.Point(15, 92);
-            this.lblInicio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblInicio.Location = new System.Drawing.Point(22, 142);
             this.lblInicio.Name = "lblInicio";
-            this.lblInicio.Size = new System.Drawing.Size(42, 19);
+            this.lblInicio.Size = new System.Drawing.Size(67, 27);
             this.lblInicio.TabIndex = 3;
             this.lblInicio.Text = "Inicio";
             // 
@@ -125,10 +119,9 @@
             // 
             this.pbMas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbMas.Image = ((System.Drawing.Image)(resources.GetObject("pbMas.Image")));
-            this.pbMas.Location = new System.Drawing.Point(21, 8);
-            this.pbMas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbMas.Location = new System.Drawing.Point(32, 12);
             this.pbMas.Name = "pbMas";
-            this.pbMas.Size = new System.Drawing.Size(32, 33);
+            this.pbMas.Size = new System.Drawing.Size(46, 49);
             this.pbMas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbMas.TabIndex = 3;
             this.pbMas.TabStop = false;
@@ -140,11 +133,32 @@
             this.panel3.Controls.Add(this.txtBuscarEvento);
             this.panel3.Controls.Add(this.pbBuscar);
             this.panel3.Controls.Add(this.lblBienvenidoUsuario);
-            this.panel3.Location = new System.Drawing.Point(79, 81);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Location = new System.Drawing.Point(118, 125);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(631, 42);
+            this.panel3.Size = new System.Drawing.Size(946, 65);
             this.panel3.TabIndex = 2;
+            // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.Animated = true;
+            this.btnCerrarSesion.AnimatedGIF = true;
+            this.btnCerrarSesion.AutoRoundedCorners = true;
+            this.btnCerrarSesion.BorderRadius = 22;
+            this.btnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrarSesion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCerrarSesion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCerrarSesion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCerrarSesion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCerrarSesion.FillColor = System.Drawing.Color.Red;
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(544, 5);
+            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(183, 46);
+            this.btnCerrarSesion.TabIndex = 20;
+            this.btnCerrarSesion.Text = "Cerrar Sesión";
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // txtBuscarEvento
             // 
@@ -157,22 +171,22 @@
             this.txtBuscarEvento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBuscarEvento.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBuscarEvento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBuscarEvento.Location = new System.Drawing.Point(505, 7);
+            this.txtBuscarEvento.Location = new System.Drawing.Point(758, 11);
+            this.txtBuscarEvento.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.txtBuscarEvento.Name = "txtBuscarEvento";
             this.txtBuscarEvento.PasswordChar = '\0';
             this.txtBuscarEvento.PlaceholderText = "";
             this.txtBuscarEvento.SelectedText = "";
-            this.txtBuscarEvento.Size = new System.Drawing.Size(85, 26);
+            this.txtBuscarEvento.Size = new System.Drawing.Size(128, 40);
             this.txtBuscarEvento.TabIndex = 4;
             // 
             // pbBuscar
             // 
             this.pbBuscar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbBuscar.Image = ((System.Drawing.Image)(resources.GetObject("pbBuscar.Image")));
-            this.pbBuscar.Location = new System.Drawing.Point(595, 9);
-            this.pbBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbBuscar.Location = new System.Drawing.Point(892, 14);
             this.pbBuscar.Name = "pbBuscar";
-            this.pbBuscar.Size = new System.Drawing.Size(25, 27);
+            this.pbBuscar.Size = new System.Drawing.Size(36, 39);
             this.pbBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbBuscar.TabIndex = 2;
             this.pbBuscar.TabStop = false;
@@ -181,10 +195,9 @@
             // 
             this.lblBienvenidoUsuario.AutoSize = true;
             this.lblBienvenidoUsuario.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBienvenidoUsuario.Location = new System.Drawing.Point(5, 7);
-            this.lblBienvenidoUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBienvenidoUsuario.Location = new System.Drawing.Point(8, 11);
             this.lblBienvenidoUsuario.Name = "lblBienvenidoUsuario";
-            this.lblBienvenidoUsuario.Size = new System.Drawing.Size(290, 16);
+            this.lblBienvenidoUsuario.Size = new System.Drawing.Size(410, 22);
             this.lblBienvenidoUsuario.TabIndex = 0;
             this.lblBienvenidoUsuario.Text = "¡Bienvenido! Conoce nuestros eventos disponibles";
             // 
@@ -203,7 +216,6 @@
             this.dgvEventos.ColumnHeadersHeight = 22;
             this.dgvEventos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvEventos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgvNumeroEvento,
             this.dgvNombreEvento,
             this.dgvDescripcion,
             this.dgvFecha});
@@ -216,13 +228,12 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvEventos.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvEventos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvEventos.Location = new System.Drawing.Point(81, 126);
-            this.dgvEventos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvEventos.Location = new System.Drawing.Point(122, 194);
             this.dgvEventos.Name = "dgvEventos";
             this.dgvEventos.RowHeadersVisible = false;
             this.dgvEventos.RowHeadersWidth = 62;
             this.dgvEventos.RowTemplate.Height = 28;
-            this.dgvEventos.Size = new System.Drawing.Size(629, 205);
+            this.dgvEventos.Size = new System.Drawing.Size(944, 315);
             this.dgvEventos.TabIndex = 9;
             this.dgvEventos.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvEventos.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -247,11 +258,31 @@
             this.dgvEventos.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvEventos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEventos_CellContentClick_1);
             // 
-            // dgvNumeroEvento
+            // btnExaminar
             // 
-            this.dgvNumeroEvento.HeaderText = "Número del Evento";
-            this.dgvNumeroEvento.MinimumWidth = 8;
-            this.dgvNumeroEvento.Name = "dgvNumeroEvento";
+            this.btnExaminar.BorderRadius = 24;
+            this.btnExaminar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExaminar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExaminar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExaminar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExaminar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnExaminar.Font = new System.Drawing.Font("Arial Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExaminar.ForeColor = System.Drawing.Color.White;
+            this.btnExaminar.Location = new System.Drawing.Point(464, 515);
+            this.btnExaminar.Name = "btnExaminar";
+            this.btnExaminar.Size = new System.Drawing.Size(272, 45);
+            this.btnExaminar.TabIndex = 5;
+            this.btnExaminar.Text = "Examinar Evento";
+            // 
+            // guna2GradientPanel1
+            // 
+            this.guna2GradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(118, 49);
+            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(946, 77);
+            this.guna2GradientPanel1.TabIndex = 10;
             // 
             // dgvNombreEvento
             // 
@@ -271,67 +302,19 @@
             this.dgvFecha.MinimumWidth = 8;
             this.dgvFecha.Name = "dgvFecha";
             // 
-            // btnExaminar
-            // 
-            this.btnExaminar.BorderRadius = 24;
-            this.btnExaminar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnExaminar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnExaminar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExaminar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnExaminar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnExaminar.Font = new System.Drawing.Font("Arial Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExaminar.ForeColor = System.Drawing.Color.White;
-            this.btnExaminar.Location = new System.Drawing.Point(309, 335);
-            this.btnExaminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnExaminar.Name = "btnExaminar";
-            this.btnExaminar.Size = new System.Drawing.Size(181, 29);
-            this.btnExaminar.TabIndex = 5;
-            this.btnExaminar.Text = "Examinar Evento";
-            // 
-            // guna2GradientPanel1
-            // 
-            this.guna2GradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(79, 32);
-            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(631, 50);
-            this.guna2GradientPanel1.TabIndex = 10;
-            // 
-            // btnCerrarSesion
-            // 
-            this.btnCerrarSesion.Animated = true;
-            this.btnCerrarSesion.AnimatedGIF = true;
-            this.btnCerrarSesion.AutoRoundedCorners = true;
-            this.btnCerrarSesion.BorderRadius = 14;
-            this.btnCerrarSesion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrarSesion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCerrarSesion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCerrarSesion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCerrarSesion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCerrarSesion.FillColor = System.Drawing.Color.Red;
-            this.btnCerrarSesion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(363, 3);
-            this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Size = new System.Drawing.Size(122, 30);
-            this.btnCerrarSesion.TabIndex = 20;
-            this.btnCerrarSesion.Text = "Cerrar Sesión";
-            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
-            // 
             // VistaGeneralUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(745, 403);
+            this.ClientSize = new System.Drawing.Size(1118, 620);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.btnExaminar);
             this.Controls.Add(this.dgvEventos);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.DisplayHeader = false;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "VistaGeneralUsuario";
-            this.Padding = new System.Windows.Forms.Padding(13, 30, 13, 13);
+            this.Padding = new System.Windows.Forms.Padding(20, 46, 20, 20);
             this.Style = MetroFramework.MetroColorStyle.White;
             this.Load += new System.EventHandler(this.VistaGeneralUsuario_Load);
             this.panel2.ResumeLayout(false);
@@ -359,12 +342,11 @@
         private System.Windows.Forms.PictureBox pbBuscar;
         private Guna.UI2.WinForms.Guna2TextBox txtBuscarEvento;
         private Guna.UI2.WinForms.Guna2DataGridView dgvEventos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvNumeroEvento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvNombreEvento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvDescripcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvFecha;
         private Guna.UI2.WinForms.Guna2Button btnExaminar;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2TileButton btnCerrarSesion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvNombreEvento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvDescripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvFecha;
     }
 }

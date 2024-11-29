@@ -20,12 +20,20 @@ namespace ProyectoFinal.Formularios
 
         private void CargarDetalles()
         {
-            // Muestra los detalles del evento
+            // Asegurarse de que el tipo de evento esté en la lista del ComboBox
+            if (!cmbTipoDeEventoElim.Items.Contains(eventoSeleccionado.TipoDeEvento) && !cmbCategoriaElim.Items.Contains(eventoSeleccionado.TipoDeEvento))
+            {
+                cmbTipoDeEventoElim.Items.Add(eventoSeleccionado.TipoDeEvento);
+                cmbCategoriaElim.Items.Add(eventoSeleccionado.Categoría);
+            }
+
+            cmbTipoDeEventoElim.Text = eventoSeleccionado.TipoDeEvento;
+            cmbTipoDeEventoElim.Enabled = false; // Deshabilita la opción de cambio
             txtNombreEvento.Text = eventoSeleccionado.NombreEvento;
             txtDescripcion.Text = eventoSeleccionado.Descripción;
-            txtCategoria.Text = eventoSeleccionado.Categoría;
             mtxtFechaEvento.Text = eventoSeleccionado.Fecha.ToString("dd/MM/yyyy");
-            txtTipoPublico.Text = eventoSeleccionado.TipoPúblico;
+            cmbCategoriaElim.Text = eventoSeleccionado.Categoría;
+            cmbCategoriaElim.Enabled = false; // Deshabilita la opción de cambio
             txtCuposDisp.Text = eventoSeleccionado.CuposDisp.ToString();
             mtxtHInicio.Text = $"{eventoSeleccionado.HoraInicio:00}:00";
             mtxtHFin.Text = $"{eventoSeleccionado.HoraFin:00}:00";
@@ -33,9 +41,9 @@ namespace ProyectoFinal.Formularios
             // Deshabilita la edición
             txtNombreEvento.ReadOnly = true;
             txtDescripcion.ReadOnly = true;
-            txtCategoria.ReadOnly = true;
+            cmbTipoDeEventoElim.DropDownStyle = ComboBoxStyle.DropDownList;
             mtxtFechaEvento.ReadOnly = true;
-            txtTipoPublico.ReadOnly = true;
+            cmbCategoriaElim.DropDownStyle = ComboBoxStyle.DropDownList;
             txtCuposDisp.ReadOnly = true;
             mtxtHInicio.ReadOnly = true;
             mtxtHFin.ReadOnly = true;
@@ -105,16 +113,22 @@ namespace ProyectoFinal.Formularios
             this.Close();
         }
 
-<<<<<<< HEAD
+
         private void EliminarEvento_Load(object sender, EventArgs e)
-=======
+        {
+
+        }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
         private void cmbImagen_SelectedIndexChanged(object sender, EventArgs e)
->>>>>>> e0fc8588fb5b5422e7bafb2e1719545fcf06807b
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }

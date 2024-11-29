@@ -33,7 +33,7 @@ namespace ProyectoFinal.Formularios
                 foreach (var evento in eventos)
                 {
                     // Suponiendo que la primera columna en el DataGridView es para el ID del evento
-                    dgvEventos.Rows.Add(evento.ID, evento.NombreEvento, evento.Descripción, evento.Fecha.ToString("dd/MM/yyyy"));
+                    dgvEventos.Rows.Add(evento.NombreEvento, evento.Descripción, evento.Fecha.ToString("dd/MM/yyyy"));
                 }
             }
             else

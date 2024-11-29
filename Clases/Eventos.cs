@@ -15,9 +15,9 @@ namespace ProyectoFinal.Clases
         public int ID { get; set; }
         public string NombreEvento { get; set; }
         public string Descripción { get; set; }
-        public string Categoría { get; set; }
+        public string TipoDeEvento { get; set; }
         public DateTime Fecha { get; set; } // Cambiado a DateTime
-        public string TipoPúblico { get; set; }
+        public string Categoría { get; set; }
         public int CuposDisp { get; set; }
         public int HoraInicio { get; set; }
         public int HoraFin { get; set; }
