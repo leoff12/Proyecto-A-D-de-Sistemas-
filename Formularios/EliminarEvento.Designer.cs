@@ -123,7 +123,6 @@
             // 
             // pbImagen
             // 
-<<<<<<< HEAD
             this.pictureBox.ImageRotate = 0F;
             this.pictureBox.Location = new System.Drawing.Point(345, 187);
             this.pictureBox.Margin = new System.Windows.Forms.Padding(2);
@@ -132,7 +131,6 @@
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 24;
             this.pictureBox.TabStop = false;
-=======
             this.pbImagen.ImageRotate = 0F;
             this.pbImagen.Location = new System.Drawing.Point(788, 299);
             this.pbImagen.Name = "pbImagen";
@@ -140,7 +138,6 @@
             this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagen.TabIndex = 24;
             this.pbImagen.TabStop = false;
->>>>>>> e0fc8588fb5b5422e7bafb2e1719545fcf06807b
             // 
             // cmbImagen
             // 
@@ -463,15 +460,12 @@
             this.lblAgregarEvento.Location = new System.Drawing.Point(61, 21);
             this.lblAgregarEvento.Margin = new System.Windows.Forms.Padding(2);
             this.lblAgregarEvento.Name = "lblAgregarEvento";
-<<<<<<< HEAD
             this.lblAgregarEvento.Size = new System.Drawing.Size(201, 26);
             this.lblAgregarEvento.TabIndex = 3;
             this.lblAgregarEvento.Text = "ELIMINAR  EVENTO";
-=======
             this.lblAgregarEvento.Size = new System.Drawing.Size(309, 38);
             this.lblAgregarEvento.TabIndex = 3;
             this.lblAgregarEvento.Text = "ELIMINAR EVENTO";
->>>>>>> e0fc8588fb5b5422e7bafb2e1719545fcf06807b
             // 
             // pbLogoUAM
             // 

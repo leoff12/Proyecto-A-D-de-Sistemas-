@@ -54,16 +54,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnToggleMenu = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pbInicioAdmin = new System.Windows.Forms.PictureBox();
-            this.txtCategoria = new Guna.UI2.WinForms.Guna2TextBox();
-            this.panel2.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.guna2PanelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnToggleMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNombreEvento
@@ -535,9 +530,5 @@
         private System.Windows.Forms.PictureBox btnToggleMenu;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
-=======
-        private System.Windows.Forms.PictureBox pbInicioAdmin;
-        private Guna.UI2.WinForms.Guna2TextBox txtCategoria;
->>>>>>> e0fc8588fb5b5422e7bafb2e1719545fcf06807b
     }
 }
