@@ -33,7 +33,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pbMensajes = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pbInicio = new System.Windows.Forms.PictureBox();
+            this.pbDetallesRegresar = new System.Windows.Forms.PictureBox();
             this.lblInicio = new System.Windows.Forms.Label();
             this.pbMas = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -53,10 +53,11 @@
             this.lblHoraDeInicio = new System.Windows.Forms.Label();
             this.lblHoraDeFin = new System.Windows.Forms.Label();
             this.lblDetallesDescripcion = new System.Windows.Forms.Label();
+            this.btnReservarEvento = new Guna.UI2.WinForms.Guna2Button();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMensajes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbInicio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDetallesRegresar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMas)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).BeginInit();
@@ -83,7 +84,7 @@
             this.panel2.BackColor = System.Drawing.Color.Azure;
             this.panel2.Controls.Add(this.pbMensajes);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pbInicio);
+            this.panel2.Controls.Add(this.pbDetallesRegresar);
             this.panel2.Controls.Add(this.lblInicio);
             this.panel2.Controls.Add(this.pbMas);
             this.panel2.Location = new System.Drawing.Point(-12, -2);
@@ -112,26 +113,27 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Mensajes";
             // 
-            // pbInicio
+            // pbDetallesRegresar
             // 
-            this.pbInicio.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pbInicio.Image = ((System.Drawing.Image)(resources.GetObject("pbInicio.Image")));
-            this.pbInicio.Location = new System.Drawing.Point(32, 88);
-            this.pbInicio.Name = "pbInicio";
-            this.pbInicio.Size = new System.Drawing.Size(46, 52);
-            this.pbInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbInicio.TabIndex = 3;
-            this.pbInicio.TabStop = false;
+            this.pbDetallesRegresar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pbDetallesRegresar.Image = ((System.Drawing.Image)(resources.GetObject("pbDetallesRegresar.Image")));
+            this.pbDetallesRegresar.Location = new System.Drawing.Point(32, 88);
+            this.pbDetallesRegresar.Name = "pbDetallesRegresar";
+            this.pbDetallesRegresar.Size = new System.Drawing.Size(46, 52);
+            this.pbDetallesRegresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbDetallesRegresar.TabIndex = 3;
+            this.pbDetallesRegresar.TabStop = false;
+            this.pbDetallesRegresar.Click += new System.EventHandler(this.pbDetallesRegresar_Click);
             // 
             // lblInicio
             // 
             this.lblInicio.AutoSize = true;
             this.lblInicio.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInicio.Location = new System.Drawing.Point(22, 142);
+            this.lblInicio.Location = new System.Drawing.Point(13, 143);
             this.lblInicio.Name = "lblInicio";
-            this.lblInicio.Size = new System.Drawing.Size(67, 27);
+            this.lblInicio.Size = new System.Drawing.Size(97, 27);
             this.lblInicio.TabIndex = 3;
-            this.lblInicio.Text = "Inicio";
+            this.lblInicio.Text = "Regresar";
             // 
             // pbMas
             // 
@@ -178,6 +180,7 @@
             // 
             // gbDetallesEvento
             // 
+            this.gbDetallesEvento.Controls.Add(this.btnReservarEvento);
             this.gbDetallesEvento.Controls.Add(this.lblDetallesDescripcion);
             this.gbDetallesEvento.Controls.Add(this.lblHoraDeFin);
             this.gbDetallesEvento.Controls.Add(this.lblHoraDeInicio);
@@ -192,7 +195,7 @@
             this.gbDetallesEvento.Controls.Add(this.txtCuposDispEvento);
             this.gbDetallesEvento.Controls.Add(this.lblNombreEvento);
             this.gbDetallesEvento.Controls.Add(this.pbDetallesImagenEvento);
-            this.gbDetallesEvento.Font = new System.Drawing.Font("Segoe UI Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbDetallesEvento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbDetallesEvento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.gbDetallesEvento.Location = new System.Drawing.Point(28, 13);
             this.gbDetallesEvento.Name = "gbDetallesEvento";
@@ -284,7 +287,7 @@
             this.mtxFechaEvento.Mask = "00/00/0000";
             this.mtxFechaEvento.Name = "mtxFechaEvento";
             this.mtxFechaEvento.ReadOnly = true;
-            this.mtxFechaEvento.Size = new System.Drawing.Size(158, 37);
+            this.mtxFechaEvento.Size = new System.Drawing.Size(158, 40);
             this.mtxFechaEvento.TabIndex = 6;
             this.mtxFechaEvento.ValidatingType = typeof(System.DateTime);
             // 
@@ -320,7 +323,7 @@
             this.mtxHoraInicioEvento.Mask = "00:00";
             this.mtxHoraInicioEvento.Name = "mtxHoraInicioEvento";
             this.mtxHoraInicioEvento.ReadOnly = true;
-            this.mtxHoraInicioEvento.Size = new System.Drawing.Size(80, 37);
+            this.mtxHoraInicioEvento.Size = new System.Drawing.Size(80, 40);
             this.mtxHoraInicioEvento.TabIndex = 8;
             this.mtxHoraInicioEvento.ValidatingType = typeof(System.DateTime);
             // 
@@ -330,7 +333,7 @@
             this.mtxHoraFinEvento.Mask = "00:00";
             this.mtxHoraFinEvento.Name = "mtxHoraFinEvento";
             this.mtxHoraFinEvento.ReadOnly = true;
-            this.mtxHoraFinEvento.Size = new System.Drawing.Size(81, 37);
+            this.mtxHoraFinEvento.Size = new System.Drawing.Size(81, 40);
             this.mtxHoraFinEvento.TabIndex = 9;
             this.mtxHoraFinEvento.ValidatingType = typeof(System.DateTime);
             // 
@@ -394,6 +397,22 @@
             this.lblDetallesDescripcion.Text = "Descripción del Evento:";
             this.lblDetallesDescripcion.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // btnReservarEvento
+            // 
+            this.btnReservarEvento.BackColor = System.Drawing.Color.Transparent;
+            this.btnReservarEvento.BorderRadius = 15;
+            this.btnReservarEvento.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnReservarEvento.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnReservarEvento.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnReservarEvento.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnReservarEvento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReservarEvento.ForeColor = System.Drawing.Color.White;
+            this.btnReservarEvento.Location = new System.Drawing.Point(720, 363);
+            this.btnReservarEvento.Name = "btnReservarEvento";
+            this.btnReservarEvento.Size = new System.Drawing.Size(180, 45);
+            this.btnReservarEvento.TabIndex = 15;
+            this.btnReservarEvento.Text = "Reservar";
+            // 
             // DetalleEventoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -410,7 +429,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMensajes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbInicio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDetallesRegresar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMas)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).EndInit();
@@ -427,7 +446,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pbMensajes;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pbInicio;
+        private System.Windows.Forms.PictureBox pbDetallesRegresar;
         private System.Windows.Forms.Label lblInicio;
         private System.Windows.Forms.PictureBox pbMas;
         private System.Windows.Forms.Panel panel1;
@@ -447,5 +466,6 @@
         private System.Windows.Forms.Label lblDetallesDescripcion;
         private System.Windows.Forms.Label lblHoraDeFin;
         private System.Windows.Forms.Label lblHoraDeInicio;
+        private Guna.UI2.WinForms.Guna2Button btnReservarEvento;
     }
 }

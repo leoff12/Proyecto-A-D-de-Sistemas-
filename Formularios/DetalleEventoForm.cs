@@ -115,5 +115,12 @@ namespace ProyectoFinal.Formularios
         {
 
         }
+
+        private void pbDetallesRegresar_Click(object sender, EventArgs e)
+        {
+            VistaGeneralUsuario vistaGeneralUsuario = new VistaGeneralUsuario();
+            vistaGeneralUsuario.Show();
+            this.Close();
+        }
     }
 }
