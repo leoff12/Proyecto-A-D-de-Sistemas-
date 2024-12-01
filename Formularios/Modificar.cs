@@ -87,5 +87,19 @@ namespace ProyectoFinal.Formularios
         {
 
         }
+
+        private void pbMensajes_Click(object sender, EventArgs e)
+        {
+            MensajesAdministrador mensajesAdministrador = new MensajesAdministrador();
+            mensajesAdministrador.Show();
+            this.Close();
+        }
+
+        private void btnCerrarSesiónAdmin_Click(object sender, EventArgs e)
+        {
+            AdminLoginForm adminLoginForm = new AdminLoginForm();
+            adminLoginForm.Show();
+            this.Close();
+        }
     }
 }

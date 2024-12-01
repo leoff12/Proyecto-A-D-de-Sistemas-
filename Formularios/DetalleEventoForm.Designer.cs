@@ -385,7 +385,7 @@
             this.guna2PanelMenu.Name = "guna2PanelMenu";
             this.guna2PanelMenu.ShadowDecoration.BorderRadius = 10;
             this.guna2PanelMenu.ShadowDecoration.Color = System.Drawing.Color.SandyBrown;
-            this.guna2PanelMenu.Size = new System.Drawing.Size(38, 411);
+            this.guna2PanelMenu.Size = new System.Drawing.Size(48, 411);
             this.guna2PanelMenu.TabIndex = 20;
             // 
             // btnCerrarSesiónAdmin
@@ -446,9 +446,9 @@
             // pbAdministrador
             // 
             this.pbAdministrador.BackColor = System.Drawing.Color.Transparent;
-            this.pbAdministrador.Image = ((System.Drawing.Image)(resources.GetObject("pbAdministrador.Image")));
+            this.pbAdministrador.Image = global::ProyectoFinal.Properties.Resources._67654f6b2a7d10436445455b1458935f1;
             this.pbAdministrador.ImageRotate = 0F;
-            this.pbAdministrador.Location = new System.Drawing.Point(-2, 3);
+            this.pbAdministrador.Location = new System.Drawing.Point(3, 3);
             this.pbAdministrador.Name = "pbAdministrador";
             this.pbAdministrador.Size = new System.Drawing.Size(39, 32);
             this.pbAdministrador.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

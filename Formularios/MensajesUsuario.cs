@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal.Formularios
 {
-    public partial class MensajesUsuario : Form
+    public partial class MensajesUsuario : MetroFramework.Forms.MetroForm
     {
         DetalleEventoForm detalleEventoForm = new DetalleEventoForm();
         public MensajesUsuario()
@@ -64,6 +64,13 @@ namespace ProyectoFinal.Formularios
         {
             VistaGeneralUsuario vistaGeneralUsuario = new VistaGeneralUsuario();
             vistaGeneralUsuario.Show();
+            this.Close();
+        }
+
+        private void btnCerrarSesiónAdmin_Click(object sender, EventArgs e)
+        {
+            VistaGeneralUsuario VistaGeneralUsuario = new VistaGeneralUsuario();
+            VistaGeneralUsuario.Show();
             this.Close();
         }
     }
