@@ -365,7 +365,7 @@
             this.pbDetallesImagenEvento.Location = new System.Drawing.Point(15, 55);
             this.pbDetallesImagenEvento.Margin = new System.Windows.Forms.Padding(2);
             this.pbDetallesImagenEvento.Name = "pbDetallesImagenEvento";
-            this.pbDetallesImagenEvento.Size = new System.Drawing.Size(183, 211);
+            this.pbDetallesImagenEvento.Size = new System.Drawing.Size(185, 232);
             this.pbDetallesImagenEvento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbDetallesImagenEvento.TabIndex = 0;
             this.pbDetallesImagenEvento.TabStop = false;
@@ -385,7 +385,7 @@
             this.guna2PanelMenu.Name = "guna2PanelMenu";
             this.guna2PanelMenu.ShadowDecoration.BorderRadius = 10;
             this.guna2PanelMenu.ShadowDecoration.Color = System.Drawing.Color.SandyBrown;
-            this.guna2PanelMenu.Size = new System.Drawing.Size(43, 411);
+            this.guna2PanelMenu.Size = new System.Drawing.Size(38, 411);
             this.guna2PanelMenu.TabIndex = 20;
             // 
             // btnCerrarSesiónAdmin

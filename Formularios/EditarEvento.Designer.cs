@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditarEvento));
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.chkAccesibleMod = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.pbLogoUAM = new System.Windows.Forms.PictureBox();
             this.cmbCategoriaMod = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbTipoDeEventoMod = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnGuardarCambios = new Guna.UI2.WinForms.Guna2Button();
@@ -51,7 +52,6 @@
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.txtNombreEvento = new System.Windows.Forms.TextBox();
-            this.pbLogoUAM = new System.Windows.Forms.PictureBox();
             this.guna2PanelMenu = new Guna.UI2.WinForms.Guna2Panel();
             this.pbMensajesAdmin = new System.Windows.Forms.PictureBox();
             this.btnCerrarSesiónAdmin = new Guna.UI2.WinForms.Guna2TileButton();
@@ -61,8 +61,8 @@
             this.pbAdministrador = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pbInicio = new System.Windows.Forms.PictureBox();
             this.guna2GroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.guna2PanelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMensajesAdmin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnToggleMenu)).BeginInit();
@@ -103,7 +103,7 @@
             this.guna2GroupBox1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
             this.guna2GroupBox1.Location = new System.Drawing.Point(42, 32);
-            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.Size = new System.Drawing.Size(650, 408);
             this.guna2GroupBox1.TabIndex = 8;
@@ -118,11 +118,12 @@
             this.chkAccesibleMod.CheckedState.BorderThickness = 0;
             this.chkAccesibleMod.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.chkAccesibleMod.CheckMarkColor = System.Drawing.Color.Navy;
+            this.chkAccesibleMod.Font = new System.Drawing.Font("Ebrima", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkAccesibleMod.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.chkAccesibleMod.Location = new System.Drawing.Point(486, 339);
-            this.chkAccesibleMod.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkAccesibleMod.Margin = new System.Windows.Forms.Padding(2);
             this.chkAccesibleMod.Name = "chkAccesibleMod";
-            this.chkAccesibleMod.Size = new System.Drawing.Size(106, 26);
+            this.chkAccesibleMod.Size = new System.Drawing.Size(112, 29);
             this.chkAccesibleMod.TabIndex = 28;
             this.chkAccesibleMod.Text = "Accesible";
             this.chkAccesibleMod.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -130,6 +131,18 @@
             this.chkAccesibleMod.UncheckedState.BorderThickness = 0;
             this.chkAccesibleMod.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.chkAccesibleMod.UseVisualStyleBackColor = false;
+            // 
+            // pbLogoUAM
+            // 
+            this.pbLogoUAM.BackColor = System.Drawing.Color.Transparent;
+            this.pbLogoUAM.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoUAM.Image")));
+            this.pbLogoUAM.Location = new System.Drawing.Point(561, 0);
+            this.pbLogoUAM.Margin = new System.Windows.Forms.Padding(2);
+            this.pbLogoUAM.Name = "pbLogoUAM";
+            this.pbLogoUAM.Size = new System.Drawing.Size(87, 39);
+            this.pbLogoUAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLogoUAM.TabIndex = 2;
+            this.pbLogoUAM.TabStop = false;
             // 
             // cmbCategoriaMod
             // 
@@ -143,7 +156,7 @@
             this.cmbCategoriaMod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbCategoriaMod.ItemHeight = 30;
             this.cmbCategoriaMod.Location = new System.Drawing.Point(13, 255);
-            this.cmbCategoriaMod.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbCategoriaMod.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCategoriaMod.Name = "cmbCategoriaMod";
             this.cmbCategoriaMod.Size = new System.Drawing.Size(133, 36);
             this.cmbCategoriaMod.TabIndex = 27;
@@ -160,7 +173,7 @@
             this.cmbTipoDeEventoMod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbTipoDeEventoMod.ItemHeight = 30;
             this.cmbTipoDeEventoMod.Location = new System.Drawing.Point(13, 194);
-            this.cmbTipoDeEventoMod.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbTipoDeEventoMod.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTipoDeEventoMod.Name = "cmbTipoDeEventoMod";
             this.cmbTipoDeEventoMod.Size = new System.Drawing.Size(133, 36);
             this.cmbTipoDeEventoMod.TabIndex = 26;
@@ -176,7 +189,7 @@
             this.btnGuardarCambios.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCambios.ForeColor = System.Drawing.SystemColors.Control;
             this.btnGuardarCambios.Location = new System.Drawing.Point(222, 361);
-            this.btnGuardarCambios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGuardarCambios.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardarCambios.Name = "btnGuardarCambios";
             this.btnGuardarCambios.Size = new System.Drawing.Size(141, 29);
             this.btnGuardarCambios.TabIndex = 25;
@@ -186,9 +199,11 @@
             // 
             // pictureBox
             // 
+            this.pictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox.BorderRadius = 10;
             this.pictureBox.ImageRotate = 0F;
             this.pictureBox.Location = new System.Drawing.Point(392, 205);
-            this.pictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(200, 130);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -208,7 +223,7 @@
             this.cmbImagen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbImagen.ItemHeight = 30;
             this.cmbImagen.Location = new System.Drawing.Point(13, 315);
-            this.cmbImagen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbImagen.Margin = new System.Windows.Forms.Padding(2);
             this.cmbImagen.Name = "cmbImagen";
             this.cmbImagen.Size = new System.Drawing.Size(95, 36);
             this.cmbImagen.TabIndex = 23;
@@ -291,11 +306,12 @@
             // 
             // mtxtHFin
             // 
+            this.mtxtHFin.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mtxtHFin.Location = new System.Drawing.Point(524, 156);
-            this.mtxtHFin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mtxtHFin.Margin = new System.Windows.Forms.Padding(2);
             this.mtxtHFin.Mask = "00:00";
             this.mtxtHFin.Name = "mtxtHFin";
-            this.mtxtHFin.Size = new System.Drawing.Size(51, 29);
+            this.mtxtHFin.Size = new System.Drawing.Size(38, 29);
             this.mtxtHFin.TabIndex = 15;
             this.mtxtHFin.ValidatingType = typeof(System.DateTime);
             // 
@@ -314,11 +330,12 @@
             // 
             // mtxtHInicio
             // 
+            this.mtxtHInicio.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mtxtHInicio.Location = new System.Drawing.Point(525, 122);
-            this.mtxtHInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mtxtHInicio.Margin = new System.Windows.Forms.Padding(2);
             this.mtxtHInicio.Mask = "00:00";
             this.mtxtHInicio.Name = "mtxtHInicio";
-            this.mtxtHInicio.Size = new System.Drawing.Size(51, 29);
+            this.mtxtHInicio.Size = new System.Drawing.Size(37, 29);
             this.mtxtHInicio.TabIndex = 13;
             this.mtxtHInicio.ValidatingType = typeof(System.DateTime);
             // 
@@ -337,11 +354,12 @@
             // 
             // mtxtFechaEvento
             // 
-            this.mtxtFechaEvento.Location = new System.Drawing.Point(524, 89);
-            this.mtxtFechaEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mtxtFechaEvento.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtxtFechaEvento.Location = new System.Drawing.Point(525, 92);
+            this.mtxtFechaEvento.Margin = new System.Windows.Forms.Padding(2);
             this.mtxtFechaEvento.Mask = "00/00/0000";
             this.mtxtFechaEvento.Name = "mtxtFechaEvento";
-            this.mtxtFechaEvento.Size = new System.Drawing.Size(68, 29);
+            this.mtxtFechaEvento.Size = new System.Drawing.Size(67, 28);
             this.mtxtFechaEvento.TabIndex = 11;
             this.mtxtFechaEvento.ValidatingType = typeof(System.DateTime);
             // 
@@ -411,22 +429,10 @@
             // 
             this.txtNombreEvento.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtNombreEvento.Location = new System.Drawing.Point(13, 67);
-            this.txtNombreEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreEvento.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreEvento.Name = "txtNombreEvento";
             this.txtNombreEvento.Size = new System.Drawing.Size(195, 29);
             this.txtNombreEvento.TabIndex = 7;
-            // 
-            // pbLogoUAM
-            // 
-            this.pbLogoUAM.BackColor = System.Drawing.Color.Transparent;
-            this.pbLogoUAM.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoUAM.Image")));
-            this.pbLogoUAM.Location = new System.Drawing.Point(502, 0);
-            this.pbLogoUAM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pbLogoUAM.Name = "pbLogoUAM";
-            this.pbLogoUAM.Size = new System.Drawing.Size(90, 36);
-            this.pbLogoUAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbLogoUAM.TabIndex = 2;
-            this.pbLogoUAM.TabStop = false;
             // 
             // guna2PanelMenu
             // 
@@ -472,7 +478,7 @@
             this.btnCerrarSesiónAdmin.FillColor = System.Drawing.Color.Red;
             this.btnCerrarSesiónAdmin.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrarSesiónAdmin.ForeColor = System.Drawing.Color.White;
-            this.btnCerrarSesiónAdmin.Location = new System.Drawing.Point(51, 320);
+            this.btnCerrarSesiónAdmin.Location = new System.Drawing.Point(46, 393);
             this.btnCerrarSesiónAdmin.Name = "btnCerrarSesiónAdmin";
             this.btnCerrarSesiónAdmin.Size = new System.Drawing.Size(108, 28);
             this.btnCerrarSesiónAdmin.TabIndex = 18;
@@ -545,7 +551,7 @@
             this.Controls.Add(this.guna2PanelMenu);
             this.Controls.Add(this.guna2GroupBox1);
             this.DisplayHeader = false;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EditarEvento";
             this.Padding = new System.Windows.Forms.Padding(20, 30, 20, 20);
             this.Style = MetroFramework.MetroColorStyle.White;
@@ -553,8 +559,8 @@
             this.Load += new System.EventHandler(this.EditarEvento_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.guna2PanelMenu.ResumeLayout(false);
             this.guna2PanelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMensajesAdmin)).EndInit();

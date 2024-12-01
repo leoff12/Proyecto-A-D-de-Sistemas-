@@ -273,6 +273,16 @@ namespace ProyectoFinal.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap magnify_glass_14987632 {
+            get {
+                object obj = ResourceManager.GetObject("magnify-glass_14987632", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mas {
             get {
                 object obj = ResourceManager.GetObject("mas", resourceCulture);
@@ -306,6 +316,16 @@ namespace ProyectoFinal.Properties {
         internal static System.Drawing.Bitmap search_113492531 {
             get {
                 object obj = ResourceManager.GetObject("search_113492531", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_6810296 {
+            get {
+                object obj = ResourceManager.GetObject("search_6810296", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

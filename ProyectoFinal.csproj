@@ -248,6 +248,8 @@
     <Content Include="Imagenes\images %281%29.jpeg" />
     <Content Include="Imagenes\png-transparent-child-sports-coach-sports-association-sport-of-athletics-social-group-line-silhouette-thumbnail.png" />
     <Content Include="Recursos\image.png" />
+    <None Include="Resources\magnify-glass_14987632.png" />
+    <None Include="Resources\search_6810296.png" />
     <None Include="Resources\search_113492531.png" />
     <None Include="Resources\search_11349253.png" />
     <None Include="Resources\chat_45180341.png" />

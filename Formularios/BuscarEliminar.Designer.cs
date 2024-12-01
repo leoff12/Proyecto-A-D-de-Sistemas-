@@ -228,7 +228,7 @@
             this.guna2PanelMenu.Name = "guna2PanelMenu";
             this.guna2PanelMenu.ShadowDecoration.BorderRadius = 10;
             this.guna2PanelMenu.ShadowDecoration.Color = System.Drawing.Color.SandyBrown;
-            this.guna2PanelMenu.Size = new System.Drawing.Size(176, 366);
+            this.guna2PanelMenu.Size = new System.Drawing.Size(35, 366);
             this.guna2PanelMenu.TabIndex = 19;
             // 
             // btnCerrarSesiónAdmin
@@ -326,7 +326,8 @@
             // 
             // pbBuscar
             // 
-            this.pbBuscar.Image = global::ProyectoFinal.Properties.Resources.search_11349253;
+            this.pbBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.pbBuscar.Image = global::ProyectoFinal.Properties.Resources.magnify_glass_14987632;
             this.pbBuscar.Location = new System.Drawing.Point(619, 7);
             this.pbBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.pbBuscar.Name = "pbBuscar";
