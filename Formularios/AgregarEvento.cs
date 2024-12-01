@@ -196,7 +196,30 @@ namespace ProyectoFinal.Formularios
         }
 
         private bool menuExpandido = true;
-        private void btnToggleMenu_Click(object sender, EventArgs e)
+
+
+        private void pbMensajesAdmin(object sender, EventArgs e)
+        {
+            MensajesAdministrador mensajesAdministrador = new MensajesAdministrador();
+            mensajesAdministrador.Show();
+            this.Close();
+        }
+
+        private void btnCerrarSesiónAdmin_Click(object sender, EventArgs e)
+        {
+            AdminLoginForm adminLoginForm = new AdminLoginForm();
+            adminLoginForm.Show();
+            this.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            MensajesAdministrador mensajesAdministrador = new MensajesAdministrador();
+            mensajesAdministrador.Show();
+            this.Close();
+        }
+
+        private void btnToggleMenu_Click_1(object sender, EventArgs e)
         {
             if (menuExpandido)
             {
@@ -215,7 +238,7 @@ namespace ProyectoFinal.Formularios
             }
             else
             {
-                guna2PanelMenu.Width = 100; // Expandir el ancho del panel
+                guna2PanelMenu.Width = 187; // Expandir el ancho del panel
                 menuExpandido = true;
 
                 // Restaurar texto de los botones
@@ -230,4 +253,5 @@ namespace ProyectoFinal.Formularios
             }
         }
     }
+    
 }

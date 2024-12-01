@@ -242,9 +242,23 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Imagenes\eventos.jpg" />
+    <Content Include="Imagenes\eventos2.jpg" />
+    <Content Include="Imagenes\eventos3.jpg" />
     <Content Include="Imagenes\images %281%29.jpeg" />
     <Content Include="Imagenes\png-transparent-child-sports-coach-sports-association-sport-of-athletics-social-group-line-silhouette-thumbnail.png" />
     <Content Include="Recursos\image.png" />
+    <None Include="Resources\search_113492531.png" />
+    <None Include="Resources\search_11349253.png" />
+    <None Include="Resources\chat_45180341.png" />
+    <None Include="Resources\chat_4518034.png" />
+    <None Include="Resources\email_146742441.gif" />
+    <None Include="Resources\home_100230672.png" />
+    <None Include="Resources\mas.png" />
+    <None Include="Resources\settings_13895453.png" />
+    <None Include="Resources\Captura de pantalla 2024-11-30 2146401.png" />
+    <None Include="Resources\Captura de pantalla 2024-11-30 214640.png" />
+    <None Include="Resources\logo-uam-2.png" />
     <None Include="Resources\speech-bubble_8716838.gif" />
     <None Include="Resources\logout_17905742.gif" />
     <None Include="Resources\email_14674244.gif" />

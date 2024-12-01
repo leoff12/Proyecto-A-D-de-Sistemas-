@@ -268,6 +268,7 @@
             this.Name = "InicioSesiónUsuario";
             this.Padding = new System.Windows.Forms.Padding(13, 60, 13, 13);
             this.Style = MetroFramework.MetroColorStyle.White;
+            this.Load += new System.EventHandler(this.InicioSesiónUsuario_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

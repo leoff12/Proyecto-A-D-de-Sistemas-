@@ -19,24 +19,6 @@ namespace ProyectoFinal.Formularios
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pbMensajes_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-        private bool menuExpandido = true;
-
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             AgregarEvento agregarEvento = new AgregarEvento();
@@ -44,11 +26,6 @@ namespace ProyectoFinal.Formularios
             agregarEvento.Show();
 
             this.Close();
-        }
-
-        private void FrmAdmin_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -72,6 +49,8 @@ namespace ProyectoFinal.Formularios
             this.Close();
         }
 
+        private bool menuExpandido = true; // Indica si el menú está expandido
+       
         private void btnToggleMenu_Click(object sender, EventArgs e)
         {
             if (menuExpandido)
@@ -91,7 +70,7 @@ namespace ProyectoFinal.Formularios
             }
             else
             {
-                guna2PanelMenu.Width = 100; // Expandir el ancho del panel
+                guna2PanelMenu.Width = 187; // Expandir el ancho del panel
                 menuExpandido = true;
 
                 // Restaurar texto de los botones
@@ -104,11 +83,6 @@ namespace ProyectoFinal.Formularios
                     }
                 }
             }
-        }
-
-        private void pbInicio_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -124,6 +98,16 @@ namespace ProyectoFinal.Formularios
             MensajesAdministrador mensajesAdministrador = new MensajesAdministrador();
             mensajesAdministrador.Show();
             this.Close();
+        }
+
+        private void guna2PanelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void timerMenuAnimacion_Tick(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -38,10 +38,12 @@
             this.lblHInicio = new System.Windows.Forms.Label();
             this.lblHFin = new System.Windows.Forms.Label();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.pbLogoUAM = new System.Windows.Forms.PictureBox();
             this.chkAccesible = new Guna.UI2.WinForms.Guna2CheckBox();
             this.cmbCategoria = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbTipoDeEvento = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnGuardarEvento = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.cmbImagen = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblImagen = new System.Windows.Forms.Label();
             this.lblCategoria = new System.Windows.Forms.Label();
@@ -52,37 +54,42 @@
             this.mtxtHInicio = new System.Windows.Forms.MaskedTextBox();
             this.txtCategoria = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PanelMenu = new Guna.UI2.WinForms.Guna2Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCerrarSesiónAdmin = new Guna.UI2.WinForms.Guna2TileButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblInicio = new System.Windows.Forms.Label();
             this.btnToggleMenu = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pbAdministrador = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GroupBox1.SuspendLayout();
-            this.guna2PanelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnToggleMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            this.guna2PanelMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnToggleMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAdministrador)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNombreEvento
             // 
             this.txtNombreEvento.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtNombreEvento.Location = new System.Drawing.Point(20, 103);
+            this.txtNombreEvento.Location = new System.Drawing.Point(14, 62);
+            this.txtNombreEvento.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreEvento.Name = "txtNombreEvento";
-            this.txtNombreEvento.Size = new System.Drawing.Size(290, 40);
+            this.txtNombreEvento.Size = new System.Drawing.Size(195, 29);
             this.txtNombreEvento.TabIndex = 7;
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitulo.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.Black;
-            this.lblTitulo.Location = new System.Drawing.Point(16, 77);
+            this.lblTitulo.Location = new System.Drawing.Point(11, 43);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(156, 23);
+            this.lblTitulo.Size = new System.Drawing.Size(114, 17);
             this.lblTitulo.TabIndex = 4;
             this.lblTitulo.Text = "Título del Evento";
             // 
@@ -90,16 +97,18 @@
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.BackColor = System.Drawing.Color.Transparent;
-            this.lblDescripcion.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescripcion.ForeColor = System.Drawing.Color.Black;
-            this.lblDescripcion.Location = new System.Drawing.Point(15, 146);
+            this.lblDescripcion.Location = new System.Drawing.Point(11, 93);
+            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(203, 23);
+            this.lblDescripcion.Size = new System.Drawing.Size(149, 17);
             this.lblDescripcion.TabIndex = 6;
             this.lblDescripcion.Text = "Descripción del Evento";
             // 
             // txtDescripcion
             // 
+            this.txtDescripcion.BorderRadius = 5;
             this.txtDescripcion.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDescripcion.DefaultText = "";
             this.txtDescripcion.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -109,33 +118,35 @@
             this.txtDescripcion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDescripcion.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDescripcion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDescripcion.Location = new System.Drawing.Point(20, 171);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtDescripcion.Location = new System.Drawing.Point(13, 111);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.PasswordChar = '\0';
             this.txtDescripcion.PlaceholderText = "";
             this.txtDescripcion.SelectedText = "";
-            this.txtDescripcion.Size = new System.Drawing.Size(291, 97);
+            this.txtDescripcion.Size = new System.Drawing.Size(194, 63);
             this.txtDescripcion.TabIndex = 8;
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.BackColor = System.Drawing.Color.Transparent;
-            this.lblFecha.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.Color.Black;
-            this.lblFecha.Location = new System.Drawing.Point(572, 125);
+            this.lblFecha.Location = new System.Drawing.Point(380, 95);
+            this.lblFecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(155, 23);
+            this.lblFecha.Size = new System.Drawing.Size(112, 17);
             this.lblFecha.TabIndex = 9;
             this.lblFecha.Text = "Fecha del Evento";
             // 
             // mtxtFechaEvento
             // 
-            this.mtxtFechaEvento.Location = new System.Drawing.Point(777, 114);
+            this.mtxtFechaEvento.Location = new System.Drawing.Point(528, 87);
+            this.mtxtFechaEvento.Margin = new System.Windows.Forms.Padding(2);
             this.mtxtFechaEvento.Mask = "00/00/0000";
             this.mtxtFechaEvento.Name = "mtxtFechaEvento";
-            this.mtxtFechaEvento.Size = new System.Drawing.Size(100, 40);
+            this.mtxtFechaEvento.Size = new System.Drawing.Size(67, 29);
             this.mtxtFechaEvento.TabIndex = 11;
             this.mtxtFechaEvento.ValidatingType = typeof(System.DateTime);
             this.mtxtFechaEvento.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mtxtFechaEvento_MaskInputRejected);
@@ -144,11 +155,12 @@
             // 
             this.lblHInicio.AutoSize = true;
             this.lblHInicio.BackColor = System.Drawing.Color.Transparent;
-            this.lblHInicio.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHInicio.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHInicio.ForeColor = System.Drawing.Color.Black;
-            this.lblHInicio.Location = new System.Drawing.Point(572, 171);
+            this.lblHInicio.Location = new System.Drawing.Point(380, 130);
+            this.lblHInicio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHInicio.Name = "lblHInicio";
-            this.lblHInicio.Size = new System.Drawing.Size(104, 23);
+            this.lblHInicio.Size = new System.Drawing.Size(76, 17);
             this.lblHInicio.TabIndex = 12;
             this.lblHInicio.Text = "Hora Inicio";
             // 
@@ -156,11 +168,12 @@
             // 
             this.lblHFin.AutoSize = true;
             this.lblHFin.BackColor = System.Drawing.Color.Transparent;
-            this.lblHFin.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHFin.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHFin.ForeColor = System.Drawing.Color.Black;
-            this.lblHFin.Location = new System.Drawing.Point(572, 220);
+            this.lblHFin.Location = new System.Drawing.Point(380, 163);
+            this.lblHFin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHFin.Name = "lblHFin";
-            this.lblHFin.Size = new System.Drawing.Size(84, 23);
+            this.lblHFin.Size = new System.Drawing.Size(61, 17);
             this.lblHFin.TabIndex = 14;
             this.lblHFin.Text = "Hora Fin";
             // 
@@ -168,7 +181,11 @@
             // 
             this.guna2GroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GroupBox1.BorderRadius = 24;
+            this.guna2GroupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GroupBox1.BorderColor = System.Drawing.Color.LightGray;
+            this.guna2GroupBox1.BorderRadius = 18;
+            this.guna2GroupBox1.BorderThickness = 3;
+            this.guna2GroupBox1.Controls.Add(this.pbLogoUAM);
             this.guna2GroupBox1.Controls.Add(this.chkAccesible);
             this.guna2GroupBox1.Controls.Add(this.cmbCategoria);
             this.guna2GroupBox1.Controls.Add(this.cmbTipoDeEvento);
@@ -190,29 +207,47 @@
             this.guna2GroupBox1.Controls.Add(this.lblDescripcion);
             this.guna2GroupBox1.Controls.Add(this.lblTitulo);
             this.guna2GroupBox1.Controls.Add(this.txtNombreEvento);
-            this.guna2GroupBox1.CustomBorderColor = System.Drawing.SystemColors.Highlight;
-            this.guna2GroupBox1.FillColor = System.Drawing.Color.Silver;
+            this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2GroupBox1.FillColor = System.Drawing.SystemColors.InactiveCaption;
             this.guna2GroupBox1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(80, 55);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(41, 27);
+            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(987, 577);
-            this.guna2GroupBox1.TabIndex = 5;
-            this.guna2GroupBox1.Text = "Información del Evento";
+            this.guna2GroupBox1.Size = new System.Drawing.Size(644, 412);
+            this.guna2GroupBox1.TabIndex = 2;
+            this.guna2GroupBox1.Text = "Agregar Información del Evento";
+            this.guna2GroupBox1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2GroupBox1.TextTransform = Guna.UI2.WinForms.Enums.TextTransform.UpperCase;
             this.guna2GroupBox1.Click += new System.EventHandler(this.guna2GroupBox1_Click);
+            // 
+            // pbLogoUAM
+            // 
+            this.pbLogoUAM.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoUAM.Image")));
+            this.pbLogoUAM.Location = new System.Drawing.Point(516, 0);
+            this.pbLogoUAM.Margin = new System.Windows.Forms.Padding(2);
+            this.pbLogoUAM.Name = "pbLogoUAM";
+            this.pbLogoUAM.Size = new System.Drawing.Size(89, 38);
+            this.pbLogoUAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLogoUAM.TabIndex = 29;
+            this.pbLogoUAM.TabStop = false;
             // 
             // chkAccesible
             // 
+            this.chkAccesible.Animated = true;
             this.chkAccesible.AutoSize = true;
             this.chkAccesible.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.chkAccesible.CheckedState.BorderRadius = 0;
             this.chkAccesible.CheckedState.BorderThickness = 0;
             this.chkAccesible.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.chkAccesible.CheckMarkColor = System.Drawing.SystemColors.Highlight;
-            this.chkAccesible.ForeColor = System.Drawing.Color.Black;
-            this.chkAccesible.Location = new System.Drawing.Point(574, 494);
+            this.chkAccesible.CheckMarkColor = System.Drawing.Color.Navy;
+            this.chkAccesible.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chkAccesible.Font = new System.Drawing.Font("Ebrima", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAccesible.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.chkAccesible.Location = new System.Drawing.Point(471, 328);
+            this.chkAccesible.Margin = new System.Windows.Forms.Padding(2);
             this.chkAccesible.Name = "chkAccesible";
-            this.chkAccesible.Size = new System.Drawing.Size(151, 36);
+            this.chkAccesible.Size = new System.Drawing.Size(112, 29);
             this.chkAccesible.TabIndex = 28;
             this.chkAccesible.Text = "Accesible";
             this.chkAccesible.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -223,6 +258,7 @@
             // cmbCategoria
             // 
             this.cmbCategoria.BackColor = System.Drawing.Color.Transparent;
+            this.cmbCategoria.BorderRadius = 5;
             this.cmbCategoria.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCategoria.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -234,14 +270,16 @@
             "Deportes",
             "Cultura",
             "Educación"});
-            this.cmbCategoria.Location = new System.Drawing.Point(20, 392);
+            this.cmbCategoria.Location = new System.Drawing.Point(13, 255);
+            this.cmbCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Size = new System.Drawing.Size(198, 36);
+            this.cmbCategoria.Size = new System.Drawing.Size(133, 36);
             this.cmbCategoria.TabIndex = 27;
             // 
             // cmbTipoDeEvento
             // 
             this.cmbTipoDeEvento.BackColor = System.Drawing.Color.Transparent;
+            this.cmbTipoDeEvento.BorderRadius = 5;
             this.cmbTipoDeEvento.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbTipoDeEvento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipoDeEvento.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -252,9 +290,10 @@
             this.cmbTipoDeEvento.Items.AddRange(new object[] {
             "PAGA",
             "GRATUITO"});
-            this.cmbTipoDeEvento.Location = new System.Drawing.Point(20, 299);
+            this.cmbTipoDeEvento.Location = new System.Drawing.Point(13, 198);
+            this.cmbTipoDeEvento.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTipoDeEvento.Name = "cmbTipoDeEvento";
-            this.cmbTipoDeEvento.Size = new System.Drawing.Size(198, 36);
+            this.cmbTipoDeEvento.Size = new System.Drawing.Size(133, 36);
             this.cmbTipoDeEvento.TabIndex = 26;
             // 
             // btnGuardarEvento
@@ -266,17 +305,32 @@
             this.btnGuardarEvento.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnGuardarEvento.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnGuardarEvento.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarEvento.ForeColor = System.Drawing.Color.Pink;
-            this.btnGuardarEvento.Location = new System.Drawing.Point(336, 515);
+            this.btnGuardarEvento.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnGuardarEvento.Location = new System.Drawing.Point(224, 371);
+            this.btnGuardarEvento.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardarEvento.Name = "btnGuardarEvento";
-            this.btnGuardarEvento.Size = new System.Drawing.Size(212, 45);
+            this.btnGuardarEvento.Size = new System.Drawing.Size(146, 29);
             this.btnGuardarEvento.TabIndex = 25;
             this.btnGuardarEvento.Text = "Guardar Evento";
+            this.btnGuardarEvento.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.btnGuardarEvento.Tile = true;
             this.btnGuardarEvento.Click += new System.EventHandler(this.btnGuardarEvento_Click);
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.ImageRotate = 0F;
+            this.pictureBox.Location = new System.Drawing.Point(396, 198);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(200, 130);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox.TabIndex = 24;
+            this.pictureBox.TabStop = false;
             // 
             // cmbImagen
             // 
             this.cmbImagen.BackColor = System.Drawing.Color.Transparent;
+            this.cmbImagen.BorderRadius = 5;
             this.cmbImagen.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbImagen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbImagen.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -284,9 +338,10 @@
             this.cmbImagen.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbImagen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbImagen.ItemHeight = 30;
-            this.cmbImagen.Location = new System.Drawing.Point(20, 485);
+            this.cmbImagen.Location = new System.Drawing.Point(14, 321);
+            this.cmbImagen.Margin = new System.Windows.Forms.Padding(2);
             this.cmbImagen.Name = "cmbImagen";
-            this.cmbImagen.Size = new System.Drawing.Size(140, 36);
+            this.cmbImagen.Size = new System.Drawing.Size(95, 36);
             this.cmbImagen.TabIndex = 23;
             this.cmbImagen.SelectedIndexChanged += new System.EventHandler(this.cmbImagen_SelectedIndexChanged);
             // 
@@ -294,11 +349,12 @@
             // 
             this.lblImagen.AutoSize = true;
             this.lblImagen.BackColor = System.Drawing.Color.Transparent;
-            this.lblImagen.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImagen.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblImagen.ForeColor = System.Drawing.Color.Black;
-            this.lblImagen.Location = new System.Drawing.Point(15, 458);
+            this.lblImagen.Location = new System.Drawing.Point(11, 300);
+            this.lblImagen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblImagen.Name = "lblImagen";
-            this.lblImagen.Size = new System.Drawing.Size(167, 23);
+            this.lblImagen.Size = new System.Drawing.Size(123, 17);
             this.lblImagen.TabIndex = 22;
             this.lblImagen.Text = "Imagen del Evento";
             // 
@@ -306,11 +362,12 @@
             // 
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.BackColor = System.Drawing.Color.Transparent;
-            this.lblCategoria.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoria.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategoria.ForeColor = System.Drawing.Color.Black;
-            this.lblCategoria.Location = new System.Drawing.Point(16, 366);
+            this.lblCategoria.Location = new System.Drawing.Point(11, 236);
+            this.lblCategoria.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(95, 23);
+            this.lblCategoria.Size = new System.Drawing.Size(67, 17);
             this.lblCategoria.TabIndex = 20;
             this.lblCategoria.Text = "Categoría";
             // 
@@ -318,16 +375,18 @@
             // 
             this.lblTipoDeEvento.AutoSize = true;
             this.lblTipoDeEvento.BackColor = System.Drawing.Color.Transparent;
-            this.lblTipoDeEvento.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoDeEvento.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipoDeEvento.ForeColor = System.Drawing.Color.Black;
-            this.lblTipoDeEvento.Location = new System.Drawing.Point(15, 272);
+            this.lblTipoDeEvento.Location = new System.Drawing.Point(11, 179);
+            this.lblTipoDeEvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTipoDeEvento.Name = "lblTipoDeEvento";
-            this.lblTipoDeEvento.Size = new System.Drawing.Size(138, 23);
+            this.lblTipoDeEvento.Size = new System.Drawing.Size(101, 17);
             this.lblTipoDeEvento.TabIndex = 19;
             this.lblTipoDeEvento.Text = "Tipo de Evento";
             // 
             // txtCuposDisp
             // 
+            this.txtCuposDisp.BorderRadius = 5;
             this.txtCuposDisp.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCuposDisp.DefaultText = "";
             this.txtCuposDisp.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -337,13 +396,13 @@
             this.txtCuposDisp.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCuposDisp.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCuposDisp.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCuposDisp.Location = new System.Drawing.Point(778, 66);
-            this.txtCuposDisp.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtCuposDisp.Location = new System.Drawing.Point(528, 57);
+            this.txtCuposDisp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCuposDisp.Name = "txtCuposDisp";
             this.txtCuposDisp.PasswordChar = '\0';
             this.txtCuposDisp.PlaceholderText = "";
             this.txtCuposDisp.SelectedText = "";
-            this.txtCuposDisp.Size = new System.Drawing.Size(100, 40);
+            this.txtCuposDisp.Size = new System.Drawing.Size(67, 26);
             this.txtCuposDisp.TabIndex = 17;
             this.txtCuposDisp.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             this.txtCuposDisp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCuposDisp_KeyPress);
@@ -352,29 +411,32 @@
             // 
             this.lblCuposDisp.AutoSize = true;
             this.lblCuposDisp.BackColor = System.Drawing.Color.Transparent;
-            this.lblCuposDisp.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCuposDisp.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCuposDisp.ForeColor = System.Drawing.Color.Black;
-            this.lblCuposDisp.Location = new System.Drawing.Point(572, 77);
+            this.lblCuposDisp.Location = new System.Drawing.Point(380, 66);
+            this.lblCuposDisp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCuposDisp.Name = "lblCuposDisp";
-            this.lblCuposDisp.Size = new System.Drawing.Size(162, 23);
+            this.lblCuposDisp.Size = new System.Drawing.Size(123, 17);
             this.lblCuposDisp.TabIndex = 16;
             this.lblCuposDisp.Text = "Cupos Disponibles";
             // 
             // mtxtHFin
             // 
-            this.mtxtHFin.Location = new System.Drawing.Point(778, 208);
+            this.mtxtHFin.Location = new System.Drawing.Point(528, 156);
+            this.mtxtHFin.Margin = new System.Windows.Forms.Padding(2);
             this.mtxtHFin.Mask = "00:00";
             this.mtxtHFin.Name = "mtxtHFin";
-            this.mtxtHFin.Size = new System.Drawing.Size(74, 40);
+            this.mtxtHFin.Size = new System.Drawing.Size(51, 29);
             this.mtxtHFin.TabIndex = 15;
             this.mtxtHFin.ValidatingType = typeof(System.DateTime);
             // 
             // mtxtHInicio
             // 
-            this.mtxtHInicio.Location = new System.Drawing.Point(777, 160);
+            this.mtxtHInicio.Location = new System.Drawing.Point(528, 124);
+            this.mtxtHInicio.Margin = new System.Windows.Forms.Padding(2);
             this.mtxtHInicio.Mask = "00:00";
             this.mtxtHInicio.Name = "mtxtHInicio";
-            this.mtxtHInicio.Size = new System.Drawing.Size(74, 40);
+            this.mtxtHInicio.Size = new System.Drawing.Size(51, 29);
             this.mtxtHInicio.TabIndex = 13;
             this.mtxtHInicio.ValidatingType = typeof(System.DateTime);
             // 
@@ -400,109 +462,136 @@
             // 
             // guna2PanelMenu
             // 
-            this.guna2PanelMenu.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.guna2PanelMenu.Controls.Add(this.label2);
-            this.guna2PanelMenu.Controls.Add(this.label1);
+            this.guna2PanelMenu.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.guna2PanelMenu.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.guna2PanelMenu.Controls.Add(this.pictureBox1);
+            this.guna2PanelMenu.Controls.Add(this.btnCerrarSesiónAdmin);
+            this.guna2PanelMenu.Controls.Add(this.label3);
+            this.guna2PanelMenu.Controls.Add(this.lblInicio);
             this.guna2PanelMenu.Controls.Add(this.btnToggleMenu);
-            this.guna2PanelMenu.Controls.Add(this.pictureBox6);
+            this.guna2PanelMenu.Controls.Add(this.pbAdministrador);
             this.guna2PanelMenu.Controls.Add(this.pictureBox5);
-            this.guna2PanelMenu.Location = new System.Drawing.Point(0, -2);
-            this.guna2PanelMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2PanelMenu.Location = new System.Drawing.Point(-1, 0);
             this.guna2PanelMenu.Name = "guna2PanelMenu";
-            this.guna2PanelMenu.Size = new System.Drawing.Size(60, 643);
-            this.guna2PanelMenu.TabIndex = 6;
-            this.guna2PanelMenu.Click += new System.EventHandler(this.btnToggleMenu_Click);
+            this.guna2PanelMenu.ShadowDecoration.BorderRadius = 10;
+            this.guna2PanelMenu.ShadowDecoration.Color = System.Drawing.Color.SandyBrown;
+            this.guna2PanelMenu.Size = new System.Drawing.Size(37, 457);
+            this.guna2PanelMenu.TabIndex = 7;
             // 
-            // label2
+            // pictureBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(63, 286);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Mensajes";
+            this.pictureBox1.Image = global::ProyectoFinal.Properties.Resources.chat_45180341;
+            this.pictureBox1.Location = new System.Drawing.Point(85, 151);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 45);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pbMensajesAdmin);
             // 
-            // label1
+            // btnCerrarSesiónAdmin
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(72, 172);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Inicio";
+            this.btnCerrarSesiónAdmin.Animated = true;
+            this.btnCerrarSesiónAdmin.AnimatedGIF = true;
+            this.btnCerrarSesiónAdmin.AutoRoundedCorners = true;
+            this.btnCerrarSesiónAdmin.BorderRadius = 13;
+            this.btnCerrarSesiónAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrarSesiónAdmin.DefaultAutoSize = true;
+            this.btnCerrarSesiónAdmin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCerrarSesiónAdmin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCerrarSesiónAdmin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCerrarSesiónAdmin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCerrarSesiónAdmin.FillColor = System.Drawing.Color.Red;
+            this.btnCerrarSesiónAdmin.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarSesiónAdmin.ForeColor = System.Drawing.Color.White;
+            this.btnCerrarSesiónAdmin.Location = new System.Drawing.Point(51, 320);
+            this.btnCerrarSesiónAdmin.Name = "btnCerrarSesiónAdmin";
+            this.btnCerrarSesiónAdmin.Size = new System.Drawing.Size(108, 28);
+            this.btnCerrarSesiónAdmin.TabIndex = 18;
+            this.btnCerrarSesiónAdmin.Tag = "Cerrar Sesión";
+            this.btnCerrarSesiónAdmin.Text = "Cerrar Sesión";
+            this.btnCerrarSesiónAdmin.Click += new System.EventHandler(this.btnCerrarSesiónAdmin_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(82, 199);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Mensajes";
+            // 
+            // lblInicio
+            // 
+            this.lblInicio.AutoSize = true;
+            this.lblInicio.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInicio.Location = new System.Drawing.Point(87, 113);
+            this.lblInicio.Name = "lblInicio";
+            this.lblInicio.Size = new System.Drawing.Size(42, 16);
+            this.lblInicio.TabIndex = 3;
+            this.lblInicio.Text = "Inicio";
             // 
             // btnToggleMenu
             // 
-            this.btnToggleMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnToggleMenu.Image")));
+            this.btnToggleMenu.Image = global::ProyectoFinal.Properties.Resources.settings_13895453;
             this.btnToggleMenu.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnToggleMenu.InitialImage")));
-            this.btnToggleMenu.Location = new System.Drawing.Point(4, 51);
-            this.btnToggleMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnToggleMenu.Location = new System.Drawing.Point(3, 51);
             this.btnToggleMenu.Name = "btnToggleMenu";
-            this.btnToggleMenu.Size = new System.Drawing.Size(48, 43);
+            this.btnToggleMenu.Size = new System.Drawing.Size(30, 29);
             this.btnToggleMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnToggleMenu.TabIndex = 2;
             this.btnToggleMenu.TabStop = false;
-            this.btnToggleMenu.Click += new System.EventHandler(this.btnToggleMenu_Click);
+            this.btnToggleMenu.Click += new System.EventHandler(this.btnToggleMenu_Click_1);
             // 
-            // pictureBox6
+            // pbAdministrador
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::ProyectoFinal.Properties.Resources.speech_bubble_8716838;
-            this.pictureBox6.Location = new System.Drawing.Point(70, 214);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(66, 65);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 1;
-            this.pictureBox6.TabStop = false;
+            this.pbAdministrador.BackColor = System.Drawing.Color.Transparent;
+            this.pbAdministrador.Image = ((System.Drawing.Image)(resources.GetObject("pbAdministrador.Image")));
+            this.pbAdministrador.ImageRotate = 0F;
+            this.pbAdministrador.Location = new System.Drawing.Point(-2, 3);
+            this.pbAdministrador.Name = "pbAdministrador";
+            this.pbAdministrador.Size = new System.Drawing.Size(39, 32);
+            this.pbAdministrador.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbAdministrador.TabIndex = 19;
+            this.pbAdministrador.TabStop = false;
             // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = global::ProyectoFinal.Properties.Resources.logout_17905742;
-            this.pictureBox5.Location = new System.Drawing.Point(70, 98);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox5.Image = global::ProyectoFinal.Properties.Resources.home_100230672;
+            this.pictureBox5.Location = new System.Drawing.Point(85, 65);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(66, 69);
+            this.pictureBox5.Size = new System.Drawing.Size(44, 45);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pbInicioAdmin_Click);
             // 
-            // pictureBox
-            // 
-            this.pictureBox.ImageRotate = 0F;
-            this.pictureBox.Location = new System.Drawing.Point(574, 288);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(300, 200);
-            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox.TabIndex = 24;
-            this.pictureBox.TabStop = false;
-            // 
             // AgregarEvento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1118, 642);
+            this.ClientSize = new System.Drawing.Size(714, 454);
             this.Controls.Add(this.guna2PanelMenu);
             this.Controls.Add(this.guna2GroupBox1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AgregarEvento";
-            this.Padding = new System.Windows.Forms.Padding(20, 92, 20, 20);
+            this.Padding = new System.Windows.Forms.Padding(13, 60, 13, 13);
             this.Style = MetroFramework.MetroColorStyle.White;
             this.Load += new System.EventHandler(this.AgregarEvento_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.guna2PanelMenu.ResumeLayout(false);
             this.guna2PanelMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnToggleMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAdministrador)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -531,14 +620,17 @@
         private System.Windows.Forms.Label lblImagen;
         private Guna.UI2.WinForms.Guna2Button btnGuardarEvento;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblAgregarEvento;
-        private Guna.UI2.WinForms.Guna2Panel guna2PanelMenu;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox btnToggleMenu;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private Guna.UI2.WinForms.Guna2ComboBox cmbCategoria;
         private Guna.UI2.WinForms.Guna2ComboBox cmbTipoDeEvento;
         private Guna.UI2.WinForms.Guna2CheckBox chkAccesible;
+        private Guna.UI2.WinForms.Guna2Panel guna2PanelMenu;
+        private Guna.UI2.WinForms.Guna2TileButton btnCerrarSesiónAdmin;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblInicio;
+        private System.Windows.Forms.PictureBox btnToggleMenu;
+        private Guna.UI2.WinForms.Guna2PictureBox pbAdministrador;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbLogoUAM;
     }
 }
