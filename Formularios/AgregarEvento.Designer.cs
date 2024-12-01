@@ -38,8 +38,10 @@
             this.lblHInicio = new System.Windows.Forms.Label();
             this.lblHFin = new System.Windows.Forms.Label();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.chkAccesible = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.cmbCategoria = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cmbTipoDeEvento = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnGuardarEvento = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.cmbImagen = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblImagen = new System.Windows.Forms.Label();
             this.lblCategoria = new System.Windows.Forms.Label();
@@ -55,14 +57,13 @@
             this.btnToggleMenu = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.cmbTipoDeEvento = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cmbCategoria = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.pictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.guna2PanelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnToggleMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNombreEvento
@@ -168,6 +169,7 @@
             this.guna2GroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2GroupBox1.BorderRadius = 24;
+            this.guna2GroupBox1.Controls.Add(this.chkAccesible);
             this.guna2GroupBox1.Controls.Add(this.cmbCategoria);
             this.guna2GroupBox1.Controls.Add(this.cmbTipoDeEvento);
             this.guna2GroupBox1.Controls.Add(this.btnGuardarEvento);
@@ -199,6 +201,62 @@
             this.guna2GroupBox1.Text = "Información del Evento";
             this.guna2GroupBox1.Click += new System.EventHandler(this.guna2GroupBox1_Click);
             // 
+            // chkAccesible
+            // 
+            this.chkAccesible.AutoSize = true;
+            this.chkAccesible.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chkAccesible.CheckedState.BorderRadius = 0;
+            this.chkAccesible.CheckedState.BorderThickness = 0;
+            this.chkAccesible.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chkAccesible.CheckMarkColor = System.Drawing.SystemColors.Highlight;
+            this.chkAccesible.ForeColor = System.Drawing.Color.Black;
+            this.chkAccesible.Location = new System.Drawing.Point(574, 494);
+            this.chkAccesible.Name = "chkAccesible";
+            this.chkAccesible.Size = new System.Drawing.Size(151, 36);
+            this.chkAccesible.TabIndex = 28;
+            this.chkAccesible.Text = "Accesible";
+            this.chkAccesible.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chkAccesible.UncheckedState.BorderRadius = 0;
+            this.chkAccesible.UncheckedState.BorderThickness = 0;
+            this.chkAccesible.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            // 
+            // cmbCategoria
+            // 
+            this.cmbCategoria.BackColor = System.Drawing.Color.Transparent;
+            this.cmbCategoria.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategoria.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbCategoria.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbCategoria.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbCategoria.ItemHeight = 30;
+            this.cmbCategoria.Items.AddRange(new object[] {
+            "Deportes",
+            "Cultura",
+            "Educación"});
+            this.cmbCategoria.Location = new System.Drawing.Point(20, 392);
+            this.cmbCategoria.Name = "cmbCategoria";
+            this.cmbCategoria.Size = new System.Drawing.Size(198, 36);
+            this.cmbCategoria.TabIndex = 27;
+            // 
+            // cmbTipoDeEvento
+            // 
+            this.cmbTipoDeEvento.BackColor = System.Drawing.Color.Transparent;
+            this.cmbTipoDeEvento.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbTipoDeEvento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipoDeEvento.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbTipoDeEvento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbTipoDeEvento.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbTipoDeEvento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbTipoDeEvento.ItemHeight = 30;
+            this.cmbTipoDeEvento.Items.AddRange(new object[] {
+            "PAGA",
+            "GRATUITO"});
+            this.cmbTipoDeEvento.Location = new System.Drawing.Point(20, 299);
+            this.cmbTipoDeEvento.Name = "cmbTipoDeEvento";
+            this.cmbTipoDeEvento.Size = new System.Drawing.Size(198, 36);
+            this.cmbTipoDeEvento.TabIndex = 26;
+            // 
             // btnGuardarEvento
             // 
             this.btnGuardarEvento.BackColor = System.Drawing.Color.Transparent;
@@ -215,16 +273,6 @@
             this.btnGuardarEvento.TabIndex = 25;
             this.btnGuardarEvento.Text = "Guardar Evento";
             this.btnGuardarEvento.Click += new System.EventHandler(this.btnGuardarEvento_Click);
-            // 
-            // pictureBox
-            // 
-            this.pictureBox.ImageRotate = 0F;
-            this.pictureBox.Location = new System.Drawing.Point(574, 288);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(300, 200);
-            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox.TabIndex = 24;
-            this.pictureBox.TabStop = false;
             // 
             // cmbImagen
             // 
@@ -425,42 +473,15 @@
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.pbInicioAdmin_Click);
             // 
-            // cmbTipoDeEvento
+            // pictureBox
             // 
-            this.cmbTipoDeEvento.BackColor = System.Drawing.Color.Transparent;
-            this.cmbTipoDeEvento.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbTipoDeEvento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTipoDeEvento.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbTipoDeEvento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbTipoDeEvento.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbTipoDeEvento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbTipoDeEvento.ItemHeight = 30;
-            this.cmbTipoDeEvento.Items.AddRange(new object[] {
-            "PAGA",
-            "GRATUITO"});
-            this.cmbTipoDeEvento.Location = new System.Drawing.Point(20, 299);
-            this.cmbTipoDeEvento.Name = "cmbTipoDeEvento";
-            this.cmbTipoDeEvento.Size = new System.Drawing.Size(198, 36);
-            this.cmbTipoDeEvento.TabIndex = 26;
-            // 
-            // cmbCategoria
-            // 
-            this.cmbCategoria.BackColor = System.Drawing.Color.Transparent;
-            this.cmbCategoria.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCategoria.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbCategoria.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbCategoria.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbCategoria.ItemHeight = 30;
-            this.cmbCategoria.Items.AddRange(new object[] {
-            "Deportes",
-            "Cultura",
-            "Educación"});
-            this.cmbCategoria.Location = new System.Drawing.Point(20, 392);
-            this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Size = new System.Drawing.Size(198, 36);
-            this.cmbCategoria.TabIndex = 27;
+            this.pictureBox.ImageRotate = 0F;
+            this.pictureBox.Location = new System.Drawing.Point(574, 288);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(300, 200);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox.TabIndex = 24;
+            this.pictureBox.TabStop = false;
             // 
             // AgregarEvento
             // 
@@ -476,12 +497,12 @@
             this.Load += new System.EventHandler(this.AgregarEvento_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.guna2PanelMenu.ResumeLayout(false);
             this.guna2PanelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnToggleMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -518,5 +539,6 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private Guna.UI2.WinForms.Guna2ComboBox cmbCategoria;
         private Guna.UI2.WinForms.Guna2ComboBox cmbTipoDeEvento;
+        private Guna.UI2.WinForms.Guna2CheckBox chkAccesible;
     }
 }

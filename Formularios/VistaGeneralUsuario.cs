@@ -50,7 +50,8 @@ namespace ProyectoFinal.Formularios
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
-            
+            InicioSesiónUsuario inicioSesiónUsuario = new InicioSesiónUsuario();
+            inicioSesiónUsuario.Show();
             this.Close();
            
 
@@ -68,82 +69,110 @@ namespace ProyectoFinal.Formularios
 
         private void btnExaminar_Click(object sender, EventArgs e)
         {
-            if (dgvEventos.SelectedRows.Count > 0) // Verificamos si se ha seleccionado una fila en el DataGridView
+            try
             {
-                // Obtenemos el nombre del evento seleccionado en el DataGridView
-                string nombreEvento = dgvEventos.SelectedRows[0].Cells[0].Value.ToString();
-
-                // Cargamos los eventos desde el archivo o fuente de datos
-                List<Eventos> eventos = Funciones.CargarEventos();
-
-                // Buscamos el evento seleccionado a través del nombre del evento
-                Eventos eventoSeleccionado = eventos.FirstOrDefault(evento => evento.NombreEvento == nombreEvento);
-
-                // Si el evento existe, cargamos sus detalles en el formulario DetalleEventoForm
-                if (eventoSeleccionado != null)
+                if (dgvEventos.SelectedRows.Count > 0) // Verificamos si se ha seleccionado una fila en el DataGridView
                 {
-                    DetalleEventoForm detalleForm = new DetalleEventoForm();
-                    // Asignar los valores de los campos del evento seleccionado a las propiedades públicas
-                    detalleForm.nombreEvento = eventoSeleccionado.NombreEvento;
-                    detalleForm.descripcionEvento = eventoSeleccionado.Descripción;
-                    detalleForm.categoriaEvento = eventoSeleccionado.Categoría;
-                    detalleForm.fechaEvento = eventoSeleccionado.Fecha.ToString("dd/MM/yyyy");
-                    detalleForm.cuposDispEvento = eventoSeleccionado.CuposDisp.ToString();
-                    detalleForm.horaInicioEvento = $"{eventoSeleccionado.HoraInicio:00}:00";
-                    detalleForm.horaFinEvento = $"{eventoSeleccionado.HoraFin:00}:00";
-
-                    // Construir la ruta completa de la imagen
-                    if (!string.IsNullOrEmpty(eventoSeleccionado.ImagenSeleccionada))
+                    // Verificamos si el valor de la primera celda de la fila seleccionada no es null
+                    var valorCelda = dgvEventos.SelectedRows[0].Cells[0].Value;
+                    if (valorCelda == null)
                     {
-                        string rutaImagen = Path.Combine(
-                            Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName,
-                            "Imagenes",
-                            eventoSeleccionado.ImagenSeleccionada
-                        );
+                        MessageBox.Show("El evento seleccionado no tiene un nombre válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return; // Detenemos la ejecución si el valor es null
+                    }
 
-                        // Cargar la imagen del evento en el PictureBox si la ruta es válida
-                        if (File.Exists(rutaImagen))
+                    // Obtenemos el nombre del evento seleccionado en el DataGridView
+                    string nombreEvento = valorCelda.ToString();
+
+                    // Cargamos los eventos desde el archivo o fuente de datos
+                    List<Eventos> eventos = Funciones.CargarEventos();
+
+                    // Buscamos el evento seleccionado a través del nombre del evento
+                    Eventos eventoSeleccionado = eventos.FirstOrDefault(evento => evento.NombreEvento == nombreEvento);
+
+                    // Si el evento existe, cargamos sus detalles en el formulario DetalleEventoForm
+                    if (eventoSeleccionado != null)
+                    {
+                        DetalleEventoForm detalleForm = new DetalleEventoForm
                         {
-                            try
+                            EventoSeleccionado = eventoSeleccionado // Asigna el evento seleccionado
+                        };
+
+                        // Asignar los valores de los campos del evento seleccionado a las propiedades públicas
+                        detalleForm.nombreEvento = eventoSeleccionado.NombreEvento;
+                        detalleForm.descripcionEvento = eventoSeleccionado.Descripción;
+                        detalleForm.categoriaEvento = eventoSeleccionado.Categoría;
+                        detalleForm.fechaEvento = eventoSeleccionado.Fecha.ToString("dd/MM/yyyy");
+                        detalleForm.cuposDispEvento = eventoSeleccionado.CuposDisp.ToString();
+                        detalleForm.horaInicioEvento = $"{eventoSeleccionado.HoraInicio:00}:00";
+                        detalleForm.horaFinEvento = $"{eventoSeleccionado.HoraFin:00}:00";
+
+                        // Construir la ruta completa de la imagen
+                        if (!string.IsNullOrEmpty(eventoSeleccionado.ImagenSeleccionada))
+                        {
+                            string rutaImagen = Path.Combine(
+                                Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName,
+                                "Imagenes",
+                                eventoSeleccionado.ImagenSeleccionada
+                            );
+
+                            // Cargar la imagen del evento en el PictureBox si la ruta es válida
+                            if (File.Exists(rutaImagen))
                             {
-                                detalleForm.imagenEvento = Image.FromFile(rutaImagen);
+                                try
+                                {
+                                    detalleForm.imagenEvento = Image.FromFile(rutaImagen);
+                                }
+                                catch (Exception ex)
+                                {
+                                    MessageBox.Show($"Error al cargar la imagen: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    detalleForm.imagenEvento = null; // En caso de error, limpiar el PictureBox
+                                }
                             }
-                            catch (Exception ex)
+                            else
                             {
-                                MessageBox.Show($"Error al cargar la imagen: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                detalleForm.imagenEvento = null; // En caso de error, limpiar el PictureBox
+                                detalleForm.imagenEvento = null; // Si no hay imagen seleccionada, dejar el PictureBox vacío
+                                MessageBox.Show($"La imagen no se encuentra en la ruta: {rutaImagen}", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             }
                         }
                         else
                         {
-                            detalleForm.imagenEvento = null; // Si no hay imagen seleccionada, dejar el PictureBox vacío
-                            MessageBox.Show($"La imagen no se encuentra en la ruta: {rutaImagen}", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            detalleForm.imagenEvento = null;
                         }
+
+                        // Configurar el estado del evento basado en el tipo de pago usando FillColor
+                        detalleForm.estadoPagoEvento = eventoSeleccionado.TipoDeEvento.ToUpper(); // Asigna "PAGA" o "GRATUITO"
+                        detalleForm.estadoPagoFillColor = eventoSeleccionado.TipoDeEvento.ToUpper() == "PAGA" ? Color.Red : Color.Green;
+                        detalleForm.estadoPagoColorTexto = Color.White; // El color del texto será blanco
+
+                        // Mostrar el formulario DetalleEventoForm
+                        detalleForm.ShowDialog();
                     }
                     else
                     {
-                        detalleForm.imagenEvento = null;
+                        // Si no se encuentra el evento, mostrar un mensaje de error
+                        MessageBox.Show("Evento no encontrado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-
-                    // Configurar el estado del evento basado en el tipo de pago usando FillColor
-                    detalleForm.estadoPagoEvento = eventoSeleccionado.TipoDeEvento.ToUpper(); // Asigna "PAGA" o "GRATUITO"
-                    detalleForm.estadoPagoFillColor = eventoSeleccionado.TipoDeEvento.ToUpper() == "PAGA" ? Color.Red : Color.Green;
-                    detalleForm.estadoPagoColorTexto = Color.White; // El color del texto será blanco
-
-                    // Mostrar el formulario DetalleEventoForm
-                    detalleForm.ShowDialog();
                 }
                 else
                 {
-                    // Si no se encuentra el evento, mostrar un mensaje de error
-                    MessageBox.Show("Evento no encontrado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    // Si no se ha seleccionado ningún evento en el DataGridView
+                    MessageBox.Show("Por favor, seleccione un evento.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            else
+            catch (Exception ex)
             {
-                // Si no se ha seleccionado ningún evento en el DataGridView
-                MessageBox.Show("Por favor, seleccione un evento.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // Captura de cualquier error inesperado y muestra un mensaje
+                MessageBox.Show($"Se produjo un error al intentar mostrar el evento: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+
+        private void pbMensajes_Click(object sender, EventArgs e)
+        {
+            MensajesUsuario mensajesUsuario = new MensajesUsuario();
+            mensajesUsuario.Show();
+            this.Close();
         }
     }
 }

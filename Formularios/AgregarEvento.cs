@@ -89,7 +89,9 @@ namespace ProyectoFinal.Formularios
                 CuposDisp = int.Parse(txtCuposDisp.Text),
                 HoraInicio = int.Parse(mtxtHInicio.Text.Split(':')[0]),  // Solo toma la hora
                 HoraFin = int.Parse(mtxtHFin.Text.Split(':')[0]),        // Solo toma la hora
-                ImagenSeleccionada = cmbImagen.SelectedItem?.ToString()
+                ImagenSeleccionada = cmbImagen.SelectedItem?.ToString(),
+                Accesible = chkAccesible.Checked,
+                EstadoReservación = 0,
             };
 
             // Llamar al método agregarEvento de la clase Funciones para guardar el evento

@@ -37,6 +37,7 @@ namespace ProyectoFinal.Formularios
             txtCuposDisp.Text = eventoSeleccionado.CuposDisp.ToString();
             mtxtHInicio.Text = $"{eventoSeleccionado.HoraInicio:00}:00";
             mtxtHFin.Text = $"{eventoSeleccionado.HoraFin:00}:00";
+            chkAccesibleElim.Checked = eventoSeleccionado.Accesible;
 
             // Deshabilita la edición
             txtNombreEvento.ReadOnly = true;

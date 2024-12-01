@@ -118,5 +118,12 @@ namespace ProyectoFinal.Formularios
             this.Close();
             
         }
+
+        private void pbMensajesAdmin_Click(object sender, EventArgs e)
+        {
+            MensajesAdministrador mensajesAdministrador = new MensajesAdministrador();
+            mensajesAdministrador.Show();
+            this.Close();
+        }
     }
 }

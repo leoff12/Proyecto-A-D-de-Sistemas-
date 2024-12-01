@@ -6,13 +6,16 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Windows.Forms;
 using ProyectoFinal.Formularios;
 using System.Linq;
+using System.Runtime.Serialization;
 
 namespace ProyectoFinal.Servicios
 {
     public static class Funciones
     {
         private const string Archivo = "Eventos.dat";
+        private const string Archivo2 = "Mensajes.dat";
 
+        //Funciones para los Eventos
         public static void AgregarEvento(Eventos evento)
         {
             try
@@ -127,6 +130,80 @@ namespace ProyectoFinal.Servicios
                 formatter.Serialize(fs, eventos);
             }
         }
+
+        //Funciones para Mensajes
+
+        public static void GuardarMensaje(Mensajes mensaje)
+        {
+            List<Mensajes> mensajes = CargarMensajes();
+
+            // Asignar un ID único al nuevo mensaje
+            mensaje.IDMensaje = mensajes.Count > 0 ? mensajes.Max(m => m.IDMensaje) + 1 : 1;
+
+            mensajes.Add(mensaje);
+
+            using (FileStream fs = new FileStream("Mensajes.dat", FileMode.Create))
+            {
+                BinaryFormatter formatter = new BinaryFormatter();
+                formatter.Serialize(fs, mensajes);
+            }
+        }
+
+        public static List<Mensajes> CargarMensajes()
+        {
+            if (File.Exists("Mensajes.dat"))
+            {
+                using (FileStream fs = new FileStream("Mensajes.dat", FileMode.Open))
+                {
+                    BinaryFormatter formatter = new BinaryFormatter();
+                    return (List<Mensajes>)formatter.Deserialize(fs);
+                }
+            }
+            return new List<Mensajes>();
+        }
+        public static void GuardarMensajes(List<Mensajes> mensajes)
+        {
+            try
+            {
+                using (FileStream fs = new FileStream("Mensajes.dat", FileMode.Create))
+                {
+                    BinaryFormatter formatter = new BinaryFormatter();
+                    formatter.Serialize(fs, mensajes);
+                }
+            }
+            catch (IOException ex)
+            {
+                MessageBox.Show($"Error al guardar los mensajes: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (SerializationException ex)
+            {
+                MessageBox.Show($"Error de serialización: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ocurrió un error inesperado: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public static void EliminarMensaje(Mensajes mensaje)
+        {
+            try
+            {
+                string rutaArchivo = "Mensajes.dat";
+                List<Mensajes> mensajes = CargarMensajes();
+
+                // Elimina el mensaje de la lista utilizando el IDMensaje
+                mensajes.RemoveAll(m => m.IDMensaje == mensaje.IDMensaje);
+
+                // Guarda la lista actualizada de mensajes sin el mensaje eliminado
+                GuardarMensajes(mensajes);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ocurrió un error inesperado: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
 
     }
 }

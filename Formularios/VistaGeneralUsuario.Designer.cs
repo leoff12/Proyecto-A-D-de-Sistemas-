@@ -28,20 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaGeneralUsuario));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaGeneralUsuario));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pbMensajes = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pbInicio = new System.Windows.Forms.PictureBox();
             this.lblInicio = new System.Windows.Forms.Label();
-            this.pbMas = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnCerrarSesion = new Guna.UI2.WinForms.Guna2TileButton();
             this.txtBuscarEvento = new Guna.UI2.WinForms.Guna2TextBox();
-            this.pbBuscar = new System.Windows.Forms.PictureBox();
             this.lblBienvenidoUsuario = new System.Windows.Forms.Label();
             this.dgvEventos = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dgvNombreEvento = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,13 +45,17 @@
             this.dgvFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnExaminar = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.pbBuscar = new System.Windows.Forms.PictureBox();
+            this.pbMensajes = new System.Windows.Forms.PictureBox();
+            this.pbInicio = new System.Windows.Forms.PictureBox();
+            this.pbMas = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEventos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBuscar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMensajes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbInicio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMas)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbBuscar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEventos)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -73,17 +73,6 @@
             this.panel2.Size = new System.Drawing.Size(116, 572);
             this.panel2.TabIndex = 1;
             // 
-            // pbMensajes
-            // 
-            this.pbMensajes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pbMensajes.Image = ((System.Drawing.Image)(resources.GetObject("pbMensajes.Image")));
-            this.pbMensajes.Location = new System.Drawing.Point(32, 189);
-            this.pbMensajes.Name = "pbMensajes";
-            this.pbMensajes.Size = new System.Drawing.Size(46, 52);
-            this.pbMensajes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbMensajes.TabIndex = 5;
-            this.pbMensajes.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -94,17 +83,6 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Mensajes";
             // 
-            // pbInicio
-            // 
-            this.pbInicio.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pbInicio.Image = ((System.Drawing.Image)(resources.GetObject("pbInicio.Image")));
-            this.pbInicio.Location = new System.Drawing.Point(32, 88);
-            this.pbInicio.Name = "pbInicio";
-            this.pbInicio.Size = new System.Drawing.Size(46, 52);
-            this.pbInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbInicio.TabIndex = 3;
-            this.pbInicio.TabStop = false;
-            // 
             // lblInicio
             // 
             this.lblInicio.AutoSize = true;
@@ -114,17 +92,6 @@
             this.lblInicio.Size = new System.Drawing.Size(67, 27);
             this.lblInicio.TabIndex = 3;
             this.lblInicio.Text = "Inicio";
-            // 
-            // pbMas
-            // 
-            this.pbMas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pbMas.Image = ((System.Drawing.Image)(resources.GetObject("pbMas.Image")));
-            this.pbMas.Location = new System.Drawing.Point(32, 12);
-            this.pbMas.Name = "pbMas";
-            this.pbMas.Size = new System.Drawing.Size(46, 49);
-            this.pbMas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbMas.TabIndex = 3;
-            this.pbMas.TabStop = false;
             // 
             // panel3
             // 
@@ -179,17 +146,6 @@
             this.txtBuscarEvento.SelectedText = "";
             this.txtBuscarEvento.Size = new System.Drawing.Size(128, 40);
             this.txtBuscarEvento.TabIndex = 4;
-            // 
-            // pbBuscar
-            // 
-            this.pbBuscar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pbBuscar.Image = ((System.Drawing.Image)(resources.GetObject("pbBuscar.Image")));
-            this.pbBuscar.Location = new System.Drawing.Point(892, 14);
-            this.pbBuscar.Name = "pbBuscar";
-            this.pbBuscar.Size = new System.Drawing.Size(36, 39);
-            this.pbBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbBuscar.TabIndex = 2;
-            this.pbBuscar.TabStop = false;
             // 
             // lblBienvenidoUsuario
             // 
@@ -303,6 +259,51 @@
             this.guna2GradientPanel1.Size = new System.Drawing.Size(946, 77);
             this.guna2GradientPanel1.TabIndex = 10;
             // 
+            // pbBuscar
+            // 
+            this.pbBuscar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pbBuscar.Image = ((System.Drawing.Image)(resources.GetObject("pbBuscar.Image")));
+            this.pbBuscar.Location = new System.Drawing.Point(892, 14);
+            this.pbBuscar.Name = "pbBuscar";
+            this.pbBuscar.Size = new System.Drawing.Size(36, 39);
+            this.pbBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbBuscar.TabIndex = 2;
+            this.pbBuscar.TabStop = false;
+            // 
+            // pbMensajes
+            // 
+            this.pbMensajes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pbMensajes.Image = ((System.Drawing.Image)(resources.GetObject("pbMensajes.Image")));
+            this.pbMensajes.Location = new System.Drawing.Point(32, 189);
+            this.pbMensajes.Name = "pbMensajes";
+            this.pbMensajes.Size = new System.Drawing.Size(46, 52);
+            this.pbMensajes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbMensajes.TabIndex = 5;
+            this.pbMensajes.TabStop = false;
+            this.pbMensajes.Click += new System.EventHandler(this.pbMensajes_Click);
+            // 
+            // pbInicio
+            // 
+            this.pbInicio.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pbInicio.Image = ((System.Drawing.Image)(resources.GetObject("pbInicio.Image")));
+            this.pbInicio.Location = new System.Drawing.Point(32, 88);
+            this.pbInicio.Name = "pbInicio";
+            this.pbInicio.Size = new System.Drawing.Size(46, 52);
+            this.pbInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbInicio.TabIndex = 3;
+            this.pbInicio.TabStop = false;
+            // 
+            // pbMas
+            // 
+            this.pbMas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pbMas.Image = ((System.Drawing.Image)(resources.GetObject("pbMas.Image")));
+            this.pbMas.Location = new System.Drawing.Point(32, 12);
+            this.pbMas.Name = "pbMas";
+            this.pbMas.Size = new System.Drawing.Size(46, 49);
+            this.pbMas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbMas.TabIndex = 3;
+            this.pbMas.TabStop = false;
+            // 
             // VistaGeneralUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -320,13 +321,13 @@
             this.Load += new System.EventHandler(this.VistaGeneralUsuario_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEventos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBuscar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMensajes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbInicio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMas)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbBuscar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEventos)).EndInit();
             this.ResumeLayout(false);
 
         }

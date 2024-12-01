@@ -27,11 +27,8 @@ namespace ProyectoFinal.Formularios
             if (usuarioIngresado == USUARIO_VALIDO && contraseñaIngresada == CONTRASENA_VALIDA)
             {
                 VistaGeneralUsuario vistaGeneralUsuario= new VistaGeneralUsuario();
-                this.Hide(); // Oculta el formulario actual
-
-                vistaGeneralUsuario.ShowDialog();
-
-                this.Show();
+                vistaGeneralUsuario.Show();
+                this.Close(); // Oculta el formulario actual
             }
             else
             {

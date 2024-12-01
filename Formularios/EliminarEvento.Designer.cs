@@ -30,8 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EliminarEvento));
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.cmbCategoriaElim = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cmbTipoDeEventoElim = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnGuardarCambios = new Guna.UI2.WinForms.Guna2Button();
-            this.pbImagen = new Guna.UI2.WinForms.Guna2PictureBox();
             this.cmbImagen = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblImagen = new System.Windows.Forms.Label();
             this.lblCategoriaElim = new System.Windows.Forms.Label();
@@ -49,21 +50,21 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.txtNombreEvento = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pbInicio = new System.Windows.Forms.PictureBox();
-            this.pbMas = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblAgregarEvento = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.pbLogoUAM = new System.Windows.Forms.PictureBox();
             this.lblInicio = new System.Windows.Forms.Label();
+            this.chkAccesibleElim = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.pbImagen = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pbInicio = new System.Windows.Forms.PictureBox();
+            this.pbMas = new System.Windows.Forms.PictureBox();
+            this.pbLogoUAM = new System.Windows.Forms.PictureBox();
             this.pictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.cmbTipoDeEventoElim = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.cmbCategoriaElim = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2GroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbInicio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMas)).BeginInit();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
@@ -73,6 +74,7 @@
             this.guna2GroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2GroupBox1.BorderRadius = 24;
+            this.guna2GroupBox1.Controls.Add(this.chkAccesibleElim);
             this.guna2GroupBox1.Controls.Add(this.cmbCategoriaElim);
             this.guna2GroupBox1.Controls.Add(this.cmbTipoDeEventoElim);
             this.guna2GroupBox1.Controls.Add(this.btnGuardarCambios);
@@ -103,6 +105,36 @@
             this.guna2GroupBox1.TabIndex = 11;
             this.guna2GroupBox1.Text = "Información del Evento";
             // 
+            // cmbCategoriaElim
+            // 
+            this.cmbCategoriaElim.BackColor = System.Drawing.Color.Transparent;
+            this.cmbCategoriaElim.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbCategoriaElim.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategoriaElim.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbCategoriaElim.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbCategoriaElim.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbCategoriaElim.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbCategoriaElim.ItemHeight = 30;
+            this.cmbCategoriaElim.Location = new System.Drawing.Point(20, 392);
+            this.cmbCategoriaElim.Name = "cmbCategoriaElim";
+            this.cmbCategoriaElim.Size = new System.Drawing.Size(198, 36);
+            this.cmbCategoriaElim.TabIndex = 27;
+            // 
+            // cmbTipoDeEventoElim
+            // 
+            this.cmbTipoDeEventoElim.BackColor = System.Drawing.Color.Transparent;
+            this.cmbTipoDeEventoElim.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbTipoDeEventoElim.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipoDeEventoElim.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbTipoDeEventoElim.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbTipoDeEventoElim.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbTipoDeEventoElim.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbTipoDeEventoElim.ItemHeight = 30;
+            this.cmbTipoDeEventoElim.Location = new System.Drawing.Point(20, 299);
+            this.cmbTipoDeEventoElim.Name = "cmbTipoDeEventoElim";
+            this.cmbTipoDeEventoElim.Size = new System.Drawing.Size(198, 36);
+            this.cmbTipoDeEventoElim.TabIndex = 26;
+            // 
             // btnGuardarCambios
             // 
             this.btnGuardarCambios.BackColor = System.Drawing.Color.NavajoWhite;
@@ -120,17 +152,6 @@
             this.btnGuardarCambios.TabIndex = 25;
             this.btnGuardarCambios.Text = "Eliminar Evento";
             this.btnGuardarCambios.Click += new System.EventHandler(this.btnEliminar_Click);
-            // 
-            // pbImagen
-            // 
-            this.pbImagen.ImageRotate = 0F;
-            this.pbImagen.Location = new System.Drawing.Point(1182, 460);
-            this.pbImagen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pbImagen.Name = "pbImagen";
-            this.pbImagen.Size = new System.Drawing.Size(450, 308);
-            this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbImagen.TabIndex = 24;
-            this.pbImagen.TabStop = false;
             // 
             // cmbImagen
             // 
@@ -345,29 +366,6 @@
             this.panel2.TabIndex = 10;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // pbInicio
-            // 
-            this.pbInicio.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pbInicio.Image = ((System.Drawing.Image)(resources.GetObject("pbInicio.Image")));
-            this.pbInicio.Location = new System.Drawing.Point(26, 88);
-            this.pbInicio.Name = "pbInicio";
-            this.pbInicio.Size = new System.Drawing.Size(42, 36);
-            this.pbInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbInicio.TabIndex = 3;
-            this.pbInicio.TabStop = false;
-            this.pbInicio.Click += new System.EventHandler(this.pbInicio_Click);
-            // 
-            // pbMas
-            // 
-            this.pbMas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pbMas.Image = ((System.Drawing.Image)(resources.GetObject("pbMas.Image")));
-            this.pbMas.Location = new System.Drawing.Point(26, 14);
-            this.pbMas.Name = "pbMas";
-            this.pbMas.Size = new System.Drawing.Size(42, 36);
-            this.pbMas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbMas.TabIndex = 3;
-            this.pbMas.TabStop = false;
-            // 
             // panel1
             // 
             this.panel1.AllowDrop = true;
@@ -392,16 +390,6 @@
             this.lblAgregarEvento.TabIndex = 3;
             this.lblAgregarEvento.Text = "ELIMINAR EVENTO";
             // 
-            // pbLogoUAM
-            // 
-            this.pbLogoUAM.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoUAM.Image")));
-            this.pbLogoUAM.Location = new System.Drawing.Point(856, 18);
-            this.pbLogoUAM.Name = "pbLogoUAM";
-            this.pbLogoUAM.Size = new System.Drawing.Size(138, 68);
-            this.pbLogoUAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbLogoUAM.TabIndex = 2;
-            this.pbLogoUAM.TabStop = false;
-            // 
             // lblInicio
             // 
             this.lblInicio.AutoSize = true;
@@ -411,6 +399,70 @@
             this.lblInicio.Size = new System.Drawing.Size(67, 27);
             this.lblInicio.TabIndex = 3;
             this.lblInicio.Text = "Inicio";
+            // 
+            // chkAccesibleElim
+            // 
+            this.chkAccesibleElim.AutoSize = true;
+            this.chkAccesibleElim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.chkAccesibleElim.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chkAccesibleElim.CheckedState.BorderRadius = 0;
+            this.chkAccesibleElim.CheckedState.BorderThickness = 0;
+            this.chkAccesibleElim.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.chkAccesibleElim.CheckMarkColor = System.Drawing.Color.Lime;
+            this.chkAccesibleElim.Location = new System.Drawing.Point(518, 445);
+            this.chkAccesibleElim.Name = "chkAccesibleElim";
+            this.chkAccesibleElim.Size = new System.Drawing.Size(151, 36);
+            this.chkAccesibleElim.TabIndex = 28;
+            this.chkAccesibleElim.Text = "Accesible";
+            this.chkAccesibleElim.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chkAccesibleElim.UncheckedState.BorderRadius = 0;
+            this.chkAccesibleElim.UncheckedState.BorderThickness = 0;
+            this.chkAccesibleElim.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chkAccesibleElim.UseVisualStyleBackColor = false;
+            // 
+            // pbImagen
+            // 
+            this.pbImagen.ImageRotate = 0F;
+            this.pbImagen.Location = new System.Drawing.Point(517, 256);
+            this.pbImagen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbImagen.Name = "pbImagen";
+            this.pbImagen.Size = new System.Drawing.Size(279, 172);
+            this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbImagen.TabIndex = 24;
+            this.pbImagen.TabStop = false;
+            // 
+            // pbInicio
+            // 
+            this.pbInicio.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pbInicio.Image = ((System.Drawing.Image)(resources.GetObject("pbInicio.Image")));
+            this.pbInicio.Location = new System.Drawing.Point(26, 88);
+            this.pbInicio.Name = "pbInicio";
+            this.pbInicio.Size = new System.Drawing.Size(42, 36);
+            this.pbInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbInicio.TabIndex = 3;
+            this.pbInicio.TabStop = false;
+            this.pbInicio.Click += new System.EventHandler(this.pbInicio_Click);
+            // 
+            // pbMas
+            // 
+            this.pbMas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pbMas.Image = ((System.Drawing.Image)(resources.GetObject("pbMas.Image")));
+            this.pbMas.Location = new System.Drawing.Point(26, 14);
+            this.pbMas.Name = "pbMas";
+            this.pbMas.Size = new System.Drawing.Size(42, 36);
+            this.pbMas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbMas.TabIndex = 3;
+            this.pbMas.TabStop = false;
+            // 
+            // pbLogoUAM
+            // 
+            this.pbLogoUAM.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoUAM.Image")));
+            this.pbLogoUAM.Location = new System.Drawing.Point(856, 18);
+            this.pbLogoUAM.Name = "pbLogoUAM";
+            this.pbLogoUAM.Size = new System.Drawing.Size(138, 68);
+            this.pbLogoUAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLogoUAM.TabIndex = 2;
+            this.pbLogoUAM.TabStop = false;
             // 
             // pictureBox
             // 
@@ -422,36 +474,6 @@
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 24;
             this.pictureBox.TabStop = false;
-            // 
-            // cmbTipoDeEventoElim
-            // 
-            this.cmbTipoDeEventoElim.BackColor = System.Drawing.Color.Transparent;
-            this.cmbTipoDeEventoElim.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbTipoDeEventoElim.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTipoDeEventoElim.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbTipoDeEventoElim.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbTipoDeEventoElim.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbTipoDeEventoElim.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbTipoDeEventoElim.ItemHeight = 30;
-            this.cmbTipoDeEventoElim.Location = new System.Drawing.Point(20, 299);
-            this.cmbTipoDeEventoElim.Name = "cmbTipoDeEventoElim";
-            this.cmbTipoDeEventoElim.Size = new System.Drawing.Size(198, 36);
-            this.cmbTipoDeEventoElim.TabIndex = 26;
-            // 
-            // cmbCategoriaElim
-            // 
-            this.cmbCategoriaElim.BackColor = System.Drawing.Color.Transparent;
-            this.cmbCategoriaElim.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbCategoriaElim.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCategoriaElim.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbCategoriaElim.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbCategoriaElim.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbCategoriaElim.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbCategoriaElim.ItemHeight = 30;
-            this.cmbCategoriaElim.Location = new System.Drawing.Point(20, 392);
-            this.cmbCategoriaElim.Name = "cmbCategoriaElim";
-            this.cmbCategoriaElim.Size = new System.Drawing.Size(198, 36);
-            this.cmbCategoriaElim.TabIndex = 27;
             // 
             // EliminarEvento
             // 
@@ -467,13 +489,13 @@
             this.Load += new System.EventHandler(this.EliminarEvento_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbInicio)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMas)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbInicio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
@@ -512,5 +534,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox pictureBox;
         private Guna.UI2.WinForms.Guna2ComboBox cmbCategoriaElim;
         private Guna.UI2.WinForms.Guna2ComboBox cmbTipoDeEventoElim;
+        private Guna.UI2.WinForms.Guna2CheckBox chkAccesibleElim;
     }
 }

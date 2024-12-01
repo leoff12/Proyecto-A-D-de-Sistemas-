@@ -22,5 +22,7 @@ namespace ProyectoFinal.Clases
         public int HoraInicio { get; set; }
         public int HoraFin { get; set; }
         public string ImagenSeleccionada { get; set; }
+        public bool Accesible { get; set; }
+        public int EstadoReservación { get; set; } // 0 = Base, 1 = En espera, 2 = Aprobada, 3 = Rechazada
     }
 }

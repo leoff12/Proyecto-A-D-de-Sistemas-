@@ -23,13 +23,7 @@ namespace ProyectoFinal
         {
             //Instanciar el Formulario Inicio de sesión Usuario
             InicioSesiónUsuario inicioSesiónUsuario = new InicioSesiónUsuario();
-            this.Hide();
-
-            //Mostrar el formulario
-            inicioSesiónUsuario.ShowDialog();
-
-            this.Show();
-            
+            inicioSesiónUsuario.Show();
         }
 
         private void btnAdministrador_Click(object sender, EventArgs e)

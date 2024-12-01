@@ -43,6 +43,7 @@ namespace ProyectoFinal.Formularios
             mtxtHInicio.Text = $"{eventoOriginal.HoraInicio:00}:00";
             mtxtHFin.Text = $"{eventoOriginal.HoraFin:00}:00";
             cmbImagen.SelectedItem = eventoOriginal.ImagenSeleccionada;
+            chkAccesibleMod.Checked = eventoOriginal.Accesible;
 
         }
 
@@ -63,6 +64,7 @@ namespace ProyectoFinal.Formularios
             eventoOriginal.HoraInicio = int.Parse(mtxtHInicio.Text.Split(':')[0]);
             eventoOriginal.HoraFin = int.Parse(mtxtHFin.Text.Split(':')[0]);
             eventoOriginal.ImagenSeleccionada = cmbImagen.SelectedItem?.ToString();
+            eventoOriginal.Accesible = chkAccesibleMod.Checked;
 
             // Guardar los cambios
             Funciones.ActualizarEvento(eventoOriginal);
