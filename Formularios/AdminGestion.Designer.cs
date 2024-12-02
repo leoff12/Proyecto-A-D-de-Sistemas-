@@ -64,10 +64,10 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(48, 51);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.panel1.Location = new System.Drawing.Point(32, 23);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1017, 152);
+            this.panel1.Size = new System.Drawing.Size(678, 109);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -78,8 +78,8 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(22, 15);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 15);
+            this.label1.Location = new System.Drawing.Point(15, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(393, 120);
             this.label1.TabIndex = 0;
@@ -91,8 +91,8 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(766, 25);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.pictureBox1.Location = new System.Drawing.Point(511, 5);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(231, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

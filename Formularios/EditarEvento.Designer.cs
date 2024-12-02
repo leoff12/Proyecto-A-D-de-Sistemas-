@@ -147,6 +147,7 @@
             // cmbCategoriaMod
             // 
             this.cmbCategoriaMod.BackColor = System.Drawing.Color.Transparent;
+            this.cmbCategoriaMod.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.cmbCategoriaMod.BorderRadius = 5;
             this.cmbCategoriaMod.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbCategoriaMod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -164,6 +165,7 @@
             // cmbTipoDeEventoMod
             // 
             this.cmbTipoDeEventoMod.BackColor = System.Drawing.Color.Transparent;
+            this.cmbTipoDeEventoMod.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.cmbTipoDeEventoMod.BorderRadius = 5;
             this.cmbTipoDeEventoMod.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbTipoDeEventoMod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -188,7 +190,7 @@
             this.btnGuardarCambios.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnGuardarCambios.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCambios.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnGuardarCambios.Location = new System.Drawing.Point(222, 361);
+            this.btnGuardarCambios.Location = new System.Drawing.Point(238, 361);
             this.btnGuardarCambios.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardarCambios.Name = "btnGuardarCambios";
             this.btnGuardarCambios.Size = new System.Drawing.Size(141, 29);
@@ -214,6 +216,7 @@
             // cmbImagen
             // 
             this.cmbImagen.BackColor = System.Drawing.Color.Transparent;
+            this.cmbImagen.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.cmbImagen.BorderRadius = 5;
             this.cmbImagen.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbImagen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -271,6 +274,7 @@
             // txtCuposDisp
             // 
             this.txtCuposDisp.BackColor = System.Drawing.Color.Transparent;
+            this.txtCuposDisp.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.txtCuposDisp.BorderRadius = 5;
             this.txtCuposDisp.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.txtCuposDisp.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -378,7 +382,7 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.BorderColor = System.Drawing.Color.Transparent;
+            this.txtDescripcion.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.txtDescripcion.BorderRadius = 5;
             this.txtDescripcion.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.txtDescripcion.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -449,7 +453,7 @@
             this.guna2PanelMenu.Name = "guna2PanelMenu";
             this.guna2PanelMenu.ShadowDecoration.BorderRadius = 10;
             this.guna2PanelMenu.ShadowDecoration.Color = System.Drawing.Color.SandyBrown;
-            this.guna2PanelMenu.Size = new System.Drawing.Size(38, 457);
+            this.guna2PanelMenu.Size = new System.Drawing.Size(176, 457);
             this.guna2PanelMenu.TabIndex = 9;
             // 
             // pbMensajesAdmin
