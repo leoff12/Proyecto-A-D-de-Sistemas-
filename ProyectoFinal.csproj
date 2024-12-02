@@ -95,6 +95,11 @@
   <ItemGroup>
     <Compile Include="Clases\Eventos.cs" />
     <Compile Include="Clases\Mensajes.cs" />
+    <Compile Include="DataSet\EventosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EventosDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +160,12 @@
     <Compile Include="Formularios\FormulariosDeGraficas\MayorTipoEvento.Designer.cs">
       <DependentUpon>MayorTipoEvento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FormulariosReportes\EventosPorCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormulariosReportes\EventosPorCategoria.Designer.cs">
+      <DependentUpon>EventosPorCategoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Gráficas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +195,12 @@
     </Compile>
     <Compile Include="Formularios\Modificar.Designer.cs">
       <DependentUpon>Modificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes.Designer.cs">
+      <DependentUpon>Reportes.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\VistaGeneralUsuario.cs">
       <SubType>Form</SubType>
@@ -226,6 +243,9 @@
     <EmbeddedResource Include="Formularios\FormulariosDeGraficas\MayorTipoEvento.resx">
       <DependentUpon>MayorTipoEvento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormulariosReportes\EventosPorCategoria.resx">
+      <DependentUpon>EventosPorCategoria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Gráficas.resx">
       <DependentUpon>Gráficas.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,6 +261,9 @@
     <EmbeddedResource Include="Formularios\Modificar.resx">
       <DependentUpon>Modificar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes.resx">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\VistaGeneralUsuario.resx">
       <DependentUpon>VistaGeneralUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -254,6 +277,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reportes\EventosPorCategoria.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="DataSet\EventosDataSet.xsc">
+      <DependentUpon>EventosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\EventosDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EventosDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\EventosDataSet.xss">
+      <DependentUpon>EventosDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

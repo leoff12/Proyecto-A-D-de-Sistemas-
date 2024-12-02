@@ -198,6 +198,7 @@ namespace ProyectoFinal.Formularios
                 case 2:
                     btnReservar.Text = "Aprobada";
                     btnReservar.Enabled = true;
+                    EventoSeleccionado.CuposDisp--;
                     btnReservar.FillColor = Color.Green;
                     btnReservar.ForeColor = Color.White;
                     break;
@@ -219,8 +220,8 @@ namespace ProyectoFinal.Formularios
 
         private void btnCerrarSesiónAdmin_Click(object sender, EventArgs e)
         {
-            VistaGeneralUsuario VistaGeneralUsuario = new VistaGeneralUsuario();
-            VistaGeneralUsuario.Show();
+            InicioSesiónUsuario inicioSesiónUsuario = new InicioSesiónUsuario();
+            inicioSesiónUsuario.Show();
             this.Close();
         }
 

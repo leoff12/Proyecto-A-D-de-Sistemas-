@@ -34,6 +34,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCerrarSesiónAdmin = new Guna.UI2.WinForms.Guna2TileButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pbReportes = new System.Windows.Forms.PictureBox();
+            this.btnReportes = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnBorrarEvent = new Guna.UI2.WinForms.Guna2TileButton();
             this.guna2TileButton1 = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnAddEvent = new Guna.UI2.WinForms.Guna2TileButton();
@@ -49,6 +51,7 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbReportes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -64,10 +67,10 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(32, 23);
+            this.panel1.Location = new System.Drawing.Point(62, 23);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(678, 109);
+            this.panel1.Size = new System.Drawing.Size(757, 177);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -78,7 +81,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(15, 15);
+            this.label1.Location = new System.Drawing.Point(94, 49);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(393, 120);
@@ -126,6 +129,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.pbReportes);
+            this.panel2.Controls.Add(this.btnReportes);
             this.panel2.Controls.Add(this.btnBorrarEvent);
             this.panel2.Controls.Add(this.guna2TileButton1);
             this.panel2.Controls.Add(this.btnAddEvent);
@@ -137,6 +142,40 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1023, 360);
             this.panel2.TabIndex = 2;
+            // 
+            // pbReportes
+            // 
+            this.pbReportes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbReportes.Image = ((System.Drawing.Image)(resources.GetObject("pbReportes.Image")));
+            this.pbReportes.Location = new System.Drawing.Point(801, 68);
+            this.pbReportes.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.pbReportes.Name = "pbReportes";
+            this.pbReportes.Size = new System.Drawing.Size(104, 105);
+            this.pbReportes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbReportes.TabIndex = 21;
+            this.pbReportes.TabStop = false;
+            this.pbReportes.Click += new System.EventHandler(this.pbReportes_Click);
+            // 
+            // btnReportes
+            // 
+            this.btnReportes.Animated = true;
+            this.btnReportes.AnimatedGIF = true;
+            this.btnReportes.AutoRoundedCorners = true;
+            this.btnReportes.BorderRadius = 24;
+            this.btnReportes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReportes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnReportes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnReportes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnReportes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnReportes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportes.ForeColor = System.Drawing.Color.White;
+            this.btnReportes.Location = new System.Drawing.Point(769, 195);
+            this.btnReportes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.Size = new System.Drawing.Size(170, 51);
+            this.btnReportes.TabIndex = 20;
+            this.btnReportes.Text = "Reportes";
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
             // btnBorrarEvent
             // 
@@ -151,7 +190,7 @@
             this.btnBorrarEvent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnBorrarEvent.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBorrarEvent.ForeColor = System.Drawing.Color.White;
-            this.btnBorrarEvent.Location = new System.Drawing.Point(742, 195);
+            this.btnBorrarEvent.Location = new System.Drawing.Point(546, 195);
             this.btnBorrarEvent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBorrarEvent.Name = "btnBorrarEvent";
             this.btnBorrarEvent.Size = new System.Drawing.Size(170, 51);
@@ -172,7 +211,7 @@
             this.guna2TileButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2TileButton1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TileButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2TileButton1.Location = new System.Drawing.Point(405, 195);
+            this.guna2TileButton1.Location = new System.Drawing.Point(297, 195);
             this.guna2TileButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TileButton1.Name = "guna2TileButton1";
             this.guna2TileButton1.Size = new System.Drawing.Size(196, 51);
@@ -193,7 +232,7 @@
             this.btnAddEvent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAddEvent.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddEvent.ForeColor = System.Drawing.Color.White;
-            this.btnAddEvent.Location = new System.Drawing.Point(86, 195);
+            this.btnAddEvent.Location = new System.Drawing.Point(77, 195);
             this.btnAddEvent.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAddEvent.Name = "btnAddEvent";
             this.btnAddEvent.Size = new System.Drawing.Size(170, 51);
@@ -205,7 +244,7 @@
             // 
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(772, 68);
+            this.pictureBox4.Location = new System.Drawing.Point(576, 68);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(104, 105);
@@ -218,7 +257,7 @@
             // 
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(459, 68);
+            this.pictureBox3.Location = new System.Drawing.Point(347, 68);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(90, 105);
@@ -231,7 +270,7 @@
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(114, 68);
+            this.pictureBox2.Location = new System.Drawing.Point(106, 68);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(106, 105);
@@ -345,6 +384,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbReportes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -378,5 +418,7 @@
         private System.Windows.Forms.PictureBox pbMensajesAdmin;
         private Guna.UI2.WinForms.Guna2PictureBox pbAdministrador;
         private Guna.UI2.WinForms.Guna2PictureBox pbGraficas;
+        private Guna.UI2.WinForms.Guna2TileButton btnReportes;
+        private System.Windows.Forms.PictureBox pbReportes;
     }
 }

@@ -128,11 +128,6 @@ namespace ProyectoFinal.Formularios
             // Ruta completa de la imagen seleccionada en la carpeta "Imagenes"
             string rutaImagen = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName, "Imagenes", nombreImagen);
 
-            // Muestra la ruta completa en un MessageBox
-            MessageBox.Show($"Ruta completa de la imagen seleccionada:\n{rutaImagen}",
-                            "Ruta de la imagen",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
 
             // Verifica si la imagen existe
             if (File.Exists(rutaImagen))

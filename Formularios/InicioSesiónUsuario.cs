@@ -39,6 +39,7 @@ namespace ProyectoFinal.Formularios
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
+
             this.Close();
         }
 

@@ -67,8 +67,6 @@ namespace ProyectoFinal.Formularios
                 // Construcción de la ruta completa usando el directorio actual
                 string rutaImagen = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName, "Imagenes", nombreImagen);
 
-                MessageBox.Show($"Ruta completa construida: {rutaImagen}"); // Para verificar la ruta
-
                 if (File.Exists(rutaImagen))
                 {
                     using (FileStream stream = new FileStream(rutaImagen, FileMode.Open, FileAccess.Read))

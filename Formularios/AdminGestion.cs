@@ -53,6 +53,7 @@ namespace ProyectoFinal.Formularios
        
         private void btnToggleMenu_Click(object sender, EventArgs e)
         {
+
             if (menuExpandido)
             {
                 guna2PanelMenu.Width = 40; // Reducir el ancho del panel
@@ -114,6 +115,20 @@ namespace ProyectoFinal.Formularios
         {
             Gráficas gráficas = new Gráficas();
             gráficas.Show();
+            this.Close();
+        }
+
+        private void pbReportes_Click(object sender, EventArgs e)
+        {
+            Reportes reportes = new Reportes();
+            reportes.Show();
+            this.Close();
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            Reportes reportes = new Reportes();
+            reportes.Show();
             this.Close();
         }
     }
