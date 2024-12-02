@@ -453,7 +453,7 @@
             this.guna2PanelMenu.Name = "guna2PanelMenu";
             this.guna2PanelMenu.ShadowDecoration.BorderRadius = 10;
             this.guna2PanelMenu.ShadowDecoration.Color = System.Drawing.Color.SandyBrown;
-            this.guna2PanelMenu.Size = new System.Drawing.Size(38, 457);
+            this.guna2PanelMenu.Size = new System.Drawing.Size(176, 457);
             this.guna2PanelMenu.TabIndex = 9;
             // 
             // pbMensajesAdmin
