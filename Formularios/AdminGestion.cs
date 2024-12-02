@@ -109,5 +109,12 @@ namespace ProyectoFinal.Formularios
         {
 
         }
+
+        private void pbGraficas_Click(object sender, EventArgs e)
+        {
+            Gráficas gráficas = new Gráficas();
+            gráficas.Show();
+            this.Close();
+        }
     }
 }
