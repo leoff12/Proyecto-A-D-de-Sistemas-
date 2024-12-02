@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using ProyectoFinal.Formularios;
 
 
 
@@ -44,13 +36,13 @@ namespace ProyectoFinal.Formularios
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            BuscarEliminar buscaEliminar = new BuscarEliminar();   
+            BuscarEliminar buscaEliminar = new BuscarEliminar();
             buscaEliminar.Show();
             this.Close();
         }
 
         private bool menuExpandido = true; // Indica si el menú está expandido
-       
+
         private void btnToggleMenu_Click(object sender, EventArgs e)
         {
             if (menuExpandido)
@@ -90,7 +82,7 @@ namespace ProyectoFinal.Formularios
             FrmAdmin frmAdmin = new FrmAdmin();
             frmAdmin.Show();
             this.Close();
-            
+
         }
 
         private void pbMensajesAdmin_Click(object sender, EventArgs e)
@@ -98,16 +90,6 @@ namespace ProyectoFinal.Formularios
             MensajesAdministrador mensajesAdministrador = new MensajesAdministrador();
             mensajesAdministrador.Show();
             this.Close();
-        }
-
-        private void guna2PanelMenu_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void timerMenuAnimacion_Tick(object sender, EventArgs e)
-        {
-
         }
 
         private void pbGraficas_Click(object sender, EventArgs e)

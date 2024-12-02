@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DetalleEventoForm));
             this.panel3 = new System.Windows.Forms.Panel();
             this.gbDetallesEvento = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.pbLogoUAM = new System.Windows.Forms.PictureBox();
             this.btnAnularReservacion = new Guna.UI2.WinForms.Guna2Button();
             this.btnReservar = new Guna.UI2.WinForms.Guna2Button();
             this.lblDetallesDescripcion = new System.Windows.Forms.Label();
@@ -47,7 +46,6 @@
             this.txtDescripcionEvento = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCuposDispEvento = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblNombreEvento = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.pbDetallesImagenEvento = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PanelMenu = new Guna.UI2.WinForms.Guna2Panel();
             this.btnCerrarSesiónAdmin = new Guna.UI2.WinForms.Guna2TileButton();
             this.label2 = new System.Windows.Forms.Label();
@@ -56,15 +54,17 @@
             this.pbAdministrador = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pbMensajes = new System.Windows.Forms.PictureBox();
             this.pbInicio = new System.Windows.Forms.PictureBox();
+            this.pbLogoUAM = new System.Windows.Forms.PictureBox();
+            this.pbDetallesImagenEvento = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel3.SuspendLayout();
             this.gbDetallesEvento.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbDetallesImagenEvento)).BeginInit();
             this.guna2PanelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnToggleMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAdministrador)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMensajes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbInicio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDetallesImagenEvento)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -76,9 +76,8 @@
             this.panel3.Location = new System.Drawing.Point(42, 26);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(677, 370);
+            this.panel3.Size = new System.Drawing.Size(681, 370);
             this.panel3.TabIndex = 6;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // gbDetallesEvento
             // 
@@ -105,25 +104,15 @@
             this.gbDetallesEvento.Location = new System.Drawing.Point(19, 17);
             this.gbDetallesEvento.Margin = new System.Windows.Forms.Padding(2);
             this.gbDetallesEvento.Name = "gbDetallesEvento";
-            this.gbDetallesEvento.Size = new System.Drawing.Size(619, 322);
+            this.gbDetallesEvento.Size = new System.Drawing.Size(647, 344);
             this.gbDetallesEvento.TabIndex = 1;
             this.gbDetallesEvento.Text = "Información del Evento";
-            // 
-            // pbLogoUAM
-            // 
-            this.pbLogoUAM.Image = global::ProyectoFinal.Properties.Resources.logo_uam_2;
-            this.pbLogoUAM.Location = new System.Drawing.Point(511, 0);
-            this.pbLogoUAM.Margin = new System.Windows.Forms.Padding(2);
-            this.pbLogoUAM.Name = "pbLogoUAM";
-            this.pbLogoUAM.Size = new System.Drawing.Size(109, 40);
-            this.pbLogoUAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbLogoUAM.TabIndex = 2;
-            this.pbLogoUAM.TabStop = false;
             // 
             // btnAnularReservacion
             // 
             this.btnAnularReservacion.BackColor = System.Drawing.Color.Transparent;
             this.btnAnularReservacion.BorderRadius = 15;
+            this.btnAnularReservacion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAnularReservacion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAnularReservacion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAnularReservacion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -143,6 +132,7 @@
             // 
             this.btnReservar.BackColor = System.Drawing.Color.Transparent;
             this.btnReservar.BorderRadius = 15;
+            this.btnReservar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReservar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnReservar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnReservar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -294,7 +284,7 @@
             this.txtEstadoPagoEvento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEstadoPagoEvento.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEstadoPagoEvento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEstadoPagoEvento.Location = new System.Drawing.Point(505, 55);
+            this.txtEstadoPagoEvento.Location = new System.Drawing.Point(429, 189);
             this.txtEstadoPagoEvento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEstadoPagoEvento.Name = "txtEstadoPagoEvento";
             this.txtEstadoPagoEvento.PasswordChar = '\0';
@@ -359,17 +349,6 @@
             this.lblNombreEvento.TabIndex = 1;
             this.lblNombreEvento.Text = "Título del Evento";
             // 
-            // pbDetallesImagenEvento
-            // 
-            this.pbDetallesImagenEvento.ImageRotate = 0F;
-            this.pbDetallesImagenEvento.Location = new System.Drawing.Point(15, 55);
-            this.pbDetallesImagenEvento.Margin = new System.Windows.Forms.Padding(2);
-            this.pbDetallesImagenEvento.Name = "pbDetallesImagenEvento";
-            this.pbDetallesImagenEvento.Size = new System.Drawing.Size(185, 232);
-            this.pbDetallesImagenEvento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbDetallesImagenEvento.TabIndex = 0;
-            this.pbDetallesImagenEvento.TabStop = false;
-            // 
             // guna2PanelMenu
             // 
             this.guna2PanelMenu.BackColor = System.Drawing.SystemColors.MenuBar;
@@ -385,7 +364,7 @@
             this.guna2PanelMenu.Name = "guna2PanelMenu";
             this.guna2PanelMenu.ShadowDecoration.BorderRadius = 10;
             this.guna2PanelMenu.ShadowDecoration.Color = System.Drawing.Color.SandyBrown;
-            this.guna2PanelMenu.Size = new System.Drawing.Size(48, 411);
+            this.guna2PanelMenu.Size = new System.Drawing.Size(49, 411);
             this.guna2PanelMenu.TabIndex = 20;
             // 
             // btnCerrarSesiónAdmin
@@ -433,9 +412,10 @@
             // 
             // btnToggleMenu
             // 
+            this.btnToggleMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnToggleMenu.Image = global::ProyectoFinal.Properties.Resources.settings_13895453;
             this.btnToggleMenu.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnToggleMenu.InitialImage")));
-            this.btnToggleMenu.Location = new System.Drawing.Point(3, 51);
+            this.btnToggleMenu.Location = new System.Drawing.Point(8, 54);
             this.btnToggleMenu.Name = "btnToggleMenu";
             this.btnToggleMenu.Size = new System.Drawing.Size(30, 29);
             this.btnToggleMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -481,6 +461,28 @@
             this.pbInicio.TabStop = false;
             this.pbInicio.Click += new System.EventHandler(this.pbDetallesRegresar_Click);
             // 
+            // pbLogoUAM
+            // 
+            this.pbLogoUAM.Image = global::ProyectoFinal.Properties.Resources.logo_uam_2;
+            this.pbLogoUAM.Location = new System.Drawing.Point(511, 0);
+            this.pbLogoUAM.Margin = new System.Windows.Forms.Padding(2);
+            this.pbLogoUAM.Name = "pbLogoUAM";
+            this.pbLogoUAM.Size = new System.Drawing.Size(109, 40);
+            this.pbLogoUAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLogoUAM.TabIndex = 2;
+            this.pbLogoUAM.TabStop = false;
+            // 
+            // pbDetallesImagenEvento
+            // 
+            this.pbDetallesImagenEvento.ImageRotate = 0F;
+            this.pbDetallesImagenEvento.Location = new System.Drawing.Point(15, 55);
+            this.pbDetallesImagenEvento.Margin = new System.Windows.Forms.Padding(2);
+            this.pbDetallesImagenEvento.Name = "pbDetallesImagenEvento";
+            this.pbDetallesImagenEvento.Size = new System.Drawing.Size(185, 232);
+            this.pbDetallesImagenEvento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbDetallesImagenEvento.TabIndex = 0;
+            this.pbDetallesImagenEvento.TabStop = false;
+            // 
             // DetalleEventoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -495,14 +497,14 @@
             this.panel3.ResumeLayout(false);
             this.gbDetallesEvento.ResumeLayout(false);
             this.gbDetallesEvento.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbDetallesImagenEvento)).EndInit();
             this.guna2PanelMenu.ResumeLayout(false);
             this.guna2PanelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnToggleMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAdministrador)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMensajes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbInicio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDetallesImagenEvento)).EndInit();
             this.ResumeLayout(false);
 
         }

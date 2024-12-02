@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using ProyectoFinal.Formularios;
 
 namespace ProyectoFinal.Formularios
 {
@@ -47,7 +39,7 @@ namespace ProyectoFinal.Formularios
                 // Abrir el formulario principal
                 FrmAdmin frmAdmin = new FrmAdmin();
                 frmAdmin.Show();
-                this.Close(); 
+                this.Close();
             }
             else
             {
@@ -63,7 +55,7 @@ namespace ProyectoFinal.Formularios
             this.Close();
         }
 
-        
+
         private void chkMostrarContraseñaAdm_CheckedChanged(object sender, EventArgs e)
         {
             if (chkMostrarContraseñaAdm.Checked)

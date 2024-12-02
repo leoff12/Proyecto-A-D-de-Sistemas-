@@ -1,10 +1,10 @@
 ﻿using ProyectoFinal.Clases;
 using ProyectoFinal.Servicios;
 using System;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-using System.Drawing;
 
 namespace ProyectoFinal.Formularios
 {
@@ -70,7 +70,7 @@ namespace ProyectoFinal.Formularios
             Funciones.ActualizarEvento(eventoOriginal);
 
             MessageBox.Show("Cambios guardados exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            
+
         }
 
         private bool ValidarFormulario()
@@ -115,11 +115,6 @@ namespace ProyectoFinal.Formularios
                 comboBox.SelectedIndex = 0;
             }
         }
-
-        private void pictureBox_Click(object sender, EventArgs e)
-        {
-
-        }
         private void cmbImagen_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Obtiene el nombre del archivo seleccionado en el ComboBox
@@ -158,11 +153,6 @@ namespace ProyectoFinal.Formularios
             ModificarEvento modificarEvento = new ModificarEvento();
             modificarEvento.Show();
             this.Close();
-        }
-
-        private void lblAgregarEvento_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void pbMensajesAdmin_Click(object sender, EventArgs e)

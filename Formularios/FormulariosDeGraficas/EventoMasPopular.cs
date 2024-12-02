@@ -2,27 +2,18 @@
 using ProyectoFinal.Servicios;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
 namespace ProyectoFinal.Formularios.FormulariosDeGraficas
 {
-    public partial class EventoMasPopular : Form
+    public partial class EventoMasPopular : MetroFramework.Forms.MetroForm
     {
         public EventoMasPopular()
         {
             InitializeComponent();
-        }
-
-        private void chartCategorias_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void EventoMasPopular_Load(object sender, EventArgs e)
@@ -71,5 +62,56 @@ namespace ProyectoFinal.Formularios.FormulariosDeGraficas
             gráficas.Show();
             this.Close();
         }
+
+        private void pbMensajesAdmin_Click(object sender, EventArgs e)
+        {
+            MensajesAdministrador mensajesAdministrador = new MensajesAdministrador();
+            mensajesAdministrador.Show();
+            this.Close();
+        }
+
+        private void btnCerrarSesiónAdmin_Click(object sender, EventArgs e)
+        {
+            AdminLoginForm adminLoginForm = new AdminLoginForm();
+            adminLoginForm.Show();
+            this.Close();
+        }
+
+        private bool menuExpandido = true;
+
+        private void btnToggleMenu_Click(object sender, EventArgs e)
+        {
+            if (menuExpandido)
+            {
+                guna2PanelMenu.Width = 40; // Reducir el ancho del panel
+                menuExpandido = false;
+
+                // Ocultar texto de los botones
+                foreach (Control control in guna2PanelMenu.Controls)
+                {
+                    if (control is Guna.UI2.WinForms.Guna2Button button)
+                    {
+                        button.Text = ""; // Ocultar el texto
+                        button.ImageAlign = HorizontalAlignment.Center; // Centrar los íconos
+                    }
+                }
+            }
+            else
+            {
+                guna2PanelMenu.Width = 187; // Expandir el ancho del panel
+                menuExpandido = true;
+
+                // Restaurar texto de los botones
+                foreach (Control control in guna2PanelMenu.Controls)
+                {
+                    if (control is Guna.UI2.WinForms.Guna2Button button)
+                    {
+                        button.Text = button.Tag.ToString(); // Recuperar texto del botón desde su Tag
+                        button.ImageAlign = HorizontalAlignment.Left; // Restaurar la alineación de los íconos
+                    }
+                }
+            }
+        }
     }
 }
+

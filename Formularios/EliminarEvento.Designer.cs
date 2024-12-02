@@ -151,6 +151,7 @@
             this.cmbCategoriaElim.BackColor = System.Drawing.Color.Transparent;
             this.cmbCategoriaElim.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.cmbCategoriaElim.BorderRadius = 5;
+            this.cmbCategoriaElim.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbCategoriaElim.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbCategoriaElim.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCategoriaElim.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -169,6 +170,7 @@
             this.cmbTipoDeEventoElim.BackColor = System.Drawing.Color.Transparent;
             this.cmbTipoDeEventoElim.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.cmbTipoDeEventoElim.BorderRadius = 5;
+            this.cmbTipoDeEventoElim.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbTipoDeEventoElim.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbTipoDeEventoElim.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipoDeEventoElim.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -186,6 +188,7 @@
             // 
             this.btnGuardarCambios.BackColor = System.Drawing.Color.Transparent;
             this.btnGuardarCambios.BorderRadius = 10;
+            this.btnGuardarCambios.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardarCambios.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnGuardarCambios.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGuardarCambios.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -218,6 +221,7 @@
             this.cmbImagen.BackColor = System.Drawing.Color.Transparent;
             this.cmbImagen.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.cmbImagen.BorderRadius = 5;
+            this.cmbImagen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbImagen.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbImagen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbImagen.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -230,7 +234,6 @@
             this.cmbImagen.Name = "cmbImagen";
             this.cmbImagen.Size = new System.Drawing.Size(95, 36);
             this.cmbImagen.TabIndex = 23;
-            this.cmbImagen.SelectedIndexChanged += new System.EventHandler(this.cmbImagen_SelectedIndexChanged);
             // 
             // lblImagen
             // 
@@ -244,7 +247,6 @@
             this.lblImagen.Size = new System.Drawing.Size(123, 17);
             this.lblImagen.TabIndex = 22;
             this.lblImagen.Text = "Imagen del Evento";
-            this.lblImagen.Click += new System.EventHandler(this.lblImagen_Click);
             // 
             // lblCategoriaElim
             // 
@@ -470,6 +472,7 @@
             // 
             // pbMensajesAdmin
             // 
+            this.pbMensajesAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbMensajesAdmin.Image = global::ProyectoFinal.Properties.Resources.chat_45180341;
             this.pbMensajesAdmin.Location = new System.Drawing.Point(85, 151);
             this.pbMensajesAdmin.Name = "pbMensajesAdmin";
@@ -516,14 +519,15 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(87, 113);
+            this.label1.Location = new System.Drawing.Point(78, 113);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 16);
+            this.label1.Size = new System.Drawing.Size(64, 16);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Inicio";
+            this.label1.Text = "Regresar";
             // 
             // btnToggleMenu
             // 
+            this.btnToggleMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnToggleMenu.Image = global::ProyectoFinal.Properties.Resources.settings_13895453;
             this.btnToggleMenu.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnToggleMenu.InitialImage")));
             this.btnToggleMenu.Location = new System.Drawing.Point(3, 51);
@@ -550,7 +554,7 @@
             // 
             this.pbInicio.BackColor = System.Drawing.Color.Transparent;
             this.pbInicio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbInicio.Image = global::ProyectoFinal.Properties.Resources.home_100230672;
+            this.pbInicio.Image = global::ProyectoFinal.Properties.Resources.turn_left_10118729;
             this.pbInicio.Location = new System.Drawing.Point(85, 65);
             this.pbInicio.Name = "pbInicio";
             this.pbInicio.Size = new System.Drawing.Size(44, 45);
@@ -571,7 +575,6 @@
             this.Name = "EliminarEvento";
             this.Padding = new System.Windows.Forms.Padding(20, 30, 20, 20);
             this.Style = MetroFramework.MetroColorStyle.White;
-            this.Load += new System.EventHandler(this.EliminarEvento_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).EndInit();

@@ -1,9 +1,9 @@
 ﻿using ProyectoFinal.Clases;
 using ProyectoFinal.Servicios;
 using System;
-using System.Windows.Forms;
-using System.IO;
 using System.Drawing;
+using System.IO;
+using System.Windows.Forms;
 namespace ProyectoFinal.Formularios
 {
     public partial class EliminarEvento : MetroFramework.Forms.MetroForm
@@ -114,31 +114,6 @@ namespace ProyectoFinal.Formularios
             this.Close();
         }
 
-
-        private void EliminarEvento_Load(object sender, EventArgs e)
-        {
-
-        }
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void cmbImagen_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblImagen_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pbMensajesAdmin_Click(object sender, EventArgs e)
         {
             MensajesAdministrador mensajesAdministrador = new MensajesAdministrador();
@@ -187,5 +162,6 @@ namespace ProyectoFinal.Formularios
                     }
                 }
             }
-    }   }
+        }
+    }
 }

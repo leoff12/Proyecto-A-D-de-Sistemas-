@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProyectoFinal.Formularios
@@ -26,7 +19,7 @@ namespace ProyectoFinal.Formularios
 
             if (usuarioIngresado == USUARIO_VALIDO && contraseñaIngresada == CONTRASENA_VALIDA)
             {
-                VistaGeneralUsuario vistaGeneralUsuario= new VistaGeneralUsuario();
+                VistaGeneralUsuario vistaGeneralUsuario = new VistaGeneralUsuario();
                 vistaGeneralUsuario.Show();
                 this.Close(); // Oculta el formulario actual
             }

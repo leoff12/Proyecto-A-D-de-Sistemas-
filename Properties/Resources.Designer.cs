@@ -323,6 +323,16 @@ namespace ProyectoFinal.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap replay_10024635 {
+            get {
+                object obj = ResourceManager.GetObject("replay_10024635", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap search_11349253 {
             get {
                 object obj = ResourceManager.GetObject("search_11349253", resourceCulture);
@@ -366,6 +376,26 @@ namespace ProyectoFinal.Properties {
         internal static System.Drawing.Bitmap speech_bubble_8716838 {
             get {
                 object obj = ResourceManager.GetObject("speech-bubble_8716838", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap turn_left_10118729 {
+            get {
+                object obj = ResourceManager.GetObject("turn-left_10118729", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap turn_left_101187291 {
+            get {
+                object obj = ResourceManager.GetObject("turn-left_101187291", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

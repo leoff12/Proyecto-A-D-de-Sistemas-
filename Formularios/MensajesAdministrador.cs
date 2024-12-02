@@ -2,20 +2,14 @@
 using ProyectoFinal.Servicios;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using ProyectoFinal.Formularios;
 
 namespace ProyectoFinal.Formularios
 {
     public partial class MensajesAdministrador : MetroFramework.Forms.MetroForm
     {
-        
+
 
         public MensajesAdministrador()
         {
@@ -42,7 +36,7 @@ namespace ProyectoFinal.Formularios
                 // Agregar los datos de los mensajes al DataGridView
                 foreach (var mensaje in mensajes)
                 {
-                    
+
                     dgvMensajesAdmin.Rows.Add(
                         mensaje.NombreMensaje,  // Nombre del Evento
                         mensaje.FechaMensaje.ToString("dd/MM/yyyy"),  // Fecha del Evento
@@ -102,7 +96,7 @@ namespace ProyectoFinal.Formularios
             {
                 string nombreEvento = dgvMensajesAdmin.SelectedRows[0].Cells[0].Value.ToString();
                 ActualizarEstadoEvento(nombreEvento, 2, "Aprobada"); // EstadoReservación = 2 (Aprobada)
-                
+
             }
         }
 
@@ -112,7 +106,7 @@ namespace ProyectoFinal.Formularios
             {
                 string nombreEvento = dgvMensajesAdmin.SelectedRows[0].Cells[0].Value.ToString();
                 ActualizarEstadoEvento(nombreEvento, 3, "Rechazada"); // EstadoReservación = 3 (Rechazada)
-                
+
             }
         }
 
@@ -122,7 +116,7 @@ namespace ProyectoFinal.Formularios
             {
                 string nombreEvento = dgvMensajesAdmin.SelectedRows[0].Cells[0].Value.ToString();
                 ActualizarEstadoEvento(nombreEvento, 1, "En espera"); // EstadoReservación = 1 (En espera)
-                
+
             }
         }
 

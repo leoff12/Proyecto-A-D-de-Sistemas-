@@ -83,11 +83,6 @@ namespace ProyectoFinal.Formularios
             this.Close();
         }
 
-        private void ModificarEvento_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void pbMensajes_Click(object sender, EventArgs e)
         {
             MensajesAdministrador mensajesAdministrador = new MensajesAdministrador();

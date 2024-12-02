@@ -44,6 +44,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pbLogoUAM = new System.Windows.Forms.PictureBox();
             this.guna2PanelMenu = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2TileButton1 = new Guna.UI2.WinForms.Guna2TileButton();
             this.pbMensajes = new System.Windows.Forms.PictureBox();
             this.btnCerrarSesiónAdmin = new Guna.UI2.WinForms.Guna2TileButton();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,7 +52,6 @@
             this.btnToggleMenu = new System.Windows.Forms.PictureBox();
             this.pbAdministrador = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pbInicio = new System.Windows.Forms.PictureBox();
-            this.guna2TileButton1 = new Guna.UI2.WinForms.Guna2TileButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEventos)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbBuscar)).BeginInit();
@@ -164,6 +164,7 @@
             // cmbEventos
             // 
             this.cmbEventos.BackColor = System.Drawing.Color.Transparent;
+            this.cmbEventos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbEventos.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbEventos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEventos.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -217,10 +218,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.pbLogoUAM);
-            this.panel1.Location = new System.Drawing.Point(37, 24);
+            this.panel1.Location = new System.Drawing.Point(37, 27);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(673, 55);
+            this.panel1.Size = new System.Drawing.Size(673, 52);
             this.panel1.TabIndex = 10;
             // 
             // pbLogoUAM
@@ -253,8 +254,32 @@
             this.guna2PanelMenu.Size = new System.Drawing.Size(40, 369);
             this.guna2PanelMenu.TabIndex = 15;
             // 
+            // guna2TileButton1
+            // 
+            this.guna2TileButton1.Animated = true;
+            this.guna2TileButton1.AnimatedGIF = true;
+            this.guna2TileButton1.AutoRoundedCorners = true;
+            this.guna2TileButton1.BorderRadius = 13;
+            this.guna2TileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2TileButton1.DefaultAutoSize = true;
+            this.guna2TileButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2TileButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2TileButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2TileButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2TileButton1.FillColor = System.Drawing.Color.Red;
+            this.guna2TileButton1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TileButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2TileButton1.Location = new System.Drawing.Point(55, 331);
+            this.guna2TileButton1.Name = "guna2TileButton1";
+            this.guna2TileButton1.Size = new System.Drawing.Size(108, 28);
+            this.guna2TileButton1.TabIndex = 21;
+            this.guna2TileButton1.Tag = "Cerrar Sesión";
+            this.guna2TileButton1.Text = "Cerrar Sesión";
+            this.guna2TileButton1.Click += new System.EventHandler(this.guna2TileButton1_Click);
+            // 
             // pbMensajes
             // 
+            this.pbMensajes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbMensajes.Image = global::ProyectoFinal.Properties.Resources.chat_45180341;
             this.pbMensajes.Location = new System.Drawing.Point(85, 151);
             this.pbMensajes.Name = "pbMensajes";
@@ -309,6 +334,7 @@
             // 
             // btnToggleMenu
             // 
+            this.btnToggleMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnToggleMenu.Image = global::ProyectoFinal.Properties.Resources.settings_13895453;
             this.btnToggleMenu.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnToggleMenu.InitialImage")));
             this.btnToggleMenu.Location = new System.Drawing.Point(3, 51);
@@ -335,7 +361,7 @@
             // 
             this.pbInicio.BackColor = System.Drawing.Color.Transparent;
             this.pbInicio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbInicio.Image = global::ProyectoFinal.Properties.Resources.home_100230672;
+            this.pbInicio.Image = global::ProyectoFinal.Properties.Resources.home_10023067;
             this.pbInicio.Location = new System.Drawing.Point(85, 65);
             this.pbInicio.Name = "pbInicio";
             this.pbInicio.Size = new System.Drawing.Size(44, 45);
@@ -343,29 +369,6 @@
             this.pbInicio.TabIndex = 0;
             this.pbInicio.TabStop = false;
             this.pbInicio.Click += new System.EventHandler(this.pbInicio_Click);
-            // 
-            // guna2TileButton1
-            // 
-            this.guna2TileButton1.Animated = true;
-            this.guna2TileButton1.AnimatedGIF = true;
-            this.guna2TileButton1.AutoRoundedCorners = true;
-            this.guna2TileButton1.BorderRadius = 13;
-            this.guna2TileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2TileButton1.DefaultAutoSize = true;
-            this.guna2TileButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TileButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TileButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2TileButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2TileButton1.FillColor = System.Drawing.Color.Red;
-            this.guna2TileButton1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TileButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2TileButton1.Location = new System.Drawing.Point(55, 331);
-            this.guna2TileButton1.Name = "guna2TileButton1";
-            this.guna2TileButton1.Size = new System.Drawing.Size(108, 28);
-            this.guna2TileButton1.TabIndex = 21;
-            this.guna2TileButton1.Tag = "Cerrar Sesión";
-            this.guna2TileButton1.Text = "Cerrar Sesión";
-            this.guna2TileButton1.Click += new System.EventHandler(this.guna2TileButton1_Click);
             // 
             // ModificarEvento
             // 
@@ -381,7 +384,6 @@
             this.RightToLeftLayout = true;
             this.Style = MetroFramework.MetroColorStyle.White;
             this.Text = "Modificar Evento";
-            this.Load += new System.EventHandler(this.ModificarEvento_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEventos)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbBuscar)).EndInit();
