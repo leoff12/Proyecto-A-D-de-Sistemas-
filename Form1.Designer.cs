@@ -185,6 +185,7 @@
             this.Name = "UniEventHub";
             this.Padding = new System.Windows.Forms.Padding(20, 92, 20, 20);
             this.Style = MetroFramework.MetroColorStyle.White;
+            this.Text = "Página Principal";
             this.TransparencyKey = System.Drawing.Color.DodgerBlue;
             this.Load += new System.EventHandler(this.UniEventHub_Load_1);
             this.metroPanel1.ResumeLayout(false);

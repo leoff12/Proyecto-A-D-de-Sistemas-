@@ -154,11 +154,22 @@ namespace ProyectoFinal.Formularios
         {
             if (EventoSeleccionado.EstadoReservación == 1 || EventoSeleccionado.EstadoReservación == 2)
             {
+                // Restaurar un cupo disponible
                 EventoSeleccionado.CuposDisp++;
-                EventoSeleccionado.EstadoReservación = 0; // Reservar
+                EventoSeleccionado.EstadoReservación = 0; // Estado "Reservar"
+
+                // Actualizar la lista de mensajes eliminando el mensaje relacionado con el evento
+                var mensajes = Funciones.CargarMensajes();
+                Mensajes mensajeRelacionado = mensajes.FirstOrDefault(m => m.NombreMensaje == EventoSeleccionado.NombreEvento);
+
+                if (mensajeRelacionado != null)
+                {
+                    Funciones.EliminarMensaje(mensajeRelacionado);
+                }
+
+                // Actualizar el estado del botón de reservación y guardar cambios en el evento
                 ActualizarBotonReservar(EventoSeleccionado.EstadoReservación);
                 Funciones.ActualizarEvento(EventoSeleccionado);
-
             }
         }
         private void ActualizarBotonReservar(int estado)

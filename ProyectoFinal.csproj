@@ -213,6 +213,7 @@
     <Compile Include="Servicios\DatosEnControlesCargar.cs" />
     <Compile Include="Servicios\CargarImagen.cs" />
     <Compile Include="Servicios\FuncionesMensajes.cs" />
+    <Compile Include="Servicios\FuncionesUsuario.cs" />
     <Compile Include="Servicios\ValidarFormularios.cs" />
     <Compile Include="Servicios\funcionesBinarias.cs" />
     <Compile Include="Servicios\FuncionesVarias.cs" />
