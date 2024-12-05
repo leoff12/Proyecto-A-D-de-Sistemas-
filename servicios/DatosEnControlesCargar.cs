@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProyectoFinal.Clases;
+
 
 namespace ProyectoFinal.Servicios
 {
@@ -43,6 +45,48 @@ namespace ProyectoFinal.Servicios
             mtxtHFin.Text = $"{eventoOriginal.HoraFin:00}:00";
             cmbImagen.SelectedItem = eventoOriginal.ImagenSeleccionada;
             chkAccesibleMod.Checked = eventoOriginal.Accesible;
+        }
+
+        public static void CargarDetalles(Eventos eventoSeleccionado, ComboBox cmbTipoDeEventoElim, ComboBox cmbCategoriaElim, TextBox txtNombreEvento, Guna2TextBox txtDescripcion, MaskedTextBox mtxtFechaEvento, Guna2TextBox txtCuposDisp, MaskedTextBox mtxtHInicio, MaskedTextBox mtxtHFin, CheckBox chkAccesibleElim, ComboBox cmbImagen, PictureBox pbImagen)
+        {
+            // Asegurarse de que el tipo de evento esté en la lista del ComboBox
+            if (!cmbTipoDeEventoElim.Items.Contains(eventoSeleccionado.TipoDeEvento) && !cmbCategoriaElim.Items.Contains(eventoSeleccionado.TipoDeEvento))
+            {
+                cmbTipoDeEventoElim.Items.Add(eventoSeleccionado.TipoDeEvento);
+                cmbCategoriaElim.Items.Add(eventoSeleccionado.Categoría);
+            }
+
+            // Cargar los datos en los controles
+            cmbTipoDeEventoElim.Text = eventoSeleccionado.TipoDeEvento;
+            cmbTipoDeEventoElim.Enabled = false; // Deshabilita la opción de cambio
+            txtNombreEvento.Text = eventoSeleccionado.NombreEvento;
+            txtDescripcion.Text = eventoSeleccionado.Descripción;
+            mtxtFechaEvento.Text = eventoSeleccionado.Fecha.ToString("dd/MM/yyyy");
+            cmbCategoriaElim.Text = eventoSeleccionado.Categoría;
+            cmbCategoriaElim.Enabled = false; // Deshabilita la opción de cambio
+            txtCuposDisp.Text = eventoSeleccionado.CuposDisp.ToString();
+            mtxtHInicio.Text = $"{eventoSeleccionado.HoraInicio:00}:00";
+            mtxtHFin.Text = $"{eventoSeleccionado.HoraFin:00}:00";
+            chkAccesibleElim.Checked = eventoSeleccionado.Accesible;
+
+            // Deshabilitar la edición de los controles
+            txtNombreEvento.ReadOnly = true;
+            txtDescripcion.ReadOnly = true;
+            cmbTipoDeEventoElim.DropDownStyle = ComboBoxStyle.DropDownList;
+            mtxtFechaEvento.ReadOnly = true;
+            cmbCategoriaElim.DropDownStyle = ComboBoxStyle.DropDownList;
+            txtCuposDisp.ReadOnly = true;
+            mtxtHInicio.ReadOnly = true;
+            mtxtHFin.ReadOnly = true;
+
+            // Cargar la imagen en el ComboBox y el PictureBox
+            cmbImagen.Items.Clear();
+            if (!string.IsNullOrEmpty(eventoSeleccionado.ImagenSeleccionada))
+            {
+                cmbImagen.Items.Add(eventoSeleccionado.ImagenSeleccionada);
+                cmbImagen.SelectedIndex = 0; // Selecciona automáticamente la imagen del evento
+                CargarImagen.CargarImagenEnPictureBox(eventoSeleccionado.ImagenSeleccionada, pbImagen);
+            }
         }
     }
 }

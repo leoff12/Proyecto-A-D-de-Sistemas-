@@ -15,78 +15,7 @@ namespace ProyectoFinal.Formularios
         {
             InitializeComponent();
             eventoSeleccionado = eventoS;
-            CargarDetalles();
         }
-
-        private void CargarDetalles()
-        {
-            // Asegurarse de que el tipo de evento esté en la lista del ComboBox
-            if (!cmbTipoDeEventoElim.Items.Contains(eventoSeleccionado.TipoDeEvento) && !cmbCategoriaElim.Items.Contains(eventoSeleccionado.TipoDeEvento))
-            {
-                cmbTipoDeEventoElim.Items.Add(eventoSeleccionado.TipoDeEvento);
-                cmbCategoriaElim.Items.Add(eventoSeleccionado.Categoría);
-            }
-
-            cmbTipoDeEventoElim.Text = eventoSeleccionado.TipoDeEvento;
-            cmbTipoDeEventoElim.Enabled = false; // Deshabilita la opción de cambio
-            txtNombreEvento.Text = eventoSeleccionado.NombreEvento;
-            txtDescripcion.Text = eventoSeleccionado.Descripción;
-            mtxtFechaEvento.Text = eventoSeleccionado.Fecha.ToString("dd/MM/yyyy");
-            cmbCategoriaElim.Text = eventoSeleccionado.Categoría;
-            cmbCategoriaElim.Enabled = false; // Deshabilita la opción de cambio
-            txtCuposDisp.Text = eventoSeleccionado.CuposDisp.ToString();
-            mtxtHInicio.Text = $"{eventoSeleccionado.HoraInicio:00}:00";
-            mtxtHFin.Text = $"{eventoSeleccionado.HoraFin:00}:00";
-            chkAccesibleElim.Checked = eventoSeleccionado.Accesible;
-
-            // Deshabilita la edición
-            txtNombreEvento.ReadOnly = true;
-            txtDescripcion.ReadOnly = true;
-            cmbTipoDeEventoElim.DropDownStyle = ComboBoxStyle.DropDownList;
-            mtxtFechaEvento.ReadOnly = true;
-            cmbCategoriaElim.DropDownStyle = ComboBoxStyle.DropDownList;
-            txtCuposDisp.ReadOnly = true;
-            mtxtHInicio.ReadOnly = true;
-            mtxtHFin.ReadOnly = true;
-
-            // Carga la dirección de la imagen en el ComboBox y la imagen en el PictureBox
-            cmbImagen.Items.Clear();
-            if (!string.IsNullOrEmpty(eventoSeleccionado.ImagenSeleccionada))
-            {
-                cmbImagen.Items.Add(eventoSeleccionado.ImagenSeleccionada);
-                cmbImagen.SelectedIndex = 0; // Selecciona automáticamente la imagen del evento
-                CargarImagen(eventoSeleccionado.ImagenSeleccionada);
-            }
-
-        }
-
-        private void CargarImagen(string nombreImagen)
-        {
-            try
-            {
-                // Construcción de la ruta completa usando el directorio actual
-                string rutaImagen = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName, "Imagenes", nombreImagen);
-
-                if (File.Exists(rutaImagen))
-                {
-                    using (FileStream stream = new FileStream(rutaImagen, FileMode.Open, FileAccess.Read))
-                    {
-                        pbImagen.Image = Image.FromStream(stream); // Carga la imagen desde el stream
-                    }
-                }
-                else
-                {
-                    pbImagen.Image = null;
-                    MessageBox.Show($"La imagen no se encontró en la ruta especificada: {rutaImagen}", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-            }
-            catch (Exception ex)
-            {
-                pbImagen.Image = null;
-                MessageBox.Show($"Error al cargar la imagen: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
@@ -115,7 +44,8 @@ namespace ProyectoFinal.Formularios
 
         private void EliminarEvento_Load(object sender, EventArgs e)
         {
-
+            // Llamar a la función estática CargarDetalles de la clase DatosEnControlesCargar
+            DatosEnControlesCargar.CargarDetalles(eventoSeleccionado, cmbTipoDeEventoElim, cmbCategoriaElim, txtNombreEvento, txtDescripcion, mtxtFechaEvento, txtCuposDisp, mtxtHInicio, mtxtHFin, chkAccesibleElim, cmbImagen, pbImagen);
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {

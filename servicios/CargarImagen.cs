@@ -46,19 +46,46 @@ namespace ProyectoFinal.Servicios
 
         //Cargar imagen en el pictureBox
 
-        public void CargarImagenEnPictureBox(string nombreImagen, PictureBox pictureBox)
+        public static void CargarImagenEnPictureBox(string nombreImagen, PictureBox pictureBox)
         {
-            // Ruta de la carpeta donde se encuentran las imágenes
-            string rutaImagen = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName, "Imagenes", nombreImagen);
-
-            if (File.Exists(rutaImagen))
+            // Validación de parámetros
+            if (string.IsNullOrEmpty(nombreImagen))
             {
-                pictureBox.Image = Image.FromFile(rutaImagen);
+                MessageBox.Show("El nombre de la imagen no es válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            else
+
+            if (pictureBox == null)
             {
-                MessageBox.Show("No se pudo cargar la imagen.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("El control PictureBox no es válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            try
+            {
+                // Construcción de la ruta completa usando el directorio base
+                string rutaImagen = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName, "Imagenes", nombreImagen);
+
+                // Verificar si el archivo de la imagen existe
+                if (File.Exists(rutaImagen))
+                {
+                    // Cargar la imagen en el PictureBox
+                    pictureBox.Image = Image.FromFile(rutaImagen);
+                }
+                else
+                {
+                    // Si no se encuentra la imagen, mostrar mensaje de error
+                    pictureBox.Image = null;  // Limpiar el PictureBox
+                    MessageBox.Show($"La imagen '{nombreImagen}' no se encuentra en la ruta especificada.", "Error de Carga", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejo de excepciones generales
+                pictureBox.Image = null;  // Limpiar el PictureBox
+                MessageBox.Show($"Error al cargar la imagen: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
     }
 }
