@@ -11,7 +11,7 @@ using ProyectoFinal.Formularios.FormulariosReportes;
 
 namespace ProyectoFinal.Formularios
 {
-    public partial class Reportes : Form
+    public partial class Reportes : MetroFramework.Forms.MetroForm
     {
         public Reportes()
         {
@@ -30,6 +30,11 @@ namespace ProyectoFinal.Formularios
             EventosPorCategoria eventosPorCategoria = new EventosPorCategoria();
             eventosPorCategoria.Show();
             this.Close();
+        }
+
+        private void Reportes_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

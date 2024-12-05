@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoFinal.Servicios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,7 @@ namespace ProyectoFinal.Formularios
 {
     public partial class InicioSesiónUsuario : MetroFramework.Forms.MetroForm
     {
-        private const string USUARIO_VALIDO = "admin";
+        private const string CIF_VALIDO = "admin";
         private const string CONTRASENA_VALIDA = "1234";
         public InicioSesiónUsuario()
         {
@@ -21,20 +22,10 @@ namespace ProyectoFinal.Formularios
 
         private void btnAcceder_Click(object sender, EventArgs e)
         {
-            string usuarioIngresado = txtCIF.Text;
-            string contraseñaIngresada = txtContraseña.Text;
+            string usuarioIngresado = txtCIF.Text.Trim();
+            string contraseñaIngresada = txtContraseña.Text.Trim();
 
-            if (usuarioIngresado == USUARIO_VALIDO && contraseñaIngresada == CONTRASENA_VALIDA)
-            {
-                VistaGeneralUsuario vistaGeneralUsuario= new VistaGeneralUsuario();
-                vistaGeneralUsuario.Show();
-                this.Close(); // Oculta el formulario actual
-            }
-            else
-            {
-                // Credenciales incorrectas: muestra un mensaje de error
-                MessageBox.Show("Usuario o contraseña incorrectos. Por favor, inténtelo de nuevo.", "Error de autenticación", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            ValidarAcceso.ValidarInicioSesionUsuario(usuarioIngresado, contraseñaIngresada, txtCIF, txtContraseña, this);
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)

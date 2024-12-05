@@ -14,7 +14,7 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal.Formularios.FormulariosReportes
 {
-    public partial class EventosPorCategoria : Form
+    public partial class EventosPorCategoria : MetroFramework.Forms.MetroForm
     {
         public EventosPorCategoria()
         {

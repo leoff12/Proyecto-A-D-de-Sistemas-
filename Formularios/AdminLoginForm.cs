@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProyectoFinal.Formularios;
+using ProyectoFinal.Servicios;
 
 namespace ProyectoFinal.Formularios
 {
@@ -25,37 +26,8 @@ namespace ProyectoFinal.Formularios
             string nombreUsuario = txtUserAdm.Text.Trim();
             string contrasena = txtContraseñaAdm.Text.Trim();
 
-            // Verificar que ambos campos no estén vacíos
-            if (string.IsNullOrEmpty(nombreUsuario))
-            {
-                MessageBox.Show("Por favor, ingrese el Nombre de Usuario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtUserAdm.Focus();
-                return;
-            }
-
-            if (string.IsNullOrEmpty(contrasena))
-            {
-                MessageBox.Show("Por favor, ingrese la Contraseña.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtContraseñaAdm.Focus();
-                return;
-            }
-
-            // Validar credenciales
-            if (nombreUsuario == "Santiago Mena" && contrasena == "1234")
-            {
-
-                // Abrir el formulario principal
-                FrmAdmin frmAdmin = new FrmAdmin();
-                frmAdmin.Show();
-                this.Close(); 
-            }
-            else
-            {
-                MessageBox.Show("Credenciales incorrectas. Por favor, inténtelo nuevamente.", "Error de Inicio de Sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtUserAdm.Clear();
-                txtContraseñaAdm.Clear();
-                txtUserAdm.Focus();
-            }
+            // Llamar a la función ValidarUsuarioAdmin desde ValidarAcceso
+            ValidarAcceso.ValidarUsuarioAdmin(nombreUsuario, contrasena, txtUserAdm, txtContraseñaAdm, this);
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
@@ -75,7 +47,11 @@ namespace ProyectoFinal.Formularios
                 txtContraseñaAdm.PasswordChar = '*'; // Ocultar la contraseña
             }
         }
+        private void AdminLoginForm_Load(object sender, EventArgs e)
+        {
+            
 
+        }
     }
 }
 

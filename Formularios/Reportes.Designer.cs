@@ -32,22 +32,22 @@
             this.pnlGraficas = new Guna.UI2.WinForms.Guna2Panel();
             this.gbReportes = new Guna.UI2.WinForms.Guna2GroupBox();
             this.btnReportes2 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnReportes = new Guna.UI2.WinForms.Guna2Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblRegresarReportes = new System.Windows.Forms.Label();
             this.pbReporte2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnReportes = new Guna.UI2.WinForms.Guna2Button();
             this.pbReporte1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pbLogoUAM = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pbRegresarReportes = new System.Windows.Forms.PictureBox();
+            this.lblRegresarReportes = new System.Windows.Forms.Label();
             this.pbMas = new System.Windows.Forms.PictureBox();
             this.pnlGraficas.SuspendLayout();
             this.gbReportes.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbReporte2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbReporte1)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbRegresarReportes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMas)).BeginInit();
             this.SuspendLayout();
@@ -56,9 +56,9 @@
             // 
             this.pnlGraficas.Controls.Add(this.gbReportes);
             this.pnlGraficas.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.pnlGraficas.Location = new System.Drawing.Point(115, 84);
+            this.pnlGraficas.Location = new System.Drawing.Point(115, 125);
             this.pnlGraficas.Name = "pnlGraficas";
-            this.pnlGraficas.Size = new System.Drawing.Size(927, 423);
+            this.pnlGraficas.Size = new System.Drawing.Size(927, 438);
             this.pnlGraficas.TabIndex = 15;
             // 
             // gbReportes
@@ -67,7 +67,7 @@
             this.gbReportes.Controls.Add(this.pbReporte2);
             this.gbReportes.Controls.Add(this.btnReportes);
             this.gbReportes.Controls.Add(this.pbReporte1);
-            this.gbReportes.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.gbReportes.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.gbReportes.Font = new System.Drawing.Font("Segoe UI Black", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbReportes.ForeColor = System.Drawing.Color.White;
             this.gbReportes.Location = new System.Drawing.Point(7, 12);
@@ -93,6 +93,18 @@
             this.btnReportes2.TabIndex = 4;
             this.btnReportes2.Text = "Crear Reporte de...";
             // 
+            // pbReporte2
+            // 
+            this.pbReporte2.BackColor = System.Drawing.Color.Transparent;
+            this.pbReporte2.Image = ((System.Drawing.Image)(resources.GetObject("pbReporte2.Image")));
+            this.pbReporte2.ImageRotate = 0F;
+            this.pbReporte2.Location = new System.Drawing.Point(615, 79);
+            this.pbReporte2.Name = "pbReporte2";
+            this.pbReporte2.Size = new System.Drawing.Size(184, 140);
+            this.pbReporte2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbReporte2.TabIndex = 3;
+            this.pbReporte2.TabStop = false;
+            // 
             // btnReportes
             // 
             this.btnReportes.BackColor = System.Drawing.Color.Transparent;
@@ -110,52 +122,6 @@
             this.btnReportes.Text = "Reporte de Eventos Por Categoría";
             this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.pbLogoUAM);
-            this.panel1.Location = new System.Drawing.Point(115, -1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(927, 85);
-            this.panel1.TabIndex = 14;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel2.BackColor = System.Drawing.Color.Azure;
-            this.panel2.Controls.Add(this.pbRegresarReportes);
-            this.panel2.Controls.Add(this.lblRegresarReportes);
-            this.panel2.Controls.Add(this.pbMas);
-            this.panel2.Location = new System.Drawing.Point(0, -4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(116, 514);
-            this.panel2.TabIndex = 13;
-            // 
-            // lblRegresarReportes
-            // 
-            this.lblRegresarReportes.AutoSize = true;
-            this.lblRegresarReportes.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegresarReportes.Location = new System.Drawing.Point(13, 143);
-            this.lblRegresarReportes.Name = "lblRegresarReportes";
-            this.lblRegresarReportes.Size = new System.Drawing.Size(97, 27);
-            this.lblRegresarReportes.TabIndex = 3;
-            this.lblRegresarReportes.Text = "Regresar";
-            // 
-            // pbReporte2
-            // 
-            this.pbReporte2.BackColor = System.Drawing.Color.Transparent;
-            this.pbReporte2.Image = ((System.Drawing.Image)(resources.GetObject("pbReporte2.Image")));
-            this.pbReporte2.ImageRotate = 0F;
-            this.pbReporte2.Location = new System.Drawing.Point(615, 79);
-            this.pbReporte2.Name = "pbReporte2";
-            this.pbReporte2.Size = new System.Drawing.Size(184, 140);
-            this.pbReporte2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbReporte2.TabIndex = 3;
-            this.pbReporte2.TabStop = false;
-            // 
             // pbReporte1
             // 
             this.pbReporte1.BackColor = System.Drawing.Color.Transparent;
@@ -168,6 +134,17 @@
             this.pbReporte1.TabIndex = 1;
             this.pbReporte1.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.pbLogoUAM);
+            this.panel1.Location = new System.Drawing.Point(116, 41);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(927, 85);
+            this.panel1.TabIndex = 14;
+            // 
             // pbLogoUAM
             // 
             this.pbLogoUAM.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoUAM.Image")));
@@ -177,6 +154,19 @@
             this.pbLogoUAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbLogoUAM.TabIndex = 2;
             this.pbLogoUAM.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel2.BackColor = System.Drawing.Color.Azure;
+            this.panel2.Controls.Add(this.pbRegresarReportes);
+            this.panel2.Controls.Add(this.lblRegresarReportes);
+            this.panel2.Controls.Add(this.pbMas);
+            this.panel2.Location = new System.Drawing.Point(0, -4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(116, 567);
+            this.panel2.TabIndex = 13;
             // 
             // pbRegresarReportes
             // 
@@ -189,6 +179,16 @@
             this.pbRegresarReportes.TabIndex = 3;
             this.pbRegresarReportes.TabStop = false;
             this.pbRegresarReportes.Click += new System.EventHandler(this.pbRegresarReportes_Click);
+            // 
+            // lblRegresarReportes
+            // 
+            this.lblRegresarReportes.AutoSize = true;
+            this.lblRegresarReportes.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegresarReportes.Location = new System.Drawing.Point(13, 143);
+            this.lblRegresarReportes.Name = "lblRegresarReportes";
+            this.lblRegresarReportes.Size = new System.Drawing.Size(97, 27);
+            this.lblRegresarReportes.TabIndex = 3;
+            this.lblRegresarReportes.Text = "Regresar";
             // 
             // pbMas
             // 
@@ -205,21 +205,22 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1043, 507);
+            this.ClientSize = new System.Drawing.Size(1043, 560);
             this.Controls.Add(this.pnlGraficas);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "Reportes";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Style = MetroFramework.MetroColorStyle.White;
             this.Text = "Reportes";
+            this.Load += new System.EventHandler(this.Reportes_Load);
             this.pnlGraficas.ResumeLayout(false);
             this.gbReportes.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbReporte2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbReporte1)).EndInit();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbRegresarReportes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMas)).EndInit();
             this.ResumeLayout(false);

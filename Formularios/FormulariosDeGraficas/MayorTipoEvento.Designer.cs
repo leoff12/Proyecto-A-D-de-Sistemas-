@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MayorTipoEvento));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pbMayorTipoEvento = new System.Windows.Forms.PictureBox();
             this.lblInicio = new System.Windows.Forms.Label();
             this.pbMas = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pbLogoUAM = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tpGrafica = new System.Windows.Forms.TabPage();
             this.chartTipoEvento = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tpDetalles = new System.Windows.Forms.TabPage();
             this.listBoxTipos = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMayorTipoEvento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMas)).BeginInit();
@@ -65,7 +65,7 @@
             this.panel2.Controls.Add(this.pbMas);
             this.panel2.Location = new System.Drawing.Point(1, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(116, 514);
+            this.panel2.Size = new System.Drawing.Size(116, 567);
             this.panel2.TabIndex = 8;
             // 
             // pbMayorTipoEvento
@@ -108,10 +108,21 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pbLogoUAM);
-            this.panel1.Location = new System.Drawing.Point(117, 1);
+            this.panel1.Location = new System.Drawing.Point(117, 38);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(927, 85);
             this.panel1.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(24, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(501, 37);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Tipo de Evento Más Recurrente";
             // 
             // pbLogoUAM
             // 
@@ -129,7 +140,7 @@
             this.tabControl1.Controls.Add(this.tpGrafica);
             this.tabControl1.Controls.Add(this.tpDetalles);
             this.tabControl1.ItemSize = new System.Drawing.Size(180, 40);
-            this.tabControl1.Location = new System.Drawing.Point(148, 106);
+            this.tabControl1.Location = new System.Drawing.Point(148, 143);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(858, 376);
@@ -165,16 +176,16 @@
             // 
             // chartTipoEvento
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chartTipoEvento.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chartTipoEvento.Legends.Add(legend6);
+            chartArea1.Name = "ChartArea1";
+            this.chartTipoEvento.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartTipoEvento.Legends.Add(legend1);
             this.chartTipoEvento.Location = new System.Drawing.Point(6, 21);
             this.chartTipoEvento.Name = "chartTipoEvento";
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chartTipoEvento.Series.Add(series6);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartTipoEvento.Series.Add(series1);
             this.chartTipoEvento.Size = new System.Drawing.Size(577, 327);
             this.chartTipoEvento.TabIndex = 13;
             this.chartTipoEvento.Text = "chart1";
@@ -203,27 +214,16 @@
             this.listBoxTipos.Size = new System.Drawing.Size(644, 346);
             this.listBoxTipos.TabIndex = 1;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(24, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(501, 37);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Tipo de Evento Más Recurrente";
-            // 
             // MayorTipoEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1043, 507);
+            this.ClientSize = new System.Drawing.Size(1043, 560);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "MayorTipoEvento";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Style = MetroFramework.MetroColorStyle.White;
             this.Text = "MayorTipoEvento";
             this.Load += new System.EventHandler(this.MayorTipoEvento_Load);
             this.panel2.ResumeLayout(false);

@@ -73,5 +73,12 @@ namespace ProyectoFinal.Formularios
             VistaGeneralUsuario.Show();
             this.Close();
         }
+
+        bool menuExpandido = false;
+        private void btnToggleMenu_Click(object sender, EventArgs e)
+        {
+            FuncionesVarias.ToggleMenu(guna2PanelMenu, menuExpandido);
+            menuExpandido = !menuExpandido; // Cambiar el estado del menú
+        }
     }
 }

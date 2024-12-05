@@ -13,7 +13,7 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace ProyectoFinal.Formularios.FormulariosDeGraficas
 {
-    public partial class MayorTipoEvento : Form
+    public partial class MayorTipoEvento : MetroFramework.Forms.MetroForm
     {
         public MayorTipoEvento()
         {

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal.Formularios
 {
-    public partial class Gráficas : Form
+    public partial class Gráficas : MetroFramework.Forms.MetroForm
     {
         public Gráficas()
         {
@@ -37,6 +37,11 @@ namespace ProyectoFinal.Formularios
             MayorTipoEvento mayorTipoEvento = new MayorTipoEvento();
             mayorTipoEvento.Show();
             this.Close();
+        }
+
+        private void Gráficas_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

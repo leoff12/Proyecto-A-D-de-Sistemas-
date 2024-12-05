@@ -41,10 +41,10 @@
             // 
             // reportViewer1
             // 
-            this.reportViewer1.Location = new System.Drawing.Point(117, -1);
+            this.reportViewer1.Location = new System.Drawing.Point(117, 43);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(1211, 661);
+            this.reportViewer1.Size = new System.Drawing.Size(1211, 617);
             this.reportViewer1.TabIndex = 0;
             // 
             // panel2
@@ -101,7 +101,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.reportViewer1);
             this.Name = "EventosPorCategoria";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Style = MetroFramework.MetroColorStyle.White;
             this.Text = "EventosPorCategoria";
             this.Load += new System.EventHandler(this.EventosPorCategoria_Load);
             this.panel2.ResumeLayout(false);

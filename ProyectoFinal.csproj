@@ -213,6 +213,7 @@
     <Compile Include="Servicios\CargarImagen.cs" />
     <Compile Include="Servicios\funcionesBinarias.cs" />
     <Compile Include="Servicios\FuncionesVarias.cs" />
+    <Compile Include="Servicios\ValidarAcceso.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

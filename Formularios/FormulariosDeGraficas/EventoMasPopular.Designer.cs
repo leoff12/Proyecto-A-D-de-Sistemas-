@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventoMasPopular));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pbRegresarEventoMasPopular = new System.Windows.Forms.PictureBox();
             this.lblInicio = new System.Windows.Forms.Label();
             this.pbMas = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblCategorias = new System.Windows.Forms.Label();
             this.pbLogoUAM = new System.Windows.Forms.PictureBox();
             this.chartCategorias = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tpGrafica = new System.Windows.Forms.TabPage();
             this.tpDetalles = new System.Windows.Forms.TabPage();
             this.listBoxCategorias = new System.Windows.Forms.ListBox();
-            this.lblCategorias = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbRegresarEventoMasPopular)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMas)).BeginInit();
@@ -65,7 +65,7 @@
             this.panel2.Controls.Add(this.pbMas);
             this.panel2.Location = new System.Drawing.Point(1, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(116, 514);
+            this.panel2.Size = new System.Drawing.Size(116, 567);
             this.panel2.TabIndex = 8;
             // 
             // pbRegresarEventoMasPopular
@@ -109,10 +109,20 @@
             this.panel1.Controls.Add(this.lblCategorias);
             this.panel1.Controls.Add(this.pbLogoUAM);
             this.panel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(116, -1);
+            this.panel1.Location = new System.Drawing.Point(116, 41);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(927, 85);
             this.panel1.TabIndex = 12;
+            // 
+            // lblCategorias
+            // 
+            this.lblCategorias.AutoSize = true;
+            this.lblCategorias.ForeColor = System.Drawing.Color.White;
+            this.lblCategorias.Location = new System.Drawing.Point(23, 25);
+            this.lblCategorias.Name = "lblCategorias";
+            this.lblCategorias.Size = new System.Drawing.Size(532, 37);
+            this.lblCategorias.TabIndex = 3;
+            this.lblCategorias.Text = "Categoría de Evento Más Popular";
             // 
             // pbLogoUAM
             // 
@@ -126,16 +136,16 @@
             // 
             // chartCategorias
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartCategorias.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartCategorias.Legends.Add(legend1);
+            chartArea3.Name = "ChartArea1";
+            this.chartCategorias.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chartCategorias.Legends.Add(legend3);
             this.chartCategorias.Location = new System.Drawing.Point(6, 25);
             this.chartCategorias.Name = "chartCategorias";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartCategorias.Series.Add(series1);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chartCategorias.Series.Add(series3);
             this.chartCategorias.Size = new System.Drawing.Size(599, 322);
             this.chartCategorias.TabIndex = 13;
             this.chartCategorias.Text = "chart1";
@@ -147,7 +157,7 @@
             this.guna2TabControl1.Controls.Add(this.tpGrafica);
             this.guna2TabControl1.Controls.Add(this.tpDetalles);
             this.guna2TabControl1.ItemSize = new System.Drawing.Size(180, 40);
-            this.guna2TabControl1.Location = new System.Drawing.Point(146, 103);
+            this.guna2TabControl1.Location = new System.Drawing.Point(146, 143);
             this.guna2TabControl1.Name = "guna2TabControl1";
             this.guna2TabControl1.SelectedIndex = 0;
             this.guna2TabControl1.Size = new System.Drawing.Size(858, 376);
@@ -204,26 +214,16 @@
             this.listBoxCategorias.Size = new System.Drawing.Size(644, 346);
             this.listBoxCategorias.TabIndex = 0;
             // 
-            // lblCategorias
-            // 
-            this.lblCategorias.AutoSize = true;
-            this.lblCategorias.ForeColor = System.Drawing.Color.White;
-            this.lblCategorias.Location = new System.Drawing.Point(23, 25);
-            this.lblCategorias.Name = "lblCategorias";
-            this.lblCategorias.Size = new System.Drawing.Size(532, 37);
-            this.lblCategorias.TabIndex = 3;
-            this.lblCategorias.Text = "Categoría de Evento Más Popular";
-            // 
             // EventoMasPopular
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1043, 507);
+            this.ClientSize = new System.Drawing.Size(1043, 560);
             this.Controls.Add(this.guna2TabControl1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "EventoMasPopular";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Style = MetroFramework.MetroColorStyle.White;
             this.Text = "EventoMasPopular";
             this.Load += new System.EventHandler(this.EventoMasPopular_Load);
             this.panel2.ResumeLayout(false);

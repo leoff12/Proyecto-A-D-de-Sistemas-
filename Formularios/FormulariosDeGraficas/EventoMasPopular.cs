@@ -13,7 +13,7 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace ProyectoFinal.Formularios.FormulariosDeGraficas
 {
-    public partial class EventoMasPopular : Form
+    public partial class EventoMasPopular : MetroFramework.Forms.MetroForm
     {
         public EventoMasPopular()
         {
@@ -54,6 +54,12 @@ namespace ProyectoFinal.Formularios.FormulariosDeGraficas
                     serie.Points.AddXY(categoria.Categoría, categoria.Cantidad);
                     listBoxCategorias.Items.Add($"{categoria.Categoría}: {categoria.Cantidad} evento(s)");
                 }
+
+                // Personalización de etiquetas en la gráfica
+                serie.Label = "#VALY"; // Muestra la cantidad de eventos dentro de cada campo
+                serie.LegendText = "#VALX"; // Muestra la categoría en la leyenda
+                serie["PieLabelStyle"] = "Inside"; // Coloca las etiquetas dentro del gráfico
+                serie["PieLineColor"] = "Transparent"; // Elimina las líneas de las etiquetas
 
                 chartCategorias.Series.Add(serie);
                 chartCategorias.Titles.Clear();

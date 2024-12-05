@@ -380,6 +380,7 @@
             this.Style = MetroFramework.MetroColorStyle.White;
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.AliceBlue;
+            this.Load += new System.EventHandler(this.FrmAdmin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
