@@ -33,26 +33,26 @@
             this.cmbEventos = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtBuscar = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pbLogoUAM = new System.Windows.Forms.PictureBox();
             this.guna2PanelMenu = new Guna.UI2.WinForms.Guna2Panel();
             this.btnCerrarSesiónAdmin = new Guna.UI2.WinForms.Guna2TileButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.lblNotaElim = new System.Windows.Forms.Label();
             this.btnToggleMenu = new System.Windows.Forms.PictureBox();
             this.pbAdministrador = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pbMensajes = new System.Windows.Forms.PictureBox();
             this.pbInicio = new System.Windows.Forms.PictureBox();
+            this.lblNotaElim = new System.Windows.Forms.Label();
             this.pbBuscar = new System.Windows.Forms.PictureBox();
-            this.pbLogoUAM = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).BeginInit();
             this.guna2PanelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnToggleMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAdministrador)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMensajes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbInicio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBuscar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -119,6 +119,17 @@
             this.panel1.Size = new System.Drawing.Size(679, 49);
             this.panel1.TabIndex = 15;
             // 
+            // pbLogoUAM
+            // 
+            this.pbLogoUAM.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoUAM.Image")));
+            this.pbLogoUAM.Location = new System.Drawing.Point(560, 0);
+            this.pbLogoUAM.Margin = new System.Windows.Forms.Padding(2);
+            this.pbLogoUAM.Name = "pbLogoUAM";
+            this.pbLogoUAM.Size = new System.Drawing.Size(119, 49);
+            this.pbLogoUAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLogoUAM.TabIndex = 2;
+            this.pbLogoUAM.TabStop = false;
+            // 
             // guna2PanelMenu
             // 
             this.guna2PanelMenu.BackColor = System.Drawing.SystemColors.MenuBar;
@@ -180,18 +191,6 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Inicio";
             // 
-            // lblNotaElim
-            // 
-            this.lblNotaElim.AutoSize = true;
-            this.lblNotaElim.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNotaElim.ForeColor = System.Drawing.Color.Black;
-            this.lblNotaElim.Location = new System.Drawing.Point(202, 242);
-            this.lblNotaElim.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblNotaElim.Name = "lblNotaElim";
-            this.lblNotaElim.Size = new System.Drawing.Size(283, 22);
-            this.lblNotaElim.TabIndex = 20;
-            this.lblNotaElim.Text = "Busca tu evento para Eliminar";
-            // 
             // btnToggleMenu
             // 
             this.btnToggleMenu.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -243,6 +242,18 @@
             this.pbInicio.TabStop = false;
             this.pbInicio.Click += new System.EventHandler(this.pbInicio_Click);
             // 
+            // lblNotaElim
+            // 
+            this.lblNotaElim.AutoSize = true;
+            this.lblNotaElim.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotaElim.ForeColor = System.Drawing.Color.Black;
+            this.lblNotaElim.Location = new System.Drawing.Point(202, 242);
+            this.lblNotaElim.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNotaElim.Name = "lblNotaElim";
+            this.lblNotaElim.Size = new System.Drawing.Size(283, 22);
+            this.lblNotaElim.TabIndex = 20;
+            this.lblNotaElim.Text = "Busca tu evento para Eliminar";
+            // 
             // pbBuscar
             // 
             this.pbBuscar.BackColor = System.Drawing.Color.Transparent;
@@ -256,17 +267,6 @@
             this.pbBuscar.TabIndex = 2;
             this.pbBuscar.TabStop = false;
             this.pbBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
-            // pbLogoUAM
-            // 
-            this.pbLogoUAM.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoUAM.Image")));
-            this.pbLogoUAM.Location = new System.Drawing.Point(560, 0);
-            this.pbLogoUAM.Margin = new System.Windows.Forms.Padding(2);
-            this.pbLogoUAM.Name = "pbLogoUAM";
-            this.pbLogoUAM.Size = new System.Drawing.Size(119, 49);
-            this.pbLogoUAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbLogoUAM.TabIndex = 2;
-            this.pbLogoUAM.TabStop = false;
             // 
             // BuscarEliminar
             // 
@@ -282,9 +282,11 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BuscarEliminar";
             this.Style = MetroFramework.MetroColorStyle.White;
+            this.Text = "Buscar Eliminar";
             this.Load += new System.EventHandler(this.BuscarEliminar_Load);
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).EndInit();
             this.guna2PanelMenu.ResumeLayout(false);
             this.guna2PanelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnToggleMenu)).EndInit();
@@ -292,7 +294,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbMensajes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbInicio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBuscar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

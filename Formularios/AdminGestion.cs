@@ -72,16 +72,6 @@ namespace ProyectoFinal.Formularios
             this.Close();
         }
 
-        private void guna2PanelMenu_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void timerMenuAnimacion_Tick(object sender, EventArgs e)
-        {
-
-        }
-
         private void pbGraficas_Click(object sender, EventArgs e)
         {
             Gráficas gráficas = new Gráficas();
@@ -103,9 +93,5 @@ namespace ProyectoFinal.Formularios
             this.Close();
         }
 
-        private void FrmAdmin_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

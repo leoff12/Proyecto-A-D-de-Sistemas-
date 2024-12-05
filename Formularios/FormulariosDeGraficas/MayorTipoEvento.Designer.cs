@@ -156,7 +156,6 @@
             this.tpDetalles.TabIndex = 1;
             this.tpDetalles.Text = "Detalles";
             this.tpDetalles.UseVisualStyleBackColor = true;
-            this.tpDetalles.Click += new System.EventHandler(this.tpDetalles_Click);
             // 
             // listBoxTipos
             // 

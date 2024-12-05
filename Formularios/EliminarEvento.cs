@@ -47,26 +47,7 @@ namespace ProyectoFinal.Formularios
             // Llamar a la función estática CargarDetalles de la clase DatosEnControlesCargar
             DatosEnControlesCargar.CargarDetalles(eventoSeleccionado, cmbTipoDeEventoElim, cmbCategoriaElim, txtNombreEvento, txtDescripcion, mtxtFechaEvento, txtCuposDisp, mtxtHInicio, mtxtHFin, chkAccesibleElim, cmbImagen, pbImagen);
         }
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void cmbImagen_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblImagen_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void pbMensajesAdmin_Click(object sender, EventArgs e)
         {
             MensajesAdministrador mensajesAdministrador = new MensajesAdministrador();

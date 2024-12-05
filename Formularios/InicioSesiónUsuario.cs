@@ -46,10 +46,6 @@ namespace ProyectoFinal.Formularios
             }
         }
 
-        private void InicioSesiónUsuario_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 

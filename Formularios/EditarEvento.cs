@@ -82,11 +82,6 @@ namespace ProyectoFinal.Formularios
             this.Close();
         }
 
-        private void lblAgregarEvento_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pbMensajesAdmin_Click(object sender, EventArgs e)
         {
             MensajesAdministrador mensajesAdministrador = new MensajesAdministrador();

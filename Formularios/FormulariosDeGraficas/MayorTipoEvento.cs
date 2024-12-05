@@ -20,11 +20,6 @@ namespace ProyectoFinal.Formularios.FormulariosDeGraficas
             InitializeComponent();
         }
 
-        private void chartCategorias_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void MayorTipoEvento_Load(object sender, EventArgs e)
         {
             try
@@ -70,11 +65,6 @@ namespace ProyectoFinal.Formularios.FormulariosDeGraficas
             Gráficas gráficas = new Gráficas();
             gráficas.Show();
             this.Close();
-        }
-
-        private void tpDetalles_Click(object sender, EventArgs e)
-        {
-
         }
 
         bool menuExpandido = false;

@@ -33,11 +33,6 @@ namespace ProyectoFinal.Formularios
             this.Close();
         }
 
-        private void Reportes_Load(object sender, EventArgs e)
-        {
-
-        }
-
         bool menuExpandido = false;
         private void btnToggleMenu_Click_1(object sender, EventArgs e)
         {
