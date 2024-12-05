@@ -22,7 +22,9 @@ namespace ProyectoFinal.Formularios.FormulariosDeGraficas
 
         private void chartCategorias_Click(object sender, EventArgs e)
         {
-
+            MensajesAdministrador mensajesAdministrador = new MensajesAdministrador();
+            mensajesAdministrador.Show();
+            this.Close();
         }
 
         private void EventoMasPopular_Load(object sender, EventArgs e)
@@ -75,6 +77,25 @@ namespace ProyectoFinal.Formularios.FormulariosDeGraficas
         {
             Gráficas gráficas = new Gráficas();
             gráficas.Show();
+            this.Close();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        bool menuExpandido = false;
+        private void btnToggleMenu_Click_1(object sender, EventArgs e)
+        {
+            FuncionesVarias.ToggleMenu(guna2PanelMenu, menuExpandido);
+            menuExpandido = !menuExpandido; // Cambiar el estado del menú
+        }
+
+        private void btnCerrarSesiónAdmin_Click(object sender, EventArgs e)
+        {
+            AdminLoginForm adminLoginForm = new AdminLoginForm();
+            adminLoginForm.Show();
             this.Close();
         }
     }
