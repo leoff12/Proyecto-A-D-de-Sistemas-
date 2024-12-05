@@ -105,7 +105,6 @@
             this.txtBuscar.SelectedText = "";
             this.txtBuscar.Size = new System.Drawing.Size(211, 26);
             this.txtBuscar.TabIndex = 4;
-            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // panel1
             // 
@@ -306,7 +305,6 @@
             this.RightToLeftLayout = true;
             this.Style = MetroFramework.MetroColorStyle.White;
             this.Text = "Modificar Evento";
-            this.Load += new System.EventHandler(this.ModificarEvento_Load_1);
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.guna2PanelMenu.ResumeLayout(false);

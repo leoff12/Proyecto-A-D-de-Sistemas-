@@ -24,11 +24,6 @@ namespace ProyectoFinal.Formularios
             this.Load += AgregarEvento_Load; // Vincula el evento Load al método
         }
 
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void cmbImagen_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmbImagen.SelectedItem != null)
@@ -44,11 +39,6 @@ namespace ProyectoFinal.Formularios
 
             // Llamar al método de carga de imágenes
             cargarImagen.CargarImagenes(cmbImagen);
-        }
-
-        private void guna2GroupBox1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void pbInicio_Click(object sender, EventArgs e)
@@ -96,16 +86,6 @@ namespace ProyectoFinal.Formularios
             {
                 e.Handled = true; // Cancela el evento
             }
-        }
-
-        private void mtxtFechaEvento_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-        private void pictureBox_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void pbInicioAdmin_Click(object sender, EventArgs e)

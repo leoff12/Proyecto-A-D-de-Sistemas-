@@ -43,27 +43,12 @@ namespace ProyectoFinal.Formularios
             }
         }
 
-        private void txtBuscarEvento_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
             InicioSesiónUsuario inicioSesiónUsuario = new InicioSesiónUsuario();
             inicioSesiónUsuario.Show();
             this.Close();
            
-
-        }
-
-        private void dgvEventos_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dgvEventos_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
 
         }
 

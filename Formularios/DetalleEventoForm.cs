@@ -101,26 +101,6 @@ namespace ProyectoFinal.Formularios
             ActualizarBotonReservar(EventoSeleccionado.EstadoReservación);
         }
 
-        private void txtDetallesEvento_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvEventos_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblCuposDispEvento_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pbDetallesRegresar_Click(object sender, EventArgs e)
         {
             VistaGeneralUsuario vistaGeneralUsuario = new VistaGeneralUsuario();

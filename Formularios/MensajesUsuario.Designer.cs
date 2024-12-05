@@ -39,6 +39,7 @@
             this.EstadoReservacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnEliminarMensaje = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblBandejaDeMensajes = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PanelMenu = new Guna.UI2.WinForms.Guna2Panel();
             this.btnCerrarSesiónAdmin = new Guna.UI2.WinForms.Guna2TileButton();
@@ -46,14 +47,13 @@
             this.btnToggleMenu = new System.Windows.Forms.PictureBox();
             this.pbAdministrador = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pbMensajesRegresarUser = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMensajesUsuario)).BeginInit();
             this.guna2ShadowPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2PanelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnToggleMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAdministrador)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMensajesRegresarUser)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvMensajesUsuario
@@ -178,6 +178,16 @@
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(692, 55);
             this.guna2ShadowPanel1.TabIndex = 15;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ProyectoFinal.Properties.Resources.speech_bubble_8716838;
+            this.pictureBox1.Location = new System.Drawing.Point(639, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(39, 38);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // lblBandejaDeMensajes
             // 
             this.lblBandejaDeMensajes.BackColor = System.Drawing.Color.Transparent;
@@ -276,16 +286,6 @@
             this.pbMensajesRegresarUser.TabStop = false;
             this.pbMensajesRegresarUser.Click += new System.EventHandler(this.pbMensajesRegresarUser_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ProyectoFinal.Properties.Resources.speech_bubble_8716838;
-            this.pictureBox1.Location = new System.Drawing.Point(639, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 38);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // MensajesUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -298,18 +298,18 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MensajesUsuario";
             this.Style = MetroFramework.MetroColorStyle.White;
-            this.Text = "MensajesUsuario";
+            this.Text = "Mensajes Usuario";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.MensajesUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMensajesUsuario)).EndInit();
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2PanelMenu.ResumeLayout(false);
             this.guna2PanelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnToggleMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAdministrador)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMensajesRegresarUser)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

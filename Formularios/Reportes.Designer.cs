@@ -260,7 +260,6 @@
             this.Padding = new System.Windows.Forms.Padding(13, 60, 13, 13);
             this.Style = MetroFramework.MetroColorStyle.White;
             this.Text = "Reportes";
-            this.Load += new System.EventHandler(this.Reportes_Load);
             this.pnlGraficas.ResumeLayout(false);
             this.gbReportes.ResumeLayout(false);
             this.guna2PanelMenu.ResumeLayout(false);

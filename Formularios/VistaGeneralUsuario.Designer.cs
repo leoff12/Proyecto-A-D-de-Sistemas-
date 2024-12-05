@@ -67,7 +67,7 @@
             this.panel3.Controls.Add(this.pbBuscar);
             this.panel3.Controls.Add(this.lblBienvenidoUsuario);
             this.panel3.Location = new System.Drawing.Point(47, 81);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(663, 42);
             this.panel3.TabIndex = 2;
@@ -98,7 +98,7 @@
             this.pbBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbBuscar.Image = global::ProyectoFinal.Properties.Resources.magnify_glass_14987632;
             this.pbBuscar.Location = new System.Drawing.Point(623, 7);
-            this.pbBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.pbBuscar.Name = "pbBuscar";
             this.pbBuscar.Size = new System.Drawing.Size(25, 27);
             this.pbBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -167,7 +167,7 @@
             this.dgvEventos.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvEventos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(222)))), ((int)(((byte)(251)))));
             this.dgvEventos.Location = new System.Drawing.Point(47, 123);
-            this.dgvEventos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvEventos.Margin = new System.Windows.Forms.Padding(2);
             this.dgvEventos.Name = "dgvEventos";
             this.dgvEventos.RowHeadersVisible = false;
             this.dgvEventos.RowHeadersWidth = 62;
@@ -196,7 +196,6 @@
             this.dgvEventos.ThemeStyle.RowsStyle.Height = 28;
             this.dgvEventos.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
             this.dgvEventos.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvEventos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEventos_CellContentClick_1);
             // 
             // dgvNombreEvento
             // 
@@ -230,7 +229,7 @@
             this.btnExaminar.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExaminar.ForeColor = System.Drawing.Color.White;
             this.btnExaminar.Location = new System.Drawing.Point(290, 322);
-            this.btnExaminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExaminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnExaminar.Name = "btnExaminar";
             this.btnExaminar.Size = new System.Drawing.Size(181, 29);
             this.btnExaminar.TabIndex = 5;
@@ -242,9 +241,9 @@
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2GradientPanel1.Controls.Add(this.pictureBox1);
             this.guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(47, 19);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(47, 22);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(663, 63);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(663, 60);
             this.guna2GradientPanel1.TabIndex = 10;
             // 
             // pictureBox1
@@ -334,10 +333,11 @@
             this.Controls.Add(this.dgvEventos);
             this.Controls.Add(this.panel3);
             this.DisplayHeader = false;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "VistaGeneralUsuario";
             this.Padding = new System.Windows.Forms.Padding(13, 30, 13, 13);
             this.Style = MetroFramework.MetroColorStyle.White;
+            this.Text = "Vista General Usuario";
             this.Load += new System.EventHandler(this.VistaGeneralUsuario_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

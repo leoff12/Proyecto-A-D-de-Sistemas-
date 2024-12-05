@@ -232,7 +232,6 @@
             this.label3.Size = new System.Drawing.Size(64, 16);
             this.label3.TabIndex = 3;
             this.label3.Text = "Regresar";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // btnToggleMenu
             // 

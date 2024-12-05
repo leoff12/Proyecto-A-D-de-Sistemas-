@@ -80,11 +80,6 @@ namespace ProyectoFinal.Formularios.FormulariosDeGraficas
             this.Close();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         bool menuExpandido = false;
         private void btnToggleMenu_Click_1(object sender, EventArgs e)
         {

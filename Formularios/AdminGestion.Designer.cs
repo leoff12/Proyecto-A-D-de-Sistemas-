@@ -300,7 +300,6 @@
             this.guna2PanelMenu.ShadowDecoration.Color = System.Drawing.Color.SandyBrown;
             this.guna2PanelMenu.Size = new System.Drawing.Size(37, 368);
             this.guna2PanelMenu.TabIndex = 3;
-            this.guna2PanelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2PanelMenu_Paint);
             // 
             // label3
             // 
@@ -378,9 +377,9 @@
             this.Controls.Add(this.panel1);
             this.Name = "FrmAdmin";
             this.Style = MetroFramework.MetroColorStyle.White;
+            this.Text = "FrmAdmin";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.AliceBlue;
-            this.Load += new System.EventHandler(this.FrmAdmin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

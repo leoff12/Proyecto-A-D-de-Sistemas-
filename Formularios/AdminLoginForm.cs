@@ -47,11 +47,7 @@ namespace ProyectoFinal.Formularios
                 txtContraseñaAdm.PasswordChar = '*'; // Ocultar la contraseña
             }
         }
-        private void AdminLoginForm_Load(object sender, EventArgs e)
-        {
-            
-
-        }
+      
     }
 }
 
