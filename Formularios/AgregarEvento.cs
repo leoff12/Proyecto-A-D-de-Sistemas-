@@ -34,7 +34,7 @@ namespace ProyectoFinal.Formularios
             if (cmbImagen.SelectedItem != null)
             {
                 string nombreImagen = cmbImagen.SelectedItem.ToString();
-                cargarImagen.CargarImagenEnPictureBox(nombreImagen, pictureBox); // Llama al método de CargarImagen
+                CargarImagen.CargarImagenEnPictureBox(nombreImagen, pictureBox); // Llama al método de CargarImagen
             }
         }
 
