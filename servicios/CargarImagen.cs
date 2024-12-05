@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace ProyectoFinal.Servicios
 {
@@ -40,6 +41,23 @@ namespace ProyectoFinal.Servicios
             if (comboBox.Items.Count > 0)
             {
                 comboBox.SelectedIndex = 0; // Selecciona el primer elemento por defecto
+            }
+        }
+
+        //Cargar imagen en el pictureBox
+
+        public void CargarImagenEnPictureBox(string nombreImagen, PictureBox pictureBox)
+        {
+            // Ruta de la carpeta donde se encuentran las imágenes
+            string rutaImagen = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName, "Imagenes", nombreImagen);
+
+            if (File.Exists(rutaImagen))
+            {
+                pictureBox.Image = Image.FromFile(rutaImagen);
+            }
+            else
+            {
+                MessageBox.Show("No se pudo cargar la imagen.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
