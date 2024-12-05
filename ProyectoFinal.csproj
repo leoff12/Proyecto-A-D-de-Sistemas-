@@ -210,7 +210,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servicios\DatosEnControlesCargar.cs" />
     <Compile Include="Servicios\CargarImagen.cs" />
+    <Compile Include="Servicios\ValidarFormularios.cs" />
     <Compile Include="Servicios\funcionesBinarias.cs" />
     <Compile Include="Servicios\FuncionesVarias.cs" />
     <Compile Include="Servicios\ValidarAcceso.cs" />
