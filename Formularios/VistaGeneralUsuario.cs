@@ -71,5 +71,11 @@ namespace ProyectoFinal.Formularios
             FuncionesVarias.ToggleMenu(guna2PanelMenu, menuExpandido);
             menuExpandido = !menuExpandido; // Cambiar el estado del menú
 
-        }   }
+        }
+
+        private void dgvEventos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+    }
 }

@@ -152,24 +152,39 @@ namespace ProyectoFinal.Formularios
 
         private void btnAnularReservacion_Click(object sender, EventArgs e)
         {
-            if (EventoSeleccionado.EstadoReservación == 1 || EventoSeleccionado.EstadoReservación == 2)
-            {
-                // Restaurar un cupo disponible
-                EventoSeleccionado.CuposDisp++;
-                EventoSeleccionado.EstadoReservación = 0; // Estado "Reservar"
-
-                // Actualizar la lista de mensajes eliminando el mensaje relacionado con el evento
-                var mensajes = Funciones.CargarMensajes();
-                Mensajes mensajeRelacionado = mensajes.FirstOrDefault(m => m.NombreMensaje == EventoSeleccionado.NombreEvento);
-
-                if (mensajeRelacionado != null)
+            
+                if (EventoSeleccionado.EstadoReservación == 2 && !EventoSeleccionado.Accesible)
                 {
-                    Funciones.EliminarMensaje(mensajeRelacionado);
-                }
+                    // Restaurar un cupo disponible
+                    EventoSeleccionado.CuposDisp++;
+                    EventoSeleccionado.EstadoReservación = 0; // Estado "Reservar"
 
-                // Actualizar el estado del botón de reservación y guardar cambios en el evento
-                ActualizarBotonReservar(EventoSeleccionado.EstadoReservación);
-                Funciones.ActualizarEvento(EventoSeleccionado);
+                    // Actualizar la lista de mensajes eliminando el mensaje relacionado con el evento
+                    var mensajes = Funciones.CargarMensajes();
+                    Mensajes mensajeRelacionado = mensajes.FirstOrDefault(m => m.NombreMensaje == EventoSeleccionado.NombreEvento);
+
+                    if (mensajeRelacionado != null)
+                    {
+                        Funciones.EliminarMensaje(mensajeRelacionado);
+                    }
+
+                    // Actualizar el estado del botón de reservación y guardar cambios en el evento
+                    ActualizarBotonReservar(EventoSeleccionado.EstadoReservación);
+                    Funciones.ActualizarEvento(EventoSeleccionado);
+                }
+                if(EventoSeleccionado.EstadoReservación == 1)
+                {
+                    EventoSeleccionado.EstadoReservación = 0;
+                    var mensajes = Funciones.CargarMensajes();
+                    Mensajes mensajeRelacionado = mensajes.FirstOrDefault(m => m.NombreMensaje == EventoSeleccionado.NombreEvento);
+
+                    if (mensajeRelacionado != null)
+                    {
+                        Funciones.EliminarMensaje(mensajeRelacionado);
+                    }
+                    // Actualizar el estado del botón de reservación y guardar cambios en el evento
+                    ActualizarBotonReservar(EventoSeleccionado.EstadoReservación);
+                    Funciones.ActualizarEvento(EventoSeleccionado);
             }
         }
         private void ActualizarBotonReservar(int estado)
