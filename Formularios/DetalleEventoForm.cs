@@ -204,7 +204,7 @@ namespace ProyectoFinal.Formularios
                     break;
                 case 3:
                     btnReservar.Text = "Rechazada";
-                    btnReservar.Enabled = true;
+                    btnReservar.Enabled = false;
                     btnReservar.FillColor = Color.Red;
                     btnReservar.ForeColor = Color.White;
                     break;

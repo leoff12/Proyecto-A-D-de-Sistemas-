@@ -37,28 +37,28 @@ namespace ProyectoFinal.Formularios
         private void btnEliminarMensaje_Click(object sender, EventArgs e)
         {
 
-            if (dgvMensajesUsuario.SelectedRows.Count > 0)
-            {
-                string nombreMensaje = dgvMensajesUsuario.SelectedRows[0].Cells[0].Value.ToString(); // Obtener el nombre del mensaje
-                List<Mensajes> mensajes = Funciones.CargarMensajes();
-                Mensajes mensajeSeleccionado = mensajes.FirstOrDefault(m => m.NombreMensaje == nombreMensaje);
-
-                if (mensajeSeleccionado != null)
+                if (dgvMensajesUsuario.SelectedRows.Count > 0)
                 {
-                    Funciones.EliminarMensaje(mensajeSeleccionado);
-                    CargarMensajes();
-                    MessageBox.Show("Mensaje eliminado con éxito.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    string nombreMensaje = dgvMensajesUsuario.SelectedRows[0].Cells[0].Value.ToString(); // Obtener el nombre del mensaje
+                    List<Mensajes> mensajes = Funciones.CargarMensajes();
+                    Mensajes mensajeSeleccionado = mensajes.FirstOrDefault(m => m.NombreMensaje == nombreMensaje);
+
+                    if (mensajeSeleccionado != null)
+                    {
+                        Funciones.EliminarMensaje(mensajeSeleccionado);
+                        CargarMensajes();
+                        MessageBox.Show("Mensaje eliminado con éxito.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("El mensaje seleccionado no fue encontrado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("El mensaje seleccionado no fue encontrado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Por favor seleccione un mensaje para eliminar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
-            else
-            {
-                MessageBox.Show("Por favor seleccione un mensaje para eliminar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
 
         private void pbMensajesRegresarUser_Click(object sender, EventArgs e)
         {
