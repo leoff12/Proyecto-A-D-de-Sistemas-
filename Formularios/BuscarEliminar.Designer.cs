@@ -62,7 +62,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.panel3.Controls.Add(this.cmbEventos);
             this.panel3.Location = new System.Drawing.Point(35, 76);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(677, 42);
             this.panel3.TabIndex = 17;
@@ -78,8 +78,8 @@
             this.cmbEventos.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbEventos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbEventos.ItemHeight = 30;
-            this.cmbEventos.Location = new System.Drawing.Point(5, 2);
-            this.cmbEventos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbEventos.Location = new System.Drawing.Point(5, 4);
+            this.cmbEventos.Margin = new System.Windows.Forms.Padding(2);
             this.cmbEventos.Name = "cmbEventos";
             this.cmbEventos.Size = new System.Drawing.Size(153, 36);
             this.cmbEventos.TabIndex = 5;
@@ -113,10 +113,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.pbLogoUAM);
-            this.panel1.Location = new System.Drawing.Point(33, 22);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(33, 28);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(679, 55);
+            this.panel1.Size = new System.Drawing.Size(679, 49);
             this.panel1.TabIndex = 15;
             // 
             // guna2PanelMenu
@@ -246,6 +246,7 @@
             // pbBuscar
             // 
             this.pbBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.pbBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbBuscar.Image = global::ProyectoFinal.Properties.Resources.magnify_glass_14987632;
             this.pbBuscar.Location = new System.Drawing.Point(445, 198);
             this.pbBuscar.Margin = new System.Windows.Forms.Padding(2);
@@ -259,7 +260,7 @@
             // pbLogoUAM
             // 
             this.pbLogoUAM.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoUAM.Image")));
-            this.pbLogoUAM.Location = new System.Drawing.Point(547, 4);
+            this.pbLogoUAM.Location = new System.Drawing.Point(560, 0);
             this.pbLogoUAM.Margin = new System.Windows.Forms.Padding(2);
             this.pbLogoUAM.Name = "pbLogoUAM";
             this.pbLogoUAM.Size = new System.Drawing.Size(119, 49);
@@ -278,7 +279,7 @@
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BuscarEliminar";
             this.Style = MetroFramework.MetroColorStyle.White;
             this.Load += new System.EventHandler(this.BuscarEliminar_Load);

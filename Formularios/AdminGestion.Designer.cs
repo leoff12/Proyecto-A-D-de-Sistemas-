@@ -44,11 +44,11 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2PanelMenu = new Guna.UI2.WinForms.Guna2Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.pbGraficas = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnToggleMenu = new System.Windows.Forms.PictureBox();
             this.pbAdministrador = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pbMensajesAdmin = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -68,9 +68,9 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(28, 15);
+            this.panel1.Location = new System.Drawing.Point(28, 31);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(682, 115);
+            this.panel1.Size = new System.Drawing.Size(682, 98);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -81,7 +81,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(15, 13);
+            this.label1.Location = new System.Drawing.Point(15, 4);
             this.label1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(271, 81);
@@ -94,7 +94,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(512, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(528, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(154, 65);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -145,7 +145,7 @@
             // 
             this.pbReportes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbReportes.Image = ((System.Drawing.Image)(resources.GetObject("pbReportes.Image")));
-            this.pbReportes.Location = new System.Drawing.Point(534, 44);
+            this.pbReportes.Location = new System.Drawing.Point(546, 44);
             this.pbReportes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbReportes.Name = "pbReportes";
             this.pbReportes.Size = new System.Drawing.Size(69, 68);
@@ -167,7 +167,7 @@
             this.btnReportes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnReportes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.ForeColor = System.Drawing.Color.White;
-            this.btnReportes.Location = new System.Drawing.Point(513, 127);
+            this.btnReportes.Location = new System.Drawing.Point(525, 127);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Size = new System.Drawing.Size(113, 33);
             this.btnReportes.TabIndex = 20;
@@ -302,13 +302,22 @@
             this.guna2PanelMenu.TabIndex = 3;
             this.guna2PanelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2PanelMenu_Paint);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(84, 213);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 13);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Graficos";
+            // 
             // pbGraficas
             // 
             this.pbGraficas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbGraficas.Image = ((System.Drawing.Image)(resources.GetObject("pbGraficas.Image")));
             this.pbGraficas.ImageRotate = 0F;
             this.pbGraficas.Location = new System.Drawing.Point(86, 162);
-            this.pbGraficas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbGraficas.Margin = new System.Windows.Forms.Padding(2);
             this.pbGraficas.Name = "pbGraficas";
             this.pbGraficas.Size = new System.Drawing.Size(44, 40);
             this.pbGraficas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -353,15 +362,6 @@
             this.pbMensajesAdmin.TabIndex = 1;
             this.pbMensajesAdmin.TabStop = false;
             this.pbMensajesAdmin.Click += new System.EventHandler(this.pbMensajesAdmin_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(84, 213);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 13);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Graficos";
             // 
             // FrmAdmin
             // 

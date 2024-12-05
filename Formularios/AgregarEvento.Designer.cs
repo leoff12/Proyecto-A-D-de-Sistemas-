@@ -77,7 +77,7 @@
             this.txtNombreEvento.Location = new System.Drawing.Point(14, 62);
             this.txtNombreEvento.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreEvento.Name = "txtNombreEvento";
-            this.txtNombreEvento.Size = new System.Drawing.Size(195, 29);
+            this.txtNombreEvento.Size = new System.Drawing.Size(195, 32);
             this.txtNombreEvento.TabIndex = 7;
             // 
             // lblTitulo
@@ -146,7 +146,7 @@
             this.mtxtFechaEvento.Margin = new System.Windows.Forms.Padding(2);
             this.mtxtFechaEvento.Mask = "00/00/0000";
             this.mtxtFechaEvento.Name = "mtxtFechaEvento";
-            this.mtxtFechaEvento.Size = new System.Drawing.Size(67, 29);
+            this.mtxtFechaEvento.Size = new System.Drawing.Size(67, 32);
             this.mtxtFechaEvento.TabIndex = 11;
             this.mtxtFechaEvento.ValidatingType = typeof(System.DateTime);
             this.mtxtFechaEvento.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mtxtFechaEvento_MaskInputRejected);
@@ -209,12 +209,12 @@
             this.guna2GroupBox1.Controls.Add(this.txtNombreEvento);
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2GroupBox1.FillColor = System.Drawing.SystemColors.InactiveCaption;
-            this.guna2GroupBox1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GroupBox1.Font = new System.Drawing.Font("Ebrima", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(41, 27);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(45, 27);
             this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(644, 412);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(661, 412);
             this.guna2GroupBox1.TabIndex = 2;
             this.guna2GroupBox1.Text = "Agregar Información del Evento";
             this.guna2GroupBox1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
@@ -293,7 +293,7 @@
             this.btnGuardarEvento.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGuardarEvento.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnGuardarEvento.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnGuardarEvento.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarEvento.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarEvento.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnGuardarEvento.Location = new System.Drawing.Point(224, 371);
             this.btnGuardarEvento.Margin = new System.Windows.Forms.Padding(2);
@@ -404,7 +404,7 @@
             this.mtxtHFin.Margin = new System.Windows.Forms.Padding(2);
             this.mtxtHFin.Mask = "00:00";
             this.mtxtHFin.Name = "mtxtHFin";
-            this.mtxtHFin.Size = new System.Drawing.Size(51, 29);
+            this.mtxtHFin.Size = new System.Drawing.Size(51, 32);
             this.mtxtHFin.TabIndex = 15;
             this.mtxtHFin.ValidatingType = typeof(System.DateTime);
             // 
@@ -414,7 +414,7 @@
             this.mtxtHInicio.Margin = new System.Windows.Forms.Padding(2);
             this.mtxtHInicio.Mask = "00:00";
             this.mtxtHInicio.Name = "mtxtHInicio";
-            this.mtxtHInicio.Size = new System.Drawing.Size(51, 29);
+            this.mtxtHInicio.Size = new System.Drawing.Size(51, 32);
             this.mtxtHInicio.TabIndex = 13;
             this.mtxtHInicio.ValidatingType = typeof(System.DateTime);
             // 
@@ -453,7 +453,7 @@
             this.guna2PanelMenu.Name = "guna2PanelMenu";
             this.guna2PanelMenu.ShadowDecoration.BorderRadius = 10;
             this.guna2PanelMenu.ShadowDecoration.Color = System.Drawing.Color.SandyBrown;
-            this.guna2PanelMenu.Size = new System.Drawing.Size(37, 457);
+            this.guna2PanelMenu.Size = new System.Drawing.Size(41, 457);
             this.guna2PanelMenu.TabIndex = 7;
             // 
             // btnCerrarSesiónAdmin
@@ -552,7 +552,7 @@
             // pbLogoUAM
             // 
             this.pbLogoUAM.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoUAM.Image")));
-            this.pbLogoUAM.Location = new System.Drawing.Point(553, 0);
+            this.pbLogoUAM.Location = new System.Drawing.Point(565, 0);
             this.pbLogoUAM.Margin = new System.Windows.Forms.Padding(2);
             this.pbLogoUAM.Name = "pbLogoUAM";
             this.pbLogoUAM.Size = new System.Drawing.Size(89, 38);

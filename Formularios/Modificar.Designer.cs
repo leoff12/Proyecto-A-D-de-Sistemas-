@@ -63,7 +63,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.panel3.Controls.Add(this.cmbEventos);
             this.panel3.Location = new System.Drawing.Point(39, 74);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(671, 51);
             this.panel3.TabIndex = 12;
@@ -79,7 +79,7 @@
             this.cmbEventos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbEventos.ItemHeight = 30;
             this.cmbEventos.Location = new System.Drawing.Point(5, 3);
-            this.cmbEventos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbEventos.Margin = new System.Windows.Forms.Padding(2);
             this.cmbEventos.Name = "cmbEventos";
             this.cmbEventos.Size = new System.Drawing.Size(153, 36);
             this.cmbEventos.TabIndex = 5;
@@ -114,7 +114,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.pbLogoUAM);
             this.panel1.Location = new System.Drawing.Point(37, 24);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(673, 55);
             this.panel1.TabIndex = 10;
@@ -218,6 +218,7 @@
             // 
             // pbMensajes
             // 
+            this.pbMensajes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbMensajes.Image = global::ProyectoFinal.Properties.Resources.chat_45180341;
             this.pbMensajes.Location = new System.Drawing.Point(85, 151);
             this.pbMensajes.Name = "pbMensajes";
@@ -229,6 +230,7 @@
             // 
             // btnToggleMenu
             // 
+            this.btnToggleMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnToggleMenu.Image = global::ProyectoFinal.Properties.Resources.settings_13895453;
             this.btnToggleMenu.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnToggleMenu.InitialImage")));
             this.btnToggleMenu.Location = new System.Drawing.Point(3, 51);
@@ -299,7 +301,7 @@
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ModificarEvento";
             this.RightToLeftLayout = true;
             this.Style = MetroFramework.MetroColorStyle.White;

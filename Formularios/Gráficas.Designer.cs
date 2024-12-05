@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gráficas));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pbLogoUAM = new System.Windows.Forms.PictureBox();
             this.pnlGraficas = new Guna.UI2.WinForms.Guna2Panel();
             this.gpGraficas = new Guna.UI2.WinForms.Guna2GroupBox();
             this.btnMayorTipoEvento = new Guna.UI2.WinForms.Guna2Button();
@@ -46,8 +44,6 @@
             this.btnToggleMenu = new System.Windows.Forms.PictureBox();
             this.pbAdministrador = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pbMensajesRegresarUser = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).BeginInit();
             this.pnlGraficas.SuspendLayout();
             this.gpGraficas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMayorTipoEvento)).BeginInit();
@@ -59,52 +55,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbMensajesRegresarUser)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.pbLogoUAM);
-            this.panel1.Location = new System.Drawing.Point(42, 27);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(653, 55);
-            this.panel1.TabIndex = 11;
-            // 
-            // pbLogoUAM
-            // 
-            this.pbLogoUAM.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoUAM.Image")));
-            this.pbLogoUAM.Location = new System.Drawing.Point(524, 6);
-            this.pbLogoUAM.Margin = new System.Windows.Forms.Padding(2);
-            this.pbLogoUAM.Name = "pbLogoUAM";
-            this.pbLogoUAM.Size = new System.Drawing.Size(92, 44);
-            this.pbLogoUAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbLogoUAM.TabIndex = 2;
-            this.pbLogoUAM.TabStop = false;
-            // 
             // pnlGraficas
             // 
             this.pnlGraficas.Controls.Add(this.gpGraficas);
-            this.pnlGraficas.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.pnlGraficas.Location = new System.Drawing.Point(44, 75);
+            this.pnlGraficas.FillColor = System.Drawing.SystemColors.InactiveCaption;
+            this.pnlGraficas.Location = new System.Drawing.Point(38, 27);
             this.pnlGraficas.Margin = new System.Windows.Forms.Padding(2);
             this.pnlGraficas.Name = "pnlGraficas";
-            this.pnlGraficas.Size = new System.Drawing.Size(651, 291);
+            this.pnlGraficas.Size = new System.Drawing.Size(657, 339);
             this.pnlGraficas.TabIndex = 12;
             // 
             // gpGraficas
             // 
+            this.gpGraficas.BorderColor = System.Drawing.Color.Transparent;
+            this.gpGraficas.BorderRadius = 5;
             this.gpGraficas.Controls.Add(this.btnMayorTipoEvento);
             this.gpGraficas.Controls.Add(this.pbMayorTipoEvento);
             this.gpGraficas.Controls.Add(this.btnEventoMasPupular);
             this.gpGraficas.Controls.Add(this.pbEventoMasPopular);
-            this.gpGraficas.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.gpGraficas.Font = new System.Drawing.Font("Segoe UI Black", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpGraficas.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gpGraficas.Font = new System.Drawing.Font("Ebrima", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpGraficas.ForeColor = System.Drawing.Color.White;
-            this.gpGraficas.Location = new System.Drawing.Point(31, 11);
+            this.gpGraficas.Location = new System.Drawing.Point(17, 21);
             this.gpGraficas.Margin = new System.Windows.Forms.Padding(2);
             this.gpGraficas.Name = "gpGraficas";
-            this.gpGraficas.Size = new System.Drawing.Size(605, 257);
+            this.gpGraficas.Size = new System.Drawing.Size(625, 301);
             this.gpGraficas.TabIndex = 0;
             this.gpGraficas.Text = "Gráficas Principales";
             this.gpGraficas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -113,16 +88,17 @@
             // 
             this.btnMayorTipoEvento.BackColor = System.Drawing.Color.Transparent;
             this.btnMayorTipoEvento.BorderRadius = 10;
+            this.btnMayorTipoEvento.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMayorTipoEvento.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnMayorTipoEvento.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnMayorTipoEvento.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnMayorTipoEvento.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnMayorTipoEvento.Font = new System.Drawing.Font("Segoe UI Black", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMayorTipoEvento.ForeColor = System.Drawing.Color.White;
-            this.btnMayorTipoEvento.Location = new System.Drawing.Point(413, 146);
+            this.btnMayorTipoEvento.Location = new System.Drawing.Point(380, 207);
             this.btnMayorTipoEvento.Margin = new System.Windows.Forms.Padding(2);
             this.btnMayorTipoEvento.Name = "btnMayorTipoEvento";
-            this.btnMayorTipoEvento.Size = new System.Drawing.Size(120, 34);
+            this.btnMayorTipoEvento.Size = new System.Drawing.Size(160, 34);
             this.btnMayorTipoEvento.TabIndex = 4;
             this.btnMayorTipoEvento.Text = "Tipo de Evento más Recurrente";
             this.btnMayorTipoEvento.Click += new System.EventHandler(this.btnMayorTipoEvento_Click);
@@ -132,7 +108,7 @@
             this.pbMayorTipoEvento.BackColor = System.Drawing.Color.Transparent;
             this.pbMayorTipoEvento.Image = ((System.Drawing.Image)(resources.GetObject("pbMayorTipoEvento.Image")));
             this.pbMayorTipoEvento.ImageRotate = 0F;
-            this.pbMayorTipoEvento.Location = new System.Drawing.Point(410, 51);
+            this.pbMayorTipoEvento.Location = new System.Drawing.Point(395, 100);
             this.pbMayorTipoEvento.Margin = new System.Windows.Forms.Padding(2);
             this.pbMayorTipoEvento.Name = "pbMayorTipoEvento";
             this.pbMayorTipoEvento.Size = new System.Drawing.Size(123, 91);
@@ -144,13 +120,14 @@
             // 
             this.btnEventoMasPupular.BackColor = System.Drawing.Color.Transparent;
             this.btnEventoMasPupular.BorderRadius = 10;
+            this.btnEventoMasPupular.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEventoMasPupular.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnEventoMasPupular.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnEventoMasPupular.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnEventoMasPupular.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnEventoMasPupular.Font = new System.Drawing.Font("Segoe UI Black", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEventoMasPupular.ForeColor = System.Drawing.Color.White;
-            this.btnEventoMasPupular.Location = new System.Drawing.Point(23, 146);
+            this.btnEventoMasPupular.Location = new System.Drawing.Point(100, 207);
             this.btnEventoMasPupular.Margin = new System.Windows.Forms.Padding(2);
             this.btnEventoMasPupular.Name = "btnEventoMasPupular";
             this.btnEventoMasPupular.Size = new System.Drawing.Size(156, 34);
@@ -163,7 +140,7 @@
             this.pbEventoMasPopular.BackColor = System.Drawing.Color.Transparent;
             this.pbEventoMasPopular.Image = ((System.Drawing.Image)(resources.GetObject("pbEventoMasPopular.Image")));
             this.pbEventoMasPopular.ImageRotate = 0F;
-            this.pbEventoMasPopular.Location = new System.Drawing.Point(40, 51);
+            this.pbEventoMasPopular.Location = new System.Drawing.Point(118, 100);
             this.pbEventoMasPopular.Margin = new System.Windows.Forms.Padding(2);
             this.pbEventoMasPopular.Name = "pbEventoMasPopular";
             this.pbEventoMasPopular.Size = new System.Drawing.Size(123, 91);
@@ -187,7 +164,7 @@
             this.guna2PanelMenu.Name = "guna2PanelMenu";
             this.guna2PanelMenu.ShadowDecoration.BorderRadius = 10;
             this.guna2PanelMenu.ShadowDecoration.Color = System.Drawing.Color.SandyBrown;
-            this.guna2PanelMenu.Size = new System.Drawing.Size(49, 369);
+            this.guna2PanelMenu.Size = new System.Drawing.Size(37, 369);
             this.guna2PanelMenu.TabIndex = 16;
             // 
             // guna2TileButton1
@@ -215,6 +192,7 @@
             // 
             // pbMensajes
             // 
+            this.pbMensajes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbMensajes.Image = global::ProyectoFinal.Properties.Resources.chat_45180341;
             this.pbMensajes.Location = new System.Drawing.Point(85, 151);
             this.pbMensajes.Name = "pbMensajes";
@@ -268,6 +246,7 @@
             // 
             // btnToggleMenu
             // 
+            this.btnToggleMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnToggleMenu.Image = global::ProyectoFinal.Properties.Resources.settings_13895453;
             this.btnToggleMenu.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnToggleMenu.InitialImage")));
             this.btnToggleMenu.Location = new System.Drawing.Point(3, 51);
@@ -310,14 +289,12 @@
             this.ClientSize = new System.Drawing.Size(695, 364);
             this.Controls.Add(this.guna2PanelMenu);
             this.Controls.Add(this.pnlGraficas);
-            this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Gráficas";
             this.Padding = new System.Windows.Forms.Padding(13, 60, 13, 13);
+            this.Style = MetroFramework.MetroColorStyle.White;
             this.Text = "Gráficas";
             this.Load += new System.EventHandler(this.Gráficas_Load);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).EndInit();
             this.pnlGraficas.ResumeLayout(false);
             this.gpGraficas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbMayorTipoEvento)).EndInit();
@@ -333,8 +310,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pbLogoUAM;
         private Guna.UI2.WinForms.Guna2Panel pnlGraficas;
         private Guna.UI2.WinForms.Guna2GroupBox gpGraficas;
         private Guna.UI2.WinForms.Guna2PictureBox pbEventoMasPopular;

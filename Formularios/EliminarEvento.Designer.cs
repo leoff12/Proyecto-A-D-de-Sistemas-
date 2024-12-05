@@ -102,7 +102,7 @@
             this.guna2GroupBox1.Controls.Add(this.txtNombreEvento);
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2GroupBox1.FillColor = System.Drawing.SystemColors.InactiveCaption;
-            this.guna2GroupBox1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GroupBox1.Font = new System.Drawing.Font("Ebrima", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
             this.guna2GroupBox1.Location = new System.Drawing.Point(47, 32);
             this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2);
@@ -122,7 +122,7 @@
             this.chkAccesibleElim.CheckMarkColor = System.Drawing.Color.Navy;
             this.chkAccesibleElim.Font = new System.Drawing.Font("Ebrima", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkAccesibleElim.ForeColor = System.Drawing.Color.Black;
-            this.chkAccesibleElim.Location = new System.Drawing.Point(471, 329);
+            this.chkAccesibleElim.Location = new System.Drawing.Point(471, 345);
             this.chkAccesibleElim.Margin = new System.Windows.Forms.Padding(2);
             this.chkAccesibleElim.Name = "chkAccesibleElim";
             this.chkAccesibleElim.Size = new System.Drawing.Size(112, 29);
@@ -179,7 +179,7 @@
             this.btnGuardarCambios.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnGuardarCambios.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnGuardarCambios.FillColor = System.Drawing.Color.Red;
-            this.btnGuardarCambios.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarCambios.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCambios.ForeColor = System.Drawing.Color.White;
             this.btnGuardarCambios.Location = new System.Drawing.Point(253, 360);
             this.btnGuardarCambios.Margin = new System.Windows.Forms.Padding(2);
@@ -262,13 +262,13 @@
             this.txtCuposDisp.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCuposDisp.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCuposDisp.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCuposDisp.Location = new System.Drawing.Point(516, 45);
+            this.txtCuposDisp.Location = new System.Drawing.Point(532, 44);
             this.txtCuposDisp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCuposDisp.Name = "txtCuposDisp";
             this.txtCuposDisp.PasswordChar = '\0';
             this.txtCuposDisp.PlaceholderText = "";
             this.txtCuposDisp.SelectedText = "";
-            this.txtCuposDisp.Size = new System.Drawing.Size(67, 26);
+            this.txtCuposDisp.Size = new System.Drawing.Size(76, 26);
             this.txtCuposDisp.TabIndex = 17;
             // 
             // lblCuposDisp
@@ -287,7 +287,7 @@
             // mtxtHFin
             // 
             this.mtxtHFin.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtxtHFin.Location = new System.Drawing.Point(517, 147);
+            this.mtxtHFin.Location = new System.Drawing.Point(569, 149);
             this.mtxtHFin.Margin = new System.Windows.Forms.Padding(2);
             this.mtxtHFin.Mask = "00:00";
             this.mtxtHFin.Name = "mtxtHFin";
@@ -311,7 +311,7 @@
             // mtxtHInicio
             // 
             this.mtxtHInicio.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtxtHInicio.Location = new System.Drawing.Point(517, 111);
+            this.mtxtHInicio.Location = new System.Drawing.Point(569, 111);
             this.mtxtHInicio.Margin = new System.Windows.Forms.Padding(2);
             this.mtxtHInicio.Mask = "00:00";
             this.mtxtHInicio.Name = "mtxtHInicio";
@@ -335,7 +335,7 @@
             // mtxtFechaEvento
             // 
             this.mtxtFechaEvento.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtxtFechaEvento.Location = new System.Drawing.Point(516, 77);
+            this.mtxtFechaEvento.Location = new System.Drawing.Point(541, 77);
             this.mtxtFechaEvento.Margin = new System.Windows.Forms.Padding(2);
             this.mtxtFechaEvento.Mask = "00/00/0000";
             this.mtxtFechaEvento.Name = "mtxtFechaEvento";
@@ -543,9 +543,9 @@
             this.pbImagen.BackColor = System.Drawing.Color.Transparent;
             this.pbImagen.BorderRadius = 5;
             this.pbImagen.ImageRotate = 0F;
-            this.pbImagen.Location = new System.Drawing.Point(363, 190);
+            this.pbImagen.Location = new System.Drawing.Point(363, 187);
             this.pbImagen.Name = "pbImagen";
-            this.pbImagen.Size = new System.Drawing.Size(221, 130);
+            this.pbImagen.Size = new System.Drawing.Size(246, 130);
             this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagen.TabIndex = 24;
             this.pbImagen.TabStop = false;

@@ -100,12 +100,12 @@
             this.guna2GroupBox1.Controls.Add(this.txtNombreEvento);
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2GroupBox1.FillColor = System.Drawing.SystemColors.InactiveCaption;
-            this.guna2GroupBox1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GroupBox1.Font = new System.Drawing.Font("Ebrima", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
             this.guna2GroupBox1.Location = new System.Drawing.Point(42, 32);
-            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(650, 408);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(659, 408);
             this.guna2GroupBox1.TabIndex = 8;
             this.guna2GroupBox1.Text = "Modificar Información del Evento";
             // 
@@ -121,7 +121,7 @@
             this.chkAccesibleMod.Font = new System.Drawing.Font("Ebrima", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkAccesibleMod.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.chkAccesibleMod.Location = new System.Drawing.Point(486, 339);
-            this.chkAccesibleMod.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkAccesibleMod.Margin = new System.Windows.Forms.Padding(2);
             this.chkAccesibleMod.Name = "chkAccesibleMod";
             this.chkAccesibleMod.Size = new System.Drawing.Size(112, 29);
             this.chkAccesibleMod.TabIndex = 28;
@@ -144,8 +144,8 @@
             this.cmbCategoriaMod.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbCategoriaMod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbCategoriaMod.ItemHeight = 30;
-            this.cmbCategoriaMod.Location = new System.Drawing.Point(13, 255);
-            this.cmbCategoriaMod.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbCategoriaMod.Location = new System.Drawing.Point(13, 275);
+            this.cmbCategoriaMod.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCategoriaMod.Name = "cmbCategoriaMod";
             this.cmbCategoriaMod.Size = new System.Drawing.Size(133, 36);
             this.cmbCategoriaMod.TabIndex = 27;
@@ -162,8 +162,8 @@
             this.cmbTipoDeEventoMod.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbTipoDeEventoMod.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbTipoDeEventoMod.ItemHeight = 30;
-            this.cmbTipoDeEventoMod.Location = new System.Drawing.Point(13, 194);
-            this.cmbTipoDeEventoMod.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbTipoDeEventoMod.Location = new System.Drawing.Point(13, 218);
+            this.cmbTipoDeEventoMod.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTipoDeEventoMod.Name = "cmbTipoDeEventoMod";
             this.cmbTipoDeEventoMod.Size = new System.Drawing.Size(133, 36);
             this.cmbTipoDeEventoMod.TabIndex = 26;
@@ -176,12 +176,12 @@
             this.btnGuardarCambios.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnGuardarCambios.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnGuardarCambios.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnGuardarCambios.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarCambios.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCambios.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnGuardarCambios.Location = new System.Drawing.Point(238, 361);
-            this.btnGuardarCambios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGuardarCambios.Location = new System.Drawing.Point(231, 371);
+            this.btnGuardarCambios.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardarCambios.Name = "btnGuardarCambios";
-            this.btnGuardarCambios.Size = new System.Drawing.Size(141, 29);
+            this.btnGuardarCambios.Size = new System.Drawing.Size(170, 29);
             this.btnGuardarCambios.TabIndex = 25;
             this.btnGuardarCambios.Text = "Guardar Evento";
             this.btnGuardarCambios.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
@@ -199,8 +199,8 @@
             this.cmbImagen.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbImagen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbImagen.ItemHeight = 30;
-            this.cmbImagen.Location = new System.Drawing.Point(13, 315);
-            this.cmbImagen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbImagen.Location = new System.Drawing.Point(13, 332);
+            this.cmbImagen.Margin = new System.Windows.Forms.Padding(2);
             this.cmbImagen.Name = "cmbImagen";
             this.cmbImagen.Size = new System.Drawing.Size(95, 36);
             this.cmbImagen.TabIndex = 23;
@@ -212,7 +212,7 @@
             this.lblImagen.BackColor = System.Drawing.Color.Transparent;
             this.lblImagen.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblImagen.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblImagen.Location = new System.Drawing.Point(10, 298);
+            this.lblImagen.Location = new System.Drawing.Point(11, 313);
             this.lblImagen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblImagen.Name = "lblImagen";
             this.lblImagen.Size = new System.Drawing.Size(123, 17);
@@ -225,7 +225,7 @@
             this.lblCategoriaMod.BackColor = System.Drawing.Color.Transparent;
             this.lblCategoriaMod.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategoriaMod.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblCategoriaMod.Location = new System.Drawing.Point(11, 238);
+            this.lblCategoriaMod.Location = new System.Drawing.Point(11, 256);
             this.lblCategoriaMod.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCategoriaMod.Name = "lblCategoriaMod";
             this.lblCategoriaMod.Size = new System.Drawing.Size(67, 17);
@@ -238,7 +238,7 @@
             this.lblTipoDeEventoMod.BackColor = System.Drawing.Color.Transparent;
             this.lblTipoDeEventoMod.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipoDeEventoMod.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTipoDeEventoMod.Location = new System.Drawing.Point(10, 177);
+            this.lblTipoDeEventoMod.Location = new System.Drawing.Point(11, 194);
             this.lblTipoDeEventoMod.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTipoDeEventoMod.Name = "lblTipoDeEventoMod";
             this.lblTipoDeEventoMod.Size = new System.Drawing.Size(101, 17);
@@ -260,7 +260,7 @@
             this.txtCuposDisp.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCuposDisp.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCuposDisp.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCuposDisp.Location = new System.Drawing.Point(524, 56);
+            this.txtCuposDisp.Location = new System.Drawing.Point(541, 56);
             this.txtCuposDisp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCuposDisp.Name = "txtCuposDisp";
             this.txtCuposDisp.PasswordChar = '\0';
@@ -285,8 +285,8 @@
             // mtxtHFin
             // 
             this.mtxtHFin.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtxtHFin.Location = new System.Drawing.Point(524, 156);
-            this.mtxtHFin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mtxtHFin.Location = new System.Drawing.Point(570, 152);
+            this.mtxtHFin.Margin = new System.Windows.Forms.Padding(2);
             this.mtxtHFin.Mask = "00:00";
             this.mtxtHFin.Name = "mtxtHFin";
             this.mtxtHFin.Size = new System.Drawing.Size(38, 29);
@@ -309,8 +309,8 @@
             // mtxtHInicio
             // 
             this.mtxtHInicio.Font = new System.Drawing.Font("Dubai", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtxtHInicio.Location = new System.Drawing.Point(525, 122);
-            this.mtxtHInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mtxtHInicio.Location = new System.Drawing.Point(570, 119);
+            this.mtxtHInicio.Margin = new System.Windows.Forms.Padding(2);
             this.mtxtHInicio.Mask = "00:00";
             this.mtxtHInicio.Name = "mtxtHInicio";
             this.mtxtHInicio.Size = new System.Drawing.Size(37, 29);
@@ -333,8 +333,8 @@
             // mtxtFechaEvento
             // 
             this.mtxtFechaEvento.Font = new System.Drawing.Font("Dubai", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtxtFechaEvento.Location = new System.Drawing.Point(525, 92);
-            this.mtxtFechaEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mtxtFechaEvento.Location = new System.Drawing.Point(540, 89);
+            this.mtxtFechaEvento.Margin = new System.Windows.Forms.Padding(2);
             this.mtxtFechaEvento.Mask = "00/00/0000";
             this.mtxtFechaEvento.Name = "mtxtFechaEvento";
             this.mtxtFechaEvento.Size = new System.Drawing.Size(67, 28);
@@ -368,13 +368,13 @@
             this.txtDescripcion.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDescripcion.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtDescripcion.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDescripcion.Location = new System.Drawing.Point(13, 111);
+            this.txtDescripcion.Location = new System.Drawing.Point(13, 128);
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.PasswordChar = '\0';
             this.txtDescripcion.PlaceholderText = "";
             this.txtDescripcion.SelectedText = "";
-            this.txtDescripcion.Size = new System.Drawing.Size(194, 63);
+            this.txtDescripcion.Size = new System.Drawing.Size(194, 61);
             this.txtDescripcion.TabIndex = 8;
             // 
             // lblDescripcion
@@ -383,7 +383,7 @@
             this.lblDescripcion.BackColor = System.Drawing.Color.Transparent;
             this.lblDescripcion.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescripcion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblDescripcion.Location = new System.Drawing.Point(10, 95);
+            this.lblDescripcion.Location = new System.Drawing.Point(10, 106);
             this.lblDescripcion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(149, 17);
@@ -396,7 +396,7 @@
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
             this.lblTitulo.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTitulo.Location = new System.Drawing.Point(11, 50);
+            this.lblTitulo.Location = new System.Drawing.Point(10, 53);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(114, 17);
@@ -406,10 +406,10 @@
             // txtNombreEvento
             // 
             this.txtNombreEvento.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtNombreEvento.Location = new System.Drawing.Point(13, 67);
-            this.txtNombreEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombreEvento.Location = new System.Drawing.Point(12, 72);
+            this.txtNombreEvento.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreEvento.Name = "txtNombreEvento";
-            this.txtNombreEvento.Size = new System.Drawing.Size(195, 29);
+            this.txtNombreEvento.Size = new System.Drawing.Size(195, 32);
             this.txtNombreEvento.TabIndex = 7;
             // 
             // guna2PanelMenu
@@ -527,7 +527,7 @@
             // 
             this.pbLogoUAM.BackColor = System.Drawing.Color.Transparent;
             this.pbLogoUAM.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoUAM.Image")));
-            this.pbLogoUAM.Location = new System.Drawing.Point(561, 0);
+            this.pbLogoUAM.Location = new System.Drawing.Point(570, 0);
             this.pbLogoUAM.Margin = new System.Windows.Forms.Padding(2);
             this.pbLogoUAM.Name = "pbLogoUAM";
             this.pbLogoUAM.Size = new System.Drawing.Size(87, 39);
@@ -540,10 +540,10 @@
             this.pictureBox.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox.BorderRadius = 10;
             this.pictureBox.ImageRotate = 0F;
-            this.pictureBox.Location = new System.Drawing.Point(392, 205);
+            this.pictureBox.Location = new System.Drawing.Point(392, 194);
             this.pictureBox.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(200, 130);
+            this.pictureBox.Size = new System.Drawing.Size(221, 141);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 24;
             this.pictureBox.TabStop = false;
@@ -557,7 +557,7 @@
             this.Controls.Add(this.guna2PanelMenu);
             this.Controls.Add(this.guna2GroupBox1);
             this.DisplayHeader = false;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EditarEvento";
             this.Padding = new System.Windows.Forms.Padding(20, 30, 20, 20);
             this.Style = MetroFramework.MetroColorStyle.White;

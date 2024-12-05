@@ -123,6 +123,16 @@ namespace ProyectoFinal.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap business_report_3094836 {
+            get {
+                object obj = ResourceManager.GetObject("business-report_3094836", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_pantalla_2024_11_30_214640 {
             get {
                 object obj = ResourceManager.GetObject("Captura de pantalla 2024-11-30 214640", resourceCulture);
@@ -316,6 +326,16 @@ namespace ProyectoFinal.Properties {
         internal static System.Drawing.Bitmap modificar {
             get {
                 object obj = ResourceManager.GetObject("modificar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reporte {
+            get {
+                object obj = ResourceManager.GetObject("reporte", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

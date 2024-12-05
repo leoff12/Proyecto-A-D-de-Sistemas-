@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MayorTipoEvento));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pbLogoUAM = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tpGrafica = new System.Windows.Forms.TabPage();
             this.chartTipoEvento = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -48,8 +47,8 @@
             this.pbAdministrador = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pbMensajes = new System.Windows.Forms.PictureBox();
             this.pbMayorTipoEvento = new System.Windows.Forms.PictureBox();
+            this.pbLogoUAM = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tpGrafica.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartTipoEvento)).BeginInit();
@@ -59,6 +58,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbAdministrador)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMensajes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMayorTipoEvento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -68,34 +68,23 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pbLogoUAM);
-            this.panel1.Location = new System.Drawing.Point(30, 25);
+            this.panel1.Location = new System.Drawing.Point(38, 28);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(666, 55);
+            this.panel1.Size = new System.Drawing.Size(658, 61);
             this.panel1.TabIndex = 12;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Ebrima", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(16, 15);
+            this.label1.Location = new System.Drawing.Point(0, 2);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(349, 26);
+            this.label1.Size = new System.Drawing.Size(319, 30);
             this.label1.TabIndex = 3;
             this.label1.Text = "Tipo de Evento Más Recurrente";
-            // 
-            // pbLogoUAM
-            // 
-            this.pbLogoUAM.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoUAM.Image")));
-            this.pbLogoUAM.Location = new System.Drawing.Point(524, 6);
-            this.pbLogoUAM.Margin = new System.Windows.Forms.Padding(2);
-            this.pbLogoUAM.Name = "pbLogoUAM";
-            this.pbLogoUAM.Size = new System.Drawing.Size(92, 44);
-            this.pbLogoUAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbLogoUAM.TabIndex = 2;
-            this.pbLogoUAM.TabStop = false;
             // 
             // tabControl1
             // 
@@ -103,11 +92,11 @@
             this.tabControl1.Controls.Add(this.tpGrafica);
             this.tabControl1.Controls.Add(this.tpDetalles);
             this.tabControl1.ItemSize = new System.Drawing.Size(180, 40);
-            this.tabControl1.Location = new System.Drawing.Point(99, 93);
+            this.tabControl1.Location = new System.Drawing.Point(51, 93);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(572, 244);
+            this.tabControl1.Size = new System.Drawing.Size(629, 256);
             this.tabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.tabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.tabControl1.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -134,24 +123,24 @@
             this.tpGrafica.Margin = new System.Windows.Forms.Padding(2);
             this.tpGrafica.Name = "tpGrafica";
             this.tpGrafica.Padding = new System.Windows.Forms.Padding(2);
-            this.tpGrafica.Size = new System.Drawing.Size(384, 236);
+            this.tpGrafica.Size = new System.Drawing.Size(441, 248);
             this.tpGrafica.TabIndex = 0;
             this.tpGrafica.Text = "Gráfica";
             this.tpGrafica.UseVisualStyleBackColor = true;
             // 
             // chartTipoEvento
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chartTipoEvento.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chartTipoEvento.Legends.Add(legend5);
+            chartArea1.Name = "ChartArea1";
+            this.chartTipoEvento.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartTipoEvento.Legends.Add(legend1);
             this.chartTipoEvento.Location = new System.Drawing.Point(4, 14);
             this.chartTipoEvento.Margin = new System.Windows.Forms.Padding(2);
             this.chartTipoEvento.Name = "chartTipoEvento";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chartTipoEvento.Series.Add(series5);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartTipoEvento.Series.Add(series1);
             this.chartTipoEvento.Size = new System.Drawing.Size(385, 213);
             this.chartTipoEvento.TabIndex = 13;
             this.chartTipoEvento.Text = "chart1";
@@ -163,7 +152,7 @@
             this.tpDetalles.Margin = new System.Windows.Forms.Padding(2);
             this.tpDetalles.Name = "tpDetalles";
             this.tpDetalles.Padding = new System.Windows.Forms.Padding(2);
-            this.tpDetalles.Size = new System.Drawing.Size(384, 236);
+            this.tpDetalles.Size = new System.Drawing.Size(441, 248);
             this.tpDetalles.TabIndex = 1;
             this.tpDetalles.Text = "Detalles";
             this.tpDetalles.UseVisualStyleBackColor = true;
@@ -294,6 +283,17 @@
             this.pbMayorTipoEvento.TabStop = false;
             this.pbMayorTipoEvento.Click += new System.EventHandler(this.pbMayorTipoEvento_Click);
             // 
+            // pbLogoUAM
+            // 
+            this.pbLogoUAM.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoUAM.Image")));
+            this.pbLogoUAM.Location = new System.Drawing.Point(566, 0);
+            this.pbLogoUAM.Margin = new System.Windows.Forms.Padding(2);
+            this.pbLogoUAM.Name = "pbLogoUAM";
+            this.pbLogoUAM.Size = new System.Drawing.Size(92, 44);
+            this.pbLogoUAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLogoUAM.TabIndex = 2;
+            this.pbLogoUAM.TabStop = false;
+            // 
             // MayorTipoEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -310,7 +310,6 @@
             this.Load += new System.EventHandler(this.MayorTipoEvento_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tpGrafica.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chartTipoEvento)).EndInit();
@@ -321,6 +320,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbAdministrador)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMensajes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMayorTipoEvento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).EndInit();
             this.ResumeLayout(false);
 
         }

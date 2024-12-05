@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventoMasPopular));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblCategorias = new System.Windows.Forms.Label();
-            this.pbLogoUAM = new System.Windows.Forms.PictureBox();
             this.chartCategorias = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tpGrafica = new System.Windows.Forms.TabPage();
@@ -48,8 +47,8 @@
             this.pbAdministrador = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pbMensajes = new System.Windows.Forms.PictureBox();
             this.pbRegresarEventoMasPopular = new System.Windows.Forms.PictureBox();
+            this.pbLogoUAM = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartCategorias)).BeginInit();
             this.guna2TabControl1.SuspendLayout();
             this.tpGrafica.SuspendLayout();
@@ -59,6 +58,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbAdministrador)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMensajes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRegresarEventoMasPopular)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -69,47 +69,37 @@
             this.panel1.Controls.Add(this.lblCategorias);
             this.panel1.Controls.Add(this.pbLogoUAM);
             this.panel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(32, 27);
+            this.panel1.Location = new System.Drawing.Point(42, 27);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(663, 55);
+            this.panel1.Size = new System.Drawing.Size(653, 62);
             this.panel1.TabIndex = 12;
             // 
             // lblCategorias
             // 
             this.lblCategorias.AutoSize = true;
+            this.lblCategorias.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategorias.ForeColor = System.Drawing.Color.White;
-            this.lblCategorias.Location = new System.Drawing.Point(15, 16);
+            this.lblCategorias.Location = new System.Drawing.Point(-4, 2);
             this.lblCategorias.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCategorias.Name = "lblCategorias";
-            this.lblCategorias.Size = new System.Drawing.Size(370, 26);
+            this.lblCategorias.Size = new System.Drawing.Size(308, 36);
             this.lblCategorias.TabIndex = 3;
             this.lblCategorias.Text = "Categoría de Evento Más Popular";
             // 
-            // pbLogoUAM
-            // 
-            this.pbLogoUAM.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoUAM.Image")));
-            this.pbLogoUAM.Location = new System.Drawing.Point(524, 6);
-            this.pbLogoUAM.Margin = new System.Windows.Forms.Padding(2);
-            this.pbLogoUAM.Name = "pbLogoUAM";
-            this.pbLogoUAM.Size = new System.Drawing.Size(92, 44);
-            this.pbLogoUAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbLogoUAM.TabIndex = 2;
-            this.pbLogoUAM.TabStop = false;
-            // 
             // chartCategorias
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chartCategorias.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chartCategorias.Legends.Add(legend4);
+            chartArea1.Name = "ChartArea1";
+            this.chartCategorias.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartCategorias.Legends.Add(legend1);
             this.chartCategorias.Location = new System.Drawing.Point(4, 16);
             this.chartCategorias.Margin = new System.Windows.Forms.Padding(2);
             this.chartCategorias.Name = "chartCategorias";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chartCategorias.Series.Add(series4);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartCategorias.Series.Add(series1);
             this.chartCategorias.Size = new System.Drawing.Size(399, 209);
             this.chartCategorias.TabIndex = 13;
             this.chartCategorias.Text = "chart1";
@@ -121,11 +111,11 @@
             this.guna2TabControl1.Controls.Add(this.tpGrafica);
             this.guna2TabControl1.Controls.Add(this.tpDetalles);
             this.guna2TabControl1.ItemSize = new System.Drawing.Size(180, 40);
-            this.guna2TabControl1.Location = new System.Drawing.Point(97, 93);
+            this.guna2TabControl1.Location = new System.Drawing.Point(52, 93);
             this.guna2TabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2TabControl1.Name = "guna2TabControl1";
             this.guna2TabControl1.SelectedIndex = 0;
-            this.guna2TabControl1.Size = new System.Drawing.Size(572, 244);
+            this.guna2TabControl1.Size = new System.Drawing.Size(617, 255);
             this.guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.guna2TabControl1.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -152,7 +142,7 @@
             this.tpGrafica.Margin = new System.Windows.Forms.Padding(2);
             this.tpGrafica.Name = "tpGrafica";
             this.tpGrafica.Padding = new System.Windows.Forms.Padding(2);
-            this.tpGrafica.Size = new System.Drawing.Size(384, 236);
+            this.tpGrafica.Size = new System.Drawing.Size(429, 247);
             this.tpGrafica.TabIndex = 0;
             this.tpGrafica.Text = "Gráfica";
             this.tpGrafica.UseVisualStyleBackColor = true;
@@ -164,7 +154,7 @@
             this.tpDetalles.Margin = new System.Windows.Forms.Padding(2);
             this.tpDetalles.Name = "tpDetalles";
             this.tpDetalles.Padding = new System.Windows.Forms.Padding(2);
-            this.tpDetalles.Size = new System.Drawing.Size(384, 236);
+            this.tpDetalles.Size = new System.Drawing.Size(429, 247);
             this.tpDetalles.TabIndex = 1;
             this.tpDetalles.Text = "Detalles";
             this.tpDetalles.UseVisualStyleBackColor = true;
@@ -295,6 +285,17 @@
             this.pbRegresarEventoMasPopular.TabStop = false;
             this.pbRegresarEventoMasPopular.Click += new System.EventHandler(this.pbRegresarEventoMasPopular_Click);
             // 
+            // pbLogoUAM
+            // 
+            this.pbLogoUAM.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoUAM.Image")));
+            this.pbLogoUAM.Location = new System.Drawing.Point(561, 2);
+            this.pbLogoUAM.Margin = new System.Windows.Forms.Padding(2);
+            this.pbLogoUAM.Name = "pbLogoUAM";
+            this.pbLogoUAM.Size = new System.Drawing.Size(92, 44);
+            this.pbLogoUAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLogoUAM.TabIndex = 2;
+            this.pbLogoUAM.TabStop = false;
+            // 
             // EventoMasPopular
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -311,7 +312,6 @@
             this.Load += new System.EventHandler(this.EventoMasPopular_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartCategorias)).EndInit();
             this.guna2TabControl1.ResumeLayout(false);
             this.tpGrafica.ResumeLayout(false);
@@ -322,6 +322,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbAdministrador)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMensajes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRegresarEventoMasPopular)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoUAM)).EndInit();
             this.ResumeLayout(false);
 
         }

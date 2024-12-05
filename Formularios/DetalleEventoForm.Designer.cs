@@ -74,9 +74,9 @@
             this.panel3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel3.Controls.Add(this.gbDetallesEvento);
             this.panel3.Location = new System.Drawing.Point(42, 26);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(677, 370);
+            this.panel3.Size = new System.Drawing.Size(674, 370);
             this.panel3.TabIndex = 6;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -100,12 +100,12 @@
             this.gbDetallesEvento.Controls.Add(this.txtCuposDispEvento);
             this.gbDetallesEvento.Controls.Add(this.lblNombreEvento);
             this.gbDetallesEvento.Controls.Add(this.pbDetallesImagenEvento);
-            this.gbDetallesEvento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbDetallesEvento.Font = new System.Drawing.Font("Ebrima", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbDetallesEvento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.gbDetallesEvento.Location = new System.Drawing.Point(19, 17);
-            this.gbDetallesEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbDetallesEvento.Margin = new System.Windows.Forms.Padding(2);
             this.gbDetallesEvento.Name = "gbDetallesEvento";
-            this.gbDetallesEvento.Size = new System.Drawing.Size(619, 322);
+            this.gbDetallesEvento.Size = new System.Drawing.Size(638, 335);
             this.gbDetallesEvento.TabIndex = 1;
             this.gbDetallesEvento.Text = "Información del Evento";
             // 
@@ -113,15 +113,16 @@
             // 
             this.btnAnularReservacion.BackColor = System.Drawing.Color.Transparent;
             this.btnAnularReservacion.BorderRadius = 15;
+            this.btnAnularReservacion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAnularReservacion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAnularReservacion.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAnularReservacion.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAnularReservacion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAnularReservacion.FillColor = System.Drawing.Color.Red;
-            this.btnAnularReservacion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnularReservacion.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnularReservacion.ForeColor = System.Drawing.Color.White;
-            this.btnAnularReservacion.Location = new System.Drawing.Point(387, 258);
-            this.btnAnularReservacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAnularReservacion.Location = new System.Drawing.Point(387, 261);
+            this.btnAnularReservacion.Margin = new System.Windows.Forms.Padding(2);
             this.btnAnularReservacion.Name = "btnAnularReservacion";
             this.btnAnularReservacion.Size = new System.Drawing.Size(91, 29);
             this.btnAnularReservacion.TabIndex = 16;
@@ -132,14 +133,15 @@
             // 
             this.btnReservar.BackColor = System.Drawing.Color.Transparent;
             this.btnReservar.BorderRadius = 15;
+            this.btnReservar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReservar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnReservar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnReservar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnReservar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnReservar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReservar.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReservar.ForeColor = System.Drawing.Color.White;
-            this.btnReservar.Location = new System.Drawing.Point(493, 258);
-            this.btnReservar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReservar.Location = new System.Drawing.Point(493, 261);
+            this.btnReservar.Margin = new System.Windows.Forms.Padding(2);
             this.btnReservar.Name = "btnReservar";
             this.btnReservar.Size = new System.Drawing.Size(119, 29);
             this.btnReservar.TabIndex = 15;
@@ -214,22 +216,22 @@
             // mtxHoraFinEvento
             // 
             this.mtxHoraFinEvento.Location = new System.Drawing.Point(555, 153);
-            this.mtxHoraFinEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mtxHoraFinEvento.Margin = new System.Windows.Forms.Padding(2);
             this.mtxHoraFinEvento.Mask = "00:00";
             this.mtxHoraFinEvento.Name = "mtxHoraFinEvento";
             this.mtxHoraFinEvento.ReadOnly = true;
-            this.mtxHoraFinEvento.Size = new System.Drawing.Size(55, 29);
+            this.mtxHoraFinEvento.Size = new System.Drawing.Size(55, 32);
             this.mtxHoraFinEvento.TabIndex = 9;
             this.mtxHoraFinEvento.ValidatingType = typeof(System.DateTime);
             // 
             // mtxHoraInicioEvento
             // 
             this.mtxHoraInicioEvento.Location = new System.Drawing.Point(555, 120);
-            this.mtxHoraInicioEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mtxHoraInicioEvento.Margin = new System.Windows.Forms.Padding(2);
             this.mtxHoraInicioEvento.Mask = "00:00";
             this.mtxHoraInicioEvento.Name = "mtxHoraInicioEvento";
             this.mtxHoraInicioEvento.ReadOnly = true;
-            this.mtxHoraInicioEvento.Size = new System.Drawing.Size(55, 29);
+            this.mtxHoraInicioEvento.Size = new System.Drawing.Size(55, 32);
             this.mtxHoraInicioEvento.TabIndex = 8;
             this.mtxHoraInicioEvento.ValidatingType = typeof(System.DateTime);
             // 
@@ -262,11 +264,11 @@
             // mtxFechaEvento
             // 
             this.mtxFechaEvento.Location = new System.Drawing.Point(217, 258);
-            this.mtxFechaEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mtxFechaEvento.Margin = new System.Windows.Forms.Padding(2);
             this.mtxFechaEvento.Mask = "00/00/0000";
             this.mtxFechaEvento.Name = "mtxFechaEvento";
             this.mtxFechaEvento.ReadOnly = true;
-            this.mtxFechaEvento.Size = new System.Drawing.Size(107, 29);
+            this.mtxFechaEvento.Size = new System.Drawing.Size(107, 32);
             this.mtxFechaEvento.TabIndex = 6;
             this.mtxFechaEvento.ValidatingType = typeof(System.DateTime);
             // 
@@ -283,7 +285,7 @@
             this.txtEstadoPagoEvento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEstadoPagoEvento.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEstadoPagoEvento.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEstadoPagoEvento.Location = new System.Drawing.Point(505, 55);
+            this.txtEstadoPagoEvento.Location = new System.Drawing.Point(507, 208);
             this.txtEstadoPagoEvento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEstadoPagoEvento.Name = "txtEstadoPagoEvento";
             this.txtEstadoPagoEvento.PasswordChar = '\0';
@@ -344,7 +346,7 @@
             this.lblNombreEvento.BackColor = System.Drawing.Color.Transparent;
             this.lblNombreEvento.Font = new System.Drawing.Font("Ebrima", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreEvento.Location = new System.Drawing.Point(217, 55);
-            this.lblNombreEvento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblNombreEvento.Margin = new System.Windows.Forms.Padding(2);
             this.lblNombreEvento.Name = "lblNombreEvento";
             this.lblNombreEvento.Size = new System.Drawing.Size(153, 27);
             this.lblNombreEvento.TabIndex = 1;
@@ -365,7 +367,7 @@
             this.guna2PanelMenu.Name = "guna2PanelMenu";
             this.guna2PanelMenu.ShadowDecoration.BorderRadius = 10;
             this.guna2PanelMenu.ShadowDecoration.Color = System.Drawing.Color.SandyBrown;
-            this.guna2PanelMenu.Size = new System.Drawing.Size(38, 411);
+            this.guna2PanelMenu.Size = new System.Drawing.Size(44, 411);
             this.guna2PanelMenu.TabIndex = 20;
             // 
             // btnCerrarSesiónAdmin
@@ -383,7 +385,7 @@
             this.btnCerrarSesiónAdmin.FillColor = System.Drawing.Color.Red;
             this.btnCerrarSesiónAdmin.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrarSesiónAdmin.ForeColor = System.Drawing.Color.White;
-            this.btnCerrarSesiónAdmin.Location = new System.Drawing.Point(46, 368);
+            this.btnCerrarSesiónAdmin.Location = new System.Drawing.Point(62, 368);
             this.btnCerrarSesiónAdmin.Name = "btnCerrarSesiónAdmin";
             this.btnCerrarSesiónAdmin.Size = new System.Drawing.Size(108, 28);
             this.btnCerrarSesiónAdmin.TabIndex = 18;
@@ -465,10 +467,10 @@
             // pbLogoUAM
             // 
             this.pbLogoUAM.Image = global::ProyectoFinal.Properties.Resources.logo_uam_2;
-            this.pbLogoUAM.Location = new System.Drawing.Point(511, 0);
+            this.pbLogoUAM.Location = new System.Drawing.Point(529, 0);
             this.pbLogoUAM.Margin = new System.Windows.Forms.Padding(2);
             this.pbLogoUAM.Name = "pbLogoUAM";
-            this.pbLogoUAM.Size = new System.Drawing.Size(109, 40);
+            this.pbLogoUAM.Size = new System.Drawing.Size(109, 37);
             this.pbLogoUAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbLogoUAM.TabIndex = 2;
             this.pbLogoUAM.TabStop = false;
@@ -479,7 +481,7 @@
             this.pbDetallesImagenEvento.Location = new System.Drawing.Point(15, 55);
             this.pbDetallesImagenEvento.Margin = new System.Windows.Forms.Padding(2);
             this.pbDetallesImagenEvento.Name = "pbDetallesImagenEvento";
-            this.pbDetallesImagenEvento.Size = new System.Drawing.Size(185, 232);
+            this.pbDetallesImagenEvento.Size = new System.Drawing.Size(195, 243);
             this.pbDetallesImagenEvento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbDetallesImagenEvento.TabIndex = 0;
             this.pbDetallesImagenEvento.TabStop = false;
@@ -488,10 +490,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(730, 409);
+            this.ClientSize = new System.Drawing.Size(721, 411);
             this.Controls.Add(this.guna2PanelMenu);
             this.Controls.Add(this.panel3);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DetalleEventoForm";
             this.Style = MetroFramework.MetroColorStyle.White;
             this.Load += new System.EventHandler(this.DetalleEventoForm_Load);

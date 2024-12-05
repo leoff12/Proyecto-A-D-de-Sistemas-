@@ -85,7 +85,7 @@
             this.dgvMensajesUsuario.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvMensajesUsuario.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(222)))), ((int)(((byte)(251)))));
             this.dgvMensajesUsuario.Location = new System.Drawing.Point(38, 85);
-            this.dgvMensajesUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvMensajesUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.dgvMensajesUsuario.Name = "dgvMensajesUsuario";
             this.dgvMensajesUsuario.RowHeadersVisible = false;
             this.dgvMensajesUsuario.RowHeadersWidth = 62;
@@ -145,7 +145,10 @@
             // 
             // btnEliminarMensaje
             // 
-            this.btnEliminarMensaje.BorderRadius = 5;
+            this.btnEliminarMensaje.Animated = true;
+            this.btnEliminarMensaje.AutoRoundedCorners = true;
+            this.btnEliminarMensaje.BorderRadius = 13;
+            this.btnEliminarMensaje.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminarMensaje.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnEliminarMensaje.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnEliminarMensaje.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -153,7 +156,7 @@
             this.btnEliminarMensaje.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarMensaje.ForeColor = System.Drawing.Color.White;
             this.btnEliminarMensaje.Location = new System.Drawing.Point(303, 328);
-            this.btnEliminarMensaje.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminarMensaje.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminarMensaje.Name = "btnEliminarMensaje";
             this.btnEliminarMensaje.Size = new System.Drawing.Size(140, 29);
             this.btnEliminarMensaje.TabIndex = 14;
@@ -168,7 +171,7 @@
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel1.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(38, 26);
-            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.DodgerBlue;
             this.guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.Dropped;
@@ -180,7 +183,7 @@
             this.lblBandejaDeMensajes.BackColor = System.Drawing.Color.Transparent;
             this.lblBandejaDeMensajes.Font = new System.Drawing.Font("Ebrima", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBandejaDeMensajes.Location = new System.Drawing.Point(4, 2);
-            this.lblBandejaDeMensajes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblBandejaDeMensajes.Margin = new System.Windows.Forms.Padding(2);
             this.lblBandejaDeMensajes.Name = "lblBandejaDeMensajes";
             this.lblBandejaDeMensajes.Size = new System.Drawing.Size(271, 39);
             this.lblBandejaDeMensajes.TabIndex = 0;
@@ -237,9 +240,10 @@
             // 
             // btnToggleMenu
             // 
+            this.btnToggleMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnToggleMenu.Image = global::ProyectoFinal.Properties.Resources.settings_13895453;
             this.btnToggleMenu.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnToggleMenu.InitialImage")));
-            this.btnToggleMenu.Location = new System.Drawing.Point(9, 51);
+            this.btnToggleMenu.Location = new System.Drawing.Point(5, 54);
             this.btnToggleMenu.Name = "btnToggleMenu";
             this.btnToggleMenu.Size = new System.Drawing.Size(30, 29);
             this.btnToggleMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -291,7 +295,7 @@
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.btnEliminarMensaje);
             this.Controls.Add(this.dgvMensajesUsuario);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MensajesUsuario";
             this.Style = MetroFramework.MetroColorStyle.White;
             this.Text = "MensajesUsuario";

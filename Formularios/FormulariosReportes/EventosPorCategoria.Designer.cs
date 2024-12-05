@@ -47,11 +47,11 @@
             // 
             // reportViewer1
             // 
-            this.reportViewer1.Location = new System.Drawing.Point(38, 28);
+            this.reportViewer1.Location = new System.Drawing.Point(42, 28);
             this.reportViewer1.Margin = new System.Windows.Forms.Padding(2);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(626, 402);
+            this.reportViewer1.Size = new System.Drawing.Size(671, 428);
             this.reportViewer1.TabIndex = 0;
             // 
             // guna2PanelMenu
@@ -69,7 +69,7 @@
             this.guna2PanelMenu.Name = "guna2PanelMenu";
             this.guna2PanelMenu.ShadowDecoration.BorderRadius = 10;
             this.guna2PanelMenu.ShadowDecoration.Color = System.Drawing.Color.SandyBrown;
-            this.guna2PanelMenu.Size = new System.Drawing.Size(41, 430);
+            this.guna2PanelMenu.Size = new System.Drawing.Size(41, 456);
             this.guna2PanelMenu.TabIndex = 22;
             // 
             // btnCerrarSesiónAdmin
@@ -170,7 +170,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 427);
+            this.ClientSize = new System.Drawing.Size(714, 454);
             this.Controls.Add(this.guna2PanelMenu);
             this.Controls.Add(this.reportViewer1);
             this.Margin = new System.Windows.Forms.Padding(2);
