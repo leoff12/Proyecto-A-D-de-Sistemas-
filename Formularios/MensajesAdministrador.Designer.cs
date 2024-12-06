@@ -62,20 +62,20 @@
             this.guna2ShadowPanel1.Controls.Add(this.lblBandejaDeMensajes);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel1.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(58, 40);
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(42, 26);
+            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.DodgerBlue;
             this.guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.Dropped;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(1044, 85);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(687, 55);
             this.guna2ShadowPanel1.TabIndex = 12;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ProyectoFinal.Properties.Resources.speech_bubble_8716838;
-            this.pictureBox1.Location = new System.Drawing.Point(958, 6);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(639, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(58, 58);
+            this.pictureBox1.Size = new System.Drawing.Size(39, 38);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -84,9 +84,10 @@
             // 
             this.lblBandejaDeMensajes.BackColor = System.Drawing.Color.Transparent;
             this.lblBandejaDeMensajes.Font = new System.Drawing.Font("Ebrima", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBandejaDeMensajes.Location = new System.Drawing.Point(4, 5);
+            this.lblBandejaDeMensajes.Location = new System.Drawing.Point(3, 3);
+            this.lblBandejaDeMensajes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblBandejaDeMensajes.Name = "lblBandejaDeMensajes";
-            this.lblBandejaDeMensajes.Size = new System.Drawing.Size(404, 57);
+            this.lblBandejaDeMensajes.Size = new System.Drawing.Size(271, 39);
             this.lblBandejaDeMensajes.TabIndex = 0;
             this.lblBandejaDeMensajes.Text = "Bandeja de Mensajes";
             // 
@@ -113,12 +114,13 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvMensajesAdmin.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvMensajesAdmin.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvMensajesAdmin.Location = new System.Drawing.Point(68, 131);
+            this.dgvMensajesAdmin.Location = new System.Drawing.Point(39, 85);
+            this.dgvMensajesAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvMensajesAdmin.Name = "dgvMensajesAdmin";
             this.dgvMensajesAdmin.RowHeadersVisible = false;
             this.dgvMensajesAdmin.RowHeadersWidth = 62;
             this.dgvMensajesAdmin.RowTemplate.Height = 28;
-            this.dgvMensajesAdmin.Size = new System.Drawing.Size(1035, 371);
+            this.dgvMensajesAdmin.Size = new System.Drawing.Size(690, 241);
             this.dgvMensajesAdmin.TabIndex = 11;
             this.dgvMensajesAdmin.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvMensajesAdmin.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -153,10 +155,11 @@
             this.btnBorrarMensaje.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnBorrarMensaje.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBorrarMensaje.ForeColor = System.Drawing.Color.White;
-            this.btnBorrarMensaje.Location = new System.Drawing.Point(136, 508);
+            this.btnBorrarMensaje.Location = new System.Drawing.Point(91, 330);
+            this.btnBorrarMensaje.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBorrarMensaje.Name = "btnBorrarMensaje";
             this.btnBorrarMensaje.ShadowDecoration.BorderRadius = 50;
-            this.btnBorrarMensaje.Size = new System.Drawing.Size(210, 45);
+            this.btnBorrarMensaje.Size = new System.Drawing.Size(140, 29);
             this.btnBorrarMensaje.TabIndex = 13;
             this.btnBorrarMensaje.Text = "Eliminar Mensaje";
             this.btnBorrarMensaje.Click += new System.EventHandler(this.btnEliminarMensaje_Click);
@@ -171,9 +174,10 @@
             this.btnAceptar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAceptar.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptar.ForeColor = System.Drawing.Color.White;
-            this.btnAceptar.Location = new System.Drawing.Point(825, 508);
+            this.btnAceptar.Location = new System.Drawing.Point(550, 330);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(210, 45);
+            this.btnAceptar.Size = new System.Drawing.Size(140, 29);
             this.btnAceptar.TabIndex = 15;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
@@ -189,9 +193,10 @@
             this.btnRechazar.FillColor = System.Drawing.Color.Red;
             this.btnRechazar.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRechazar.ForeColor = System.Drawing.Color.White;
-            this.btnRechazar.Location = new System.Drawing.Point(596, 508);
+            this.btnRechazar.Location = new System.Drawing.Point(397, 330);
+            this.btnRechazar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRechazar.Name = "btnRechazar";
-            this.btnRechazar.Size = new System.Drawing.Size(210, 45);
+            this.btnRechazar.Size = new System.Drawing.Size(140, 29);
             this.btnRechazar.TabIndex = 16;
             this.btnRechazar.Text = "Rechazar";
             this.btnRechazar.Click += new System.EventHandler(this.btnRechazar_Click);
@@ -206,9 +211,10 @@
             this.btnCancelar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnCancelar.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(366, 508);
+            this.btnCancelar.Location = new System.Drawing.Point(244, 330);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(210, 45);
+            this.btnCancelar.Size = new System.Drawing.Size(140, 29);
             this.btnCancelar.TabIndex = 17;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -222,12 +228,11 @@
             this.guna2PanelMenu.Controls.Add(this.btnToggleMenu);
             this.guna2PanelMenu.Controls.Add(this.pbAdministrador);
             this.guna2PanelMenu.Controls.Add(this.pbMensajesRegresarAdmin);
-            this.guna2PanelMenu.Location = new System.Drawing.Point(0, -5);
-            this.guna2PanelMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2PanelMenu.Location = new System.Drawing.Point(0, -3);
             this.guna2PanelMenu.Name = "guna2PanelMenu";
             this.guna2PanelMenu.ShadowDecoration.BorderRadius = 10;
             this.guna2PanelMenu.ShadowDecoration.Color = System.Drawing.Color.SandyBrown;
-            this.guna2PanelMenu.Size = new System.Drawing.Size(60, 595);
+            this.guna2PanelMenu.Size = new System.Drawing.Size(40, 387);
             this.guna2PanelMenu.TabIndex = 18;
             // 
             // btnCerrarSesiónAdmin
@@ -235,7 +240,7 @@
             this.btnCerrarSesiónAdmin.Animated = true;
             this.btnCerrarSesiónAdmin.AnimatedGIF = true;
             this.btnCerrarSesiónAdmin.AutoRoundedCorners = true;
-            this.btnCerrarSesiónAdmin.BorderRadius = 18;
+            this.btnCerrarSesiónAdmin.BorderRadius = 13;
             this.btnCerrarSesiónAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrarSesiónAdmin.DefaultAutoSize = true;
             this.btnCerrarSesiónAdmin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -245,10 +250,9 @@
             this.btnCerrarSesiónAdmin.FillColor = System.Drawing.Color.Red;
             this.btnCerrarSesiónAdmin.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrarSesiónAdmin.ForeColor = System.Drawing.Color.White;
-            this.btnCerrarSesiónAdmin.Location = new System.Drawing.Point(76, 492);
-            this.btnCerrarSesiónAdmin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCerrarSesiónAdmin.Location = new System.Drawing.Point(51, 320);
             this.btnCerrarSesiónAdmin.Name = "btnCerrarSesiónAdmin";
-            this.btnCerrarSesiónAdmin.Size = new System.Drawing.Size(149, 38);
+            this.btnCerrarSesiónAdmin.Size = new System.Drawing.Size(108, 28);
             this.btnCerrarSesiónAdmin.TabIndex = 18;
             this.btnCerrarSesiónAdmin.Tag = "Cerrar Sesión";
             this.btnCerrarSesiónAdmin.Text = "Cerrar Sesión";
@@ -258,10 +262,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(130, 174);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(87, 113);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 25);
+            this.label1.Size = new System.Drawing.Size(42, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "Inicio";
             // 
@@ -269,10 +272,9 @@
             // 
             this.btnToggleMenu.Image = global::ProyectoFinal.Properties.Resources.settings_13895453;
             this.btnToggleMenu.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnToggleMenu.InitialImage")));
-            this.btnToggleMenu.Location = new System.Drawing.Point(4, 63);
-            this.btnToggleMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnToggleMenu.Location = new System.Drawing.Point(3, 41);
             this.btnToggleMenu.Name = "btnToggleMenu";
-            this.btnToggleMenu.Size = new System.Drawing.Size(46, 45);
+            this.btnToggleMenu.Size = new System.Drawing.Size(31, 29);
             this.btnToggleMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnToggleMenu.TabIndex = 2;
             this.btnToggleMenu.TabStop = false;
@@ -283,10 +285,9 @@
             this.pbAdministrador.BackColor = System.Drawing.Color.Transparent;
             this.pbAdministrador.Image = ((System.Drawing.Image)(resources.GetObject("pbAdministrador.Image")));
             this.pbAdministrador.ImageRotate = 0F;
-            this.pbAdministrador.Location = new System.Drawing.Point(-3, 5);
-            this.pbAdministrador.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbAdministrador.Location = new System.Drawing.Point(-2, 3);
             this.pbAdministrador.Name = "pbAdministrador";
-            this.pbAdministrador.Size = new System.Drawing.Size(58, 49);
+            this.pbAdministrador.Size = new System.Drawing.Size(39, 32);
             this.pbAdministrador.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbAdministrador.TabIndex = 19;
             this.pbAdministrador.TabStop = false;
@@ -296,10 +297,9 @@
             this.pbMensajesRegresarAdmin.BackColor = System.Drawing.Color.Transparent;
             this.pbMensajesRegresarAdmin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbMensajesRegresarAdmin.Image = global::ProyectoFinal.Properties.Resources.home_100230672;
-            this.pbMensajesRegresarAdmin.Location = new System.Drawing.Point(128, 100);
-            this.pbMensajesRegresarAdmin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbMensajesRegresarAdmin.Location = new System.Drawing.Point(85, 65);
             this.pbMensajesRegresarAdmin.Name = "pbMensajesRegresarAdmin";
-            this.pbMensajesRegresarAdmin.Size = new System.Drawing.Size(66, 69);
+            this.pbMensajesRegresarAdmin.Size = new System.Drawing.Size(44, 45);
             this.pbMensajesRegresarAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbMensajesRegresarAdmin.TabIndex = 0;
             this.pbMensajesRegresarAdmin.TabStop = false;
@@ -307,9 +307,9 @@
             // 
             // MensajesAdministrador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1090, 586);
+            this.ClientSize = new System.Drawing.Size(727, 381);
             this.Controls.Add(this.guna2PanelMenu);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnRechazar);
@@ -317,8 +317,8 @@
             this.Controls.Add(this.btnBorrarMensaje);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Controls.Add(this.dgvMensajesAdmin);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MensajesAdministrador";
-            this.Padding = new System.Windows.Forms.Padding(30, 92, 30, 31);
             this.Style = MetroFramework.MetroColorStyle.White;
             this.Text = "MensajesAdministrador";
             this.Load += new System.EventHandler(this.MensajesAdministrador_Load);
