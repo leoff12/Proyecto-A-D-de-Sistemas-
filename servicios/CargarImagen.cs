@@ -11,8 +11,8 @@ namespace ProyectoFinal.Servicios
         // Método para cargar imágenes en un ComboBox
         public void CargarImagenes(ComboBox comboBox)
         {
-            // Obtiene la ruta completa al directorio de imágenes dentro del proyecto
-            string rutaCarpeta = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName, "Imagenes");
+            // Obtiene la ruta completa al directorio de imágenes junto al ejecutable
+            string rutaCarpeta = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Imagenes");
 
             // Verifica si la carpeta existe
             if (!Directory.Exists(rutaCarpeta))
@@ -44,8 +44,7 @@ namespace ProyectoFinal.Servicios
             }
         }
 
-        //Cargar imagen en el pictureBox
-
+        //Cargar imagen en el PictureBox
         public static void CargarImagenEnPictureBox(string nombreImagen, PictureBox pictureBox)
         {
             // Validación de parámetros
@@ -63,8 +62,8 @@ namespace ProyectoFinal.Servicios
 
             try
             {
-                // Construcción de la ruta completa usando el directorio base
-                string rutaImagen = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName, "Imagenes", nombreImagen);
+                // Construcción de la ruta completa usando el directorio base del ejecutable
+                string rutaImagen = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Imagenes", nombreImagen);
 
                 // Verificar si el archivo de la imagen existe
                 if (File.Exists(rutaImagen))
@@ -86,6 +85,5 @@ namespace ProyectoFinal.Servicios
                 MessageBox.Show($"Error al cargar la imagen: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
     }
 }

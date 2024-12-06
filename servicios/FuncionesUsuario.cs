@@ -47,10 +47,10 @@ namespace ProyectoFinal.Servicios
                         if (!string.IsNullOrEmpty(eventoSeleccionado.ImagenSeleccionada))
                         {
                             string rutaImagen = Path.Combine(
-                                Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName,
-                                "Imagenes",
-                                eventoSeleccionado.ImagenSeleccionada
-                            );
+                           AppDomain.CurrentDomain.BaseDirectory,
+                           "Imagenes",
+                           eventoSeleccionado.ImagenSeleccionada
+                           );
 
                             if (File.Exists(rutaImagen))
                             {
