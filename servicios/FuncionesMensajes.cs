@@ -55,6 +55,17 @@ namespace ProyectoFinal.Servicios
             if (evento != null)
             {
                 evento.EstadoReservación = nuevoEstado;
+
+                if (nuevoEstado == 2)
+                {
+                    evento.CuposDisp--;
+                }
+
+                if (nuevoEstado == 1)
+                {
+                    evento.CuposDisp++;
+                }
+                
                 Funciones.ActualizarEvento(evento);
 
                 // Actualizar el mensaje correspondiente

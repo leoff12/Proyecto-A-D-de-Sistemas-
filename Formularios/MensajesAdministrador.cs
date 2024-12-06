@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProyectoFinal.Formularios;
+using ProyectoFinal.Servicios;
 
 namespace ProyectoFinal.Formularios
 {
@@ -104,6 +105,13 @@ namespace ProyectoFinal.Formularios
                 }
             }
         }
+        /*var eventoOriginal = eventosList.FirstOrDefault(e => e.ID == eventoModificado.ID);
+
+                if (eventoOriginal != null)
+                {
+                    // Actualizar los datos
+                    int index = eventosList.IndexOf(eventoOriginal);
+                    eventosList[index] = eventoModificado;*/
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
@@ -113,8 +121,19 @@ namespace ProyectoFinal.Formularios
 
                 try
                 {
-                    // Llamar a la función de actualización de estado
-                    FuncionesMensajes.ActualizarEstadoEvento(nombreEvento, 1, "En espera"); // EstadoReservación = 1 (En espera)
+                    List<Eventos> eventos = new List<Eventos>();
+                    eventos = Funciones.CargarEventos();
+                    var eventoSeleccionado = eventos.FirstOrDefault(a => a.NombreEvento == nombreEvento);
+                    if (eventoSeleccionado.EstadoReservación == 2)
+                    {
+                        // Llamar a la función de actualización de estado
+                        FuncionesMensajes.ActualizarEstadoEvento(nombreEvento, 1, "En espera"); // EstadoReservación = 1 (En espera)
+                    }
+                    else
+                    {
+                        FuncionesMensajes.ActualizarEstadoEvento(nombreEvento, 4, "En espera"); 
+                    }
+
                     CargarMensajes();
                 }
                 catch (Exception ex)
