@@ -121,6 +121,7 @@ namespace ProyectoFinal.Formularios
                         btnReservar.FillColor = Color.Green;
                         btnReservar.Text = "Aprobada";
                         Funciones.ActualizarEvento(EventoSeleccionado);
+                        txtCuposDispEvento.Text = EventoSeleccionado.CuposDisp.ToString(); 
                     }
                     else
                     {
@@ -171,7 +172,8 @@ namespace ProyectoFinal.Formularios
                     // Actualizar el estado del botón de reservación y guardar cambios en el evento
                     ActualizarBotonReservar(EventoSeleccionado.EstadoReservación);
                     Funciones.ActualizarEvento(EventoSeleccionado);
-                }
+                    txtCuposDispEvento.Text = EventoSeleccionado.CuposDisp.ToString();
+            }
                 if(EventoSeleccionado.EstadoReservación == 1)
                 {
                     EventoSeleccionado.EstadoReservación = 0;
@@ -195,7 +197,8 @@ namespace ProyectoFinal.Formularios
                     // Actualizar el estado del botón de reservación y guardar cambios en el evento
                     ActualizarBotonReservar(EventoSeleccionado.EstadoReservación);
                     Funciones.ActualizarEvento(EventoSeleccionado);
-                }
+                    txtCuposDispEvento.Text = EventoSeleccionado.CuposDisp.ToString();
+            }
         }
         private void ActualizarBotonReservar(int estado)
         {
