@@ -28,8 +28,22 @@ namespace ProyectoFinal.Formularios.FormulariosReportes
                 // Cargar los eventos desde el archivo binario
                 List<Eventos> listaDeEventos = Funciones.CargarEventos();
 
+                if (listaDeEventos == null || listaDeEventos.Count == 0)
+                {
+                    MessageBox.Show("No hay eventos disponibles para generar el reporte.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
                 // Configurar el ReportViewer
-                reportViewer1.LocalReport.ReportPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Reportes", "EventosPorCategoria.rdlc");
+                string rutaReporte = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Reportes", "EventosPorCategoria.rdlc");
+
+                if (!File.Exists(rutaReporte))
+                {
+                    MessageBox.Show($"No se encontró el archivo del reporte en la ruta: {rutaReporte}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                reportViewer1.LocalReport.ReportPath = rutaReporte;
                 reportViewer1.LocalReport.DataSources.Clear();
 
                 // Crear el origen de datos
@@ -53,6 +67,7 @@ namespace ProyectoFinal.Formularios.FormulariosReportes
         }
 
         bool menuExpandido = false;
+
         private void btnToggleMenu_Click_1(object sender, EventArgs e)
         {
             FuncionesVarias.ToggleMenu(guna2PanelMenu, menuExpandido);
@@ -74,3 +89,4 @@ namespace ProyectoFinal.Formularios.FormulariosReportes
         }
     }
 }
+
